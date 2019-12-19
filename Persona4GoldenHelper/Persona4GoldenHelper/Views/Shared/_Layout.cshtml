@@ -3,6 +3,36 @@
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
+    <div id="page-header" class="text-center">
+        <a class="header" asp-controller="App" asp-action="Index">Persona 4: Golden Helper</a>
+        <ul>
+            <li><a asp-controller="Persona" asp-action="Index">Personas</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Skill" asp-action="Index">Skills</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Calender" asp-action="Index">Calender</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Book" asp-action="Index">Books</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Equipment" asp-action="Index">Equipment</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Clothing" asp-action="Index">Clothing</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="ExamAnswer" asp-action="Index">Exam Answers</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Gardening" asp-action="Index">Gardening</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Quest" asp-action="Index">Quests</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Shadow" asp-action="Index">Shadows</a></li>
+            <li class="divider"> | </li>
+            <li><a asp-controller="Item" asp-action="Index">Items</a></li>
+            <li class="divider"> | </li>
+            <li><a href="https://github.com/AndyCrocker/Persona4GoldenHelper" target="_blank">Source Code</a></li>
+        </ul>
+    </div>
+    <br />
+
     @RenderBody()
 </body>
 
