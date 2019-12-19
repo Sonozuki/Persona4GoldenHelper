@@ -21,8 +21,10 @@ namespace Persona4GoldenHelper
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IBook, BookService>();
+            services.AddScoped<IAnswer, AnswerService>();
 
             services.AddScoped<BookContext, BookContext>();
+            services.AddScoped<ExamAnswerContext, ExamAnswerContext>();
 
             services.AddMvc();
         }

@@ -1,0 +1,234 @@
+﻿@model ExamAnswerViewModel
+
+<h2 class="center-align col-md-12">All exam questions and answers</h2>
+
+<h2 class="center-align col-md-12">April</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.April)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">May</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.May)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">June</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.June)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">July</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.July)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">August</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.August)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">September</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    </thead>
+    @foreach (var answer in Model.September)
+    {
+        <tr>
+            <td class="center-align col-md-1">@answer.DateAsked</td>
+            <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+            <td class="col-md-4">@answer.QuestionAnswer</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">October</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.October)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">November</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.November)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">December</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.December)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">Janurary</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.Janurary)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2 class="center-align col-md-12">February</h2>
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="center-align col-md-1">Date</th>
+            <th class="col-md-7">Question</th>
+            <th class="col-md-4">Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var answer in Model.February)
+        {
+            <tr>
+                <td class="center-align col-md-1">@answer.DateAsked</td>
+                <td class="col-md-7 text-bright">@answer.QuestionAsked</td>
+                <td class="col-md-4">@answer.QuestionAnswer</td>
+            </tr>
+        }
+    </tbody>
+</table>
