@@ -1,1 +1,25 @@
-﻿<h1>Book Index</h1>
+﻿@model BookViewModel
+
+<h1>Book Index</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>Available</td>
+            <td>Title</td>
+            <td>How to Obtain</td>
+            <td>Effect</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model.Books)
+        {
+            <tr>
+                <td>@book.DateAvailable</td>
+                <td>@book.Title</td>
+                <td>@book.Requirement</td>
+                <td>@book.Effect</td>
+            </tr>
+        }
+    </tbody>
+</table>

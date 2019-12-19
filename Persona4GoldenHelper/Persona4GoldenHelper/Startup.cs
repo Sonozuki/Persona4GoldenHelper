@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persona4GoldenHelper.Data;
+using Persona4GoldenHelper.Data.Context;
 using Persona4GoldenHelper.Service;
 
 namespace Persona4GoldenHelper
@@ -20,6 +21,8 @@ namespace Persona4GoldenHelper
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IBook, BookService>();
+
+            services.AddScoped<BookContext, BookContext>();
 
             services.AddMvc();
         }

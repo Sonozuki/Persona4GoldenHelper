@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Persona4GoldenHelper.Data;
+using Persona4GoldenHelper.Models;
+using Persona4GoldenHelper.Service;
 
 namespace Persona4GoldenHelper.Controllers
 {
@@ -17,7 +19,11 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Index()
         {
             ViewBag.Title = "Books";
-            return View();
+
+            var model = new BookViewModel();
+            model.Books = BookService.GetAll();
+
+            return View(model);
         }
     }
 }
