@@ -2,23 +2,23 @@
 
 <h1>Book Index</h1>
 
-<table>
+<table class="col-md-8 col-md-offset-2">
     <thead>
         <tr>
-            <td>Available</td>
-            <td>Title</td>
-            <td>How to Obtain</td>
-            <td>Effect</td>
+            <th>Available</th>
+            <th>Title</th>
+            <th>How to Obtain</th>
+            <th>Effect</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var book in Model.Books)
         {
             <tr>
-                <td>@book.DateAvailable</td>
-                <td>@book.Title</td>
-                <td>@book.Requirement</td>
-                <td>@book.Effect</td>
+                <td class="center-align col-md-1">@book.DateAvailable</td>
+                <td class="text-bright col-md-2">@book.Title</td>
+                <td style="white-space: pre-line;">@book.Requirement</td>
+                <td class="col-md-3">@book.Effect</td>
             </tr>
         }
     </tbody>

@@ -1,0 +1,41 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #c5c1b9;
+}
+
+table {
+    border: 1px solid #353535;
+    border-collapse: collapse;
+    color: #808080;
+    margin-bottom: 30px;
+}
+
+    table th {
+        background-color: #2a2a2a;
+        color: #B4B4B4;
+        position: sticky;
+        top: -1px;
+        border: none;
+        padding: 10px;
+    }
+
+    table td {
+        padding: 5px 0;
+    }
+
+    table tr {
+        background-color: #202020;
+    }
+
+        table tr:hover {
+            background-color: #333;
+        }
+
+.center-align {
+    text-align: center;
+}
+
+.text-bright {
+    color: #c5c1b9
+}
