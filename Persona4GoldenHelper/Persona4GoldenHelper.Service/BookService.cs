@@ -33,5 +33,20 @@ namespace Persona4GoldenHelper.Service
                 return null;
             }
         }
+
+        public List<string> GetOrder()
+        {
+            try
+            {
+                Logger.LogInformation("GetOrder was called");
+
+                return Context.BookOrder.ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetOrder failed {ex}");
+                return null;
+            }
+        }
     }
 }

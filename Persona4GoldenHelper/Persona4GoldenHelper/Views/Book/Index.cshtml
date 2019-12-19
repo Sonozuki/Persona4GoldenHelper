@@ -1,7 +1,6 @@
 ﻿@model BookViewModel
 
-<h1>Book Index</h1>
-
+<h2 class="center-align col-md-12">All Books</h2>
 <table class="col-md-8 col-md-offset-2">
     <thead>
         <tr>
@@ -22,4 +21,15 @@
             </tr>
         }
     </tbody>
+</table>
+
+<h2 class="center-align col-md-12">Book Order</h2>
+<h6 class="center-align col-md-12">This is the order of the books in the inventory, to make it easier to see which books you are missing.</h6>
+<table class="col-md-2 col-md-offset-5">
+    @foreach (var bookTitle in Model.BookOrder)
+    {
+        <tr>
+            <td class="center-align text-bright">@bookTitle</td>
+        </tr>
+    }
 </table>

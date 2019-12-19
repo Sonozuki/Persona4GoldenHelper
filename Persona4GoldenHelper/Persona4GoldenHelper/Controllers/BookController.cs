@@ -22,6 +22,7 @@ namespace Persona4GoldenHelper.Controllers
 
             var model = new BookViewModel();
             model.Books = BookService.GetAll();
+            model.BookOrder = BookService.GetOrder();
 
             return View(model);
         }

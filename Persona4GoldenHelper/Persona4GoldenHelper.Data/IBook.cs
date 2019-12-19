@@ -6,5 +6,6 @@ namespace Persona4GoldenHelper.Data
     public interface IBook
     {
         List<Book> GetAll();
+        List<string> GetOrder();
     }
 }

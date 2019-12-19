@@ -200,5 +200,41 @@ namespace Persona4GoldenHelper.Data.Context
                 effect: "Raises Knowlege & Understanding."
             )
         };
+
+        public List<string> BookOrder { get; } = new List<string>()
+        {
+            "The Lovely Man",
+            "Forever Macho",
+            "Man of History",
+            "Man-God",
+            "Farewell to Man",
+            "Off Today",
+            "Short on Cash",
+            "Changing Careers",
+            "Sensei's Friends",
+            "The Final Lesson",
+            "The O-Cha Way",
+            "The Gentle Way",
+            "The Divine Way",
+            "The Ramen Way",
+            "The Punk's Way",
+            "Witch Detective",
+            "Poly-land",
+            "Guide to Pests",
+            "Picross Rules!",
+            "Who Am I?",
+            "Expert Study Methods",
+            "English Made Easy",
+            "100 Ghost Stories",
+            "Office Work Manual",
+            "Easy Origami",
+            "Food Fight!",
+            "Beginner Fishing",
+            "Expert Fishing",
+            "Catching Bugs",
+            "World-Class Bugs",
+            "Home Gardening",
+            "Hyperspeed Reading"
+        };
     }
 }
