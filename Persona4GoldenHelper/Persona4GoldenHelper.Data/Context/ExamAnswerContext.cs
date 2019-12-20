@@ -141,7 +141,7 @@ namespace Persona4GoldenHelper.Data.Context
             ),
             new Answer(
                 dateAsked: "7/14",
-                questionAsked: "Which famous Heian-ero monk famously used a wrong version of the \"[Japanese Character]\" kanji?",
+                questionAsked: "Which famous Heian-ero monk famously used a wrong version of the \"応\" kanji?",
                 questionAnswer: "Kuukai"
             ),
             new Answer(
@@ -167,7 +167,7 @@ namespace Persona4GoldenHelper.Data.Context
             new Answer(
                 dateAsked: "7/20",
                 questionAsked: "It is said, \"Even Kobo made mistakes in writing.\" Which kanji did he make a mistake on?",
-                questionAnswer: "[The first one]"
+                questionAnswer: "応 (The first one)"
             ),
             new Answer(
                 dateAsked: "7/20",
