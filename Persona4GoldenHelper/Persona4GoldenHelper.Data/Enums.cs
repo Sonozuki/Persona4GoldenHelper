@@ -11,5 +11,12 @@
             Reflect,
             Absorb
         }
+
+        public enum Gender
+        {
+            Unisex,
+            Male,
+            Female
+        }
     }
 }
