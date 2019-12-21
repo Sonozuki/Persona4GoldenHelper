@@ -45,7 +45,7 @@ namespace Persona4GoldenHelper.Controllers
             model.October = AnswerService.GetByMonth("October");
             model.November = AnswerService.GetByMonth("November");
             model.December = AnswerService.GetByMonth("December");
-            model.Janurary = AnswerService.GetByMonth("Janurary");
+            model.January = AnswerService.GetByMonth("January");
             model.February = AnswerService.GetByMonth("February");
 
             return View(model);

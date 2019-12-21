@@ -18,5 +18,20 @@
             Male,
             Female
         }
+
+        public enum Month
+        { 
+            January = 1,
+            February,
+            April = 4, // skip march as you never play that month
+            May,
+            June,
+            July,
+            August,
+            September,
+            October,
+            November,
+            December
+        }
     }
 }

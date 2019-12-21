@@ -14,7 +14,7 @@ namespace Persona4GoldenHelper.Models
         public List<Answer> October { get; set; }
         public List<Answer> November { get; set; }
         public List<Answer> December { get; set; }
-        public List<Answer> Janurary { get; set; }
+        public List<Answer> January { get; set; }
         public List<Answer> February { get; set; }
     }
 }

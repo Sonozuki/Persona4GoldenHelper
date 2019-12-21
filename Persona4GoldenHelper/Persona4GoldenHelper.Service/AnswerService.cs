@@ -4,6 +4,7 @@ using Persona4GoldenHelper.Data.Context;
 using Persona4GoldenHelper.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Persona4GoldenHelper.Service
 {
@@ -25,7 +26,9 @@ namespace Persona4GoldenHelper.Service
                 Logger.LogInformation("GetByMonth was called");
 
                 // use reflection to get the answers using the monthName variable
-                return (List<Answer>)Context.GetType().GetProperty(monthName).GetValue(Context);
+                return Context.Answers
+                    .Where(answer => answer.Month.ToString() == monthName)
+                    .ToList();
             }
             catch (Exception ex)
             {
