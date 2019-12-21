@@ -22,9 +22,11 @@ namespace Persona4GoldenHelper
         {
             services.AddScoped<IBook, BookService>();
             services.AddScoped<IAnswer, AnswerService>();
+            services.AddScoped<IPersona, PersonaService>();
 
             services.AddScoped<BookContext, BookContext>();
             services.AddScoped<ExamAnswerContext, ExamAnswerContext>();
+            services.AddScoped<PersonaContext, PersonaContext>();
 
             services.AddMvc();
         }
@@ -46,6 +48,7 @@ namespace Persona4GoldenHelper
             app.UseMvc(cfg =>
             {
                 cfg.MapRoute("Default", template: "{action}", new { Controller = "App", Action = "Index" });
+                cfg.MapRoute("Persona", template: "Personas/{action}", new { Controller = "Persona", Action = "Index" });
             });
         }
     }

@@ -1,4 +1,6 @@
-﻿/* scrollbar width */
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* scrollbar width */
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -62,11 +64,11 @@ table {
         position: sticky;
         top: -1px;
         border: none;
-        padding: 10px;
+        padding: 7px;
     }
 
     table td {
-        padding: 5px 0;
+        padding: 5px 7px;
     }
 
     table tr {
@@ -81,6 +83,11 @@ table {
     text-align: center;
 }
 
-.text-bright {
+.text-bright, a:link, a:visited {
     color: #c5c1b9
 }
+
+    a:link:hover {
+        text-decoration: none;
+        filter: brightness(150%);
+    }
