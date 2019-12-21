@@ -3330,5 +3330,6 @@ namespace Persona4GoldenHelper.Data.Context
                     new SkillPersona("Hitokoto-Nushi", 43)
                 }
             )
+        };
     }
 }
