@@ -65,7 +65,7 @@
     <table class="col-md-8 col-md-offset-2">
         <thead>
             <tr>
-                <th>Level</th>
+                <th class="text-align-center">Level</th>
                 <th>Name</th>
                 <th>Effect</th>
                 <th class="text-align-center slim-column">Cost</th>
@@ -78,7 +78,7 @@
                 var personaSkill = Model.Persona.Skills[i];
 
                 <tr>
-                    <td>@personaSkill.LevelRequired</td>
+                    <td class="text-align-center">@personaSkill.LevelRequired</td>
                     <td class="text-bright">@skill.Name</td>
                     <td>@skill.Effect</td>
                     <td class="text-align-center @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
