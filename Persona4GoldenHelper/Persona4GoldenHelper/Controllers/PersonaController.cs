@@ -46,7 +46,7 @@ namespace Persona4GoldenHelper.Controllers
                 return View("Persona", model);
             }
 
-            return View("Error");
+            return View("ErrorNoPersona");
         }
     }
 }

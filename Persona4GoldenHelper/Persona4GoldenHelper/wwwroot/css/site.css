@@ -109,6 +109,10 @@ table {
         filter: brightness(150%);
     }
 
+.text-error {
+    color: red;
+}
+
 .text-dark {
     color: #808080;
 }
