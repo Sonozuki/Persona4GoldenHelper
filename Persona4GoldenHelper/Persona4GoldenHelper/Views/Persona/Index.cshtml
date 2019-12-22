@@ -3,21 +3,21 @@
 <table class="col-md-8 col-md-offset-2">
     <thead>
         <tr>
-            <th class="slim-column center-align">Level</th>
+            <th class="extra-slim-column center-align">Level</th>
             <th>Name</th>
             <th>Arcana</th>
-            <th class="slim-column center-align">St</th>
-            <th class="slim-column center-align">Mg</th>
-            <th class="slim-column center-align">En</th>
-            <th class="slim-column center-align">Ag</th>
-            <th class="slim-column center-align">Lu</th>
-            <th class="slim-column center-align"><img src="~/img/Physical.png" alt="Physical" /></th>
-            <th class="slim-column center-align"><img src="~/img/Fire.png" alt="Fire" /></th>
-            <th class="slim-column center-align"><img src="~/img/Ice.png" alt="Ice" /></th>
-            <th class="slim-column center-align"><img src="~/img/Electric.png" alt="Electric" /></th>
-            <th class="slim-column center-align"><img src="~/img/Wind.png" alt="Wind" /></th>
-            <th class="slim-column center-align"><img src="~/img/Light.png" alt="Light" /></th>
-            <th class="slim-column center-align"><img src="~/img/Dark.png" alt="Dark" /></th>
+            <th class="extra-slim-column center-align">St</th>
+            <th class="extra-slim-column center-align">Mg</th>
+            <th class="extra-slim-column center-align">En</th>
+            <th class="extra-slim-column center-align">Ag</th>
+            <th class="extra-slim-column center-align">Lu</th>
+            <th class="extra-slim-column center-align"><img src="~/img/Physical.png" alt="Physical" /></th>
+            <th class="extra-slim-column center-align"><img src="~/img/Fire.png" alt="Fire" /></th>
+            <th class="extra-slim-column center-align"><img src="~/img/Ice.png" alt="Ice" /></th>
+            <th class="extra-slim-column center-align"><img src="~/img/Electric.png" alt="Electric" /></th>
+            <th class="extra-slim-column center-align"><img src="~/img/Wind.png" alt="Wind" /></th>
+            <th class="extra-slim-column center-align"><img src="~/img/Light.png" alt="Light" /></th>
+            <th class="extra-slim-column center-align"><img src="~/img/Dark.png" alt="Dark" /></th>
         </tr>
     </thead>
     <tbody>
@@ -50,7 +50,7 @@
     /// <summary>This will convert the element affinities ("None", "Weak", "Resistant" etc) into shorter versions ("", "wk", "rs" etc) for easy of reading and displaying.</summary>
     /// <param name="element">The element affinity to convert</param>
     /// <returns>The short hand version of the affinity</returns>
-    private string ConvertElementAffinityToShortHand(ElementAffinity element)
+    public static string ConvertElementAffinityToShortHand(ElementAffinity element)
     {
         Dictionary<string, string> converter = new Dictionary<string, string>
         {

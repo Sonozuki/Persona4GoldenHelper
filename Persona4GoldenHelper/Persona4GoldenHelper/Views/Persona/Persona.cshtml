@@ -1,3 +1,128 @@
 ﻿@model PersonaViewModel
 
-<h1>@Model.Persona.Name</h1>
+<h2 class="col-md-12 center-align">
+    @Model.Persona.Name (@Model.Persona.Level/@Model.Persona.Arcana)
+    <span class="type-ultimate" @(Model.Persona.Ultimate ? "" : "hidden")>Ultimate</span>
+    <span class="type-new-game" @(Model.Persona.NewGame ? "" : "hidden")>New Game+</span>
+</h2>
+
+<div>
+    <h3 class="col-md-12 center-align">Stats</h3>
+    <table class="col-md-8 col-md-offset-2">
+        <thead>
+            <tr>
+                <th class="center-align slim-column">Strength</th>
+                <th class="center-align slim-column">Magic</th>
+                <th class="center-align slim-column">Endurance</th>
+                <th class="center-align slim-column">Agility</th>
+                <th class="center-align slim-column">Luck</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center-align">@Model.Persona.Stats.Strength</td>
+                <td class="center-align">@Model.Persona.Stats.Magic</td>
+                <td class="center-align">@Model.Persona.Stats.Endurance</td>
+                <td class="center-align">@Model.Persona.Stats.Agility</td>
+                <td class="center-align">@Model.Persona.Stats.Luck</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h3 class="col-md-12 center-align">Elements</h3>
+    <table class="col-md-8 col-md-offset-2">
+        <thead>
+            <tr>
+                <th class="center-align slim-column"><img src="~/img/Physical.png" alt="Physical" /></th>
+                <th class="center-align slim-column"><img src="~/img/Fire.png" alt="Fire" /></th>
+                <th class="center-align slim-column"><img src="~/img/Ice.png" alt="Ice" /></th>
+                <th class="center-align slim-column"><img src="~/img/Electric.png" alt="Electric" /></th>
+                <th class="center-align slim-column"><img src="~/img/Wind.png" alt="Wind" /></th>
+                <th class="center-align slim-column"><img src="~/img/Light.png" alt="Light" /></th>
+                <th class="center-align slim-column"><img src="~/img/Dark.png" alt="Dark" /></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center-align affinity-@Model.Persona.Elements.Physical">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Physical)</td>
+                <td class="center-align affinity-@Model.Persona.Elements.Fire">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Fire)</td>
+                <td class="center-align affinity-@Model.Persona.Elements.Ice">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Ice)</td>
+                <td class="center-align affinity-@Model.Persona.Elements.Electricity">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Electricity)</td>
+                <td class="center-align affinity-@Model.Persona.Elements.Wind">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Wind)</td>
+                <td class="center-align affinity-@Model.Persona.Elements.Light">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Light)</td>
+                <td class="center-align affinity-@Model.Persona.Elements.Darkness">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Darkness)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h3 class="col-md-12 center-align">Skills</h3>
+    <table class="col-md-8 col-md-offset-2">
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>Name</th>
+                <th>Effect</th>
+                <th class="center-align slim-column">Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Persona.Skills.Count(); i++)
+            {
+                var skill = Model.Skills[i];
+                var personaSkill = Model.Persona.Skills[i];
+
+                <tr>
+                    <td>@personaSkill.LevelRequired</td>
+                    <td class="text-bright">@skill.Name</td>
+                    <td>@skill.Effect</td>
+                    <td class="center-align @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@using static Persona4GoldenHelper.Data.Enums
+@functions {
+    /// <summary>This will convert the element affinities ("None", "Weak", "Resistant" etc) into shorter versions ("", "wk", "rs" etc) for easy of reading and displaying.</summary>
+    /// <param name="element">The element affinity to convert</param>
+    /// <returns>The short hand version of the affinity</returns>
+    public static string ConvertElementAffinityToShortHand(ElementAffinity element)
+    {
+        Dictionary<string, string> converter = new Dictionary<string, string>
+    {
+            { "Weak", "wk" },
+            { "None", "-" },
+            { "Resistant", "rs" },
+            { "Null", "nu" },
+            { "Reflect", "rf" },
+            { "Absorb", "ab" }
+        };
+
+        return converter[element.ToString()];
+    }
+
+    public static string CalculateCostType(string cost)
+    {
+        if (cost.Length == 0)
+        {
+            return "";
+        }
+
+        if (cost[cost.Length - 2] == 'S')
+        {
+            return "cost-sp";
+        }
+
+        if (cost[cost.Length - 2] == 'H')
+        {
+            return "cost-hp";
+        }
+
+        return "";
+    }
+}

@@ -6,5 +6,6 @@ namespace Persona4GoldenHelper.Data
     public interface ISkill
     {
         List<Skill> GetAll();
+        List<Skill> GetByPersona(Persona persona);
     }
 }
