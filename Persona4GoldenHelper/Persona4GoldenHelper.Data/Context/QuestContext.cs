@@ -625,7 +625,7 @@ namespace Persona4GoldenHelper.Data.Context
                 dateAvailable: "01/10",
                 prerequisites: "Quest 44 completed",
                 reward: "Silver Tray",
-                instructions: "Go to the TV world and go inside Magatsu Mandala (Adachi's dungeon). Then defeat an enemy called \"Solemn Machine\" to have a chance to obtain Orichalum, they are typically found on floor 6. Then give the item to the quest giver."
+                instructions: "Go to the TV world and go inside Magatsu Mandala ([True Killer]'s dungeon). Then defeat an enemy called \"Solemn Machine\" to have a chance to obtain Orichalum, they are typically found on floor 6. Then give the item to the quest giver."
             ),
             new Quest(
                 id: 63,
@@ -635,7 +635,7 @@ namespace Persona4GoldenHelper.Data.Context
                 dateAvailable: "01/10",
                 prerequisites: "Quest 48 completed",
                 reward: "¥65000",
-                instructions: "Go to the TV world and go inside Magatsu Mandala (Adachi's dungeon). Then defeat an enemy called \"Minotaur II\" to have a chance to obtain it (3 are required), they are typically found on floor 6. Then give the item to the quest giver."
+                instructions: "Go to the TV world and go inside Magatsu Mandala ([True Killer]'s dungeon). Then defeat an enemy called \"Minotaur II\" to have a chance to obtain it (3 are required), they are typically found on floor 6. Then give the item to the quest giver."
             ),
             new Quest(
                 id: 64,

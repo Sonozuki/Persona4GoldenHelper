@@ -508,7 +508,7 @@ namespace Persona4GoldenHelper.Data.Context
                 effect: "",
                 obtained: new List<ArmorObtain>() {
                     new ArmorObtain(
-                        obtain: "Found in golden chests in Magatsu Inaba (Adachi's dungeon).",
+                        obtain: "Found in golden chests in Magatsu Inaba ([True Killer]'s dungeon).",
                         price: ""
                     )
                 }
@@ -979,7 +979,7 @@ namespace Persona4GoldenHelper.Data.Context
                 effect: "Reduce Physical damage by 20%",
                 obtained: new List<ArmorObtain>() {
                     new ArmorObtain(
-                        obtain: "Found in golden chests in Magatsu Inaba (Adachi's dungeon).",
+                        obtain: "Found in golden chests in Magatsu Inaba ([True Killer]'s dungeon).",
                         price: ""
                     ),
                     new ArmorObtain(
