@@ -8,11 +8,13 @@ namespace Persona4GoldenHelper.Controllers
     {
         private readonly IBook BookService;
         private readonly IAnswer AnswerService;
+        private readonly ISkill SkillService;
 
-        public AppController(IBook bookService, IAnswer answerService)
+        public AppController(IBook bookService, IAnswer answerService, ISkill skillService)
         {
             BookService = bookService;
             AnswerService = answerService;
+            SkillService = skillService;
         }
 
         public IActionResult Index()
@@ -47,6 +49,16 @@ namespace Persona4GoldenHelper.Controllers
             model.December = AnswerService.GetByMonth("December");
             model.January = AnswerService.GetByMonth("January");
             model.February = AnswerService.GetByMonth("February");
+
+            return View(model);
+        }
+
+        public IActionResult Skills()
+        {
+            ViewBag.Title = "Skills";
+
+            var model = new SkillListingViewModel();
+            model.Skills = SkillService.GetAll();
 
             return View(model);
         }

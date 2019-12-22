@@ -3,10 +3,6 @@
     height: auto;
 }
 
-.slim-column {
-    width: 5%;
-}
-
 .affinity-weak {
     color: red;
     font-weight: bold;
@@ -30,12 +26,4 @@
 .affinity-absorb {
     color: #16ce3c;
     font-weight: bold;
-}
-
-.type-ultimate {
-    color: #4b75b3 !important;
-}
-
-.type-new-game {
-    color: #b30000 !important;
 }

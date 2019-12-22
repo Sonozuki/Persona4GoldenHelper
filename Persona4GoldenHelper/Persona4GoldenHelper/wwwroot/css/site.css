@@ -79,6 +79,14 @@ table {
             background-color: #333;
         }
 
+.extra-slim-column {
+    width: 5%;
+}
+
+.slim-column {
+    width: 8%;
+}
+
 .center-align {
     text-align: center;
 }
@@ -91,3 +99,25 @@ table {
         text-decoration: none;
         filter: brightness(150%);
     }
+
+.text-dark {
+    color: #808080;
+}
+
+.type-ultimate {
+    color: #4b75b3 !important;
+}
+
+.type-new-game {
+    color: #b30000 !important;
+}
+
+.cost-sp {
+    color: #e8b819;
+    font-weight: bold;
+}
+
+.cost-hp {
+    color: #f71df0;
+    font-weight: bold;
+}

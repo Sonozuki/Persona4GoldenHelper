@@ -1,0 +1,62 @@
+﻿@model SkillListingViewModel
+
+<div>
+    <table class="col-md-8 col-md-offset-2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Effect</th>
+                <th class="slim-column center-align">Cost</th>
+                <th>Personas</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var skill in Model.Skills)
+            {
+                <tr>
+                    <td class="text-bright">@skill.Name</td>
+                    <td>@skill.Effect</td>
+                    <td class="center-align @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
+                    <td>
+                        @for (var i = 0; i < skill.Personas.Count(); i++)
+                        {
+                            var persona = skill.Personas[i];
+
+                            <a asp-controller="Persona" asp-action="@persona.Name">
+                                <span class="@(persona.Ultimate ? "type-ultimate" : persona.NewGame ? "type-new-game" : "")">
+                                    @persona.Name
+                                </span>
+                                <span class="text-dark">
+                                    @(persona.LevelRequired != 0 ? $" ({persona.LevelRequired})" : "")
+                                </span>
+                                @(i != skill.Personas.Count() - 1 ? "," : "")
+                            </a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@functions {
+    private string CalculateCostType(string cost)
+    {
+        if (cost.Length == 0)
+        {
+            return "";
+        }
+
+        if (cost[cost.Length - 2] == 'S')
+        {
+            return "cost-sp";
+        }
+
+        if (cost[cost.Length - 2] == 'H')
+        {
+            return "cost-hp";        
+        }
+
+        return "";
+    }
+}
