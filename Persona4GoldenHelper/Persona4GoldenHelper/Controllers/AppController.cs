@@ -26,7 +26,7 @@ namespace Persona4GoldenHelper.Controllers
         {
             ViewBag.Title = "Books";
 
-            var model = new BookViewModel
+            var model = new BookListingViewModel
             {
                 Books = BookService.GetAll(),
                 BookOrder = BookService.GetOrder()
