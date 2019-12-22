@@ -4,31 +4,36 @@
 
 @{
     var months = new List<string> { "April", "May", "June", "July", "August", "September", "October", "November", "December", "January", "February" };
-    foreach (var month in months)
+}
+
+<div>
+    @foreach (var month in months)
     {
         var answers = GetAnswersByMonth(month);
-        <h2 class="text-align-center col-md-12">@month</h2>
-        <table class="col-md-8 col-md-offset-2">
-            <thead>
-                <tr>
-                    <th class="text-align-center col-md-1">Date</th>
-                    <th class="col-md-7">Question</th>
-                    <th class="col-md-4">Answer</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var answer in answers)
-                {
+        <div>
+            <h2 class="text-align-center col-md-12">@month</h2>
+            <table class="col-md-8 col-md-offset-2">
+                <thead>
                     <tr>
-                        <td class="text-align-center">@answer.DateAsked</td>
-                        <td class="text-bright white-space-pre-line">@answer.QuestionAsked</td>
-                        <td>@answer.QuestionAnswer</td>
+                        <th class="text-align-center col-md-1">Date</th>
+                        <th class="col-md-7">Question</th>
+                        <th class="col-md-4">Answer</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var answer in answers)
+                    {
+                        <tr>
+                            <td class="text-align-center">@answer.DateAsked</td>
+                            <td class="text-bright white-space-pre-line">@answer.QuestionAsked</td>
+                            <td>@answer.QuestionAnswer</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     }
-}
+</div>
 
 @functions {
     private List<Answer> GetAnswersByMonth(string month)
