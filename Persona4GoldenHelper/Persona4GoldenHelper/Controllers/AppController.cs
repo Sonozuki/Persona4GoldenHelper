@@ -37,18 +37,10 @@ namespace Persona4GoldenHelper.Controllers
         {
             ViewBag.Title = "Exam Answers";
 
-            var model = new ExamAnswerViewModel();
-            model.April = AnswerService.GetByMonth("April");
-            model.May = AnswerService.GetByMonth("May");
-            model.June = AnswerService.GetByMonth("June");
-            model.July = AnswerService.GetByMonth("July");
-            model.August = AnswerService.GetByMonth("August");
-            model.September = AnswerService.GetByMonth("September");
-            model.October = AnswerService.GetByMonth("October");
-            model.November = AnswerService.GetByMonth("November");
-            model.December = AnswerService.GetByMonth("December");
-            model.January = AnswerService.GetByMonth("January");
-            model.February = AnswerService.GetByMonth("February");
+            var model = new ExamAnswerListingViewModel
+            {
+                Answers = AnswerService.GetAll()
+            };
 
             return View(model);
         }

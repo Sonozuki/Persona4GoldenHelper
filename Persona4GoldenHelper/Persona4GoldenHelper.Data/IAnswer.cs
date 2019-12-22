@@ -5,6 +5,6 @@ namespace Persona4GoldenHelper.Data
 {
     public interface IAnswer
     {
-        List<Answer> GetByMonth(string monthName);
+        List<Answer> GetAll();
     }
 }

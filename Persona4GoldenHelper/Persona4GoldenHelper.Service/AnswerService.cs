@@ -19,20 +19,18 @@ namespace Persona4GoldenHelper.Service
             Logger = logger;            
         }
 
-        public List<Answer> GetByMonth(string monthName)
+        public List<Answer> GetAll()
         {
             try
             {
-                Logger.LogInformation("GetByMonth was called");
+                Logger.LogInformation("GetAll was called");
 
-                // use reflection to get the answers using the monthName variable
                 return Context.Answers
-                    .Where(answer => answer.Month.ToString() == monthName)
                     .ToList();
             }
             catch (Exception ex)
             {
-                Logger.LogError($"GetByMonth failed: {ex}");
+                Logger.LogError($"GetAll failed: {ex}");
                 return null;
             }
         }

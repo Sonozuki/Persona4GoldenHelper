@@ -221,13 +221,13 @@ namespace Persona4GoldenHelper.Data.Context
             new Answer(
                 month: Month.August,
                 dateAsked: "8/28",
-                questionAsked: "NOTE:Study with Justice to be asked.\nIs it the male or female platypus that has the poison claws?",
+                questionAsked: "NOTE: Study with Justice to be asked.\nIs it the male or female platypus that has the poison claws?",
                 questionAnswer: "Male"
             ),
             new Answer(
                 month: Month.August,
                 dateAsked: "8/29",
-                questionAsked: "NOTE:Study with Justice to be asked.\nDid it rain the day that we worked on my art homework?",
+                questionAsked: "NOTE: Study with Justice to be asked.\nDid it rain the day that we worked on my art homework?",
                 questionAnswer: "It stopped raining by then"
             ),
             new Answer(
