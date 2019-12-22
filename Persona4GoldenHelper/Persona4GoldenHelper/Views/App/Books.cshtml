@@ -1,36 +1,40 @@
 ﻿@model BookViewModel
 
-<h2 class="center-align col-md-12">All Books</h2>
-<h5 class="center-align col-md-12">All the books in the game, including when they become available, the title, how to get them, and what effect they give once fully read.</h5>
-<table class="col-md-8 col-md-offset-2">
-    <thead>
-        <tr>
-            <th>Available</th>
-            <th>Title</th>
-            <th>How to Obtain</th>
-            <th>Effect</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var book in Model.Books)
+<div>
+    <h2 class="text-align-center col-md-12">All Books</h2>
+    <h5 class="text-align-center col-md-12">All the books in the game, including when they become available, the title, how to get them, and what effect they give once fully read.</h5>
+    <table class="col-md-8 col-md-offset-2">
+        <thead>
+            <tr>
+                <th>Available</th>
+                <th>Title</th>
+                <th>How to Obtain</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td class="text-align-center col-md-1">@book.DateAvailable</td>
+                    <td class="text-bright col-md-2">@book.Title</td>
+                    <td style="white-space: pre-line;">@book.Requirement</td>
+                    <td class="col-md-3">@book.Effect</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h2 class="text-align-center col-md-12">Book Order</h2>
+    <h5 class="text-align-center col-md-12">This is the order of the books in the inventory, to make it easier to see which books you are missing.</h5>
+    <table class="col-md-2 col-md-offset-5">
+        @foreach (var bookTitle in Model.BookOrder)
         {
             <tr>
-                <td class="center-align col-md-1">@book.DateAvailable</td>
-                <td class="text-bright col-md-2">@book.Title</td>
-                <td style="white-space: pre-line;">@book.Requirement</td>
-                <td class="col-md-3">@book.Effect</td>
+                <td class="text-align-center text-bright">@bookTitle</td>
             </tr>
         }
-    </tbody>
-</table>
-
-<h2 class="center-align col-md-12">Book Order</h2>
-<h5 class="center-align col-md-12">This is the order of the books in the inventory, to make it easier to see which books you are missing.</h5>
-<table class="col-md-2 col-md-offset-5">
-    @foreach (var bookTitle in Model.BookOrder)
-    {
-        <tr>
-            <td class="center-align text-bright">@bookTitle</td>
-        </tr>
-    }
-</table>
+    </table>
+</div>

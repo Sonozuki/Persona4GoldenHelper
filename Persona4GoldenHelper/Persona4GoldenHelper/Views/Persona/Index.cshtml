@@ -1,49 +1,51 @@
 ﻿@model PersonaListingViewModel
 
-<table class="col-md-8 col-md-offset-2">
-    <thead>
-        <tr>
-            <th class="extra-slim-column center-align">Level</th>
-            <th>Name</th>
-            <th>Arcana</th>
-            <th class="extra-slim-column center-align">St</th>
-            <th class="extra-slim-column center-align">Mg</th>
-            <th class="extra-slim-column center-align">En</th>
-            <th class="extra-slim-column center-align">Ag</th>
-            <th class="extra-slim-column center-align">Lu</th>
-            <th class="extra-slim-column center-align"><img src="~/img/Physical.png" alt="Physical" /></th>
-            <th class="extra-slim-column center-align"><img src="~/img/Fire.png" alt="Fire" /></th>
-            <th class="extra-slim-column center-align"><img src="~/img/Ice.png" alt="Ice" /></th>
-            <th class="extra-slim-column center-align"><img src="~/img/Electric.png" alt="Electric" /></th>
-            <th class="extra-slim-column center-align"><img src="~/img/Wind.png" alt="Wind" /></th>
-            <th class="extra-slim-column center-align"><img src="~/img/Light.png" alt="Light" /></th>
-            <th class="extra-slim-column center-align"><img src="~/img/Dark.png" alt="Dark" /></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var persona in Model.Personas)
-        {
+<div>
+    <table class="col-md-8 col-md-offset-2">
+        <thead>
             <tr>
-                <td class="center-align">@persona.Level</td>
-                <td class="text-bright"><a class="@(persona.Ultimate ? "type-ultimate" : persona.NewGame ? "type-new-game" : "")" asp-action="@persona.Name">@persona.Name</a></td>
-                <td>@persona.Arcana</td>
-                <td class="center-align">@persona.Stats.Strength</td>
-                <td class="center-align">@persona.Stats.Magic</td>
-                <td class="center-align">@persona.Stats.Endurance</td>
-                <td class="center-align">@persona.Stats.Agility</td>
-                <td class="center-align">@persona.Stats.Luck</td>
-                <td class="center-align affinity-@persona.Elements.Physical">@ConvertElementAffinityToShortHand(persona.Elements.Physical)</td>
-                <td class="center-align affinity-@persona.Elements.Fire">@ConvertElementAffinityToShortHand(persona.Elements.Fire)</td>
-                <td class="center-align affinity-@persona.Elements.Ice">@ConvertElementAffinityToShortHand(persona.Elements.Ice)</td>
-                <td class="center-align affinity-@persona.Elements.Electricity">@ConvertElementAffinityToShortHand(persona.Elements.Electricity)</td>
-                <td class="center-align affinity-@persona.Elements.Wind">@ConvertElementAffinityToShortHand(persona.Elements.Wind)</td>
-                <td class="center-align affinity-@persona.Elements.Light">@ConvertElementAffinityToShortHand(persona.Elements.Light)</td>
-                <td class="center-align affinity-@persona.Elements.Darkness">@ConvertElementAffinityToShortHand(persona.Elements.Darkness)</td>
+                <th class="extra-slim-column text-align-center">Level</th>
+                <th>Name</th>
+                <th>Arcana</th>
+                <th class="extra-slim-column text-align-center">St</th>
+                <th class="extra-slim-column text-align-center">Mg</th>
+                <th class="extra-slim-column text-align-center">En</th>
+                <th class="extra-slim-column text-align-center">Ag</th>
+                <th class="extra-slim-column text-align-center">Lu</th>
+                <th class="extra-slim-column text-align-center"><img src="~/img/Physical.png" alt="Physical" /></th>
+                <th class="extra-slim-column text-align-center"><img src="~/img/Fire.png" alt="Fire" /></th>
+                <th class="extra-slim-column text-align-center"><img src="~/img/Ice.png" alt="Ice" /></th>
+                <th class="extra-slim-column text-align-center"><img src="~/img/Electric.png" alt="Electric" /></th>
+                <th class="extra-slim-column text-align-center"><img src="~/img/Wind.png" alt="Wind" /></th>
+                <th class="extra-slim-column text-align-center"><img src="~/img/Light.png" alt="Light" /></th>
+                <th class="extra-slim-column text-align-center"><img src="~/img/Dark.png" alt="Dark" /></th>
             </tr>
+        </thead>
+        <tbody>
+            @foreach (var persona in Model.Personas)
+            {
+                <tr>
+                    <td class="text-align-center">@persona.Level</td>
+                    <td class="text-bright"><a class="@(persona.Ultimate ? "type-ultimate" : persona.NewGame ? "type-new-game" : "")" asp-action="@persona.Name">@persona.Name</a></td>
+                    <td>@persona.Arcana</td>
+                    <td class="text-align-center">@persona.Stats.Strength</td>
+                    <td class="text-align-center">@persona.Stats.Magic</td>
+                    <td class="text-align-center">@persona.Stats.Endurance</td>
+                    <td class="text-align-center">@persona.Stats.Agility</td>
+                    <td class="text-align-center">@persona.Stats.Luck</td>
+                    <td class="text-align-center affinity-@persona.Elements.Physical">@ConvertElementAffinityToShortHand(persona.Elements.Physical)</td>
+                    <td class="text-align-center affinity-@persona.Elements.Fire">@ConvertElementAffinityToShortHand(persona.Elements.Fire)</td>
+                    <td class="text-align-center affinity-@persona.Elements.Ice">@ConvertElementAffinityToShortHand(persona.Elements.Ice)</td>
+                    <td class="text-align-center affinity-@persona.Elements.Electricity">@ConvertElementAffinityToShortHand(persona.Elements.Electricity)</td>
+                    <td class="text-align-center affinity-@persona.Elements.Wind">@ConvertElementAffinityToShortHand(persona.Elements.Wind)</td>
+                    <td class="text-align-center affinity-@persona.Elements.Light">@ConvertElementAffinityToShortHand(persona.Elements.Light)</td>
+                    <td class="text-align-center affinity-@persona.Elements.Darkness">@ConvertElementAffinityToShortHand(persona.Elements.Darkness)</td>
+                </tr>
 
-        }
-    </tbody>
-</table>
+            }
+        </tbody>
+    </table>
+</div>
 
 @using static Persona4GoldenHelper.Data.Enums
 @functions {

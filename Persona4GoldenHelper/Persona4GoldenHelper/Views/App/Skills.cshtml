@@ -6,7 +6,7 @@
             <tr>
                 <th>Name</th>
                 <th>Effect</th>
-                <th class="slim-column center-align">Cost</th>
+                <th class="slim-column text-align-center">Cost</th>
                 <th>Personas</th>
             </tr>
         </thead>
@@ -16,7 +16,7 @@
                 <tr>
                     <td class="text-bright">@skill.Name</td>
                     <td>@skill.Effect</td>
-                    <td class="center-align @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
+                    <td class="text-align-center @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
                     <td>
                         @for (var i = 0; i < skill.Personas.Count(); i++)
                         {
