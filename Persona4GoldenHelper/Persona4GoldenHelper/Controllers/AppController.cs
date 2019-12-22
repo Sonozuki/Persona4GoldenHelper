@@ -26,9 +26,11 @@ namespace Persona4GoldenHelper.Controllers
         {
             ViewBag.Title = "Books";
 
-            var model = new BookViewModel();
-            model.Books = BookService.GetAll();
-            model.BookOrder = BookService.GetOrder();
+            var model = new BookViewModel
+            {
+                Books = BookService.GetAll(),
+                BookOrder = BookService.GetOrder()
+            };
 
             return View(model);
         }
@@ -49,8 +51,10 @@ namespace Persona4GoldenHelper.Controllers
         {
             ViewBag.Title = "Skills";
 
-            var model = new SkillListingViewModel();
-            model.Skills = SkillService.GetAll();
+            var model = new SkillListingViewModel
+            {
+                Skills = SkillService.GetAll()
+            };
 
             return View(model);
         }
