@@ -24,11 +24,13 @@ namespace Persona4GoldenHelper
             services.AddScoped<IAnswer, AnswerService>();
             services.AddScoped<IPersona, PersonaService>();
             services.AddScoped<ISkill, SkillService>();
+            services.AddScoped<IQuest, QuestService>();
 
             services.AddScoped<BookContext, BookContext>();
             services.AddScoped<ExamAnswerContext, ExamAnswerContext>();
             services.AddScoped<PersonaContext, PersonaContext>();
             services.AddScoped<SkillContext, SkillContext>();
+            services.AddScoped<QuestContext, QuestContext>();
 
             services.AddMvc();
         }
