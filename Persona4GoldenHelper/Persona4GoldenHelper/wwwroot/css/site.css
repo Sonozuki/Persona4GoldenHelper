@@ -84,6 +84,10 @@ table {
             background-color: #333;
         }
 
+.white-space-pre-line {
+    white-space: pre-line;
+}
+
 .extra-slim-column {
     width: 5%;
 }
