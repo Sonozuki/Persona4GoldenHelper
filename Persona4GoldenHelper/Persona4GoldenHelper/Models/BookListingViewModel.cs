@@ -6,6 +6,6 @@ namespace Persona4GoldenHelper.Models
     public class BookListingViewModel
     {
         public List<Book> Books { get; set; }
-        public List<string> BookOrder { get; set; }
+        public List<BookOrder> BookOrder { get; set; }
     }
 }

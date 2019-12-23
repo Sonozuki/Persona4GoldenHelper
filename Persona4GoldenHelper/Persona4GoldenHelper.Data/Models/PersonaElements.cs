@@ -4,6 +4,7 @@ namespace Persona4GoldenHelper.Data.Models
 {
     public class PersonaElements
     {
+        public int Id { get; set; }
         public ElementAffinity Physical { get; set; }
         public ElementAffinity Fire { get; set; }
         public ElementAffinity Ice { get; set; }
@@ -11,16 +12,5 @@ namespace Persona4GoldenHelper.Data.Models
         public ElementAffinity Wind { get; set; }
         public ElementAffinity Light { get; set; }
         public ElementAffinity Darkness { get; set; }
-
-        public PersonaElements(ElementAffinity physical, ElementAffinity fire, ElementAffinity ice, ElementAffinity electricity, ElementAffinity wind, ElementAffinity light, ElementAffinity darkness)
-        {
-            Physical = physical;
-            Fire = fire;
-            Ice = ice;
-            Electricity = electricity;
-            Wind = wind;
-            Light = light;
-            Darkness = darkness;
-        }
     }
 }

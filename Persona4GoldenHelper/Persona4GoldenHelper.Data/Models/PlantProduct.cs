@@ -2,13 +2,8 @@
 {
     public class PlantProduct
     {
-        public string Name { get; private set; }
-        public string Effect { get; private set; }
-
-        public PlantProduct(string name, string effect)
-        {
-            Name = name;
-            Effect = effect;
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Effect { get; set; }
     }
 }

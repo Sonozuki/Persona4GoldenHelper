@@ -4,17 +4,10 @@ namespace Persona4GoldenHelper.Data.Models
 {
     public class Answer
     {
-        public Month Month { get; private set; }
-        public string DateAsked { get; private set; }
-        public string QuestionAsked { get; private set; }
-        public string QuestionAnswer { get; private set; }
-
-        public Answer(Month month, string dateAsked, string questionAsked, string questionAnswer)
-        {
-            Month = month;
-            DateAsked = dateAsked;
-            QuestionAsked = questionAsked;
-            QuestionAnswer = questionAnswer;
-        }
+        public int Id { get; set; }
+        public Month Month { get; set; }
+        public string DateAsked { get; set; }
+        public string QuestionAsked { get; set; }
+        public string QuestionAnswer { get; set; }
     }
 }

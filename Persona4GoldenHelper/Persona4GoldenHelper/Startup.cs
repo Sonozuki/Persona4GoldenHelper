@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persona4GoldenHelper.Data;
-using Persona4GoldenHelper.Data.Context;
+using Persona4GoldenHelper.Data.Data;
 using Persona4GoldenHelper.Service;
 
 namespace Persona4GoldenHelper
@@ -20,17 +21,16 @@ namespace Persona4GoldenHelper
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IBook, BookService>();
-            services.AddScoped<IAnswer, AnswerService>();
-            services.AddScoped<IPersona, PersonaService>();
-            services.AddScoped<ISkill, SkillService>();
-            services.AddScoped<IQuest, QuestService>();
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<BookContext, BookContext>();
-            services.AddScoped<ExamAnswerContext, ExamAnswerContext>();
-            services.AddScoped<PersonaContext, PersonaContext>();
-            services.AddScoped<SkillContext, SkillContext>();
-            services.AddScoped<QuestContext, QuestContext>();
+            services.AddTransient<IBook, BookService>();
+            services.AddTransient<IAnswer, AnswerService>();
+            services.AddTransient<IPersona, PersonaService>();
+            services.AddTransient<ISkill, SkillService>();
+            services.AddTransient<IQuest, QuestService>();
+
+            services.AddTransient<Seeder>();
 
             services.AddMvc();
         }
@@ -54,6 +54,12 @@ namespace Persona4GoldenHelper
                 cfg.MapRoute("Default", template: "{action}", new { Controller = "App", Action = "Index" });
                 cfg.MapRoute("Persona", template: "Personas/{action}", new { Controller = "Persona", Action = "Index" });
             });
+
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var seeder = scope.ServiceProvider.GetService<Seeder>();
+                seeder.Seed();
+            }
         }
     }
 }

@@ -2,25 +2,14 @@
 {
     public class Quest
     {
-        public int Id { get; private set; }
-        public string Title { get; private set; }
-        public string QuestGiver { get; private set; }
-        public string Location { get; private set; }
-        public string DateAvailable { get; private set; }
-        public string Prerequisites { get; private set; }
-        public string Reward { get; private set; }
-        public string Instructions { get; private set; }
-
-        public Quest(int id, string title, string questGiver, string location, string dateAvailable, string prerequisites, string reward, string instructions)
-        {
-            Id = id;
-            Title = title;
-            QuestGiver = questGiver;
-            Location = location;
-            DateAvailable = dateAvailable;
-            Prerequisites = prerequisites;
-            Reward = reward;
-            Instructions = instructions;
-        }
+        public int Id { get; set; }
+        public int Number { get; set; }
+        public string Title { get; set; }
+        public string QuestGiver { get; set; }
+        public string Location { get; set; }
+        public string DateAvailable { get; set; }
+        public string Prerequisites { get; set; }
+        public string Reward { get; set; }
+        public string Instructions { get; set; }
     }
 }

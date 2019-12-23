@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Persona4GoldenHelper.Data;
-using Persona4GoldenHelper.Data.Context;
+using Persona4GoldenHelper.Data.Data;
 using Persona4GoldenHelper.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -10,10 +10,10 @@ namespace Persona4GoldenHelper.Service
 {
     public class QuestService : IQuest
     {
-        private readonly QuestContext Context;
+        private readonly ApplicationDbContext Context;
         private readonly ILogger<QuestService> Logger;
 
-        public QuestService(QuestContext context, ILogger<QuestService> logger)
+        public QuestService(ApplicationDbContext context, ILogger<QuestService> logger)
         {
             Context = context;
             Logger = logger;

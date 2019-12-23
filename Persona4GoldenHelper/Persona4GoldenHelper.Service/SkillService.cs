@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Persona4GoldenHelper.Data;
-using Persona4GoldenHelper.Data.Context;
+using Persona4GoldenHelper.Data.Data;
 using Persona4GoldenHelper.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,10 @@ namespace Persona4GoldenHelper.Service
 {
     public class SkillService : ISkill
     {
-        private readonly SkillContext Context;
+        private readonly ApplicationDbContext Context;
         private readonly ILogger<SkillService> Logger;
 
-        public SkillService(SkillContext context, ILogger<SkillService> logger)
+        public SkillService(ApplicationDbContext context, ILogger<SkillService> logger)
         {
             Context = context;
             Logger = logger;
@@ -26,6 +27,7 @@ namespace Persona4GoldenHelper.Service
                 Logger.LogInformation("GetAll was called");
 
                 return Context.Skills
+                    .Include(skill => skill.Personas)
                     .ToList();
             }
             catch (Exception ex)
