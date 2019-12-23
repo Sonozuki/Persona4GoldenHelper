@@ -6,20 +6,20 @@
     <table class="col-md-8 col-md-offset-2">
         <thead>
             <tr>
-                <th>Available</th>
-                <th>Title</th>
+                <th class="col-md-1 text-align-center">Available</th>
+                <th class="col-md-2">Title</th>
                 <th>How to Obtain</th>
-                <th>Effect</th>
+                <th class="col-md-3">Effect</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var book in Model.Books)
             {
                 <tr>
-                    <td class="text-align-center col-md-1">@book.DateAvailable</td>
-                    <td class="text-bright col-md-2">@book.Title</td>
+                    <td class="text-align-center">@book.DateAvailable</td>
+                    <td class="text-bright">@book.Title</td>
                     <td class="white-space-pre-line">@book.Requirement</td>
-                    <td class="col-md-3">@book.Effect</td>
+                    <td>@book.Effect</td>
                 </tr>
             }
         </tbody>
