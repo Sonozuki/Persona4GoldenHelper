@@ -125,7 +125,7 @@ namespace Persona4GoldenHelper.Data.Data
                 DateAvailable = "After 05/06",
                 Prerequisites = "Quest 11 completed",
                 Reward = "Hemit social link level up",
-                Instructions = "Take the ema from the fox. Talk to the girl on the roof and choose the dialogue options: \"Looks like you want to learn to speak better\" and \"Let me teach you\". Talk to her the next day and choose \"It takes courage to apologize\". Then report back to the fox."
+                Instructions = "Take the ema from the fox. Talk to the girl on the school roof, go back the next day and talk to her again and choose the dialogue options: \"Looks like you want to learn to speak better\" and \"Give her lessons\". Talk to her the next day and choose \"It takes courage to apologize\". Then report back to the fox."
             },
             new Quest() {
                 Number = 13,
