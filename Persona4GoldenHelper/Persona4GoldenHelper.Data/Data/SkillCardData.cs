@@ -6,7 +6,7 @@ namespace Persona4GoldenHelper.Data.Data
 {
     public class SkillCardData
     {
-        public List<SkillCard> SkillCards { get; set; } = new List<SkillCard>()
+        public static List<SkillCard> SkillCards { get; set; } = new List<SkillCard>()
         {
             new SkillCard() {
                 Type = SkillType.Physical,

@@ -93,6 +93,15 @@ namespace Persona4GoldenHelper.Data
                     Context.SaveChanges();
                 }
             }
+
+            if (!Context.SkillCards.Any())
+            {
+                foreach (var skillCard in SkillCardData.SkillCards)
+                {
+                    Context.SkillCards.Add(skillCard);
+                    Context.SaveChanges();
+                }
+            }
         }
     }
 }
