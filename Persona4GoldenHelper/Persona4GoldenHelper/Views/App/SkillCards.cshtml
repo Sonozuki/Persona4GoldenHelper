@@ -1,0 +1,61 @@
+﻿@model SkillCardListingViewModel
+
+@{
+    var types = new List<string>() { "Physical", "Magical", "Support", "Passive" };
+}
+
+<div>
+    @foreach (var type in types)
+    {
+        var skillCards = GetSkillCardsByType(type);
+        <div>
+            <h2 class="text-align-center col-md-12">@type</h2>
+            <table class="col-md-8 col-md-offset-2">
+                <thead>
+                    <tr>
+                        <th class="text-align-center">Rank</th>
+                        <th>Skill Cards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= 10; i++)
+                    {
+                        var rankSkillCards = GetSkillCardsByRank(skillCards, i);
+
+                        <tr>
+                            <td class="text-align-center">@i</td>
+                            <td>
+                                @if (rankSkillCards.Count == 0)
+                                {
+                                    @:-
+                                }
+
+                                @for (int j = 0; j < rankSkillCards.Count; j++)
+                                {
+                                    <span class="text-bright">@rankSkillCards[j].Name</span>
+                                    @(j != rankSkillCards.Count() - 1 ? "," : "")
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@functions {
+    private List<SkillCard> GetSkillCardsByType(string type)
+    {
+        return Model.SkillCards
+            .Where(skillCard => skillCard.Type.ToString() == type)
+            .ToList();
+    }
+
+    private List<SkillCard> GetSkillCardsByRank(List<SkillCard> skillCards, int rank)
+    {
+        return skillCards
+            .Where(skillCard => skillCard.Rank == rank)
+            .ToList();
+    }
+}

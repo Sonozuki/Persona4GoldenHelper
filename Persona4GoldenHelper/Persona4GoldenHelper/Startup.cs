@@ -29,6 +29,7 @@ namespace Persona4GoldenHelper
             services.AddTransient<IPersona, PersonaService>();
             services.AddTransient<ISkill, SkillService>();
             services.AddTransient<IQuest, QuestService>();
+            services.AddTransient<ISkillCard, SkillCardService>();
 
             services.AddTransient<Seeder>();
 

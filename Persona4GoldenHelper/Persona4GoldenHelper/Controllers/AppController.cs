@@ -10,13 +10,15 @@ namespace Persona4GoldenHelper.Controllers
         private readonly IAnswer AnswerService;
         private readonly ISkill SkillService;
         private readonly IQuest QuestService;
+        private readonly ISkillCard SkillCardService;
 
-        public AppController(IBook bookService, IAnswer answerService, ISkill skillService, IQuest questService)
+        public AppController(IBook bookService, IAnswer answerService, ISkill skillService, IQuest questService, ISkillCard skillCardService)
         {
             BookService = bookService;
             AnswerService = answerService;
             SkillService = skillService;
             QuestService = questService;
+            SkillCardService = skillCardService;
         }
 
         public IActionResult Index()
@@ -68,6 +70,18 @@ namespace Persona4GoldenHelper.Controllers
             var model = new QuestListingViewModel
             {
                 Quests = QuestService.GetAll()
+            };
+
+            return View(model);
+        }
+
+        public IActionResult SkillCards()
+        {
+            ViewBag.Title = "Skill Cards";
+
+            var model = new SkillCardListingViewModel
+            { 
+                SkillCards = SkillCardService.GetAll()
             };
 
             return View(model);
