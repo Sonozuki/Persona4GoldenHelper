@@ -24,12 +24,8 @@ namespace Persona4GoldenHelper
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IBook, BookService>();
-            services.AddTransient<IAnswer, AnswerService>();
+            services.AddTransient<IApp, AppService>();
             services.AddTransient<IPersona, PersonaService>();
-            services.AddTransient<ISkill, SkillService>();
-            services.AddTransient<IQuest, QuestService>();
-            services.AddTransient<ISkillCard, SkillCardService>();
 
             services.AddTransient<Seeder>();
 

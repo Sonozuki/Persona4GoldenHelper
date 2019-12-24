@@ -6,19 +6,11 @@ namespace Persona4GoldenHelper.Controllers
 {
     public class AppController : Controller
     {
-        private readonly IBook BookService;
-        private readonly IAnswer AnswerService;
-        private readonly ISkill SkillService;
-        private readonly IQuest QuestService;
-        private readonly ISkillCard SkillCardService;
+        private readonly IApp AppService;
 
-        public AppController(IBook bookService, IAnswer answerService, ISkill skillService, IQuest questService, ISkillCard skillCardService)
+        public AppController(IApp appService)
         {
-            BookService = bookService;
-            AnswerService = answerService;
-            SkillService = skillService;
-            QuestService = questService;
-            SkillCardService = skillCardService;
+            AppService = appService;
         }
 
         public IActionResult Index()
@@ -32,8 +24,8 @@ namespace Persona4GoldenHelper.Controllers
 
             var model = new BookListingViewModel
             {
-                Books = BookService.GetAll(),
-                BookOrder = BookService.GetOrder()
+                Books = AppService.GetAllBooks(),
+                BookOrder = AppService.GetBookOrder()
             };
 
             return View(model);
@@ -45,7 +37,7 @@ namespace Persona4GoldenHelper.Controllers
 
             var model = new ExamAnswerListingViewModel
             {
-                Answers = AnswerService.GetAll()
+                Answers = AppService.GetAllExamAnswers()
             };
 
             return View(model);
@@ -57,7 +49,7 @@ namespace Persona4GoldenHelper.Controllers
 
             var model = new SkillListingViewModel
             {
-                Skills = SkillService.GetAll()
+                Skills = AppService.GetAllSkills()
             };
 
             return View(model);
@@ -69,7 +61,7 @@ namespace Persona4GoldenHelper.Controllers
 
             var model = new QuestListingViewModel
             {
-                Quests = QuestService.GetAll()
+                Quests = AppService.GetAllQuests()
             };
 
             return View(model);
@@ -81,7 +73,7 @@ namespace Persona4GoldenHelper.Controllers
 
             var model = new SkillCardListingViewModel
             { 
-                SkillCards = SkillCardService.GetAll()
+                SkillCards = AppService.GetAllSkillCards()
             };
 
             return View(model);

@@ -9,12 +9,12 @@ namespace Persona4GoldenHelper.Controllers
     public class PersonaController : Controller
     {
         private readonly IPersona PersonaService;
-        private readonly ISkill SkillService;
+        private readonly IApp AppService;
 
-        public PersonaController(IPersona personaService, ISkill skillService)
+        public PersonaController(IPersona personaService, IApp appService)
         {
             PersonaService = personaService;
-            SkillService = skillService;
+            AppService = appService;
         }
 
         public IActionResult Index()
@@ -40,7 +40,7 @@ namespace Persona4GoldenHelper.Controllers
                 var model = new PersonaViewModel
                 {
                     Persona = persona,
-                    Skills = SkillService.GetByPersona(persona)
+                    Skills = AppService.GetSkillsByPersona(persona)
                 };
 
                 return View("Persona", model);
