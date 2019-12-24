@@ -33,5 +33,13 @@
             November,
             December
         }
+
+        public enum SkillType
+        { 
+            Physical,
+            Magical,
+            Support,
+            Passive
+        }
     }
 }
