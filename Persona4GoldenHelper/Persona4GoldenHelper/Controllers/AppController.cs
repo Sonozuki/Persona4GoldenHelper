@@ -72,8 +72,9 @@ namespace Persona4GoldenHelper.Controllers
             ViewBag.Title = "Skill Cards";
 
             var model = new SkillCardListingViewModel
-            { 
-                SkillCards = AppService.GetAllSkillCards()
+            {
+                SkillCards = AppService.GetAllSkillCards(),
+                SkillCardLocations = AppService.GetAllSkillCardLocations()
             };
 
             return View(model);

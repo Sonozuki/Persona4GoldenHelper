@@ -6,6 +6,55 @@ namespace Persona4GoldenHelper.Data.Data
 {
     public class SkillCardData
     {
+        public static List<SkillCardLocation> SkillCardLocations { get; set; } = new List<SkillCardLocation>()
+        {
+            new SkillCardLocation() {
+                DungeonName = "Yukiko's Castle",
+                RankLowerBound = 1,
+                RankUpperBound = 2,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Steamy Bathhouse",
+                RankLowerBound = 1,
+                RankUpperBound = 3,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Marukyu Striptease",
+                RankLowerBound = 2,
+                RankUpperBound = 4,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Void Quest",
+                RankLowerBound = 3,
+                RankUpperBound = 6,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Secret Lab",
+                RankLowerBound = 3,
+                RankUpperBound = 7,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Heaven",
+                RankLowerBound = 4,
+                RankUpperBound = 9,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Magatsu Inaba",
+                RankLowerBound = 4,
+                RankUpperBound = 10,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Hollow Forest",
+                RankLowerBound = 4,
+                RankUpperBound = 10,
+            },
+            new SkillCardLocation() {
+                DungeonName = "Yomotsu Hirasaka",
+                RankLowerBound = 5,
+                RankUpperBound = 10,
+            }
+        };
+
         public static List<SkillCard> SkillCards { get; set; } = new List<SkillCard>()
         {
             new SkillCard() {

@@ -6,5 +6,6 @@ namespace Persona4GoldenHelper.Models
     public class SkillCardListingViewModel
     {
         public List<SkillCard> SkillCards { get; set; }
+        public List<SkillCardLocation> SkillCardLocations { get; set; }
     }
 }

@@ -143,5 +143,21 @@ namespace Persona4GoldenHelper.Service
                 return null;
             }
         }
+
+        public List<SkillCardLocation> GetAllSkillCardLocations()
+        {
+            try
+            {
+                Logger.LogInformation("GetSkillCardLocations was called");
+
+                return Context.SkillCardLocations
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetSkillCardLocations failed: {ex}");
+                return null;
+            }
+        }
     }
 }

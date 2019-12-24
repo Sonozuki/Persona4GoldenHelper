@@ -12,5 +12,6 @@ namespace Persona4GoldenHelper.Data
         List<Skill> GetSkillsByPersona(Persona persona);
         List<Quest> GetAllQuests();
         List<SkillCard> GetAllSkillCards();
+        List<SkillCardLocation> GetAllSkillCardLocations();
     }
 }
