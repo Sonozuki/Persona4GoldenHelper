@@ -5,7 +5,7 @@ namespace Persona4GoldenHelper.Data.Data
 {
     public class AccessoryData
     {
-        public List<Accessory> Accessories { get; set; } = new List<Accessory>()
+        public static List<Accessory> Accessories { get; set; } = new List<Accessory>()
         {
             new Accessory() {
                 Name = "Alarm Clock",

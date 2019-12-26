@@ -7,6 +7,7 @@ namespace Persona4GoldenHelper.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
+        public DbSet<Accessory> Accessories { get; set; }
         public DbSet<Armor> Armor { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<BookOrder> BookOrder { get; set; }

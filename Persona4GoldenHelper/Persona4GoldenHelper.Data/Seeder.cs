@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using System.Linq;
 using Persona4GoldenHelper.Data.Data;
 
 namespace Persona4GoldenHelper.Data
@@ -21,6 +16,15 @@ namespace Persona4GoldenHelper.Data
         public void Seed()
         {
             Context.Database.EnsureCreated();
+
+            if (!Context.Accessories.Any())
+            {
+                foreach (var accessory in AccessoryData.Accessories)
+                {
+                    Context.Accessories.Add(accessory);
+                    Context.SaveChanges();
+                }
+            }
 
             if (!Context.Armor.Any())
             {
