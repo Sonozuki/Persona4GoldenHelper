@@ -62,6 +62,15 @@ namespace Persona4GoldenHelper.Data
                 }
             }
 
+            if (!Context.Lunches.Any())
+            {
+                foreach (var lunch in LunchData.Lunches)
+                {
+                    Context.Lunches.Add(lunch);
+                    Context.SaveChanges();
+                }
+            }
+
             if (!Context.Personas.Any())
             {
                 foreach (var persona in PersonaData.Personas)
