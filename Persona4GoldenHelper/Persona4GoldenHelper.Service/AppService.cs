@@ -159,5 +159,21 @@ namespace Persona4GoldenHelper.Service
                 return null;
             }
         }
+
+        public List<Lunch> GetAllLunches()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllLunches was called");
+
+                return Context.Lunches
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllLunches failed: {ex}");
+                return null;
+            }
+        }
     }
 }

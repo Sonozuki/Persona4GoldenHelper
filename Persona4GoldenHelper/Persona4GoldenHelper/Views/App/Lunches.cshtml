@@ -1,0 +1,19 @@
+﻿@model LunchListingViewModel
+
+<table class="col-md-4 col-md-offset-4">
+    <thead>
+        <tr>
+            <th class="slim-column text-align-center">Name</th>
+            <th class="slim-column text-align-center">Method</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lunch in Model.Lunches)
+        {
+            <tr>
+                <td class="text-bright text-align-center">@lunch.Name</td>
+                <td class="text-align-center">@lunch.Method</td>
+            </tr>
+        }
+    </tbody>
+</table>

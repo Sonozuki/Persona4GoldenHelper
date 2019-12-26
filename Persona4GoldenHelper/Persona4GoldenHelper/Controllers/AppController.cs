@@ -79,5 +79,17 @@ namespace Persona4GoldenHelper.Controllers
 
             return View(model);
         }
+
+        public IActionResult Lunches()
+        {
+            ViewBag.Title = "Lunches";
+
+            var model = new LunchListingViewModel()
+            {
+                Lunches = AppService.GetAllLunches()
+            };
+
+            return View(model);
+        }
     }
 }
