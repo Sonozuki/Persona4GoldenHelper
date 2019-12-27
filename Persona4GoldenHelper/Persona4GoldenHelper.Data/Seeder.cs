@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Persona4GoldenHelper.Data.Data;
+using Persona4GoldenHelper.Data.Data.Calculator;
 
 namespace Persona4GoldenHelper.Data
 {
@@ -121,6 +122,24 @@ namespace Persona4GoldenHelper.Data
                 foreach (var skillCardLocation in SkillCardData.SkillCardLocations)
                 {
                     Context.SkillCardLocations.Add(skillCardLocation);
+                    Context.SaveChanges();
+                }
+            }
+
+            if (!Context.ArcanaFusionResults.Any())
+            {
+                foreach (var fusionResult in ArcanaFusionResultData.ArcanaFusions)
+                {
+                    Context.ArcanaFusionResults.Add(fusionResult);
+                    Context.SaveChanges();
+                }
+            }
+
+            if (!Context.SpecialFusionResults.Any())
+            {
+                foreach (var fusionResult in SpecialFusionResultData.SpecialFusions)
+                {
+                    Context.SpecialFusionResults.Add(fusionResult);
                     Context.SaveChanges();
                 }
             }

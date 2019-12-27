@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persona4GoldenHelper.Data;
-using Persona4GoldenHelper.Data.Data;
 using Persona4GoldenHelper.Service;
 
 namespace Persona4GoldenHelper
@@ -26,6 +25,7 @@ namespace Persona4GoldenHelper
 
             services.AddTransient<IApp, AppService>();
             services.AddTransient<IPersona, PersonaService>();
+            services.AddTransient<IFusion, FusionService>();
 
             services.AddTransient<Seeder>();
 
@@ -50,6 +50,7 @@ namespace Persona4GoldenHelper
             {
                 cfg.MapRoute("Default", template: "{action}", new { Controller = "App", Action = "Index" });
                 cfg.MapRoute("Persona", template: "Personas/{action}", new { Controller = "Persona", Action = "Index" });
+                cfg.MapRoute("Api", template: "Api/{action}", new { Controller = "Api" });
             });
 
             using (var scope = app.ApplicationServices.CreateScope())

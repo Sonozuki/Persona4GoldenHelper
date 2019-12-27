@@ -1,11 +1,17 @@
 ﻿@model PersonaViewModel
 
+<div hidden>
+    @* Store some data in hidden elements for easy retrieval in javascript *@
+    <a id="target-persona-name">@Model.Persona.Name</a>
+    <a id="target-persona-arcana">@Model.Persona.Arcana</a>
+</div>
+
 <div>
     <h2 class="col-md-12 text-align-center">
         @Model.Persona.Name (@Model.Persona.Level/@Model.Persona.Arcana)
         <span class="type-ultimate" @(Model.Persona.Ultimate ? "" : "hidden")>Ultimate</span>
         <span class="type-new-game" @(Model.Persona.NewGame ? "" : "hidden")>New Game+</span>
-    <h2>
+    </h2>
 </div>
 
 <div>

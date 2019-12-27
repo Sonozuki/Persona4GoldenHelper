@@ -41,5 +41,11 @@
             Support,
             Passive
         }
+
+        public enum FusionType
+        {
+            Arcana2,
+            Arcana3
+        }
     }
 }

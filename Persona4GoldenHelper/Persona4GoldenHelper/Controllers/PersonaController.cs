@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Persona4GoldenHelper.Data;
 using Persona4GoldenHelper.Data.Models;
 using Persona4GoldenHelper.Models;
+using System;
 
 namespace Persona4GoldenHelper.Controllers
 {
@@ -33,6 +35,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Persona(string personaName)
         {
             ViewBag.Title = personaName;
+            ViewBag.PersonaName = personaName;
 
             Persona persona = PersonaService.GetByName(personaName);
             if (persona != null)

@@ -7,7 +7,7 @@ namespace Persona4GoldenHelper.Data.Models.Calculator
     {
         public int Id { get; set; }
         public FusionType FusionType { get; set; }
-        public List<string> SourceArcanas { get; set; }
+        public List<FusionArcana> SourceArcanas { get; set; }
         public string ResultArcana { get; set; }
     }
 }
