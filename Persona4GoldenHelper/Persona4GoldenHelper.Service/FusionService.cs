@@ -20,6 +20,22 @@ namespace Persona4GoldenHelper.Service
             Logger = logger;
         }
 
+        public List<ArcanaRank> GetAllArcanas()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllArcanas was called");
+
+                return Context.ArcanaRanks
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllArcanas failed: {ex}");
+                return null;
+            }
+        }
+
         public List<ArcanaFusionResult> GetAllArcana2FusionResults()
         {
             try

@@ -34,6 +34,22 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        public IActionResult GetAllArcanas()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllArcanas was called");
+
+                var arcanas = FusionService.GetAllArcanas();
+                return Ok(arcanas);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllArcanas failed: {ex}");
+                return BadRequest("GetAllPersonas failed");
+            }
+        }
+
         public IActionResult GetAllArcana2FusionResults()
         {
             try

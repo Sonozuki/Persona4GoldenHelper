@@ -5,6 +5,7 @@ namespace Persona4GoldenHelper.Data
 {
     public interface IFusion
     {
+        List<ArcanaRank> GetAllArcanas();
         List<ArcanaFusionResult> GetAllArcana2FusionResults();
         List<ArcanaFusionResult> GetAllArcana3FusionResults();
         List<SpecialFusionResult> GetAllSpecialFusionResults();

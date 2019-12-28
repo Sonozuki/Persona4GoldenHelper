@@ -143,6 +143,15 @@ namespace Persona4GoldenHelper.Data
                     Context.SaveChanges();
                 }
             }
+
+            if (!Context.ArcanaRanks.Any())
+            {
+                foreach (var arcana in ArcanaRankData.Arcanas)
+                {
+                    Context.ArcanaRanks.Add(arcana);
+                    Context.SaveChanges();
+                }
+            }
         }
     }
 }

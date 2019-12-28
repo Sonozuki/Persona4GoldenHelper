@@ -12,13 +12,17 @@ interface ArcanaFusionResult {
 };
 
 interface Arcana {
-    arcanaName : string
+    arcanaName: string
 }
 
 interface SpecialFusionResult {
-    sourcePersonas: string[],
+    sourcePersonas: FusionPersona[],
     resultPersona: string
 };
+
+interface FusionPersona {
+    personaName: string;
+}
 
 interface Recipe {
     IngredientPersonas: Persona[],
@@ -27,6 +31,7 @@ interface Recipe {
 
 let TargetPersona: Persona;
 let Personas: Persona[];
+let Arcanas: Arcana[];
 let Arcana2FusionResults: ArcanaFusionResult[];
 let Arcana3FusionResults: ArcanaFusionResult[];
 let SpecialFusionResults: SpecialFusionResult[];
@@ -35,7 +40,7 @@ let Recipes: Recipe[] = [];
 /// Api functions
 function getPersonaByName(name: string): Persona {
     for (let persona of Personas) {
-        if (persona.name.toLowerCase() === name) {
+        if (persona.name.toLowerCase() === name.toLowerCase()) {
             return persona;
         }
     }
@@ -60,6 +65,18 @@ function isPersonaSpecial(persona: Persona): boolean {
     return recipe != null;
 }
 
+function getArcanaRank(targetArcana: string) {
+    for (let i = 0; i < Arcanas.length; i++) {
+        let arcana = Arcanas[i];
+
+        if (targetArcana === arcana.arcanaName) {
+            return i;
+        }
+    }
+
+    return 0;
+}
+
 /// Get fusion data
 function getPersonaInfo() {
     let name = document.getElementById('target-persona-name').innerText;
@@ -73,6 +90,7 @@ function getPersonaInfo() {
 
 function getFusionInfo() {
     var xhttp = new XMLHttpRequest();
+
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState == 4) {
             if (xhttp.status == 200) {
@@ -85,6 +103,20 @@ function getFusionInfo() {
         }
     };
     xhttp.open("GET", "/api/GetAllPersonas", false);
+    xhttp.send();
+
+    xhttp.onreadystatechange = function () {
+        if (xhttp.readyState == 4) {
+            if (xhttp.status == 200) {
+                console.log('Successfully got arcana list');
+                Arcanas = JSON.parse(xhttp.response);
+            }
+            else {
+                console.log('Failed to get arcana list');
+            }
+        }
+    };
+    xhttp.open("GET", "/api/GetAllArcanas", false);
     xhttp.send();
 
     xhttp.onreadystatechange = function () {
@@ -135,8 +167,6 @@ function calculateRecipes() {
     getPersonaInfo();
     getFusionInfo();
     getRecipes();
-
-    alert(Recipes.length);
 }
 
 function getRecipes() {
@@ -148,25 +178,29 @@ function getRecipes() {
     }
 
     // check for 2 persona fusions
-    var twoPersonaRecipes = get2PersonaRecipes();
+    var twoPersonaRecipes = get2PersonaRecipes(TargetPersona.arcana, true);
     for (let twoPersonaRecipe of twoPersonaRecipes) {
         Recipes.push(twoPersonaRecipe);
     }
 
+    console.log(`after 2 persona fusions: ${Recipes.length}`);
     // check for 3 persona fusions
+    var threePersonaRecipes = get3PersonaRecipes();
+    for (let threePersonaRecipe of threePersonaRecipes) {
+        Recipes.push(threePersonaRecipe);
+    }
+    console.log(`after 3 persona fusions: ${Recipes.length}`);
 }
 
 function getSpecialRecipe(persona: Persona): Recipe {
-    let recipe: Recipe;
-
     for (let specialFusionResult of SpecialFusionResults) {
         if (specialFusionResult.resultPersona.toLowerCase() == persona.name.toLowerCase()) {
-            let recipe: Recipe;
+            let recipe: Recipe = { IngredientPersonas: [] };
 
             for (let ingredientPersona of specialFusionResult.sourcePersonas) {
-                let persona: Persona = getPersonaByName(ingredientPersona)
+                let persona: Persona = getPersonaByName(ingredientPersona.personaName)
                 if (persona == null) {
-                    console.log(`ERROR: No persona with the name: ${ingredientPersona} could be found.`)
+                    console.log(`ERROR: No persona with the name: ${ingredientPersona.personaName} could be found.`)
                     continue;
                 }
 
@@ -180,13 +214,13 @@ function getSpecialRecipe(persona: Persona): Recipe {
     return null;
 }
 
-function get2PersonaRecipes(): Recipe[] {
+function get2PersonaRecipes(arcana: string, validate: boolean): Recipe[] {
     let recipes: Recipe[] = [];
 
     // get all arcana fusions that result in the target persona arcana
     let arcanaFusions: ArcanaFusionResult[] = [];
     for (let arcanaFusion of Arcana2FusionResults) {
-        if (arcanaFusion.resultArcana.toLowerCase() === TargetPersona.arcana.toLowerCase()) {
+        if (arcanaFusion.resultArcana.toLowerCase() === arcana.toLowerCase()) {
             arcanaFusions.push(arcanaFusion);
         }
     }
@@ -211,12 +245,59 @@ function get2PersonaRecipes(): Recipe[] {
                     continue;
                 }
 
-                let valid: Boolean = is2PersonaFusionValid(arcana1Persona, arcana2Persona, resultPersona)
+                if (validate) {
+                    let valid: boolean = is2PersonaFusionValid(arcana1Persona, arcana2Persona, resultPersona)
+                    if (!valid) {
+                        continue;
+                    }
+                }
+                
+                let recipe: Recipe = { IngredientPersonas: [arcana1Persona, arcana2Persona] }
+                recipes.push(recipe);
+            }
+        }
+    }
+
+    return recipes;
+}
+
+function get3PersonaRecipes(): Recipe[] {
+    let recipes: Recipe[] = [];
+
+    // get all 3 persona arcana fusion results that result in the target persona arcana
+    let arcanaFusions: ArcanaFusionResult[] = [];
+    for (let arcanaFusion of Arcana3FusionResults) {
+        if (arcanaFusion.resultArcana.toLowerCase() === TargetPersona.arcana.toLowerCase()) {
+            arcanaFusions.push(arcanaFusion);
+        }
+    }
+
+    // for each arcana fusion, consider either the intermediate parent
+    for (let arcanaFusion of arcanaFusions) {
+        let step1Recipes = get2PersonaRecipes(arcanaFusion.sourceArcanas[0].arcanaName, false);
+
+        for (let step1Recipe of step1Recipes) {
+            let persona1 = step1Recipe.IngredientPersonas[0];
+            let persona2 = step1Recipe.IngredientPersonas[1];
+            let personas = getPersonasByArcana(arcanaFusion.sourceArcanas[1].arcanaName);
+
+            for (let persona3 of personas) {
+
+                let valid: boolean = is3PersonaFusionValid(persona1, persona2, persona3);
                 if (!valid) {
                     continue;
                 }
 
-                let recipe: Recipe = { IngredientPersonas: [arcana1Persona, arcana2Persona] }
+                let resultPersona = fuse3Personas(TargetPersona.arcana, persona1, persona2, persona3)
+                if (resultPersona == null) {
+                    continue;
+                }
+
+                if (resultPersona.name != TargetPersona.name) {
+                    continue;
+                }
+
+                let recipe: Recipe = { IngredientPersonas: [persona1, persona2, persona3] }
                 recipes.push(recipe);
             }
         }
@@ -251,16 +332,42 @@ function fuse2Personas(resultArcana: string, persona1: Persona, persona2: Person
     return personas[i];
 }
 
-function fuse3Personas(resultArcana: string, persona1: Persona, persona2: Persona, persona3: Persona) {
+function fuse3Personas(resultArcana: string, persona1: Persona, persona2: Persona, persona3: Persona): Persona {
+    let level: number = 5 + Math.floor((persona1.level + persona2.level + persona3.level) / 3);
+    let personas = getPersonasByArcana(resultArcana);
 
+    // ensure there is a persona in that arcana with a level that is valid
+    let found: boolean = false;
+    for (var i = 0; i < personas.length; i++) {
+        let persona = personas[i];
+
+        if (persona.level >= level) {
+            found = true;
+            break;
+        }
+    }
+    if (!found) {
+        return null;
+    }
+
+    if (persona1.arcana === resultArcana && persona2.arcana === resultArcana && persona3.arcana === resultArcana) {
+        while (persona1.name === personas[i].name || persona2.name === personas[i].name || persona3.name === personas[i].name) {
+            i++;
+            if (personas[i] == null) {
+                return null;
+            }
+        }
+    }
+
+    return personas[i];
 }
 
 function is2PersonaFusionValid(persona1: Persona, persona2: Persona, resultPersona: Persona): boolean {
-    if (persona1.name === resultPersona.name) {
+    if (persona1.name === TargetPersona.name) {
         return false;
     }
 
-    if (persona2.name === resultPersona.name) {
+    if (persona2.name === TargetPersona.name) {
         return false;
     }
 
@@ -269,4 +376,24 @@ function is2PersonaFusionValid(persona1: Persona, persona2: Persona, resultPerso
     }
 
     return false;
+}
+
+function is3PersonaFusionValid(persona1: Persona, persona2: Persona, persona3: Persona): boolean {
+    if (persona1.name === persona3.name || persona2.name === persona3.name) {
+        return false;
+    }
+
+    if (persona1.level > persona3.level || persona2.level > persona3.level) {
+        return false;
+    }
+
+    if (persona1.level === persona3.level) {
+        return getArcanaRank(persona1.arcana) > getArcanaRank(persona3.arcana)
+    }
+
+    if (persona2.level === persona3.level) {
+        return getArcanaRank(persona2.arcana) > getArcanaRank(persona3.arcana)
+    }
+
+    return true;
 }

@@ -23,5 +23,6 @@ namespace Persona4GoldenHelper.Data
 
         public DbSet<ArcanaFusionResult> ArcanaFusionResults { get; set; }
         public DbSet<SpecialFusionResult> SpecialFusionResults { get; set; }
+        public DbSet<ArcanaRank> ArcanaRanks { get; set; }
     }
 }
