@@ -125,6 +125,83 @@ function calculateRecipes() {
     getPersonaInfo();
     getFusionInfo();
     getRecipes();
+    populateRecipeCount();
+    calculateRecipeCosts();
+    sortRecipes();
+    populateRecipeTable();
+}
+function populateRecipeCount() {
+    document.getElementById('recipe-count').innerText = Recipes.length.toString();
+}
+function calculateRecipeCosts() {
+    for (var i = 0; i < Recipes.length; i++) {
+        Recipes[i].Cost = 0;
+        for (var _i = 0, _a = Recipes[i].IngredientPersonas; _i < _a.length; _i++) {
+            var ingredientPersona = _a[_i];
+            Recipes[i].Cost += (27 * ingredientPersona.level * ingredientPersona.level) + (126 * ingredientPersona.level) + 2147;
+        }
+    }
+    console.log(Recipes[0].Cost);
+}
+function sortRecipes() {
+    Recipes.sort(function (a, b) { return a.Cost - b.Cost; });
+    for (var _i = 0, Recipes_1 = Recipes; _i < Recipes_1.length; _i++) {
+        var recipe = Recipes_1[_i];
+        recipe.IngredientPersonas.sort(function (a, b) { return b.level - a.level; });
+    }
+}
+function populateRecipeTable() {
+    var recipeTable = document.getElementById('recipe-table');
+    var currentRecipesCount = recipeTable.tBodies[0].children.length;
+    for (var i = currentRecipesCount; i < Recipes.length && i < currentRecipesCount + 100; i++) {
+        var recipe = Recipes[i];
+        var recipeRow = recipeTable.tBodies[0].insertRow();
+        var costCell = recipeRow.insertCell();
+        costCell.className = "text-align-center";
+        var costCellText = document.createTextNode("\u00A5" + recipe.Cost);
+        costCell.appendChild(costCellText);
+        var personaCell = recipeRow.insertCell();
+        for (var _i = 0, _a = recipe.IngredientPersonas; _i < _a.length; _i++) {
+            var persona = _a[_i];
+            // generate the parent anchor tag to link the persona to it's persona page, the persona info will also be housed in the anchor tag
+            var personaA = document.createElement('a');
+            personaA.setAttribute('href', '#');
+            personaA.className = 'padding-right';
+            var personaName = document.createElement('span');
+            if (persona.ultimate === true) {
+                personaName.className = 'type-ultimate';
+            }
+            else if (persona.newGame === true) {
+                personaName.className = 'type-ultimate';
+            }
+            var personaNameText = document.createTextNode(persona.name);
+            personaName.appendChild(personaNameText);
+            // generate the persona info the '(43 / Lovers)' that will be appended to each persona (Level / Arcana)
+            var personaInfoLeftBracket = document.createTextNode(' (');
+            var personaInfoLevel = document.createElement('span');
+            personaInfoLevel.className = 'text-dark';
+            var personaInfoLevelText = document.createTextNode(persona.level.toString());
+            personaInfoLevel.appendChild(personaInfoLevelText);
+            var personaInfoMiddleSlash = document.createTextNode('/');
+            var personaInfoArcana = document.createElement('arcana');
+            personaInfoArcana.className = 'text-dark';
+            var personaInfoArcanaText = document.createTextNode(persona.arcana);
+            personaInfoArcana.appendChild(personaInfoArcanaText);
+            var personaInfoRightBracket = document.createTextNode(')');
+            // append the '(Level / Arcana)' on the persona name
+            personaA.appendChild(personaName);
+            personaA.append(personaInfoLeftBracket);
+            personaA.append(personaInfoLevel);
+            personaA.append(personaInfoMiddleSlash);
+            personaA.append(personaInfoArcana);
+            personaA.append(personaInfoRightBracket);
+            personaCell.appendChild(personaA);
+        }
+    }
+    var seeMoreButton = document.getElementById('see-more-recipes');
+    if (Recipes.length === recipeTable.tBodies[0].children.length) {
+        seeMoreButton.hidden = true;
+    }
 }
 function getRecipes() {
     // check if the persona is made through a special recipe
@@ -139,14 +216,12 @@ function getRecipes() {
         var twoPersonaRecipe = twoPersonaRecipes_1[_i];
         Recipes.push(twoPersonaRecipe);
     }
-    console.log("after 2 persona fusions: " + Recipes.length);
     // check for 3 persona fusions
     var threePersonaRecipes = get3PersonaRecipes();
     for (var _a = 0, threePersonaRecipes_1 = threePersonaRecipes; _a < threePersonaRecipes_1.length; _a++) {
         var threePersonaRecipe = threePersonaRecipes_1[_a];
         Recipes.push(threePersonaRecipe);
     }
-    console.log("after 3 persona fusions: " + Recipes.length);
 }
 function getSpecialRecipe(persona) {
     for (var _i = 0, SpecialFusionResults_1 = SpecialFusionResults; _i < SpecialFusionResults_1.length; _i++) {

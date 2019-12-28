@@ -4,6 +4,8 @@ interface Persona {
     name: string,
     arcana: string
     level?: number;
+    ultimate?: boolean;
+    newGame?: boolean;
 };
 
 interface ArcanaFusionResult {
@@ -26,7 +28,7 @@ interface FusionPersona {
 
 interface Recipe {
     IngredientPersonas: Persona[],
-    Cost?: string
+    Cost?: number
 };
 
 let TargetPersona: Persona;
@@ -167,29 +169,123 @@ function calculateRecipes() {
     getPersonaInfo();
     getFusionInfo();
     getRecipes();
+
+    populateRecipeCount();
+    calculateRecipeCosts();
+    sortRecipes();
+    populateRecipeTable();
+}
+
+function populateRecipeCount() {
+    document.getElementById('recipe-count').innerText = Recipes.length.toString();
+}
+
+function calculateRecipeCosts() {
+    for (let i = 0; i < Recipes.length; i++) {
+        Recipes[i].Cost = 0;
+
+        for (let ingredientPersona of Recipes[i].IngredientPersonas) {
+            Recipes[i].Cost += (27 * ingredientPersona.level * ingredientPersona.level) + (126 * ingredientPersona.level) + 2147
+        }
+    }
+
+    console.log(Recipes[0].Cost)
+}
+
+function sortRecipes() {
+    Recipes.sort(function (a, b) { return a.Cost - b.Cost });
+
+    for (let recipe of Recipes) {
+        recipe.IngredientPersonas.sort(function (a, b) { return b.level - a.level });
+    }
+}
+
+function populateRecipeTable() {
+    let recipeTable = <HTMLTableElement>document.getElementById('recipe-table');
+    let currentRecipesCount = recipeTable.tBodies[0].children.length;
+
+    for (let i = currentRecipesCount; i < Recipes.length && i < currentRecipesCount + 100; i++) {
+        let recipe = Recipes[i];
+        let recipeRow = recipeTable.tBodies[0].insertRow();
+
+        let costCell = recipeRow.insertCell();
+        costCell.className = "text-align-center"
+        let costCellText = document.createTextNode(`¥${recipe.Cost}`);
+        costCell.appendChild(costCellText);
+
+        let personaCell = recipeRow.insertCell();
+        for (let persona of recipe.IngredientPersonas) {
+            // generate the parent anchor tag to link the persona to it's persona page, the persona info will also be housed in the anchor tag
+            let personaA = document.createElement('a');
+            personaA.setAttribute('href', '#')
+            personaA.className = 'padding-right'
+
+            let personaName = document.createElement('span');
+            if (persona.ultimate === true) {
+                personaName.className = 'type-ultimate';
+            }
+            else if (persona.newGame === true) {
+                personaName.className = 'type-ultimate';
+            }
+            let personaNameText = document.createTextNode(persona.name);
+            personaName.appendChild(personaNameText);
+
+            // generate the persona info the '(43 / Lovers)' that will be appended to each persona (Level / Arcana)
+            let personaInfoLeftBracket = document.createTextNode(' (');
+
+            let personaInfoLevel = document.createElement('span');
+            personaInfoLevel.className = 'text-dark';
+            let personaInfoLevelText = document.createTextNode(persona.level.toString());
+            personaInfoLevel.appendChild(personaInfoLevelText);
+
+            let personaInfoMiddleSlash = document.createTextNode('/');
+
+            let personaInfoArcana = document.createElement('arcana');
+            personaInfoArcana.className = 'text-dark';
+            let personaInfoArcanaText = document.createTextNode(persona.arcana);
+            personaInfoArcana.appendChild(personaInfoArcanaText);
+
+            let personaInfoRightBracket = document.createTextNode(')');
+
+            // append the '(Level / Arcana)' on the persona name
+            personaA.appendChild(personaName);
+
+            personaA.append(personaInfoLeftBracket);
+            personaA.append(personaInfoLevel);
+            personaA.append(personaInfoMiddleSlash);
+            personaA.append(personaInfoArcana);
+            personaA.append(personaInfoRightBracket);
+
+            personaCell.appendChild(personaA);
+        }
+    }
+
+    let seeMoreButton = document.getElementById('see-more-recipes');
+
+    if (Recipes.length === recipeTable.tBodies[0].children.length) {
+        seeMoreButton.hidden = true;
+    }
 }
 
 function getRecipes() {
     // check if the persona is made through a special recipe
-    var specialRecipe = getSpecialRecipe(TargetPersona);
+    let specialRecipe = getSpecialRecipe(TargetPersona);
     if (specialRecipe != null) {
         Recipes.push(specialRecipe);
         return
     }
 
     // check for 2 persona fusions
-    var twoPersonaRecipes = get2PersonaRecipes(TargetPersona.arcana, true);
+    let twoPersonaRecipes = get2PersonaRecipes(TargetPersona.arcana, true);
     for (let twoPersonaRecipe of twoPersonaRecipes) {
         Recipes.push(twoPersonaRecipe);
     }
 
-    console.log(`after 2 persona fusions: ${Recipes.length}`);
     // check for 3 persona fusions
-    var threePersonaRecipes = get3PersonaRecipes();
+    let threePersonaRecipes = get3PersonaRecipes();
     for (let threePersonaRecipe of threePersonaRecipes) {
         Recipes.push(threePersonaRecipe);
     }
-    console.log(`after 3 persona fusions: ${Recipes.length}`);
 }
 
 function getSpecialRecipe(persona: Persona): Recipe {
@@ -251,7 +347,7 @@ function get2PersonaRecipes(arcana: string, validate: boolean): Recipe[] {
                         continue;
                     }
                 }
-                
+
                 let recipe: Recipe = { IngredientPersonas: [arcana1Persona, arcana2Persona] }
                 recipes.push(recipe);
             }

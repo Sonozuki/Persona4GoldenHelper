@@ -94,6 +94,23 @@
     </table>
 </div>
 
+<div>
+    <h3 class="col-md-12 text-align-center">Recipes (<span id="recipe-count" class="text-dark">?</span>)</h3>
+    <div id="recipe-scroll" class="col-md-8 col-md-offset-2">
+        <table id="recipe-table" class="col-md-12">
+            <thead>
+                <tr>
+                    <th class="slim-column text-align-center">Cost</th>
+                    <th>Ingredients</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <h4 id="see-more-recipes" class="col-md-12 text-align-center button" onclick="populateRecipeTable()">See More</h4>
+    </div>
+</div>
+
 @using static Persona4GoldenHelper.Data.Enums
 @functions {
     /// <summary>This will convert the element affinities ("None", "Weak", "Resistant" etc) into shorter versions ("", "wk", "rs" etc) for easy of reading and displaying.</summary>

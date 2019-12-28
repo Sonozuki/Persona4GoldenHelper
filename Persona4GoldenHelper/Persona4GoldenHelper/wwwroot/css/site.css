@@ -84,6 +84,17 @@ table {
             background-color: #333;
         }
 
+#recipe-scroll {
+    max-height: 500px;
+    overflow: auto;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+    #recipe-scroll table {
+        margin-bottom: 0;
+    }
+
 .white-space-pre-line {
     white-space: pre-line;
 }
@@ -116,6 +127,20 @@ table {
 .text-dark {
     color: #808080;
 }
+
+.padding-right {
+    padding-right: 35px;
+}
+
+.button {
+    padding: 10px;
+    background-color: #2a2a2a;
+    margin-bottom: 0;
+}
+
+    .button:hover {
+        cursor: pointer;
+    }
 
 .type-ultimate {
     color: #4b75b3 !important;
