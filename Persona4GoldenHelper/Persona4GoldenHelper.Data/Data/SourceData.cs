@@ -9,35 +9,79 @@ namespace Persona4GoldenHelper.Data.Data
         {
             new Source() {
                 Information = "Personas",
-                Link = "https://megamitensei.fandom.com/wiki/List_of_Persona_4_Personas & https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Personas"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://megamitensei.fandom.com/wiki/List_of_Persona_4_Personas"
+                    },
+                    new Link() {
+                        URL = "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Personas"
+                    }
+                }
             },
             new Source() {
                 Information = "Persona Fusion Calculator",
-                Link = "Code was based on: https://github.com/arantius/persona-fusion-calculator & http://persona4.wikidot.com/fusiontutor & https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/map/8037-fusion-chart"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://github.com/arantius/persona-fusion-calculator"
+                    },
+                    new Link() {
+                        URL = "http://persona4.wikidot.com/fusiontutor"
+                    },
+                    new Link() {
+                        URL = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/map/8037-fusion-chart"
+                    }
+                }
             },
             new Source() {
                 Information = "Skills",
-                Link = "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Skill_List"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Skill_List"
+                    }
+                }
             },
             new Source() {
                 Information = "Books",
-                Link = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65714"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65714"
+                    }
+                }
             },
             new Source() {
                 Information = "Exam Answers",
-                Link = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65427"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65427"
+                    }
+                }
             },
             new Source() {
                 Information = "Quests",
-                Link = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/68730 & https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Quests"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/68730"
+                    },
+                    new Link() {
+                        URL = "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Quests"
+                    }
+                }
             },
             new Source() {
                 Information = "Lunches",
-                Link = "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Boxed_Lunches"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Boxed_Lunches"
+                    }
+                }
             },
             new Source() {
                 Information = "Skill Cards",
-                Link = "https://docs.google.com/file/d/0BwDCz_Mqaf8RTmJac1hMS1dQOUU/edit?pli=1"
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://docs.google.com/file/d/0BwDCz_Mqaf8RTmJac1hMS1dQOUU/edit?pli=1"
+                    }
+                }
             }
         };
     }

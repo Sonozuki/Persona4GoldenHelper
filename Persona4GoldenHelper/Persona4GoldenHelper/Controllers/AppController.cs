@@ -15,7 +15,14 @@ namespace Persona4GoldenHelper.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            ViewBag.Title = "Index";
+
+            var model = new SourceListingViewModel()
+            {
+                Sources = AppService.GetAllSources()
+            };
+
+            return View(model);
         }
 
         public IActionResult Books()
