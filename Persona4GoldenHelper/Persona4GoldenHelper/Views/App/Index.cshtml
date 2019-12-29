@@ -1,1 +1,31 @@
-﻿<h1>Index page</h1>
+﻿@model SourceListingViewModel
+
+<h2 class="text-align-center">About</h2>
+<div class="col-md-8 col-md-offset-2 text-align-center">
+    <p>Persona 4 Golden Helper is a personal project to bring all the important info to one place. The site is an ongoing project (Thus the grayed out nav bar pages) the site is also open source (Link in the nav bar to the far right), if you find any issues with the site please report them on the GitHub repo.</p>
+    <br />
+    <p>All the sources for the data collected on the site are linked below, with some areas I've obtained manually in game.</p>
+</div>
+
+<table class="col-md-8 col-md-offset-2">
+    <thead>
+        <tr>
+            <th class="wide-column">Information</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var source in Model.Sources)
+        {
+            <tr>
+                <td>@source.Information</td>
+                <td>
+                    @foreach (var link in source.Links)
+                    {
+                        <a href="@link.URL" class="padding-right" style="white-space:nowrap">@link.URL</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
