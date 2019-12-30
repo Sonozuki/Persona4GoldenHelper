@@ -217,7 +217,7 @@ function populateRecipeTable() {
         for (let persona of recipe.IngredientPersonas) {
             // generate the parent anchor tag to link the persona to it's persona page, the persona info will also be housed in the anchor tag
             let personaA = document.createElement('a');
-            personaA.setAttribute('href', '#')
+            personaA.setAttribute('href', persona.name)
             personaA.className = 'padding-right'
 
             let personaName = document.createElement('span');

@@ -165,7 +165,7 @@ function populateRecipeTable() {
             var persona = _a[_i];
             // generate the parent anchor tag to link the persona to it's persona page, the persona info will also be housed in the anchor tag
             var personaA = document.createElement('a');
-            personaA.setAttribute('href', '#');
+            personaA.setAttribute('href', persona.name);
             personaA.className = 'padding-right';
             var personaName = document.createElement('span');
             if (persona.ultimate === true) {
