@@ -30,10 +30,10 @@
     <h2 class="text-align-center col-md-12">Book Order</h2>
     <h5 class="text-align-center col-md-12">This is the order of the books in the inventory, to make it easier to see which books you are missing.</h5>
     <table class="col-md-2 col-md-offset-5">
-        @foreach (var bookTitle in Model.BookOrder)
+        @foreach (var bookOrder in Model.BookOrder)
         {
             <tr>
-                <td class="text-align-center text-bright">@bookTitle</td>
+                <td class="text-align-center text-bright">@bookOrder.BookName</td>
             </tr>
         }
     </table>
