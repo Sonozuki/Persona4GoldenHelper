@@ -210,7 +210,7 @@ function populateRecipeTable() {
 
         let costCell = recipeRow.insertCell();
         costCell.className = "text-align-center"
-        let costCellText = document.createTextNode(`¥${recipe.Cost}`);
+        let costCellText = document.createTextNode(`\u00A5${recipe.Cost}`);
         costCell.appendChild(costCellText);
 
         let personaCell = recipeRow.insertCell();
