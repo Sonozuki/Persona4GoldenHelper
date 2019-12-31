@@ -47,5 +47,12 @@
             Arcana2,
             Arcana3
         }
+
+        public enum ShadowType
+        {
+            Normal,
+            MiniBoss,
+            Boss
+        }
     }
 }

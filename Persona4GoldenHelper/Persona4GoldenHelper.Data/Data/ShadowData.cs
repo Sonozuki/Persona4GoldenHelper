@@ -6,7 +6,7 @@ namespace Persona4GoldenHelper.Data.Data
 {
     public class ShadowData
     {
-        public List<Shadow> Shadows { get; set; } = new List<Shadow>()
+        public static List<Shadow> Shadows { get; set; } = new List<Shadow>()
         {
             new Shadow() {
                 Name = "Acheron Seeker",
@@ -84,12 +84,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Type = ShadowType.Normal
             },
             new Shadow() {
-                Name = "",
+                Name = "Agitating Hablerie",
                 Level = 66,
                 HP = 238,
                 SP = 280,
-                Exp = 2580,
-                Yen = "¥420",
+                Exp = 2670,
+                Yen = "¥360",
                 Stats = new ShadowStats() {
                     Strength = 46,
                     Magic = 52,
@@ -100,8 +100,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Elements = new ShadowElements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
-                    Ice = ElementAffinity.None,
-                    Electricity = ElementAffinity.None,
+                    Ice = ElementAffinity.Null,
+                    Electricity = ElementAffinity.Absorb,
                     Wind = ElementAffinity.None,
                     Light = ElementAffinity.None,
                     Darkness = ElementAffinity.None
