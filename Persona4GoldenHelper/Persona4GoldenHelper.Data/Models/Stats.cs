@@ -1,6 +1,6 @@
 ﻿namespace Persona4GoldenHelper.Data.Models
 {
-    public class ShadowStats
+    public class Stats
     {
         public int Id { get; set; }
         public int Strength { get; set; }

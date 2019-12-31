@@ -15,14 +15,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 208,
                 Exp = 2630,
                 Yen = "¥430",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 22,
                     Endurance = 62,
                     Agility = 54,
                     Luck = 44
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -54,14 +54,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 116,
                 Exp = 550,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 17,
                     Endurance = 10,
                     Agility = 22,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -90,14 +90,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 280,
                 Exp = 2670,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 52,
                     Endurance = 25,
                     Agility = 43,
                     Luck = 37
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -123,14 +123,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 238,
                 Exp = 900,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 28,
                     Endurance = 32,
                     Agility = 32,
                     Luck = 20
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -168,14 +168,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 238,
                 Exp = 900,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 28,
                     Endurance = 32,
                     Agility = 32,
                     Luck = 20
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -213,14 +213,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 2500,
                 Exp = 28729,
                 Yen = "¥3000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 58,
                     Magic = 66,
                     Endurance = 64,
                     Agility = 72,
                     Luck = 46
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -309,14 +309,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 117,
                 Exp = 760,
                 Yen = "¥270",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 28,
                     Endurance = 18,
                     Agility = 30,
                     Luck = 24
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -345,14 +345,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 183,
                 Exp = 3760,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 26,
                     Endurance = 48,
                     Agility = 45,
                     Luck = 39
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -384,14 +384,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 148,
                 Exp = 6300,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 38,
                     Endurance = 26,
                     Agility = 21,
                     Luck = 15
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -420,14 +420,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 270,
                 Exp = 2310,
                 Yen = "¥270",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 18,
                     Endurance = 42,
                     Agility = 40,
                     Luck = 41
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -459,14 +459,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 19,
                 Exp = 600,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 18,
                     Endurance = 31,
                     Agility = 11,
                     Luck = 23
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -495,14 +495,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 327,
                 Exp = 2150,
                 Yen = "¥270",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 36,
                     Endurance = 40,
                     Agility = 42,
                     Luck = 35
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -540,14 +540,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 264,
                 Exp = 2000,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 26,
                     Magic = 28,
                     Endurance = 23,
                     Agility = 24,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -573,14 +573,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 231,
                 Exp = 950,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 32,
                     Endurance = 16,
                     Agility = 31,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -609,14 +609,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 13,
                 Exp = 120,
                 Yen = "¥190",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 10,
                     Endurance = 8,
                     Agility = 2,
                     Luck = 4
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -639,14 +639,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 167,
                 Exp = 810,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 23,
                     Endurance = 28,
                     Agility = 28,
                     Luck = 30
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -675,14 +675,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 87,
                 Exp = 485,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 9,
                     Magic = 8,
                     Endurance = 6,
                     Agility = 8,
                     Luck = 10
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -717,14 +717,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 87,
                 Exp = 900,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 7,
                     Magic = 9,
                     Endurance = 10,
                     Agility = 6,
                     Luck = 13
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -762,14 +762,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 194,
                 Exp = 3740,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 42,
                     Endurance = 28,
                     Agility = 45,
                     Luck = 39
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -798,14 +798,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 94,
                 Exp = 1100,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 20,
                     Endurance = 30,
                     Agility = 29,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -834,14 +834,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 174,
                 Exp = 1680,
                 Yen = "¥430",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 53,
                     Magic = 62,
                     Endurance = 64,
                     Agility = 57,
                     Luck = 52
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -879,14 +879,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 25,
                 Exp = 48,
                 Yen = "¥120",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 8,
                     Magic = 4,
                     Endurance = 4,
                     Agility = 5,
                     Luck = 3
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -909,14 +909,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 6,
                 Exp = 550,
                 Yen = "¥270",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 28,
                     Endurance = 26,
                     Agility = 30,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -942,14 +942,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 194,
                 Exp = 500,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 25,
                     Endurance = 3,
                     Agility = 22,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Absorb,
@@ -978,14 +978,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 188,
                 Exp = 2210,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 41,
                     Magic = 34,
                     Endurance = 46,
                     Agility = 42,
                     Luck = 33
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -1014,14 +1014,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 329,
                 Exp = 940,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 29,
                     Endurance = 29,
                     Agility = 25,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -1050,14 +1050,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 173,
                 Exp = 2250,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 34,
                     Endurance = 39,
                     Agility = 40,
                     Luck = 28
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -1086,14 +1086,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 88,
                 Exp = 200,
                 Yen = "¥190",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 6,
                     Endurance = 15,
                     Agility = 8,
                     Luck = 4
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -1116,14 +1116,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 285,
                 Exp = 4820,
                 Yen = "¥390",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 60,
                     Magic = 40,
                     Endurance = 45,
                     Agility = 46,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Weak,
@@ -1152,14 +1152,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 256,
                 Exp = 2230,
                 Yen = "¥440",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 54,
                     Magic = 51,
                     Endurance = 61,
                     Agility = 62,
                     Luck = 48
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1209,14 +1209,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 34,
                 Exp = 184,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 8,
                     Magic = 5,
                     Endurance = 6,
                     Agility = 6,
                     Luck = 7
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1242,14 +1242,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 51,
                 Exp = 298,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 9,
                     Magic = 6,
                     Endurance = 13,
                     Agility = 9,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -1275,14 +1275,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 310,
                 Exp = 2500,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 55,
                     Magic = 24,
                     Endurance = 35,
                     Agility = 35,
                     Luck = 45
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -1326,14 +1326,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 23,
                 Exp = 40,
                 Yen = "¥150",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 6,
                     Magic = 3,
                     Endurance = 4,
                     Agility = 6,
                     Luck = 3
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1356,14 +1356,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 137,
                 Exp = 1920,
                 Yen = "¥270",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 32,
                     Endurance = 30,
                     Agility = 43,
                     Luck = 34
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -1392,14 +1392,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 116,
                 Exp = 1500,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 22,
                     Endurance = 22,
                     Agility = 25,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1422,14 +1422,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 485,
                 Exp = 4900,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 55,
                     Magic = 33,
                     Endurance = 40,
                     Agility = 47,
                     Luck = 33
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1458,14 +1458,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 318,
                 Exp = 3170,
                 Yen = "¥330",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 32,
                     Endurance = 35,
                     Agility = 42,
                     Luck = 34
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -1494,14 +1494,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 133,
                 Exp = 1340,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 30,
                     Endurance = 14,
                     Agility = 30,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Reflect,
@@ -1530,14 +1530,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 124,
                 Exp = 1820,
                 Yen = "¥44",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 47,
                     Magic = 34,
                     Endurance = 53,
                     Agility = 45,
                     Luck = 44
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1566,14 +1566,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 555,
                 Exp = 2400,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 52,
                     Endurance = 10,
                     Agility = 68,
                     Luck = 58
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1617,14 +1617,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 102,
                 Exp = 260,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 10,
                     Endurance = 14,
                     Agility = 15,
                     Luck = 9
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1647,14 +1647,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 254,
                 Exp = 5250,
                 Yen = "¥400",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 52,
                     Magic = 49,
                     Endurance = 50,
                     Agility = 49,
                     Luck = 52
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -1692,14 +1692,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 246,
                 Exp = 1200,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 29,
                     Endurance = 17,
                     Agility = 31,
                     Luck = 30
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1728,14 +1728,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 125,
                 Exp = 2480,
                 Yen = "¥350",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 36,
                     Endurance = 40,
                     Agility = 45,
                     Luck = 36
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1761,14 +1761,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 209,
                 Exp = 560,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 15,
                     Magic = 21,
                     Endurance = 23,
                     Agility = 26,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1800,14 +1800,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 169,
                 Exp = 2400,
                 Yen = "¥440",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 55,
                     Magic = 38,
                     Endurance = 48,
                     Agility = 52,
                     Luck = 44
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -1842,14 +1842,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 205,
                 Exp = 450,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 15,
                     Magic = 20,
                     Endurance = 12,
                     Agility = 19,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1875,14 +1875,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 177,
                 Exp = 440,
                 Yen = "¥220",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 12,
                     Magic = 15,
                     Endurance = 15,
                     Agility = 16,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -1911,14 +1911,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 271,
                 Exp = 2410,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 64,
                     Endurance = 41,
                     Agility = 25,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Null,
@@ -1944,14 +1944,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 400,
                 Exp = 1400,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 62,
                     Endurance = 52,
                     Agility = 50,
                     Luck = 48
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -1983,14 +1983,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 121,
                 Exp = 240,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 12,
                     Magic = 13,
                     Endurance = 8,
                     Agility = 17,
                     Luck = 15
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -2019,14 +2019,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 46,
                 Exp = 230,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 23,
                     Magic = 6,
                     Endurance = 15,
                     Agility = 15,
                     Luck = 4
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2049,14 +2049,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 100,
                 Exp = 2800,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 11,
                     Endurance = 17,
                     Agility = 18,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2091,14 +2091,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 197,
                 Exp = 2250,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 34,
                     Endurance = 26,
                     Agility = 43,
                     Luck = 36
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -2127,14 +2127,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 444,
                 Exp = 4440,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 44,
                     Magic = 44,
                     Endurance = 44,
                     Agility = 44,
                     Luck = 44
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -2163,14 +2163,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 339,
                 Exp = 640,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 1,
                     Magic = 25,
                     Endurance = 15,
                     Agility = 16,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2199,14 +2199,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 23,
                 Exp = 250,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 20,
                     Endurance = 26,
                     Agility = 10,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -2232,14 +2232,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 274,
                 Exp = 1960,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 37,
                     Endurance = 27,
                     Agility = 47,
                     Luck = 55
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -2268,14 +2268,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 164,
                 Exp = 2000,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 24,
                     Endurance = 25,
                     Agility = 26,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2301,14 +2301,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 400,
                 Exp = 1980,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 57,
                     Endurance = 52,
                     Agility = 50,
                     Luck = 48
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -2343,14 +2343,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 339,
                 Exp = 1210,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 29,
                     Magic = 37,
                     Endurance = 20,
                     Agility = 35,
                     Luck = 30
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2382,14 +2382,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 112,
                 Exp = 5040,
                 Yen = "¥330",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 31,
                     Endurance = 1,
                     Agility = 40,
                     Luck = 34
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2415,14 +2415,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 300,
                 Exp = 12400,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 39,
                     Magic = 32,
                     Endurance = 44,
                     Agility = 30,
                     Luck = 31
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2451,14 +2451,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 149,
                 Exp = 1690,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 70,
                     Magic = 47,
                     Endurance = 39,
                     Agility = 44,
                     Luck = 48
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -2490,14 +2490,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 439,
                 Exp = 1950,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 35,
                     Endurance = 44,
                     Agility = 45,
                     Luck = 50
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -2529,14 +2529,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 629,
                 Exp = 4800,
                 Yen = "¥390",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 54,
                     Endurance = 19,
                     Agility = 52,
                     Luck = 70
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2568,14 +2568,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 105,
                 Exp = 640,
                 Yen = "¥220",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 16,
                     Endurance = 18,
                     Agility = 15,
                     Luck = 11
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -2604,14 +2604,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 194,
                 Exp = 2080,
                 Yen = "¥440",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 65,
                     Magic = 50,
                     Endurance = 61,
                     Agility = 49,
                     Luck = 63
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -2652,14 +2652,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 455,
                 Exp = 2010,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 34,
                     Magic = 47,
                     Endurance = 19,
                     Agility = 36,
                     Luck = 31
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -2691,14 +2691,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 629,
                 Exp = 3000,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 54,
                     Endurance = 19,
                     Agility = 52,
                     Luck = 70
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -2739,14 +2739,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 231,
                 Exp = 2190,
                 Yen = "¥330",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 58,
                     Magic = 45,
                     Endurance = 55,
                     Agility = 46,
                     Luck = 40
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2781,14 +2781,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 91,
                 Exp = 430,
                 Yen = "¥240",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 26,
                     Magic = 17,
                     Endurance = 14,
                     Agility = 19,
                     Luck = 22
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2814,14 +2814,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 1000,
                 Exp = 10500,
                 Yen = "¥1000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 30,
                     Endurance = 20,
                     Agility = 28,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -2862,14 +2862,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 262,
                 Exp = 1500,
                 Yen = "¥420",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 52,
                     Magic = 51,
                     Endurance = 44,
                     Agility = 70,
                     Luck = 60
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -2904,14 +2904,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 243,
                 Exp = 2200,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 52,
                     Magic = 42,
                     Endurance = 43,
                     Agility = 55,
                     Luck = 47
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Absorb,
@@ -2940,14 +2940,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 234,
                 Exp = 2000,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 53,
                     Magic = 30,
                     Endurance = 11,
                     Agility = 52,
                     Luck = 55
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2982,14 +2982,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 3000,
                 Exp = 15000,
                 Yen = "¥1000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 50,
                     Magic = 45,
                     Endurance = 35,
                     Agility = 56,
                     Luck = 10
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -3054,14 +3054,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 315,
                 Exp = 1150,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 35,
                     Endurance = 15,
                     Agility = 35,
                     Luck = 39
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3099,14 +3099,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 422,
                 Exp = 3850,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 52,
                     Endurance = 24,
                     Agility = 49,
                     Luck = 41
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -3138,14 +3138,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 333,
                 Exp = 820,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 27,
                     Endurance = 22,
                     Agility = 28,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -3171,14 +3171,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 100,
                 Exp = 2230,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 45,
                     Endurance = 25,
                     Agility = 48,
                     Luck = 47
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -3213,14 +3213,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 397,
                 Exp = 2520,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 49,
                     Endurance = 25,
                     Agility = 38,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -3249,14 +3249,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 331,
                 Exp = 1500,
                 Yen = "¥240",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 55,
                     Endurance = 30,
                     Agility = 44,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -3291,14 +3291,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 199,
                 Exp = 1220,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 32,
                     Endurance = 16,
                     Agility = 32,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Weak,
@@ -3324,14 +3324,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 351,
                 Exp = 1050,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 34,
                     Magic = 30,
                     Endurance = 22,
                     Agility = 33,
                     Luck = 30
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -3360,14 +3360,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 133,
                 Exp = 430,
                 Yen = "¥240",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 19,
                     Endurance = 8,
                     Agility = 19,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -3390,14 +3390,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 170,
                 Exp = 1820,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 28,
                     Endurance = 27,
                     Agility = 46,
                     Luck = 26
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -3426,14 +3426,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 117,
                 Exp = 1840,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 26,
                     Endurance = 19,
                     Agility = 35,
                     Luck = 28
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -3465,14 +3465,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 354,
                 Exp = 1500,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 20,
                     Endurance = 10,
                     Agility = 44,
                     Luck = 55
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3513,14 +3513,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 777,
                 Exp = 40000,
                 Yen = "¥15000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 30,
                     Endurance = 1,
                     Agility = 85,
                     Luck = 75
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Reflect,
@@ -3591,14 +3591,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 164,
                 Exp = 730,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 20,
                     Endurance = 28,
                     Agility = 27,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Reflect,
@@ -3624,14 +3624,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 252,
                 Exp = 1860,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 49,
                     Endurance = 42,
                     Agility = 59,
                     Luck = 56
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3669,14 +3669,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 644,
                 Exp = 2390,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 80,
                     Endurance = 40,
                     Agility = 45,
                     Luck = 55
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3714,14 +3714,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 67,
                 Exp = 330,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 10,
                     Endurance = 24,
                     Agility = 2,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3744,14 +3744,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 199,
                 Exp = 4680,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 44,
                     Magic = 37,
                     Endurance = 31,
                     Agility = 46,
                     Luck = 39
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3777,14 +3777,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 424,
                 Exp = 3110,
                 Yen = "¥340",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 44,
                     Endurance = 40,
                     Agility = 43,
                     Luck = 37
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3819,14 +3819,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 282,
                 Exp = 1520,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 36,
                     Endurance = 33,
                     Agility = 40,
                     Luck = 33
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -3861,14 +3861,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 475,
                 Exp = 2480,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 62,
                     Endurance = 52,
                     Agility = 55,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -3912,14 +3912,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 146,
                 Exp = 4530,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 60,
                     Magic = 20,
                     Endurance = 54,
                     Agility = 29,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -3948,14 +3948,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 100,
                 Exp = 1500,
                 Yen = "¥2000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 7,
                     Magic = 7,
                     Endurance = 45,
                     Agility = 25,
                     Luck = 50
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -3993,14 +3993,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 354,
                 Exp = 4370,
                 Yen = "¥390",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 45,
                     Endurance = 31,
                     Agility = 50,
                     Luck = 46
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4035,14 +4035,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 294,
                 Exp = 3870,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 62,
                     Magic = 50,
                     Endurance = 27,
                     Agility = 47,
                     Luck = 40
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4071,14 +4071,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 169,
                 Exp = 1900,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 12,
                     Endurance = 65,
                     Agility = 72,
                     Luck = 80
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4113,14 +4113,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 128,
                 Exp = 5000,
                 Yen = "¥430",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 57,
                     Magic = 50,
                     Endurance = 31,
                     Agility = 58,
                     Luck = 43
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -4161,14 +4161,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 130,
                 Exp = 8200,
                 Yen = "¥450",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 71,
                     Magic = 56,
                     Endurance = 54,
                     Agility = 54,
                     Luck = 39
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -4212,14 +4212,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 136,
                 Exp = 210,
                 Yen = "¥190",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 5,
                     Magic = 10,
                     Endurance = 7,
                     Agility = 15,
                     Luck = 9
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Null,
@@ -4254,14 +4254,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 153,
                 Exp = 3780,
                 Yen = "¥330",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 44,
                     Magic = 35,
                     Endurance = 28,
                     Agility = 39,
                     Luck = 26
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4287,14 +4287,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 27,
                 Exp = 350,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 15,
                     Endurance = 12,
                     Agility = 14,
                     Luck = 19
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -4314,14 +4314,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 148,
                 Exp = 1530,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 33,
                     Endurance = 18,
                     Agility = 33,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -4353,14 +4353,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 148,
                 Exp = 1530,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 33,
                     Endurance = 18,
                     Agility = 33,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -4392,14 +4392,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 385,
                 Exp = 4000,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 99,
                     Magic = 77,
                     Endurance = 1,
                     Agility = 43,
                     Luck = 58
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -4437,14 +4437,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 197,
                 Exp = 2480,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 32,
                     Endurance = 35,
                     Agility = 47,
                     Luck = 47
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4470,14 +4470,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 25,
                 Exp = 1150,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 31,
                     Magic = 16,
                     Endurance = 20,
                     Agility = 20,
                     Luck = 20
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -4503,14 +4503,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 1000,
                 Exp = 4650,
                 Yen = "¥1000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 28,
                     Endurance = 15,
                     Agility = 12,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4542,14 +4542,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 140,
                 Exp = 5060,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 34,
                     Endurance = 40,
                     Agility = 46,
                     Luck = 31
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4581,14 +4581,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 174,
                 Exp = 1200,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 28,
                     Endurance = 17,
                     Agility = 32,
                     Luck = 26
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -4617,14 +4617,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 44,
                 Exp = 280,
                 Yen = "¥140",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 22,
                     Endurance = 10,
                     Agility = 14,
                     Luck = 10
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4647,14 +4647,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 999,
                 Exp = 10000,
                 Yen = "¥10000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 55,
                     Magic = 16,
                     Endurance = 62,
                     Agility = 42,
                     Luck = 99
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -4686,14 +4686,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 158,
                 Exp = 3270,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 29,
                     Endurance = 49,
                     Agility = 44,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -4725,14 +4725,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 344,
                 Exp = -1,
                 Yen = "¥-1",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 51,
                     Magic = 58,
                     Endurance = 32,
                     Agility = 40,
                     Luck = 34
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Reflect,
@@ -4770,14 +4770,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 298,
                 Exp = 1660,
                 Yen = "¥420",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 53,
                     Magic = 59,
                     Endurance = 53,
                     Agility = 54,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -4806,14 +4806,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 203,
                 Exp = 2000,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 34,
                     Endurance = 25,
                     Agility = 33,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -4839,14 +4839,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 139,
                 Exp = 4150,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 55,
                     Magic = 42,
                     Endurance = 51,
                     Agility = 47,
                     Luck = 38
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -4875,14 +4875,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 139,
                 Exp = 4150,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 55,
                     Magic = 42,
                     Endurance = 51,
                     Agility = 47,
                     Luck = 38
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -4911,14 +4911,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 76,
                 Exp = 540,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 18,
                     Endurance = 21,
                     Agility = 25,
                     Luck = 24
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -4944,14 +4944,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 76,
                 Exp = 540,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 18,
                     Endurance = 21,
                     Agility = 25,
                     Luck = 24
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -4977,14 +4977,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 48,
                 Exp = 380,
                 Yen = "¥220",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 16,
                     Endurance = 13,
                     Agility = 17,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -5013,14 +5013,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 179,
                 Exp = 490,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 20,
                     Endurance = 13,
                     Agility = 27,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5055,14 +5055,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 100,
                 Exp = 8960,
                 Yen = "¥600",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 27,
                     Endurance = 32,
                     Agility = 30,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5088,14 +5088,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 243,
                 Exp = 3940,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 50,
                     Magic = 30,
                     Endurance = 40,
                     Agility = 47,
                     Luck = 41
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -5127,14 +5127,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 29,
                 Exp = 425,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 17,
                     Endurance = 10,
                     Agility = 20,
                     Luck = 20
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5163,14 +5163,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 154,
                 Exp = 153,
                 Yen = "¥190",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 7,
                     Magic = 9,
                     Endurance = 8,
                     Agility = 7,
                     Luck = 8
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5202,14 +5202,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 344,
                 Exp = 1300,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 58,
                     Endurance = 32,
                     Agility = 40,
                     Luck = 64
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Reflect,
@@ -5241,14 +5241,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 322,
                 Exp = 1520,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 24,
                     Magic = 29,
                     Endurance = 25,
                     Agility = 28,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5280,14 +5280,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 232,
                 Exp = 590,
                 Yen = "¥240",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 19,
                     Endurance = 14,
                     Agility = 23,
                     Luck = 20
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -5316,14 +5316,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 363,
                 Exp = 2480,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 37,
                     Endurance = 38,
                     Agility = 35,
                     Luck = 40
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5355,14 +5355,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 500,
                 Exp = 23000,
                 Yen = "¥1000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 78,
                     Endurance = 32,
                     Agility = 50,
                     Luck = 30
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Absorb,
@@ -5424,14 +5424,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 157,
                 Exp = 600,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 28,
                     Endurance = 20,
                     Agility = 28,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -5460,14 +5460,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 200,
                 Exp = 34000,
                 Yen = "¥12500",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 30,
                     Endurance = 45,
                     Agility = 75,
                     Luck = 65
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -5547,14 +5547,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 51,
                 Exp = 32,
                 Yen = "¥140",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 5,
                     Magic = 5,
                     Endurance = 3,
                     Agility = 3,
                     Luck = 3
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -5577,14 +5577,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 328,
                 Exp = 1000,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 56,
                     Magic = 37,
                     Endurance = 50,
                     Agility = 42,
                     Luck = 36
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -5610,14 +5610,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 151,
                 Exp = 2340,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 29,
                     Endurance = 18,
                     Agility = 40,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -5646,14 +5646,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 245,
                 Exp = 850,
                 Yen = "¥270",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 27,
                     Endurance = 24,
                     Agility = 36,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -5682,14 +5682,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 10,
                 Exp = 78,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 1,
                     Magic = 6,
                     Endurance = 5,
                     Agility = 2,
                     Luck = 7
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -5712,14 +5712,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 135,
                 Exp = 352,
                 Yen = "¥180",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 6,
                     Magic = 8,
                     Endurance = 8,
                     Agility = 6,
                     Luck = 9
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -5754,14 +5754,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 411,
                 Exp = 2020,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 24,
                     Magic = 48,
                     Endurance = 36,
                     Agility = 41,
                     Luck = 30
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5793,14 +5793,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 127,
                 Exp = 2110,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 28,
                     Endurance = 20,
                     Agility = 33,
                     Luck = 26
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -5826,14 +5826,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 330,
                 Exp = 675,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 26,
                     Magic = 35,
                     Endurance = 19,
                     Agility = 23,
                     Luck = 5
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -5856,14 +5856,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 155,
                 Exp = 2550,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 35,
                     Endurance = 25,
                     Agility = 40,
                     Luck = 40
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5889,14 +5889,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 310,
                 Exp = 9230,
                 Yen = "¥570",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 65,
                     Magic = 40,
                     Endurance = 42,
                     Agility = 48,
                     Luck = 45
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Absorb,
@@ -5937,14 +5937,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 583,
                 Exp = 8410,
                 Yen = "¥470",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 52,
                     Magic = 70,
                     Endurance = 18,
                     Agility = 50,
                     Luck = 26
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Weak,
@@ -5979,14 +5979,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 234,
                 Exp = 7250,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 72,
                     Magic = 30,
                     Endurance = 55,
                     Agility = 52,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Reflect,
@@ -6027,14 +6027,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 234,
                 Exp = 7250,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 72,
                     Magic = 30,
                     Endurance = 55,
                     Agility = 52,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Reflect,
@@ -6075,14 +6075,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 30,
                 Exp = 390,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 12,
                     Magic = 16,
                     Endurance = 14,
                     Agility = 22,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -6108,14 +6108,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 218,
                 Exp = 2060,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 60,
                     Magic = 43,
                     Endurance = 50,
                     Agility = 44,
                     Luck = 43
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -6147,14 +6147,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 1000,
                 Exp = 8200,
                 Yen = "¥1000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 15,
                     Endurance = 30,
                     Agility = 38,
                     Luck = 18
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -6192,14 +6192,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 106,
                 Exp = 770,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 22,
                     Endurance = 28,
                     Agility = 26,
                     Luck = 24
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -6222,14 +6222,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 88,
                 Exp = 140,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 6,
                     Magic = 12,
                     Endurance = 8,
                     Agility = 18,
                     Luck = 10
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -6258,14 +6258,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 383,
                 Exp = 1700,
                 Yen = "¥420",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 55,
                     Endurance = 53,
                     Agility = 60,
                     Luck = 46
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Reflect,
@@ -6294,14 +6294,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 94,
                 Exp = 1940,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 22,
                     Endurance = 48,
                     Agility = 40,
                     Luck = 23
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -6330,14 +6330,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 230,
                 Exp = 2760,
                 Yen = "¥350",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 37,
                     Endurance = 40,
                     Agility = 45,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6369,14 +6369,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 155,
                 Exp = -1,
                 Yen = "¥-1",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = -1,
                     Magic = -1,
                     Endurance = -1,
                     Agility = -1,
                     Luck = -1
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Reflect,
@@ -6405,14 +6405,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 379,
                 Exp = 3120,
                 Yen = "¥450",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 63,
                     Magic = 59,
                     Endurance = 54,
                     Agility = 42,
                     Luck = 88
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -6456,14 +6456,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 100,
                 Exp = 23220,
                 Yen = "¥520",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 69,
                     Magic = 44,
                     Endurance = 63,
                     Agility = 50,
                     Luck = 51
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -6486,14 +6486,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 339,
                 Exp = 1720,
                 Yen = "¥420",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 45,
                     Endurance = 48,
                     Agility = 56,
                     Luck = 44
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -6531,14 +6531,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 57,
                 Exp = 380,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 12,
                     Endurance = 12,
                     Agility = 14,
                     Luck = 8
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6564,14 +6564,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 57,
                 Exp = 380,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 12,
                     Endurance = 12,
                     Agility = 14,
                     Luck = 8
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6597,14 +6597,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 500,
                 Exp = 30000,
                 Yen = "¥12000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 30,
                     Endurance = 40,
                     Agility = 65,
                     Luck = 55
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Absorb,
@@ -6663,14 +6663,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 87,
                 Exp = 2720,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 30,
                     Endurance = 20,
                     Agility = 34,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -6699,14 +6699,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 263,
                 Exp = 1530,
                 Yen = "¥220",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 40,
                     Endurance = 30,
                     Agility = 38,
                     Luck = 33
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -6738,14 +6738,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 100,
                 Exp = 450,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 18,
                     Endurance = 10,
                     Agility = 19,
                     Luck = 15
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Reflect,
@@ -6765,14 +6765,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 438,
                 Exp = 1960,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 49,
                     Endurance = 52,
                     Agility = 50,
                     Luck = 58
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -6801,14 +6801,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 122,
                 Exp = 4780,
                 Yen = "¥390",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 70,
                     Endurance = 20,
                     Agility = 48,
                     Luck = 40
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6840,14 +6840,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 469,
                 Exp = 2890,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 16,
                     Magic = 48,
                     Endurance = 24,
                     Agility = 44,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -6876,14 +6876,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 152,
                 Exp = 162,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 2,
                     Magic = 7,
                     Endurance = 7,
                     Agility = 8,
                     Luck = 13
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6915,14 +6915,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 189,
                 Exp = 350,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 7,
                     Magic = 16,
                     Endurance = 12,
                     Agility = 10,
                     Luck = 14
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6954,14 +6954,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 483,
                 Exp = 4560,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 55,
                     Endurance = 25,
                     Agility = 47,
                     Luck = 39
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Absorb,
@@ -6996,14 +6996,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 59,
                 Exp = 520,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 15,
                     Endurance = 25,
                     Agility = 20,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -7029,14 +7029,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 43,
                 Exp = 212,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 6,
                     Magic = 8,
                     Endurance = 7,
                     Agility = 5,
                     Luck = 8
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7074,14 +7074,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 385,
                 Exp = 1680,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 29,
                     Magic = 43,
                     Endurance = 26,
                     Agility = 34,
                     Luck = 24
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7116,14 +7116,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 256,
                 Exp = 1100,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 35,
                     Endurance = 40,
                     Agility = 40,
                     Luck = 34
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -7155,14 +7155,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 511,
                 Exp = 1650,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 15,
                     Magic = 57,
                     Endurance = 59,
                     Agility = 37,
                     Luck = 59
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Null,
@@ -7206,14 +7206,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 472,
                 Exp = 1500,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 24,
                     Magic = 44,
                     Endurance = 35,
                     Agility = 38,
                     Luck = 28
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -7242,14 +7242,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 523,
                 Exp = 1950,
                 Yen = "¥400",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 58,
                     Magic = 58,
                     Endurance = 45,
                     Agility = 53,
                     Luck = 55
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Null,
@@ -7275,14 +7275,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 451,
                 Exp = 860,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 42,
                     Endurance = 14,
                     Agility = 38,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -7311,14 +7311,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 120,
                 Exp = 2480,
                 Yen = "¥430",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 64,
                     Magic = 46,
                     Endurance = 72,
                     Agility = 54,
                     Luck = 41
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7356,14 +7356,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 511,
                 Exp = 2070,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 57,
                     Endurance = 45,
                     Agility = 58,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -7398,14 +7398,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 523,
                 Exp = -1,
                 Yen = "¥-1",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 49,
                     Magic = 57,
                     Endurance = 30,
                     Agility = 47,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -7434,14 +7434,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 85,
                 Exp = 240,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 12,
                     Endurance = 10,
                     Agility = 12,
                     Luck = 10
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Reflect,
@@ -7470,14 +7470,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 73,
                 Exp = 2800,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 18,
                     Endurance = 31,
                     Agility = 30,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Reflect,
@@ -7509,14 +7509,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 79,
                 Exp = 1450,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 18,
                     Endurance = 23,
                     Agility = 22,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -7542,14 +7542,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 56,
                 Exp = 760,
                 Yen = "¥240",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 34,
                     Magic = 9,
                     Endurance = 17,
                     Agility = 19,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -7572,14 +7572,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 126,
                 Exp = 4130,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 44,
                     Magic = 37,
                     Endurance = 37,
                     Agility = 46,
                     Luck = 33
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Absorb,
@@ -7608,14 +7608,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 149,
                 Exp = 1380,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 28,
                     Endurance = 23,
                     Agility = 36,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -7644,14 +7644,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 149,
                 Exp = 1380,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 28,
                     Endurance = 23,
                     Agility = 36,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -7680,14 +7680,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 119,
                 Exp = 1900,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 39,
                     Magic = 32,
                     Endurance = 16,
                     Agility = 37,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -7713,14 +7713,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 193,
                 Exp = 960,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 30,
                     Endurance = 24,
                     Agility = 30,
                     Luck = 26
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -7746,14 +7746,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 190,
                 Exp = 680,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 30,
                     Endurance = 18,
                     Agility = 29,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Weak,
@@ -7779,14 +7779,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 131,
                 Exp = 200,
                 Yen = "¥190",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 2,
                     Magic = 16,
                     Endurance = 12,
                     Agility = 10,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -7815,14 +7815,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 296,
                 Exp = 880,
                 Yen = "¥260",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 29,
                     Endurance = 17,
                     Agility = 25,
                     Luck = 22
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -7848,14 +7848,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 178,
                 Exp = 800,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 28,
                     Endurance = 25,
                     Agility = 26,
                     Luck = 21
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -7878,14 +7878,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 193,
                 Exp = 940,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 30,
                     Endurance = 28,
                     Agility = 27,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -7908,14 +7908,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 40,
                 Exp = 530,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 28,
                     Endurance = 22,
                     Agility = 26,
                     Luck = 28
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Reflect,
@@ -7941,14 +7941,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 203,
                 Exp = 580,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 28,
                     Endurance = 13,
                     Agility = 16,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -7974,14 +7974,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 136,
                 Exp = 240,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 12,
                     Magic = 6,
                     Endurance = 10,
                     Agility = 14,
                     Luck = 14
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -8007,14 +8007,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 169,
                 Exp = 2480,
                 Yen = "¥430",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 57,
                     Magic = 45,
                     Endurance = 62,
                     Agility = 50,
                     Luck = 58
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -8052,14 +8052,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 113,
                 Exp = 2310,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 20,
                     Endurance = 60,
                     Agility = 28,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8088,14 +8088,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 428,
                 Exp = 1780,
                 Yen = "¥430",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 88,
                     Magic = 42,
                     Endurance = 49,
                     Agility = 54,
                     Luck = 39
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -8127,14 +8127,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 354,
                 Exp = 2080,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 46,
                     Endurance = 36,
                     Agility = 42,
                     Luck = 34
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8172,14 +8172,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 77,
                 Exp = 2660,
                 Yen = "¥440",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 1,
                     Magic = 77,
                     Endurance = 55,
                     Agility = 55,
                     Luck = 77
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8208,14 +8208,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 405,
                 Exp = 2080,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 38,
                     Endurance = 21,
                     Agility = 32,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -8247,14 +8247,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 519,
                 Exp = 4420,
                 Yen = "¥390",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 72,
                     Endurance = 38,
                     Agility = 48,
                     Luck = 45
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Reflect,
@@ -8283,14 +8283,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 386,
                 Exp = 2100,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 42,
                     Endurance = 31,
                     Agility = 37,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -8322,14 +8322,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 149,
                 Exp = 2120,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 31,
                     Endurance = 31,
                     Agility = 44,
                     Luck = 44
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Absorb,
@@ -8358,14 +8358,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 231,
                 Exp = 950,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 58,
                     Magic = 29,
                     Endurance = 35,
                     Agility = 45,
                     Luck = 40
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -8394,14 +8394,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 210,
                 Exp = 1580,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 30,
                     Endurance = 15,
                     Agility = 32,
                     Luck = 29
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -8433,14 +8433,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 246,
                 Exp = 2450,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 29,
                     Endurance = 38,
                     Agility = 30,
                     Luck = 24
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8475,14 +8475,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 62,
                 Exp = 82,
                 Yen = "¥200",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 8,
                     Magic = 5,
                     Endurance = 10,
                     Agility = 2,
                     Luck = 9
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -8520,14 +8520,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 80,
                 Exp = 240,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 12,
                     Endurance = 16,
                     Agility = 8,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -8553,14 +8553,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 322,
                 Exp = 1350,
                 Yen = "¥300",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 38,
                     Endurance = 20,
                     Agility = 32,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8589,14 +8589,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 421,
                 Exp = 3250,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 53,
                     Endurance = 24,
                     Agility = 50,
                     Luck = 50
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8628,14 +8628,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 179,
                 Exp = 1430,
                 Yen = "¥400",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 35,
                     Endurance = 44,
                     Agility = 53,
                     Luck = 55
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8673,14 +8673,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 83,
                 Exp = 480,
                 Yen = "¥240",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 19,
                     Endurance = 19,
                     Agility = 20,
                     Luck = 19
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8703,14 +8703,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 440,
                 Exp = 1680,
                 Yen = "¥250",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 15,
                     Magic = 35,
                     Endurance = 18,
                     Agility = 24,
                     Luck = 17
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8736,14 +8736,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 150,
                 Exp = 5040,
                 Yen = "¥390",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 68,
                     Magic = 38,
                     Endurance = 36,
                     Agility = 47,
                     Luck = 41
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8775,14 +8775,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 60,
                 Exp = 3950,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 56,
                     Endurance = 30,
                     Agility = 50,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -8811,14 +8811,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 2000,
                 Exp = 24570,
                 Yen = "¥520",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 54,
                     Endurance = 67,
                     Agility = 55,
                     Luck = 75
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8853,14 +8853,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 35,
                 Exp = 30,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 2,
                     Magic = 2,
                     Endurance = 5,
                     Agility = 1,
                     Luck = 1
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -8883,14 +8883,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 129,
                 Exp = 1500,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 44,
                     Magic = 33,
                     Endurance = 55,
                     Agility = 37,
                     Luck = 46
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8934,14 +8934,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 133,
                 Exp = 9990,
                 Yen = "¥770",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 60,
                     Magic = 42,
                     Endurance = 1,
                     Agility = 51,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8970,14 +8970,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 84,
                 Exp = 390,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 12,
                     Magic = 10,
                     Endurance = 12,
                     Agility = 19,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9000,14 +9000,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 129,
                 Exp = 420,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 16,
                     Endurance = 12,
                     Agility = 18,
                     Luck = 20
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9030,14 +9030,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 44,
                 Exp = 1100,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 28,
                     Endurance = 20,
                     Agility = 29,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Reflect,
@@ -9066,14 +9066,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 429,
                 Exp = 5000,
                 Yen = "¥400",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 62,
                     Magic = 95,
                     Endurance = 48,
                     Agility = 60,
                     Luck = 26
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -9105,14 +9105,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 445,
                 Exp = 950,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 23,
                     Magic = 58,
                     Endurance = 14,
                     Agility = 48,
                     Luck = 22
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9147,14 +9147,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 242,
                 Exp = 760,
                 Yen = "¥270",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 24,
                     Endurance = 25,
                     Agility = 30,
                     Luck = 28
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -9186,14 +9186,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 96,
                 Exp = 2380,
                 Yen = "¥350",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 55,
                     Magic = 35,
                     Endurance = 48,
                     Agility = 35,
                     Luck = 22
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -9228,14 +9228,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 55,
                 Exp = 3400,
                 Yen = "¥290",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 41,
                     Magic = 14,
                     Endurance = 34,
                     Agility = 30,
                     Luck = 22
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -9261,14 +9261,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 259,
                 Exp = 2110,
                 Yen = "¥430",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 44,
                     Magic = 69,
                     Endurance = 51,
                     Agility = 56,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -9300,14 +9300,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 666,
                 Exp = 1800,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 25,
                     Endurance = 58,
                     Agility = 49,
                     Luck = 52
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -9348,14 +9348,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 485,
                 Exp = 1750,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 26,
                     Magic = 67,
                     Endurance = 85,
                     Agility = 82,
                     Luck = 47
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -9390,14 +9390,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 300,
                 Exp = 2430,
                 Yen = "¥440",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 34,
                     Endurance = 72,
                     Agility = 60,
                     Luck = 52
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Absorb,
@@ -9432,14 +9432,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 519,
                 Exp = 1600,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 34,
                     Magic = 51,
                     Endurance = 5,
                     Agility = 65,
                     Luck = 32
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -9480,14 +9480,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 500,
                 Exp = 20000,
                 Yen = "¥9000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 30,
                     Endurance = 45,
                     Agility = 55,
                     Luck = 45
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Resistant,
@@ -9543,14 +9543,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 12000,
                 Exp = 5000,
                 Yen = "¥13",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 99,
                     Magic = 80,
                     Endurance = 80,
                     Agility = 75,
                     Luck = 99
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9645,14 +9645,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 22,
                 Exp = 88,
                 Yen = "¥160",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 4,
                     Magic = 6,
                     Endurance = 5,
                     Agility = 6,
                     Luck = 7
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -9684,14 +9684,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 165,
                 Exp = 380,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 10,
                     Magic = 15,
                     Endurance = 11,
                     Agility = 15,
                     Luck = 15
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9720,14 +9720,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 165,
                 Exp = 380,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 10,
                     Magic = 15,
                     Endurance = 11,
                     Agility = 15,
                     Luck = 15
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9756,14 +9756,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 138,
                 Exp = 1680,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 39,
                     Magic = 27,
                     Endurance = 24,
                     Agility = 41,
                     Luck = 36
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -9792,14 +9792,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 206,
                 Exp = 4020,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 52,
                     Magic = 39,
                     Endurance = 30,
                     Agility = 48,
                     Luck = 41
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -9825,14 +9825,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 487,
                 Exp = 2480,
                 Yen = "¥360",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 48,
                     Endurance = 28,
                     Agility = 43,
                     Luck = 42
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Reflect,
@@ -9864,14 +9864,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 140,
                 Exp = 580,
                 Yen = "¥240",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 20,
                     Endurance = 16,
                     Agility = 19,
                     Luck = 16
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -9894,14 +9894,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 98,
                 Exp = 220,
                 Yen = "¥210",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 9,
                     Magic = 10,
                     Endurance = 12,
                     Agility = 18,
                     Luck = 12
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9930,14 +9930,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 133,
                 Exp = 2670,
                 Yen = "¥440",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 67,
                     Magic = 72,
                     Endurance = 54,
                     Agility = 58,
                     Luck = 49
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Null,
@@ -9972,14 +9972,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 250,
                 Exp = 6000,
                 Yen = "¥5000",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 10,
                     Magic = 15,
                     Endurance = 50,
                     Agility = 35,
                     Luck = 25
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -10026,14 +10026,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 245,
                 Exp = 1250,
                 Yen = "¥0",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 42,
                     Endurance = 75,
                     Agility = 38,
                     Luck = 66
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -10062,14 +10062,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 334,
                 Exp = 740,
                 Yen = "¥280",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 29,
                     Endurance = 17,
                     Agility = 30,
                     Luck = 24
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -10113,14 +10113,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 201,
                 Exp = 3330,
                 Yen = "¥320",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 25,
                     Endurance = 29,
                     Agility = 35,
                     Luck = 23
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -10149,14 +10149,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 120,
                 Exp = 1530,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 27,
                     Endurance = 21,
                     Agility = 37,
                     Luck = 27
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -10185,14 +10185,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 269,
                 Exp = 420,
                 Yen = "¥230",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 1,
                     Magic = 19,
                     Endurance = 10,
                     Agility = 16,
                     Luck = 15
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -10224,14 +10224,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 576,
                 Exp = 2300,
                 Yen = "¥310",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 55,
                     Endurance = 21,
                     Agility = 35,
                     Luck = 34
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -10257,14 +10257,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 1000,
                 Exp = 22980,
                 Yen = "¥410",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 45,
                     Endurance = 45,
                     Agility = 45,
                     Luck = 45
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -10299,14 +10299,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 445,
                 Exp = 2080,
                 Yen = "¥380",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 34,
                     Magic = 58,
                     Endurance = 44,
                     Agility = 60,
                     Luck = 38
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Null,
@@ -10344,14 +10344,14 @@ namespace Persona4GoldenHelper.Data.Data
                 SP = 230,
                 Exp = 4740,
                 Yen = "¥370",
-                Stats = new ShadowStats() {
+                Stats = new Stats() {
                     Strength = 47,
                     Magic = 43,
                     Endurance = 34,
                     Agility = 43,
                     Luck = 37
                 },
-                Elements = new ShadowElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Absorb,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,

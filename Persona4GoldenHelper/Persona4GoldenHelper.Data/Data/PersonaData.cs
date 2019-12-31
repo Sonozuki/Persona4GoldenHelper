@@ -12,14 +12,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Izanagi",
                 Arcana = "Fool",
                 Level = 1,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 3,
                     Magic = 2,
                     Endurance = 2,
                     Agility = 3,
                     Luck = 2
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -57,14 +57,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Pixie",
                 Arcana = "Magician",
                 Level = 2,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 2,
                     Magic = 3,
                     Endurance = 2,
                     Agility = 4,
                     Luck = 2
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -102,14 +102,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Slime",
                 Arcana = "Chariot",
                 Level = 2,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 3,
                     Magic = 2,
                     Endurance = 3,
                     Agility = 2,
                     Luck = 3
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -151,14 +151,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ukobach",
                 Arcana = "Devil",
                 Level = 3,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 3,
                     Magic = 4,
                     Endurance = 3,
                     Agility = 4,
                     Luck = 2
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -200,14 +200,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Angel",
                 Arcana = "Justice",
                 Level = 4,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 4,
                     Magic = 5,
                     Endurance = 2,
                     Agility = 5,
                     Luck = 3
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -249,14 +249,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Apsaras",
                 Arcana = "Temperance",
                 Level = 4,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 3,
                     Magic = 5,
                     Endurance = 3,
                     Agility = 5,
                     Luck = 3
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -294,14 +294,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Sandman",
                 Arcana = "Strength",
                 Level = 5,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 4,
                     Magic = 5,
                     Endurance = 6,
                     Agility = 4,
                     Luck = 3
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -343,14 +343,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Nata Taishi",
                 Arcana = "Chariot",
                 Level = 6,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 6,
                     Magic = 2,
                     Endurance = 6,
                     Agility = 7,
                     Luck = 4
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -396,14 +396,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Forneus",
                 Arcana = "Hermit",
                 Level = 6,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 4,
                     Magic = 5,
                     Endurance = 7,
                     Agility = 6,
                     Luck = 3
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -445,14 +445,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yomotsu-Shikome",
                 Arcana = "Fool",
                 Level = 7,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 2,
                     Magic = 7,
                     Endurance = 7,
                     Agility = 8,
                     Luck = 4
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -494,14 +494,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Omoikane",
                 Arcana = "Hierophant",
                 Level = 7,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 5,
                     Magic = 8,
                     Endurance = 5,
                     Agility = 4,
                     Luck = 6
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -547,14 +547,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Orobas",
                 Arcana = "Magician",
                 Level = 8,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 4,
                     Magic = 10,
                     Endurance = 6,
                     Agility = 7,
                     Luck = 4
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -596,14 +596,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Valkyrie",
                 Arcana = "Strength",
                 Level = 8,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 7,
                     Magic = 6,
                     Endurance = 6,
                     Agility = 7,
                     Luck = 5
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -645,14 +645,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Senri",
                 Arcana = "Empress",
                 Level = 9,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 7,
                     Magic = 7,
                     Endurance = 4,
                     Agility = 11,
                     Luck = 5
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -694,14 +694,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ghoul",
                 Arcana = "Death",
                 Level = 9,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 8,
                     Magic = 7,
                     Endurance = 9,
                     Agility = 5,
                     Luck = 5
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -747,14 +747,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Lilim",
                 Arcana = "Devil",
                 Level = 10,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 4,
                     Magic = 11,
                     Endurance = 5,
                     Agility = 9,
                     Luck = 8
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -796,14 +796,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Cu Sith",
                 Arcana = "Sun",
                 Level = 10,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 10,
                     Magic = 5,
                     Endurance = 6,
                     Agility = 9,
                     Luck = 7
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -849,14 +849,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Saki Mitama",
                 Arcana = "Priestess",
                 Level = 11,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 5,
                     Magic = 12,
                     Endurance = 5,
                     Agility = 8,
                     Luck = 10
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -898,14 +898,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Archangel",
                 Arcana = "Justice",
                 Level = 11,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 8,
                     Magic = 9,
                     Endurance = 7,
                     Agility = 7,
                     Luck = 9
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -951,14 +951,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Sylph",
                 Arcana = "Temperance",
                 Level = 11,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 8,
                     Magic = 10,
                     Endurance = 5,
                     Agility = 10,
                     Luck = 7
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1000,14 +1000,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Oberon",
                 Arcana = "Emperor",
                 Level = 12,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 10,
                     Magic = 12,
                     Endurance = 8,
                     Agility = 8,
                     Luck = 5
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -1053,14 +1053,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Eligor",
                 Arcana = "Chariot",
                 Level = 12,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 6,
                     Endurance = 13,
                     Agility = 8,
                     Luck = 5
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1106,14 +1106,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Obariyon",
                 Arcana = "Fool",
                 Level = 13,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 6,
                     Endurance = 11,
                     Agility = 9,
                     Luck = 9
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -1159,14 +1159,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Titan",
                 Arcana = "Strength",
                 Level = 14,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 12,
                     Endurance = 10,
                     Agility = 10,
                     Luck = 6
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -1208,14 +1208,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mokoi",
                 Arcana = "Death",
                 Level = 14,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 7,
                     Endurance = 9,
                     Agility = 11,
                     Luck = 9
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -1261,14 +1261,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Anzu",
                 Arcana = "Hierophant",
                 Level = 15,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 9,
                     Magic = 11,
                     Endurance = 10,
                     Agility = 13,
                     Luck = 9
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -1314,14 +1314,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Berith",
                 Arcana = "Hanged Man",
                 Level = 15,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 12,
                     Magic = 10,
                     Endurance = 9,
                     Agility = 12,
                     Luck = 9
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -1367,14 +1367,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Jack Frost",
                 Arcana = "Magician",
                 Level = 16,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 10,
                     Magic = 14,
                     Endurance = 12,
                     Agility = 11,
                     Luck = 8
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -1412,14 +1412,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Xiezhai",
                 Arcana = "Temperance",
                 Level = 16,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 12,
                     Endurance = 9,
                     Agility = 13,
                     Luck = 7
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1465,14 +1465,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Sarasvati",
                 Arcana = "Pristess",
                 Level = 17,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 9,
                     Magic = 16,
                     Endurance = 10,
                     Agility = 13,
                     Luck = 10
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -1518,14 +1518,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ippon-Datara",
                 Arcana = "Hermit",
                 Level = 17,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 15,
                     Magic = 6,
                     Endurance = 14,
                     Agility = 13,
                     Luck = 10
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -1567,14 +1567,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yaksini",
                 Arcana = "Empress",
                 Level = 18,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 16,
                     Endurance = 10,
                     Agility = 12,
                     Luck = 10
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -1620,14 +1620,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ame No Uzume",
                 Arcana = "Aeon",
                 Level = 18,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 9,
                     Magic = 15,
                     Endurance = 12,
                     Agility = 10,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1673,14 +1673,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ara Mitama",
                 Arcana = "Chariot",
                 Level = 18,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 11,
                     Endurance = 11,
                     Agility = 11,
                     Luck = 11
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1722,14 +1722,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Principality",
                 Arcana = "Justice",
                 Level = 19,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 15,
                     Endurance = 10,
                     Agility = 18,
                     Luck = 10
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1775,14 +1775,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Vetala",
                 Arcana = "Devil",
                 Level = 19,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 10,
                     Endurance = 14,
                     Agility = 12,
                     Luck = 11
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -1828,14 +1828,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Andras",
                 Arcana = "Moon",
                 Level = 20,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 16,
                     Endurance = 13,
                     Agility = 12,
                     Luck = 12
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1881,14 +1881,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Gurr",
                 Arcana = "Jester",
                 Level = 20,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 16,
                     Magic = 11,
                     Endurance = 14,
                     Agility = 15,
                     Luck = 11
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -1930,14 +1930,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Phoenix",
                 Arcana = "Sun",
                 Level = 20,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 9,
                     Magic = 15,
                     Endurance = 9,
                     Agility = 20,
                     Luck = 14
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -1983,14 +1983,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Legion",
                 Arcana = "Fool",
                 Level = 21,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 14,
                     Endurance = 18,
                     Agility = 13,
                     Luck = 11
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -2036,14 +2036,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Shiisaa",
                 Arcana = "Hierophant",
                 Level = 21,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 18,
                     Endurance = 9,
                     Agility = 14,
                     Luck = 11
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -2089,14 +2089,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "High Pixie",
                 Arcana = "Priestess",
                 Level = 22,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 10,
                     Magic = 21,
                     Endurance = 10,
                     Agility = 19,
                     Luck = 13
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -2142,14 +2142,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "King Frost",
                 Arcana = "Emperor",
                 Level = 22,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 11,
                     Magic = 20,
                     Endurance = 17,
                     Agility = 13,
                     Luck = 12
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -2199,14 +2199,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yomotsu-Ikusa",
                 Arcana = "Hanged Man",
                 Level = 22,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 16,
                     Endurance = 18,
                     Agility = 12,
                     Luck = 10
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Resistant,
@@ -2248,14 +2248,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Rakshasa",
                 Arcana = "Strength",
                 Level = 23,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 12,
                     Endurance = 18,
                     Agility = 14,
                     Luck = 13
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -2301,14 +2301,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Nigi Mitama",
                 Arcana = "Temperance",
                 Level = 23,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 15,
                     Magic = 16,
                     Endurance = 14,
                     Agility = 15,
                     Luck = 16
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2354,14 +2354,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Matador",
                 Arcana = "Death",
                 Level = 24,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 10,
                     Endurance = 16,
                     Agility = 25,
                     Luck = 11
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -2407,14 +2407,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Narcissus",
                 Arcana = "Aeon",
                 Level = 24,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 13,
                     Magic = 18,
                     Endurance = 11,
                     Agility = 16,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -2460,14 +2460,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kaiwan",
                 Arcana = "Star",
                 Level = 24,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 16,
                     Magic = 23,
                     Endurance = 14,
                     Agility = 15,
                     Luck = 11
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2513,14 +2513,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Hua Po",
                 Arcana = "Magician",
                 Level = 25,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 14,
                     Magic = 21,
                     Endurance = 15,
                     Agility = 17,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -2566,14 +2566,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Queen Mab",
                 Arcana = "Lovers",
                 Level = 25,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 19,
                     Endurance = 15,
                     Agility = 17,
                     Luck = 14
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2619,14 +2619,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ares",
                 Arcana = "Chariot",
                 Level = 25,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 15,
                     Endurance = 20,
                     Agility = 15,
                     Luck = 14
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2668,14 +2668,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Titania",
                 Arcana = "Empress",
                 Level = 26,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 12,
                     Magic = 23,
                     Endurance = 15,
                     Agility = 19,
                     Luck = 16
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -2717,14 +2717,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Lamia",
                 Arcana = "Hermit",
                 Level = 26,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 16,
                     Magic = 23,
                     Endurance = 12,
                     Agility = 20,
                     Luck = 14
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -2770,14 +2770,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Power",
                 Arcana = "Justice",
                 Level = 27,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 20,
                     Endurance = 11,
                     Agility = 17,
                     Luck = 19
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -2827,14 +2827,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Take-Minakata",
                 Arcana = "Jester",
                 Level = 27,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 20,
                     Endurance = 22,
                     Agility = 14,
                     Luck = 12
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -2876,14 +2876,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Makami",
                 Arcana = "Hanged Man",
                 Level = 27,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 16,
                     Magic = 21,
                     Endurance = 13,
                     Agility = 22,
                     Luck = 16
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -2929,14 +2929,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Nozuchi",
                 Arcana = "Moon",
                 Level = 27,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 26,
                     Magic = 13,
                     Endurance = 19,
                     Agility = 15,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -2982,14 +2982,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kusi Mitama",
                 Arcana = "Strength",
                 Level = 28,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 18,
                     Magic = 21,
                     Endurance = 12,
                     Agility = 19,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3035,14 +3035,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Incubus",
                 Arcana = "Devil",
                 Level = 28,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 22,
                     Endurance = 16,
                     Agility = 19,
                     Luck = 17
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -3084,14 +3084,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ganga",
                 Arcana = "Priestess",
                 Level = 29,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 16,
                     Magic = 22,
                     Endurance = 16,
                     Agility = 19,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -3137,14 +3137,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Unicorn",
                 Arcana = "Hierophant",
                 Level = 29,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 22,
                     Endurance = 19,
                     Agility = 22,
                     Luck = 14
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -3190,14 +3190,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Oni",
                 Arcana = "Strength",
                 Level = 30,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 12,
                     Endurance = 26,
                     Agility = 18,
                     Luck = 16
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -3243,14 +3243,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ose",
                 Arcana = "Fool",
                 Level = 31,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 12,
                     Endurance = 20,
                     Agility = 25,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3296,14 +3296,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mithra",
                 Arcana = "Temperance",
                 Level = 31,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 26,
                     Endurance = 21,
                     Agility = 16,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -3349,14 +3349,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Sati",
                 Arcana = "Aeon",
                 Level = 31,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 27,
                     Endurance = 20,
                     Agility = 17,
                     Luck = 17
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -3398,14 +3398,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Gdon",
                 Arcana = "Sun",
                 Level = 31,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 10,
                     Endurance = 23,
                     Agility = 22,
                     Luck = 18
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -3451,14 +3451,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Pyro Jack",
                 Arcana = "Magician",
                 Level = 32,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 16,
                     Magic = 26,
                     Endurance = 19,
                     Agility = 22,
                     Luck = 20
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -3500,14 +3500,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Neko Shogun",
                 Arcana = "Star",
                 Level = 32,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 26,
                     Magic = 20,
                     Endurance = 19,
                     Agility = 23,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3553,14 +3553,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Undine",
                 Arcana = "Lovers",
                 Level = 33,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 21,
                     Magic = 27,
                     Endurance = 13,
                     Agility = 26,
                     Luck = 19
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -3602,14 +3602,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Virtue",
                 Arcana = "Justice",
                 Level = 33,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 29,
                     Endurance = 21,
                     Agility = 19,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -3655,14 +3655,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mothman",
                 Arcana = "Hermit",
                 Level = 33,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 23,
                     Endurance = 17,
                     Agility = 28,
                     Luck = 18
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Weak,
@@ -3704,14 +3704,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Gorgon",
                 Arcana = "Empress",
                 Level = 34,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 21,
                     Endurance = 25,
                     Agility = 24,
                     Luck = 19
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -3753,14 +3753,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Setanta",
                 Arcana = "Emperor",
                 Level = 34,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 23,
                     Magic = 21,
                     Endurance = 25,
                     Agility = 24,
                     Luck = 16
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -3806,14 +3806,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Pale Rider",
                 Arcana = "Jester",
                 Level = 34,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 24,
                     Endurance = 21,
                     Agility = 24,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -3855,14 +3855,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yamata-No-Orochi",
                 Arcana = "Moon",
                 Level = 34,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 29,
                     Magic = 21,
                     Endurance = 26,
                     Agility = 18,
                     Luck = 15
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -3904,14 +3904,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Fortuna",
                 Arcana = "Fortune",
                 Level = 35,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 23,
                     Endurance = 22,
                     Agility = 26,
                     Luck = 22
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -3953,14 +3953,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Taotie",
                 Arcana = "Tower",
                 Level = 35,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 27,
                     Endurance = 30,
                     Agility = 22,
                     Luck = 13
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4006,14 +4006,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Flauros",
                 Arcana = "Hierophant",
                 Level = 36,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 20,
                     Endurance = 24,
                     Agility = 20,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -4059,14 +4059,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Samael",
                 Arcana = "Death",
                 Level = 36,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 24,
                     Magic = 29,
                     Endurance = 25,
                     Agility = 19,
                     Luck = 18
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -4112,14 +4112,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Parvati",
                 Arcana = "Priestess",
                 Level = 37,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 20,
                     Magic = 29,
                     Endurance = 17,
                     Agility = 25,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -4161,14 +4161,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Raja Naga",
                 Arcana = "Aeon",
                 Level = 37,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 26,
                     Endurance = 24,
                     Agility = 22,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -4214,14 +4214,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Pazuzu",
                 Arcana = "Devil",
                 Level = 37,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 15,
                     Endurance = 28,
                     Agility = 29,
                     Luck = 19
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Reflect,
@@ -4267,14 +4267,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Black Frost",
                 Arcana = "Fool",
                 Level = 38,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 23,
                     Magic = 31,
                     Endurance = 22,
                     Agility = 23,
                     Luck = 22
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Absorb,
@@ -4324,14 +4324,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Dominion",
                 Arcana = "Justice",
                 Level = 38,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 32,
                     Endurance = 25,
                     Agility = 24,
                     Luck = 18
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4377,14 +4377,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Dis",
                 Arcana = "Magician",
                 Level = 39,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 31,
                     Endurance = 24,
                     Agility = 26,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -4430,14 +4430,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Orthrus",
                 Arcana = "Hanged Man",
                 Level = 39,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 34,
                     Magic = 21,
                     Endurance = 28,
                     Agility = 23,
                     Luck = 18
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -4479,14 +4479,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Genbu",
                 Arcana = "Temperance",
                 Level = 40,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 27,
                     Endurance = 39,
                     Agility = 12,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -4532,14 +4532,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Loa",
                 Arcana = "Jester",
                 Level = 40,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 30,
                     Endurance = 28,
                     Agility = 23,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4585,14 +4585,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yatagarasu",
                 Arcana = "Sun",
                 Level = 40,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 27,
                     Endurance = 22,
                     Agility = 31,
                     Luck = 19
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -4638,14 +4638,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Okuninushi",
                 Arcana = "Emperor",
                 Level = 41,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 29,
                     Magic = 34,
                     Endurance = 25,
                     Agility = 20,
                     Luck = 22
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4691,14 +4691,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Hitokoto-Nushi",
                 Arcana = "Hermit",
                 Level = 41,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 33,
                     Endurance = 30,
                     Agility = 20,
                     Luck = 19
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -4744,14 +4744,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Alraune",
                 Arcana = "Moon",
                 Level = 41,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 17,
                     Magic = 35,
                     Endurance = 21,
                     Agility = 29,
                     Luck = 28
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -4797,14 +4797,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Leanan Sidhe",
                 Arcana = "Lovers",
                 Level = 42,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 19,
                     Magic = 33,
                     Endurance = 26,
                     Agility = 29,
                     Luck = 36
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -4850,14 +4850,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Hanuman",
                 Arcana = "Strength",
                 Level = 42,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 31,
                     Magic = 25,
                     Endurance = 31,
                     Agility = 21,
                     Luck = 25
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -4899,14 +4899,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Triglav",
                 Arcana = "Chariot",
                 Level = 43,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 23,
                     Endurance = 27,
                     Agility = 32,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -4952,14 +4952,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Fuu-Ki",
                 Arcana = "Star",
                 Level = 43,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 32,
                     Endurance = 34,
                     Agility = 27,
                     Luck = 18
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -5005,14 +5005,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Gabriel",
                 Arcana = "Empress",
                 Level = 44,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 34,
                     Endurance = 22,
                     Agility = 30,
                     Luck = 25
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -5054,14 +5054,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Clotho",
                 Arcana = "Fortune",
                 Level = 44,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 31,
                     Endurance = 28,
                     Agility = 26,
                     Luck = 32
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5107,14 +5107,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kushinada",
                 Arcana = "Aeon",
                 Level = 44,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 32,
                     Endurance = 27,
                     Agility = 24,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5156,14 +5156,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Succubus",
                 Arcana = "Devil",
                 Level = 44,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 22,
                     Magic = 33,
                     Endurance = 28,
                     Agility = 32,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -5209,14 +5209,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Thoth",
                 Arcana = "Emperor",
                 Level = 45,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 28,
                     Magic = 43,
                     Endurance = 23,
                     Agility = 21,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5262,14 +5262,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Hokuto Seikun",
                 Arcana = "Hierophant",
                 Level = 45,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 29,
                     Magic = 34,
                     Endurance = 31,
                     Agility = 26,
                     Luck = 22
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -5315,14 +5315,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Decarabia",
                 Arcana = "Fool",
                 Level = 46,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 36,
                     Endurance = 25,
                     Agility = 26,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Weak,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5368,14 +5368,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mot",
                 Arcana = "Death",
                 Level = 46,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 38,
                     Endurance = 30,
                     Agility = 24,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5417,14 +5417,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Cu Chulainn",
                 Arcana = "Tower",
                 Level = 46,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 32,
                     Endurance = 28,
                     Agility = 25,
                     Luck = 20
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -5474,14 +5474,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Rangda",
                 Arcana = "Magician",
                 Level = 47,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 24,
                     Magic = 37,
                     Endurance = 30,
                     Agility = 25,
                     Luck = 32
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -5523,14 +5523,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Baphomet",
                 Arcana = "Jester",
                 Level = 47,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 25,
                     Magic = 35,
                     Endurance = 35,
                     Agility = 26,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5576,14 +5576,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Seiryu",
                 Arcana = "Temperance",
                 Level = 47,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 31,
                     Endurance = 33,
                     Agility = 28,
                     Luck = 26
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -5629,14 +5629,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Narasimha",
                 Arcana = "Sun",
                 Level = 47,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 29,
                     Magic = 27,
                     Endurance = 30,
                     Agility = 35,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -5678,14 +5678,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kikuri-Hime",
                 Arcana = "Priestess",
                 Level = 48,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 26,
                     Magic = 36,
                     Endurance = 28,
                     Agility = 31,
                     Luck = 30
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -5731,14 +5731,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kurama Tengu",
                 Arcana = "Hermit",
                 Level = 48,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 34,
                     Endurance = 28,
                     Agility = 38,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -5784,14 +5784,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Girimehkala",
                 Arcana = "Moon",
                 Level = 48,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 35,
                     Endurance = 23,
                     Agility = 30,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -5841,14 +5841,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Throne",
                 Arcana = "Justice",
                 Level = 49,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 30,
                     Endurance = 24,
                     Agility = 37,
                     Luck = 26
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -5894,14 +5894,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yatsufusa",
                 Arcana = "Hanged Man",
                 Level = 49,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 33,
                     Endurance = 27,
                     Agility = 36,
                     Luck = 26
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -5951,14 +5951,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kali",
                 Arcana = "Strength",
                 Level = 50,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 25,
                     Endurance = 36,
                     Agility = 35,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -6000,14 +6000,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ganesha",
                 Arcana = "Star",
                 Level = 50,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 29,
                     Endurance = 31,
                     Agility = 27,
                     Luck = 32
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6053,14 +6053,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Pabilsag",
                 Arcana = "Emperor",
                 Level = 51,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 29,
                     Endurance = 30,
                     Agility = 33,
                     Luck = 30
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -6102,14 +6102,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Quetzalcoatl",
                 Arcana = "Aeon",
                 Level = 51,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 31,
                     Endurance = 31,
                     Agility = 35,
                     Luck = 33
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6155,14 +6155,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Lachesis",
                 Arcana = "Fortune",
                 Level = 51,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 31,
                     Magic = 39,
                     Endurance = 25,
                     Agility = 34,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -6208,14 +6208,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Skadi",
                 Arcana = "Empress",
                 Level = 52,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 27,
                     Magic = 37,
                     Endurance = 32,
                     Agility = 36,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -6261,14 +6261,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Cerberus",
                 Arcana = "Hierophant",
                 Level = 52,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 30,
                     Endurance = 32,
                     Agility = 35,
                     Luck = 29
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Weak,
@@ -6314,14 +6314,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Raphael",
                 Arcana = "Lovers",
                 Level = 53,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 32,
                     Magic = 38,
                     Endurance = 24,
                     Agility = 33,
                     Luck = 39
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Reflect,
@@ -6363,14 +6363,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Lilith",
                 Arcana = "Devil",
                 Level = 53,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 43,
                     Endurance = 30,
                     Agility = 36,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6412,14 +6412,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Tam Lin",
                 Arcana = "Sun",
                 Level = 53,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 31,
                     Endurance = 34,
                     Agility = 39,
                     Luck = 25
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -6469,14 +6469,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kin-Ki",
                 Arcana = "Chariot",
                 Level = 54,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 41,
                     Magic = 25,
                     Endurance = 53,
                     Agility = 23,
                     Luck = 27
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6518,14 +6518,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Suzaku",
                 Arcana = "Temperance",
                 Level = 54,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 30,
                     Magic = 36,
                     Endurance = 31,
                     Agility = 42,
                     Luck = 30
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Weak,
@@ -6571,14 +6571,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Nidhoggr",
                 Arcana = "Hermit",
                 Level = 55,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 23,
                     Magic = 41,
                     Endurance = 35,
                     Agility = 31,
                     Luck = 42
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -6624,14 +6624,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kumbhanda",
                 Arcana = "Jester",
                 Level = 55,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 36,
                     Endurance = 35,
                     Agility = 44,
                     Luck = 20
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -6677,14 +6677,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Abaddon",
                 Arcana = "Tower",
                 Level = 55,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 27,
                     Endurance = 50,
                     Agility = 23,
                     Luck = 29
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Resistant,
@@ -6730,14 +6730,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Shiki-Ouji",
                 Arcana = "Fool",
                 Level = 56,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 50,
                     Magic = 29,
                     Endurance = 31,
                     Agility = 41,
                     Luck = 24
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Null,
@@ -6779,14 +6779,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Taowu",
                 Arcana = "Hanged Man",
                 Level = 56,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 37,
                     Endurance = 31,
                     Agility = 38,
                     Luck = 29
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -6832,14 +6832,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Garuda",
                 Arcana = "Star",
                 Level = 57,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 39,
                     Magic = 33,
                     Endurance = 28,
                     Agility = 47,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -6885,14 +6885,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Sui-Ki",
                 Arcana = "Moon",
                 Level = 57,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 49,
                     Endurance = 43,
                     Agility = 33,
                     Luck = 17
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -6934,14 +6934,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Uriel",
                 Arcana = "Justice",
                 Level = 58,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 35,
                     Magic = 42,
                     Endurance = 37,
                     Agility = 36,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -6987,14 +6987,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ananta",
                 Arcana = "Fortune",
                 Level = 58,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 42,
                     Endurance = 45,
                     Agility = 28,
                     Luck = 23
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Absorb,
@@ -7040,14 +7040,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kingu",
                 Arcana = "Aeon",
                 Level = 58,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 44,
                     Endurance = 38,
                     Agility = 30,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -7093,14 +7093,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "White Rider",
                 Arcana = "Death",
                 Level = 58,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 49,
                     Magic = 31,
                     Endurance = 37,
                     Agility = 40,
                     Luck = 24
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Weak,
@@ -7150,14 +7150,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Hariti",
                 Arcana = "Priestess",
                 Level = 59,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 31,
                     Magic = 47,
                     Endurance = 33,
                     Agility = 34,
                     Luck = 39
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -7199,14 +7199,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Anubis",
                 Arcana = "Judgement",
                 Level = 59,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 41,
                     Endurance = 37,
                     Agility = 37,
                     Luck = 31
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7256,14 +7256,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mother Harlot",
                 Arcana = "Empress",
                 Level = 60,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 47,
                     Endurance = 37,
                     Agility = 29,
                     Luck = 36
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -7305,14 +7305,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Daisoujou",
                 Arcana = "Hierophant",
                 Level = 60,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 34,
                     Magic = 45,
                     Endurance = 40,
                     Agility = 30,
                     Luck = 41
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -7362,14 +7362,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Belphegor",
                 Arcana = "Devil",
                 Level = 61,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 48,
                     Endurance = 42,
                     Agility = 39,
                     Luck = 21
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7415,14 +7415,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Jatayu",
                 Arcana = "Sun",
                 Level = 61,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 44,
                     Endurance = 35,
                     Agility = 48,
                     Luck = 25
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7464,14 +7464,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Jinn",
                 Arcana = "Magician",
                 Level = 62,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 51,
                     Endurance = 38,
                     Agility = 39,
                     Luck = 28
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -7513,14 +7513,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Chernobog",
                 Arcana = "Jester",
                 Level = 62,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 47,
                     Endurance = 32,
                     Agility = 35,
                     Luck = 33
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7566,14 +7566,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Byakko",
                 Arcana = "Temperance",
                 Level = 62,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 47,
                     Magic = 32,
                     Endurance = 35,
                     Agility = 49,
                     Luck = 30
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -7619,14 +7619,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mara",
                 Arcana = "Tower",
                 Level = 62,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 44,
                     Magic = 35,
                     Endurance = 48,
                     Agility = 36,
                     Luck = 30
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -7668,14 +7668,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Nebiros",
                 Arcana = "Hermit",
                 Level = 63,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 38,
                     Magic = 47,
                     Endurance = 39,
                     Agility = 40,
                     Luck = 32
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -7721,14 +7721,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Siegfried",
                 Arcana = "Strength",
                 Level = 63,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 36,
                     Endurance = 41,
                     Agility = 38,
                     Luck = 33
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -7774,14 +7774,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Loki",
                 Arcana = "Fool",
                 Level = 64,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 50,
                     Endurance = 31,
                     Agility = 47,
                     Luck = 23
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -7831,14 +7831,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Cybele",
                 Arcana = "Lovers",
                 Level = 64,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 41,
                     Magic = 47,
                     Endurance = 37,
                     Agility = 39,
                     Luck = 35
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Null,
@@ -7880,14 +7880,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Barong",
                 Arcana = "Emperor",
                 Level = 65,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 44,
                     Endurance = 40,
                     Agility = 36,
                     Luck = 34
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -7933,14 +7933,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Lakshmi",
                 Arcana = "Aeon",
                 Level = 65,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 50,
                     Endurance = 37,
                     Agility = 38,
                     Luck = 41
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -7982,14 +7982,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Thor",
                 Arcana = "Chariot",
                 Level = 65,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 43,
                     Magic = 39,
                     Endurance = 53,
                     Agility = 32,
                     Luck = 35
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8035,14 +8035,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Atropos",
                 Arcana = "Fortune",
                 Level = 65,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 36,
                     Magic = 48,
                     Endurance = 36,
                     Agility = 37,
                     Luck = 45
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -8084,14 +8084,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Melchizedek",
                 Arcana = "Justice",
                 Level = 66,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 51,
                     Magic = 46,
                     Endurance = 46,
                     Agility = 34,
                     Luck = 28
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8133,14 +8133,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Hell Biker",
                 Arcana = "Hanged Man",
                 Level = 66,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 49,
                     Magic = 40,
                     Endurance = 40,
                     Agility = 48,
                     Luck = 28
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -8186,14 +8186,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kartikeya",
                 Arcana = "Star",
                 Level = 67,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 47,
                     Magic = 39,
                     Endurance = 40,
                     Agility = 44,
                     Luck = 38
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8235,14 +8235,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Trumpeter",
                 Arcana = "Judgement",
                 Level = 67,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 40,
                     Magic = 47,
                     Endurance = 39,
                     Agility = 45,
                     Luck = 37
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Absorb,
@@ -8292,14 +8292,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Belial",
                 Arcana = "Devil",
                 Level = 68,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 51,
                     Magic = 31,
                     Endurance = 48,
                     Agility = 40,
                     Luck = 41
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8341,14 +8341,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Seth",
                 Arcana = "Moon",
                 Level = 68,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 51,
                     Endurance = 40,
                     Agility = 39,
                     Luck = 35
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Reflect,
@@ -8390,14 +8390,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Seiten Taisei",
                 Arcana = "Jester",
                 Level = 68,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 47,
                     Magic = 34,
                     Endurance = 40,
                     Agility = 48,
                     Luck = 42
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -8443,14 +8443,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Horus",
                 Arcana = "Sun",
                 Level = 68,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 48,
                     Endurance = 35,
                     Agility = 45,
                     Luck = 38
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -8492,14 +8492,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Surt",
                 Arcana = "Magician",
                 Level = 69,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 41,
                     Magic = 54,
                     Endurance = 39,
                     Agility = 40,
                     Luck = 40
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.Weak,
@@ -8545,14 +8545,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yurlungur",
                 Arcana = "Temperance",
                 Level = 69,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 41,
                     Magic = 50,
                     Endurance = 45,
                     Agility = 43,
                     Luck = 35
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -8594,14 +8594,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Masakado",
                 Arcana = "Tower",
                 Level = 69,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 51,
                     Magic = 32,
                     Endurance = 45,
                     Agility = 46,
                     Luck = 40
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -8643,14 +8643,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Tzitzimitl",
                 Arcana = "Priestess",
                 Level = 70,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 56,
                     Endurance = 41,
                     Agility = 39,
                     Luck = 35
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8700,14 +8700,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Alilat",
                 Arcana = "Empress",
                 Level = 70,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 39,
                     Magic = 48,
                     Endurance = 49,
                     Agility = 39,
                     Luck = 42
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -8749,14 +8749,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Hachiman",
                 Arcana = "Hierophant",
                 Level = 70,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 33,
                     Magic = 60,
                     Endurance = 39,
                     Agility = 38,
                     Luck = 47
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -8798,14 +8798,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ishtar",
                 Arcana = "Lovers",
                 Level = 71,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 44,
                     Endurance = 33,
                     Agility = 48,
                     Luck = 49
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -8855,14 +8855,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Vasuki",
                 Arcana = "Hanged Man",
                 Level = 71,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 47,
                     Endurance = 50,
                     Agility = 340,
                     Luck = 35
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -8908,14 +8908,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Atavaka",
                 Arcana = "Chariot",
                 Level = 72,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 50,
                     Magic = 41,
                     Endurance = 43,
                     Agility = 41,
                     Luck = 48
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Weak,
@@ -8961,14 +8961,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Norn",
                 Arcana = "Fortune",
                 Level = 72,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 42,
                     Magic = 53,
                     Endurance = 31,
                     Agility = 48,
                     Luck = 46
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Resistant,
@@ -9018,14 +9018,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Alice",
                 Arcana = "Death",
                 Level = 72,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 39,
                     Magic = 56,
                     Endurance = 33,
                     Agility = 45,
                     Luck = 44
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9071,14 +9071,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Michael",
                 Arcana = "Judgement",
                 Level = 72,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 42,
                     Endurance = 43,
                     Agility = 48,
                     Luck = 45
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -9124,14 +9124,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Arahabaki",
                 Arcana = "Hermit",
                 Level = 73,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 50,
                     Magic = 55,
                     Endurance = 62,
                     Agility = 37,
                     Luck = 25
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Reflect,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Weak,
@@ -9173,14 +9173,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Vishnu",
                 Arcana = "Temperance",
                 Level = 73,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 46,
                     Magic = 52,
                     Endurance = 34,
                     Agility = 54,
                     Luck = 43
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Null,
@@ -9226,14 +9226,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Odin",
                 Arcana = "Emperor",
                 Level = 74,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 60,
                     Endurance = 42,
                     Agility = 39,
                     Luck = 43
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -9279,14 +9279,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kaguya",
                 Arcana = "Aeon",
                 Level = 74,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 37,
                     Magic = 65,
                     Endurance = 36,
                     Agility = 44,
                     Luck = 47
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.None,
@@ -9332,14 +9332,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Sraosha",
                 Arcana = "Justice",
                 Level = 74,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 57,
                     Magic = 36,
                     Endurance = 44,
                     Agility = 62,
                     Luck = 33
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9385,14 +9385,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Yoshitsune",
                 Arcana = "Tower",
                 Level = 75,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 52,
                     Magic = 39,
                     Endurance = 49,
                     Agility = 61,
                     Luck = 34
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.None,
@@ -9438,14 +9438,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Saturnus",
                 Arcana = "Star",
                 Level = 75,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 50,
                     Magic = 57,
                     Endurance = 36,
                     Agility = 43,
                     Luck = 49
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -9487,14 +9487,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Kohryu",
                 Arcana = "Hierophant",
                 Level = 76,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 50,
                     Magic = 53,
                     Endurance = 54,
                     Agility = 40,
                     Luck = 38
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9544,14 +9544,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Satan",
                 Arcana = "Judgement",
                 Level = 76,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 60,
                     Endurance = 47,
                     Agility = 40,
                     Luck = 43
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -9597,14 +9597,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Baal Zebul",
                 Arcana = "Moon",
                 Level = 77,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 60,
                     Endurance = 49,
                     Agility = 40,
                     Luck = 41
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -9650,14 +9650,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Suparna",
                 Arcana = "Sun",
                 Level = 77,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 52,
                     Endurance = 45,
                     Agility = 55,
                     Luck = 38
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9703,14 +9703,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mada",
                 Arcana = "Magician",
                 Level = 78,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 45,
                     Magic = 63,
                     Endurance = 52,
                     Agility = 38,
                     Luck = 43
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Weak,
@@ -9756,14 +9756,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Mahakala",
                 Arcana = "Death",
                 Level = 78,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 58,
                     Magic = 38,
                     Endurance = 57,
                     Agility = 49,
                     Luck = 39
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.None,
@@ -9813,14 +9813,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Scathach",
                 Arcana = "Priestess",
                 Level = 79,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 54,
                     Magic = 59,
                     Endurance = 37,
                     Agility = 49,
                     Luck = 45
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Weak,
                     Ice = ElementAffinity.Absorb,
@@ -9866,14 +9866,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Isis",
                 Arcana = "Empress",
                 Level = 79,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 52,
                     Magic = 48,
                     Endurance = 42,
                     Agility = 48,
                     Luck = 54
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Reflect,
@@ -9923,14 +9923,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Futsunushi",
                 Arcana = "Chariot",
                 Level = 80,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 59,
                     Magic = 38,
                     Endurance = 61,
                     Agility = 44,
                     Luck = 45
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Null,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -9980,14 +9980,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Shiva",
                 Arcana = "Tower",
                 Level = 80,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 59,
                     Magic = 48,
                     Endurance = 44,
                     Agility = 54,
                     Luck = 42
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Absorb,
@@ -10033,14 +10033,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Beelzebub",
                 Arcana = "Devil",
                 Level = 81,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 48,
                     Magic = 60,
                     Endurance = 49,
                     Agility = 40,
                     Luck = 41
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Absorb,
                     Ice = ElementAffinity.Null,
@@ -10086,14 +10086,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ongyo-Ki",
                 Arcana = "Hermit",
                 Level = 82,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 59,
                     Magic = 64,
                     Endurance = 59,
                     Agility = 47,
                     Luck = 24
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -10139,14 +10139,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Attis",
                 Arcana = "Hanged Man",
                 Level = 82,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 51,
                     Magic = 56,
                     Endurance = 56,
                     Agility = 50,
                     Luck = 40
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -10192,14 +10192,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Metatron",
                 Arcana = "Judgement",
                 Level = 83,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 54,
                     Magic = 55,
                     Endurance = 53,
                     Agility = 46,
                     Luck = 48
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -10241,14 +10241,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Sandalphon",
                 Arcana = "Moon",
                 Level = 84,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 56,
                     Magic = 61,
                     Endurance = 46,
                     Agility = 47,
                     Luck = 49
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,
@@ -10294,14 +10294,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Asura",
                 Arcana = "Sun",
                 Level = 86,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 59,
                     Magic = 57,
                     Endurance = 51,
                     Agility = 50,
                     Luck = 48
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.Resistant,
@@ -10347,14 +10347,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Helel",
                 Arcana = "Star",
                 Level = 87,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 56,
                     Magic = 57,
                     Endurance = 56,
                     Agility = 49,
                     Luck = 50
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Null,
                     Ice = ElementAffinity.None,
@@ -10404,14 +10404,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Zaou Gongen",
                 Arcana = "Strength",
                 Level = 90,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 61,
                     Magic = 48,
                     Endurance = 71,
                     Agility = 47,
                     Luck = 50
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.None,
                     Fire = ElementAffinity.Reflect,
                     Ice = ElementAffinity.None,
@@ -10461,14 +10461,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Ardha",
                 Arcana = "Judgement",
                 Level = 90,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 62,
                     Magic = 52,
                     Endurance = 64,
                     Agility = 41,
                     Luck = 58
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.Null,
@@ -10518,14 +10518,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Izanagi-No-Okami",
                 Arcana = "World",
                 Level = 91,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 80,
                     Magic = 80,
                     Endurance = 80,
                     Agility = 80,
                     Luck = 80
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.Resistant,
                     Ice = ElementAffinity.Resistant,
@@ -10591,14 +10591,14 @@ namespace Persona4GoldenHelper.Data.Data
                 Name = "Lucifer",
                 Arcana = "Judgement",
                 Level = 93,
-                Stats = new PersonaStats() {
+                Stats = new Stats() {
                     Strength = 62,
                     Magic = 69,
                     Endurance = 61,
                     Agility = 52,
                     Luck = 51
                 },
-                Elements = new PersonaElements() {
+                Elements = new Elements() {
                     Physical = ElementAffinity.Resistant,
                     Fire = ElementAffinity.None,
                     Ice = ElementAffinity.None,

@@ -2,7 +2,7 @@
 
 namespace Persona4GoldenHelper.Data.Models
 {
-    public class ShadowElements
+    public class Elements
     {
         public int Id { get; set; }
         public ElementAffinity Physical { get; set; }

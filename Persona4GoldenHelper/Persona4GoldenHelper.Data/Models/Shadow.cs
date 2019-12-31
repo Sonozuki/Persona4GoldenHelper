@@ -12,8 +12,8 @@ namespace Persona4GoldenHelper.Data.Models
         public int SP { get; set; }
         public int Exp { get; set; }
         public string Yen { get; set; }
-        public ShadowStats Stats { get; set; }
-        public ShadowElements Elements { get; set; }
+        public Stats Stats { get; set; }
+        public Elements Elements { get; set; }
         public List<ShadowSkill> Skills { get; set; }
         public ShadowType Type { get; set; }
     }
