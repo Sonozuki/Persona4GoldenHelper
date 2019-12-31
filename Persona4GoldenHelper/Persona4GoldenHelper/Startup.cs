@@ -26,6 +26,7 @@ namespace Persona4GoldenHelper
             services.AddTransient<IApp, AppService>();
             services.AddTransient<IPersona, PersonaService>();
             services.AddTransient<IFusion, FusionService>();
+            services.AddTransient<IShadow, ShadowService>();
 
             services.AddTransient<Seeder>();
 
