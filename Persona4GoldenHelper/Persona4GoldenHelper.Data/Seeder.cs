@@ -99,6 +99,15 @@ namespace Persona4GoldenHelper.Data
                 }
             }
 
+            if (!Context.Shadows.Any())
+            {
+                foreach (var shadow in ShadowData.Shadows)
+                {
+                    Context.Shadows.Add(shadow);
+                    Context.SaveChanges();
+                }
+            }
+
             if (!Context.Skills.Any())
             {
                 foreach (var skill in SkillData.Skills)

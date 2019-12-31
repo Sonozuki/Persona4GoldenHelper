@@ -17,6 +17,7 @@ namespace Persona4GoldenHelper.Data
         public DbSet<Models.Persona> Personas { get; set; }
         public DbSet<Plant> Plants { get; set; }
         public DbSet<Quest> Quests { get; set; }
+        public DbSet<Shadow> Shadows { get; set; }
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SkillCard> SkillCards { get; set; }
         public DbSet<SkillCardLocation> SkillCardLocations { get; set; }
