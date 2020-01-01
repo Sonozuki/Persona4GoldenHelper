@@ -14,7 +14,7 @@
 @foreach (var shadow in Model.Shadows)
 {
     <div>
-        <h2 class="type-@shadow.Type col-md-12 text-align-center">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString())</h2>
+        <h2 class="type-@shadow.Type col-md-12 text-align-center">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString()) <span class="text-bright">(@shadow.Level)</span></h2>
     </div>
 
     <div>
