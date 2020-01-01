@@ -20,6 +20,7 @@
         background: #555;
     }
 
+/* Styling for layout header, including navbar */
 #page-header {
     padding-top: 10px;
 }
@@ -45,6 +46,7 @@
         color: #555;
     }
 
+/* Site wide tag styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
@@ -60,6 +62,7 @@ img {
     height: auto;
 }
 
+/* Site wide default table styling */
 table {
     border: 1px solid #353535;
     border-collapse: collapse;
@@ -88,6 +91,7 @@ table {
             background-color: #333;
         }
 
+/* Persona recipes section styling */
 #recipe-scroll {
     max-height: 500px;
     overflow: auto;
@@ -99,10 +103,8 @@ table {
         margin-bottom: 0;
     }
 
-.white-space-pre-line {
-    white-space: pre-line;
-}
 
+/* Table column widths that don't fit nicely in bootstrap col-x styling */
 .extra-slim-column {
     width: 5%;
 }
@@ -115,10 +117,20 @@ table {
     width: 15%;
 }
 
+/* Misc widely used class styling */
 .text-align-center {
     text-align: center;
 }
 
+.padding-right {
+    padding-right: 35px;
+}
+
+.white-space-pre-line {
+    white-space: pre-line;
+}
+
+/* Text colouring */
 .text-bright, a:link, a:visited {
     color: #c5c1b9
 }
@@ -136,10 +148,7 @@ table {
     color: #808080;
 }
 
-.padding-right {
-    padding-right: 35px;
-}
-
+/* Style an element like a button, used on the 'See More' text for persona recipes */
 .button {
     padding: 10px;
     background-color: #2a2a2a;
@@ -150,6 +159,7 @@ table {
         cursor: pointer;
     }
 
+/* Persona types */
 .type-ultimate {
     color: #4b75b3 !important;
 }
@@ -158,6 +168,7 @@ table {
     color: #b30000 !important;
 }
 
+/* Shadow types */
 .type-normal {
     color: #16ce3c;
 }
@@ -170,6 +181,7 @@ table {
     color: #b30000;
 }
 
+/* Skill cost */
 .cost-sp {
     color: #e8b819;
     font-weight: bold;
@@ -180,6 +192,7 @@ table {
     font-weight: bold;
 }
 
+/* Persona / Shadow element affinities */
 .affinity-weak {
     color: red;
     font-weight: bold;
