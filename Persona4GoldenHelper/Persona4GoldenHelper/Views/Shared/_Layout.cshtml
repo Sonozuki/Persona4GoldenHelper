@@ -50,8 +50,14 @@
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
-@if (!string.IsNullOrEmpty(ViewBag.PersonaName)) {
+@if (!string.IsNullOrEmpty(ViewBag.PersonaName))
+{
     <script src="~/scipts/personaCalculator.js"></script>
+}
+
+@if (ViewBag.Title == "Shadows")
+{
+    <script src="~/scipts/mergedRowHighlightFix.js"></script>
 }
 
 @RenderSection("Scripts", required: false)

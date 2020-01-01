@@ -84,7 +84,7 @@ table {
         background-color: #202020;
     }
 
-        table tr:hover {
+        table tr:hover, .hover-table-cell { /* hover-table-cell is applied in the 'mergeRowHightlightFix' to fix rowspan highlight issues */
             background-color: #333;
         }
 
