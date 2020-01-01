@@ -51,6 +51,7 @@ namespace Persona4GoldenHelper
             {
                 cfg.MapRoute("Default", template: "{action}", new { Controller = "App", Action = "Index" });
                 cfg.MapRoute("Persona", template: "Personas/{action}", new { Controller = "Persona", Action = "Index" });
+                cfg.MapRoute("Shadow", template: "Shadows/{action}", new { Controller = "Shadow", Action = "Index" });
                 cfg.MapRoute("Api", template: "Api/{action}", new { Controller = "Api" });
             });
 

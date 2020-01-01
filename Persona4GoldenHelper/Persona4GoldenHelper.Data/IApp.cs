@@ -10,6 +10,7 @@ namespace Persona4GoldenHelper.Data
         List<Answer> GetAllExamAnswers();
         List<Skill> GetAllSkills();
         List<Skill> GetSkillsByPersona(Persona persona);
+        List<Skill> GetSkillsByShadow(Shadow shadow);
         List<Quest> GetAllQuests();
         List<SkillCard> GetAllSkillCards();
         List<SkillCardLocation> GetAllSkillCardLocations();

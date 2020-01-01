@@ -36,5 +36,25 @@ namespace Persona4GoldenHelper.Service
                 return null;
             }
         }
+
+        public List<Shadow> GetByName(string shadowName)
+        {
+            try
+            {
+                Logger.LogInformation("GetByName was called");
+
+                return Context.Shadows
+                    .Where(shadow => shadow.Name.ToLower() == shadowName.ToLower())
+                    .Include(shadow => shadow.Stats)
+                    .Include(shadow => shadow.Elements)
+                    .Include(shadow => shadow.Skills)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetByName failed: {ex}");
+                return null;
+            }
+        }
     }
 }

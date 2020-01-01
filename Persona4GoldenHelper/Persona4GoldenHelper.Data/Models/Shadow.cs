@@ -15,6 +15,9 @@ namespace Persona4GoldenHelper.Data.Models
         public Stats Stats { get; set; }
         public Elements Elements { get; set; }
         public List<ShadowSkill> Skills { get; set; }
+
+        /// <summary>Stores the full skills the shadow has, this get's populated when loading the shadow's page.</summary>
+        public List<Skill> FullSkills { get; set; }
         public ShadowType Type { get; set; }
     }
 }

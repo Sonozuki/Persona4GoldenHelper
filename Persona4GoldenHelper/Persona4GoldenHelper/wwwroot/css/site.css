@@ -158,6 +158,18 @@ table {
     color: #b30000 !important;
 }
 
+.type-normal {
+    color: #16ce3c;
+}
+
+.type-miniboss {
+    color: #FFD700;
+}
+
+.type-boss {
+    color: #b30000;
+}
+
 .cost-sp {
     color: #e8b819;
     font-weight: bold;

@@ -37,10 +37,10 @@
                     <tr>
                         @if (i == 0)
                         {
-                            <td rowspan=@shadows.Count class="text-bright">@shadow.Name</td>
+                            <td rowspan=@shadows.Count><a asp-action="@shadow.Name">@shadow.Name</a></td>
                         }
 
-                        <td class="text-align-center">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString())</td>
+                        <td class="text-align-center type-@shadow.Type">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString())</td>
                         <td class="text-align-center">@shadow.Level</td>
                         <td class="text-align-center">@shadow.Stats.Strength</td>
                         <td class="text-align-center">@shadow.Stats.Magic</td>

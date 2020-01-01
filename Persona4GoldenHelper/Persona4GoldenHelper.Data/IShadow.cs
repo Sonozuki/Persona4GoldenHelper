@@ -6,5 +6,6 @@ namespace Persona4GoldenHelper.Data
     public interface IShadow
     {
         List<Shadow> GetAll();
+        List<Shadow> GetByName(string shadowName);
     }
 }

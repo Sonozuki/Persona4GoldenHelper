@@ -112,6 +112,35 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        public List<Skill> GetSkillsByShadow(Shadow shadow)
+        {
+            try
+            {
+                Logger.LogInformation("GetSkillsByShadow was called");
+
+                List<string> skillNames = new List<string>();
+                foreach (ShadowSkill skill in shadow.Skills)
+                {
+                    skillNames.Add(skill.Name);
+                }
+
+                List<Skill> skills = new List<Skill>();
+                foreach (string skillName in skillNames)
+                {
+                    skills.Add(Context.Skills
+                        .Where(skill => skill.Name == skillName)
+                        .FirstOrDefault());
+                }
+
+                return skills;
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetSkillsByShadow failed: {ex}");
+                return null;
+            }
+        }
+
         public List<Quest> GetAllQuests()
         {
             try
