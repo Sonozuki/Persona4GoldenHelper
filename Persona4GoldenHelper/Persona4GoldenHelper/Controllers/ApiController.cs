@@ -1,21 +1,290 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Persona4GoldenHelper.Data;
+using Persona4GoldenHelper.Data.Models;
 using System;
 
 namespace Persona4GoldenHelper.Controllers
 {
+    [Route("Api/[action]")]
     public class ApiController : Controller
     {
+        private readonly IApp AppService;
         private readonly IPersona PersonaService;
+        private readonly IShadow ShadowService;
         private readonly IFusion FusionService;
         private readonly ILogger<ApiController> Logger;
 
-        public ApiController(IPersona personaService, IFusion fusionService, ILogger<ApiController> logger)
+        public ApiController(IApp appService, IPersona personaService, IShadow shadowService, IFusion fusionService, ILogger<ApiController> logger)
         {
+            AppService = appService;
             PersonaService = personaService;
+            ShadowService = shadowService;
             FusionService = fusionService;
             Logger = logger;
+        }
+
+        public IActionResult GetAllBooks()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllBooks was called");
+
+                var books = AppService.GetAllBooks();
+                if (books != null)
+                {
+                    return Ok(books);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllBooks failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetBookOrder()
+        {
+            try
+            {
+                Logger.LogInformation("GetBookOrder was called");
+
+                var bookOrder = AppService.GetBookOrder();
+                if (bookOrder != null)
+                {
+                    return Ok(bookOrder);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetBookOrder failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllExamAnswers()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllExamAnswers was called");
+
+                var examAnswers = AppService.GetAllExamAnswers();
+                if (examAnswers != null)
+                {
+                    return Ok(examAnswers);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllExamAnswers failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetSkillsByPersona(Persona persona)
+        {
+            try
+            {
+                Logger.LogInformation("GetSkillsByPersona was called");
+
+                if (persona == null)
+                {
+                    return StatusCode(406);
+                }
+
+                var skills = AppService.GetSkillsByPersona(persona);
+                if (skills != null)
+                {
+                    return Ok(skills);
+                }
+                else
+                {
+                    return NoContent();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetSkillsByPersona failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetSkillsByPersona(Shadow shadow)
+        {
+            try
+            {
+                Logger.LogInformation("GetSkillsByShadow was called");
+
+                if (shadow == null)
+                {
+                    return StatusCode(406);
+                }
+
+                var skills = AppService.GetSkillsByShadow(shadow);
+                if (skills != null)
+                {
+                    return Ok(skills);
+                }
+                else
+                {
+                    return NoContent();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetSkillsByShadow failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllQuests()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllQuests was called");
+
+                var quests = AppService.GetAllQuests();
+                if (quests != null)
+                {
+                    return Ok(quests);
+                }
+                else
+                {
+                    return NoContent();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllQuests failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllSkillCards()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllSkillCards was called");
+
+                var skillCards = AppService.GetAllSkillCards();
+                if (skillCards != null)
+                {
+                    return Ok(skillCards);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllSkillCards failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllSkillCardLocations()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllSkillCardLocations was called");
+
+                var skillCardLocations = AppService.GetAllSkillCardLocations();
+                if (skillCardLocations != null)
+                {
+                    return Ok(skillCardLocations);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllSkillCardLocations failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllLunches()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllLunches was called");
+
+                var lunches = AppService.GetAllLunches();
+                if (lunches != null)
+                {
+                    return Ok(lunches);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllLunches failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllSources()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllSources was called");
+
+                var sources = AppService.GetAllSources();
+                if (sources != null)
+                {
+                    return Ok(sources);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllSources failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllAccessories()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllAccessories was called");
+
+                var accessories = AppService.GetAllAccessories();
+                if (accessories != null)
+                {
+                    return Ok(accessories);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllAccessories failed: {ex}");
+                return StatusCode(500);
+            }
         }
 
         public IActionResult GetAllPersonas()
@@ -25,12 +294,98 @@ namespace Persona4GoldenHelper.Controllers
                 Logger.LogInformation("GetAllPersonas was called");
 
                 var personas = PersonaService.GetAll();
-                return Ok(personas);
+                if (personas != null)
+                {
+                    return Ok(personas);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
             }
             catch (Exception ex)
             {
                 Logger.LogError($"GetAllPersonas failed: {ex}");
-                return BadRequest("GetAllPersonas failed");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetPersonaByName(string name)
+        {
+            try
+            {
+                Logger.LogInformation("GetPersonaByName was called");
+
+                if (name == null)
+                {
+                    return StatusCode(406);
+                }
+
+                var persona = PersonaService.GetByName(name);
+                if (persona != null)
+                {
+                    return Ok(persona);
+                }
+                else
+                {
+                    return NoContent();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetPersonaByName failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetAllShadows()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllShadows was called");
+
+                var shadows = ShadowService.GetAll();
+                if (shadows != null)
+                {
+                    return Ok(shadows);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllShadows failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
+        public IActionResult GetShadowsByName(string name)
+        {
+            try
+            {
+                Logger.LogInformation("GetShadowByName was called");
+
+                if (name == null)
+                {
+                    return StatusCode(406);
+                }
+
+                var shadows = ShadowService.GetByName(name);
+                if (shadows != null)
+                {
+                    return Ok(shadows);
+                }
+                else
+                {
+                    return NoContent();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetShadowsByName failed: {ex}");
+                return StatusCode(500);
             }
         }
 
@@ -41,12 +396,19 @@ namespace Persona4GoldenHelper.Controllers
                 Logger.LogInformation("GetAllArcanas was called");
 
                 var arcanas = FusionService.GetAllArcanas();
-                return Ok(arcanas);
+                if (arcanas != null)
+                {
+                    return Ok(arcanas);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
             }
             catch (Exception ex)
             {
                 Logger.LogError($"GetAllArcanas failed: {ex}");
-                return BadRequest("GetAllPersonas failed");
+                return StatusCode(500);
             }
         }
 
@@ -57,12 +419,19 @@ namespace Persona4GoldenHelper.Controllers
                 Logger.LogInformation("GetAllArcana2FusionResults was called");
 
                 var arcana2FusionResults = FusionService.GetAllArcana2FusionResults();
-                return Ok(arcana2FusionResults);
+                if (arcana2FusionResults != null)
+                {
+                    return Ok(arcana2FusionResults);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
             }
             catch (Exception ex)
             {
                 Logger.LogError($"GetAllArcana2FusionResults failed: {ex}");
-                return BadRequest("GetAllArcana2FusionResults failed");
+                return StatusCode(500);
             }
         }
 
@@ -73,12 +442,19 @@ namespace Persona4GoldenHelper.Controllers
                 Logger.LogInformation("GetAllArcana3FusionResults was called");
 
                 var arcana3FusionResults = FusionService.GetAllArcana3FusionResults();
-                return Ok(arcana3FusionResults);
+                if (arcana3FusionResults != null)
+                {
+                    return Ok(arcana3FusionResults);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
             }
             catch (Exception ex)
             {
                 Logger.LogError($"GetAllArcana3FusionResults failed: {ex}");
-                return BadRequest("GetAllArcana3FusionResults failed");
+                return StatusCode(500);
             }
         }
 
@@ -89,12 +465,19 @@ namespace Persona4GoldenHelper.Controllers
                 Logger.LogInformation("GetAllSpecialFusionResults was called");
 
                 var specialFusionResults = FusionService.GetAllSpecialFusionResults();
-                return Ok(specialFusionResults);
+                if (specialFusionResults != null)
+                {
+                    return Ok(specialFusionResults);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
             }
             catch (Exception ex)
             {
                 Logger.LogError($"GetAllSpecialFusionResults failed: {ex}");
-                return BadRequest("GetAllSpecialFusionResults failed");
+                return StatusCode(500);
             }
         }
     }
