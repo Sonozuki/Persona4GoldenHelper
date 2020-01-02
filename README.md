@@ -1,4 +1,4 @@
-**Persona4GoldenHelper** is an [ASP.Net Core 2.2]() web app to bring all the important information for [Persona 4 Golden]() into one place. See at: http://www.persona4goldenhelper.co.uk/
+**Persona4GoldenHelper** is an [ASP.Net Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) web app to bring all the important information for [Persona 4 Golden](https://en.wikipedia.org/wiki/Persona_4#Persona_4_Golden_2) into one place. See at: http://www.persona4goldenhelper.co.uk/
 
 ## Current Pages
 * **Personas** - This page lists all available personas in the game, it also shows their: arcana, level, stats, and element affinities. Clicking on one of the persona names will bring you to that persona's page, this contains the above as well as skills that personas has.
@@ -25,10 +25,10 @@
 All apis avilable internally in the app have been exposed, through the '/Api/{function}' url. Info on each can be found below, including: request type, required params, return summary, possible returned HTTP codes, and return data model.
 
 ### GetAllBooks
-**Expects**: GET request, with no params.
-**Return Summary**: Return all books stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all books stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -42,10 +42,10 @@ All apis avilable internally in the app have been exposed, through the '/Api/{fu
 ```
 
 ### GetBookOrder
-**Expects**: GET request, with no params.
-**Return Summary**: Returns the book names in the order that appears in the players inventory.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Returns the book names in the order that appears in the players inventory.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -56,10 +56,10 @@ All apis avilable internally in the app have been exposed, through the '/Api/{fu
 ```
 
 ### GetAllExamAnswers
-**Expects**: GET request, with no params.
-**Return Summary**: Return all exam answers stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all exam answers stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -79,10 +79,10 @@ This is being rewritten to not require a persona object. Documentation will be a
 This is being rewritten to not require a shadow object. Documentation will be added once that is changed
 
 ### GetAllQuests
-**Expects**: GET request, with no params.
-**Return Summary**: Return all quests stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all quests stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -100,10 +100,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetAllSkillCards
-**Expects**: GET request, with no params.
-**Return Summary**: Return all skill cards stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all skill cards stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -116,10 +116,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetAllSkillCardLocations
-**Expects**: GET request, with no params.
-**Return Summary**: Return all skill card locations stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all skill card locations stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -132,10 +132,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetAllLunches
-**Expects**: GET request, with no params.
-**Return Summary**: Return all lunches stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all lunches stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -147,10 +147,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetAllSources
-**Expects**: GET request, with no params.
-**Return Summary**: Return all sources stored in the database in the below data model, these sources are the data sources for the site, the links on the home page.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all sources stored in the database in the below data model, these sources are the data sources for the site, the links on the home page.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -167,10 +167,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetAllAccessories
-**Expects**: GET request, with no params.
-**Return Summary**: Return all accessories stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all accessories stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -189,10 +189,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetAllPersonas
-**Expects**: GET request, with no params.
-**Return summary**: Return all personas stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with no params.
+* **Return summary**: Return all personas stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 [
     {
@@ -226,10 +226,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetPersonaByName
-**Expects**: GET request, with a parameter called 'name', type string, containing the persona name.
-**Return Summary**: Returns the full persona object from the passed name.
-**Return HTTP codes**: 200, 204, 406, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game)
+* **Expects**: GET request, with a parameter called 'name', type string, containing the persona name.
+* **Return Summary**: Returns the full persona object from the passed name.
+* **Return HTTP codes**: 200, 204, 406, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
 ```json
 {
     "id": -1,
@@ -267,10 +267,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetAllShadows
-**Expects**: GET request, with no params.
-**Return summary**: Return all shadows stored in the database in the below data model.
-**Return HTTP codes**: 200, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game. FullSkills can be ignored, this is used to pass the full skill object to the shadow view, this will always return null from the api)
+* **Expects**: GET request, with no params.
+* **Return summary**: Return all shadows stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game. FullSkills can be ignored, this is used to pass the full skill object to the shadow view, this will always return null from the api)
 ```json
 [
     {
@@ -307,14 +307,14 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ```
 
 ### GetShadowsByName
-**Expects**: GET request, with a parameter called 'name', type string, containing the shadow name.
-**Return Summary**: Returns the full shadow object from the passed name.
-**Return HTTP codes**: 200, 204, 406, 500
-**Return data model**: (All ids are purely internal ids and have no relation to the game. FullSkills can be ignored, this is used to pass the full skill object to the shadow view, this will always return null from the api)
+* **Expects**: GET request, with a parameter called 'name', type string, containing the shadow name.
+* **Return Summary**: Returns the full shadow objects from the passed name. Multiple object may be returned, 1 for each type (normal, mini boss, boss).
+* **Return HTTP codes**: 200, 204, 406, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game. FullSkills can be ignored, this is used to pass the full skill object to the shadow view, this will always return null from the api)
 ```json
 [
-{
-    "id": -1,
+    {
+        "id": -1,
         "name": "",
         "level": -1,
         "hp": -1,
@@ -343,14 +343,10 @@ This is being rewritten to not require a shadow object. Documentation will be ad
             {
                 "id": -1,
                 "name": ""
-            },
-            {
-                "id": -1,
-                "name": ""
-            }
+            }, ...
         ],
         "fullSkills": null,
         "type": -1
-}, ...
+    }, ...
 ]
 ```
