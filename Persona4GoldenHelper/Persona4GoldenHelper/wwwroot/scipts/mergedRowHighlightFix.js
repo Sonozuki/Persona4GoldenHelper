@@ -1,20 +1,36 @@
 ﻿$('tbody tr').hover(addHoverClass, removeHoverClass);
 
 function addHoverClass() {
-    // get the cell that is merged over the rows
-    var mergedTableCell = $(this).parent().children()[0].cells[0];
-    console.log(mergedTableCell);
+    // get the first table row in the tbody, this is what will contain all the merged cells
+    var mergedTableCellParent = $(this).parent().children()[0];
 
-    // add the hover class to make it appear as if it's being hovered
-    if (!$(mergedTableCell).hasClass('hover-table-cell')) {
-        $(mergedTableCell).addClass('hover-table-cell');
+    // check each cell for it's rowspan value
+    for (let tableCell of mergedTableCellParent.children) {
+        // get rowspan attr
+        let rowspan = $(tableCell).attr('rowspan');
+
+        // check if it's more than 1 (meaning its a merged cell that should be highlighted)
+        if (rowspan > 1) {
+            if (!$(tableCell).hasClass('hover-table-cell')) {
+                $(tableCell).addClass('hover-table-cell');
+            }
+        }
     }
+
 }
 
 function removeHoverClass() {
-    // get the cell that is merged over the rows
-    let mergedTableCell = $(this).parent().children()[0].cells[0];
+    // get the first table row in the tbody, this is what will contain all the merged cells
+    var mergedTableCellParent = $(this).parent().children()[0];
 
-    // remove the hover class so it doesn't appear as if it's being hovered
-    $(mergedTableCell).removeClass('hover-table-cell');
+    // check each cell for it's rowspan value
+    for (let tableCell of mergedTableCellParent.children) {
+        // get rowspan attr
+        let rowspan = $(tableCell).attr('rowspan');
+
+        // check if it's more than 1 (meaning its a merged cell that should be highlighted)
+        if (rowspan > 1) {
+            $(tableCell).removeClass('hover-table-cell');
+        }
+    }
 }
