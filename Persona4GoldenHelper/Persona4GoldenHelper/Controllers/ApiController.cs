@@ -121,7 +121,7 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
-        public IActionResult GetSkillsByPersona(Shadow shadow)
+        public IActionResult GetSkillsByShadow(Shadow shadow)
         {
             try
             {
@@ -162,7 +162,7 @@ namespace Persona4GoldenHelper.Controllers
                 }
                 else
                 {
-                    return NoContent();
+                    return StatusCode(500);
                 }
             }
             catch (Exception ex)
