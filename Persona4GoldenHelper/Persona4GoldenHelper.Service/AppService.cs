@@ -221,5 +221,22 @@ namespace Persona4GoldenHelper.Service
                 return null;
             }
         }
+
+        public List<Accessory> GetAllAccessories()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllAccessories was called");
+
+                return Context.Accessories
+                    .Include(accessory => accessory.Obtained)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllAccessories failed: {ex}");
+                return null;
+            }
+        }
     }
 }

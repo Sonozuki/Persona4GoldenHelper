@@ -18,7 +18,7 @@
             <li class="divider"> | </li>
             <li class="text-dark">Armor</li>
             <li class="divider"> | </li>
-            <li class="text-dark">Accessories</li>
+            <li><a asp-controller="App" asp-action="Accessories">Accessories</a></li>
             <li class="divider"> | </li>
             <li class="text-dark">Costumes</li>
             <li class="divider"> | </li>
@@ -55,7 +55,7 @@
     <script src="~/scipts/personaCalculator.js"></script>
 }
 
-@if (ViewBag.Title == "Shadows")
+@if (ViewBag.Title == "Shadows" || ViewBag.Title == "Accessories")
 {
     <script src="~/scipts/mergedRowHighlightFix.js"></script>
 }

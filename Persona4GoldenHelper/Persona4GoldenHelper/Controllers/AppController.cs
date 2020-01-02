@@ -98,5 +98,17 @@ namespace Persona4GoldenHelper.Controllers
 
             return View(model);
         }
+
+        public IActionResult Accessories()
+        {
+            ViewBag.Title = "Accessories";
+
+            var model = new AccessoryListingViewModel()
+            {
+                Accessories = AppService.GetAllAccessories()
+            };
+
+            return View(model);
+        }
     }
 }

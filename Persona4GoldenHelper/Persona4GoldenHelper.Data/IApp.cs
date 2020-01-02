@@ -16,5 +16,6 @@ namespace Persona4GoldenHelper.Data
         List<SkillCardLocation> GetAllSkillCardLocations();
         List<Lunch> GetAllLunches();
         List<Source> GetAllSources();
+        List<Accessory> GetAllAccessories();
     }
 }
