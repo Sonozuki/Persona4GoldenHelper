@@ -223,7 +223,7 @@ namespace Persona4GoldenHelper.Data.Data
                 QuestGiver = "[You]",
                 Location = "Samegawa Flood Plain",
                 DateAvailable = "06/03",
-                Prerequisites = "Quest 22 completed",
+                Prerequisites = "Quest 21 completed",
                 Reward = "Soma",
                 Instructions = "Feed the cat 19 more fish (Only appears on non-rainy days)."
             },
