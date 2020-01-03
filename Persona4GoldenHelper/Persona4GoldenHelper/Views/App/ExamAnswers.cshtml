@@ -1,12 +1,11 @@
 ﻿@model ExamAnswerListingViewModel
 
-<h2 class="text-align-center col-md-12">All exam questions and answers</h2>
-
 @{
     var months = new List<string> { "April", "May", "June", "July", "August", "September", "October", "November", "December", "January", "February" };
 }
 
 <div>
+    <h2 class="text-align-center">Exam Answers</h2>
     @foreach (var month in months)
     {
         var answers = GetAnswersByMonth(month);
