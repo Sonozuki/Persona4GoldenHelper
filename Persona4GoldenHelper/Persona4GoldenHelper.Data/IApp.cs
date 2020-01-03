@@ -17,5 +17,6 @@ namespace Persona4GoldenHelper.Data
         List<Lunch> GetAllLunches();
         List<Source> GetAllSources();
         List<Accessory> GetAllAccessories();
+        List<Armor> GetAllArmor();
     }
 }

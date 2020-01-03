@@ -110,5 +110,17 @@ namespace Persona4GoldenHelper.Controllers
 
             return View(model);
         }
+
+        public IActionResult Armor()
+        {
+            ViewBag.Title = "Armor";
+
+            var model = new ArmorListingViewModel()
+            {
+                Armor = AppService.GetAllArmor()
+            };
+
+            return View(model);
+        }
     }
 }

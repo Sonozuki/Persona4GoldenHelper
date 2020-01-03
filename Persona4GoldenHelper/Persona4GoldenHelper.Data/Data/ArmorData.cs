@@ -114,6 +114,19 @@ namespace Persona4GoldenHelper.Data.Data
             },
             new Armor() {
                 Gender = Gender.Male,
+                Name = "Pretty Suit",
+                Defense = 22,
+                Evade = 15,
+                Effect = "",
+                Obtained = new List<ArmorObtain>() {
+                    new ArmorObtain() {
+                        Obtain = "[Teddie's default]",
+                        Price = "",
+                    }
+                }
+            },
+            new Armor() {
+                Gender = Gender.Male,
                 Name = "T-Shirt",
                 Defense = 26,
                 Evade = 12,
@@ -147,19 +160,6 @@ namespace Persona4GoldenHelper.Data.Data
                 Obtained = new List<ArmorObtain>() {
                     new ArmorObtain() {
                         Obtain = "[Kanji's default]",
-                        Price = "",
-                    }
-                }
-            },
-            new Armor() {
-                Gender = Gender.Male,
-                Name = "Pretty Suit",
-                Defense = 22,
-                Evade = 15,
-                Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
-                        Obtain = "[Teddie's default]",
                         Price = "",
                     }
                 }

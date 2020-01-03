@@ -238,5 +238,22 @@ namespace Persona4GoldenHelper.Service
                 return null;
             }
         }
+
+        public List<Armor> GetAllArmor()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllArmor was called");
+
+                return Context.Armor
+                    .Include(armor => armor.Obtained)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllArmor failed: {ex}");
+                return null;
+            }
+        }
     }
 }
