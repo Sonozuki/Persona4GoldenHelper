@@ -375,3 +375,87 @@ This is being rewritten to not require a shadow object. Documentation will be ad
     }, ...
 ]
 ```
+
+### GetAllArcanas
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all arcanas stored in the database in the below data model. They are returned in the 'arcana rank' order.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
+```json
+[
+    {
+        "id": -1,
+        "arcanaName": ""
+    }, ...
+]
+```
+
+### GetAllArcana2FusionResults
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all 2 arcana fusion results stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
+```json
+[
+    {
+        "id": -1,
+        "fusionType": -1,
+        "sourceArcanas": [
+            {
+                "id": -1,
+                "arcanaName": ""
+            },
+            {
+                "id": -1,
+                "arcanaName": ""
+            }
+        ],
+        "resultArcana": ""
+    }, ...
+]
+```
+
+### GetAllArcana3FusionResults
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all 3 arcana fusion results stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
+```json
+[
+    {
+        "id": -1,
+        "fusionType": -1,
+        "sourceArcanas": [
+            {
+                "id": -1,
+                "arcanaName": ""
+            },
+            {
+                "id": -1,
+                "arcanaName": ""
+            }
+        ],
+        "resultArcana": ""
+    }, ...
+]
+```
+
+### GetAllSpecialFusionResults
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all special persona recipes stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
+```json
+[
+    {
+        "id": -1,
+        "sourcePersonas": [
+            {
+                "id": -1,
+                "personaName": ""
+            }, ...
+        ],
+        "resultPersona": ""
+    }
+]
+```
