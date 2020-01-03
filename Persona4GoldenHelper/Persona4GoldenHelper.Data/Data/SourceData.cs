@@ -68,6 +68,14 @@ namespace Persona4GoldenHelper.Data.Data
                 }
             },
             new Source() {
+                Information = "Shadows",
+                Links = new List<Link>() {
+                    new Link() {
+                        URL = "https://megamitensei.fandom.com/wiki/Category:Persona_4_Golden_Shadows"
+                    }
+                }
+            },
+            new Source() {
                 Information = "Lunches",
                 Links = new List<Link>() {
                     new Link() {
