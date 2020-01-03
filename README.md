@@ -188,6 +188,31 @@ This is being rewritten to not require a shadow object. Documentation will be ad
 ]
 ```
 
+### GetAllArmor
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all armor stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
+```json
+[
+    {
+        "id": -1,
+        "gender": -1,
+        "name": "",
+        "defense": -1,
+        "evade": -1,
+        "effect": "",
+        "obtained": [
+            {
+                "id": -1,
+                "obtain": "",
+                "price": ""
+            }, ...
+        ]
+    }, ...
+]
+```
+
 ### GetAllPersonas
 * **Expects**: GET request, with no params.
 * **Return summary**: Return all personas stored in the database in the below data model.
