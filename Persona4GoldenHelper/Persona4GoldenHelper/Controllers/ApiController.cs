@@ -287,6 +287,29 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        public IActionResult GetAllArmor()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllArmor was called");
+
+                var armor = AppService.GetAllArmor();
+                if (armor != null)
+                {
+                    return Ok(armor);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllArmor failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
         public IActionResult GetAllPersonas()
         {
             try
