@@ -46,6 +46,7 @@
         text-decoration: none;
         color: #c5c1b9;
         padding: 15px;
+        background-color: transparent; /* without this a weird result can happen when dragging one of the navbar items, without this it will return to the bootstap styling of a white background */
     }
 
 /* Bootstrap overrides */
