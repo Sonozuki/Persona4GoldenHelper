@@ -20,6 +20,12 @@
         background: #555;
     }
 
+/* text selected */
+::selection {
+    background-color: #c5c1b9;
+    color: #e7e7e7;
+}
+
 /* Styling for layout header, including navbar */
 #page-header {
     padding-top: 10px;
