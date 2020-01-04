@@ -32,19 +32,39 @@
         color: #c5c1b9;
     }
 
-    #page-header li {
-        display: inline;
+    #page-header ul {
+        float: none;
     }
 
-        #page-header li a {
-            text-decoration: none;
-            color: #c5c1b9;
+    #page-header a {
+        text-decoration: none;
+        color: #c5c1b9;
+        padding: 15px;
+    }
+
+        #page-header a:hover {
+            background-color: transparent; /* overrides the background bootstrap puts on nav items */
         }
 
-    #page-header .divider {
-        font-weight: bold;
-        color: #555;
+/* override bootstraps navbar styling to centeralise it and to make it stacked when in mobile mode */
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav > li {
+        width: 100%;
+        float: none;
+        display: inline-block;
     }
+}
+
+.navbar-toggle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
 
 /* Site wide tag styling */
 body {

@@ -5,45 +5,31 @@
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="page-header" class="text-center">
-        <a class="header" asp-controller="App" asp-action="Index">Persona 4: Golden Helper</a>
-        <ul>
-            <li><a asp-controller="Persona" asp-action="Index">Personas</a></li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="Skills">Skills</a></li>
-            <li class="divider"> | </li>
-            <li class="text-dark">Calender</li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="Books">Books</a></li>
-            <li class="divider"> | </li>
-            <li class="text-dark">Weapons</li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="Armor">Armor</a></li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="Accessories">Accessories</a></li>
-            <li class="divider"> | </li>
-            <li class="text-dark">Costumes</li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="ExamAnswers">Exam Answers</a></li>
-            <li class="divider"> | </li>
-            <li class="text-dark">Gardening</li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="Quests">Quests</a></li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="Shadow" asp-action="Index">Shadows</a></li>
-            <li class="divider"> | </li>
-            <li class="text-dark">Items</li>
-            <li class="divider"> | </li>
-            <li class="text-dark">Social Links</li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="Lunches">Lunches</a></li>
-            <li class="divider"> | </li>
-            <li><a asp-controller="App" asp-action="SkillCards">Skill Cards</a></li>
-            <li class="divider"> | </li>
-            <li class="text-dark">Dungeons</li>
-            <li class="divider"> | </li>
-            <li><a href="https://github.com/AndyCrocker/Persona4GoldenHelper" target="_blank">Source Code</a></li>
-        </ul>
+    <div id="page-header">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 text-align-center">
+                <a class="header" asp-controller="App" asp-action="Index">Persona 4: Golden Helper</a>
+            </div>
+            <div class="col-xs-2">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
+            </div>
+        </div>
+
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav text-align-center">
+                <li><a asp-controller="Persona" asp-action="Index">Personas</a></li>
+                <li><a asp-controller="App" asp-action="Skills">Skills</a></li>
+                <li><a asp-controller="App" asp-action="Books">Books</a></li>
+                <li><a asp-controller="App" asp-action="Armor">Armor</a></li>
+                <li><a asp-controller="App" asp-action="Accessories">Accessories</a></li>
+                <li><a asp-controller="App" asp-action="ExamAnswers">Exam Answers</a></li>
+                <li><a asp-controller="App" asp-action="Quests">Quests</a></li>
+                <li><a asp-controller="Shadow" asp-action="Index">Shadows</a></li>
+                <li><a asp-controller="App" asp-action="Lunches">Lunches</a></li>
+                <li><a asp-controller="App" asp-action="SkillCards">Skill Cards</a></li>
+                <li><a href="https://github.com/AndyCrocker/Persona4GoldenHelper" target="_blank">Source Code</a></li>
+            </ul>
+        </div>
     </div>
     <br />
 
@@ -51,6 +37,7 @@
 </body>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
 @if (!string.IsNullOrEmpty(ViewBag.PersonaName))
 {
