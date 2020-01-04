@@ -8,18 +8,18 @@
                 <th class="extra-slim-column text-align-center">Level</th>
                 <th>Name</th>
                 <th>Arcana</th>
-                <th class="extra-slim-column text-align-center">St</th>
-                <th class="extra-slim-column text-align-center">Mg</th>
-                <th class="extra-slim-column text-align-center">En</th>
-                <th class="extra-slim-column text-align-center">Ag</th>
-                <th class="extra-slim-column text-align-center">Lu</th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Physical.png" alt="Physical" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Fire.png" alt="Fire" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Ice.png" alt="Ice" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Electric.png" alt="Electric" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Wind.png" alt="Wind" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Light.png" alt="Light" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Dark.png" alt="Dark" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden">St</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">Mg</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">En</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">Ag</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">Lu</th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Physical.png" alt="Physical" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Fire.png" alt="Fire" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Ice.png" alt="Ice" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Electric.png" alt="Electric" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Wind.png" alt="Wind" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Light.png" alt="Light" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Dark.png" alt="Dark" /></th>
             </tr>
         </thead>
         <tbody>
@@ -29,18 +29,18 @@
                     <td class="text-align-center">@persona.Level</td>
                     <td class="text-bright"><a class="@(persona.Ultimate ? "type-ultimate" : persona.NewGame ? "type-new-game" : "")" asp-action="@persona.Name">@persona.Name</a></td>
                     <td>@persona.Arcana</td>
-                    <td class="text-align-center">@persona.Stats.Strength</td>
-                    <td class="text-align-center">@persona.Stats.Magic</td>
-                    <td class="text-align-center">@persona.Stats.Endurance</td>
-                    <td class="text-align-center">@persona.Stats.Agility</td>
-                    <td class="text-align-center">@persona.Stats.Luck</td>
-                    <td class="text-align-center affinity-@persona.Elements.Physical">@ConvertElementAffinityToShortHand(persona.Elements.Physical)</td>
-                    <td class="text-align-center affinity-@persona.Elements.Fire">@ConvertElementAffinityToShortHand(persona.Elements.Fire)</td>
-                    <td class="text-align-center affinity-@persona.Elements.Ice">@ConvertElementAffinityToShortHand(persona.Elements.Ice)</td>
-                    <td class="text-align-center affinity-@persona.Elements.Electricity">@ConvertElementAffinityToShortHand(persona.Elements.Electricity)</td>
-                    <td class="text-align-center affinity-@persona.Elements.Wind">@ConvertElementAffinityToShortHand(persona.Elements.Wind)</td>
-                    <td class="text-align-center affinity-@persona.Elements.Light">@ConvertElementAffinityToShortHand(persona.Elements.Light)</td>
-                    <td class="text-align-center affinity-@persona.Elements.Darkness">@ConvertElementAffinityToShortHand(persona.Elements.Darkness)</td>
+                    <td class="text-align-center mobile-hidden">@persona.Stats.Strength</td>
+                    <td class="text-align-center mobile-hidden">@persona.Stats.Magic</td>
+                    <td class="text-align-center mobile-hidden">@persona.Stats.Endurance</td>
+                    <td class="text-align-center mobile-hidden">@persona.Stats.Agility</td>
+                    <td class="text-align-center mobile-hidden">@persona.Stats.Luck</td>
+                    <td class="text-align-center mobile-hidden affinity-@persona.Elements.Physical">@ConvertElementAffinityToShortHand(persona.Elements.Physical)</td>
+                    <td class="text-align-center mobile-hidden affinity-@persona.Elements.Fire">@ConvertElementAffinityToShortHand(persona.Elements.Fire)</td>
+                    <td class="text-align-center mobile-hidden affinity-@persona.Elements.Ice">@ConvertElementAffinityToShortHand(persona.Elements.Ice)</td>
+                    <td class="text-align-center mobile-hidden affinity-@persona.Elements.Electricity">@ConvertElementAffinityToShortHand(persona.Elements.Electricity)</td>
+                    <td class="text-align-center mobile-hidden affinity-@persona.Elements.Wind">@ConvertElementAffinityToShortHand(persona.Elements.Wind)</td>
+                    <td class="text-align-center mobile-hidden affinity-@persona.Elements.Light">@ConvertElementAffinityToShortHand(persona.Elements.Light)</td>
+                    <td class="text-align-center mobile-hidden affinity-@persona.Elements.Darkness">@ConvertElementAffinityToShortHand(persona.Elements.Darkness)</td>
                 </tr>
 
             }

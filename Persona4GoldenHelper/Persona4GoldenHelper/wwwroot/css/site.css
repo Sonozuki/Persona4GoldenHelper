@@ -240,3 +240,10 @@ table {
     color: #16ce3c;
     font-weight: bold;
 }
+
+/* Mobile-hidden styling */
+@media (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+}

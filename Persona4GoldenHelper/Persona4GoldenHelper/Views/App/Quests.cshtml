@@ -7,11 +7,11 @@
             <tr>
                 <th class="extra-slim-column text-align-center">Number</th>
                 <th>Title</th>
-                <th class="slim-column text-align-center">Quest Giver</th>
-                <th class="text-align-center">Location</th>
-                <th class="slim-column text-align-center">Available</th>
-                <th class="text-align-center">Prerequisities</th>
-                <th class="text-align-center">Reward</th>
+                <th class="slim-column text-align-center mobile-hidden">Quest Giver</th>
+                <th class="text-align-center mobile-hidden">Location</th>
+                <th class="slim-column text-align-center mobile-hidden">Available</th>
+                <th class="text-align-center mobile-hidden">Prerequisities</th>
+                <th class="text-align-center mobile-hidden">Reward</th>
                 <th>Instructions</th>
             </tr>
         </thead>
@@ -21,11 +21,11 @@
                 <tr>
                     <td class="text-align-center">@quest.Number</td>
                     <td class="text-bright">@quest.Title</td>
-                    <td class="text-align-center">@quest.QuestGiver</td>
-                    <td class="text-align-center">@quest.Location</td>
-                    <td class="text-align-center">@quest.DateAvailable</td>
-                    <td class="text-align-center">@(quest.Prerequisites != "" ? quest.Prerequisites : "-")</td>
-                    <td class="text-align-center">@(quest.Reward != "" ? quest.Reward : "-")</td>
+                    <td class="text-align-center mobile-hidden">@quest.QuestGiver</td>
+                    <td class="text-align-center mobile-hidden">@quest.Location</td>
+                    <td class="text-align-center mobile-hidden">@quest.DateAvailable</td>
+                    <td class="text-align-center mobile-hidden">@(quest.Prerequisites != "" ? quest.Prerequisites : "-")</td>
+                    <td class="text-align-center mobile-hidden">@(quest.Reward != "" ? quest.Reward : "-")</td>
                     <td>@quest.Instructions</td>
                 </tr>
             }

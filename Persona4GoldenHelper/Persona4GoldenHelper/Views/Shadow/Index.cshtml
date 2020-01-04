@@ -12,18 +12,18 @@
                 <th>Name</th>
                 <th class="text-align-center">Type</th>
                 <th class="extra-slim-column text-align-center">Level</th>
-                <th class="extra-slim-column text-align-center">St</th>
-                <th class="extra-slim-column text-align-center">Mg</th>
-                <th class="extra-slim-column text-align-center">En</th>
-                <th class="extra-slim-column text-align-center">Ag</th>
-                <th class="extra-slim-column text-align-center">Lu</th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Physical.png" alt="Physical" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Fire.png" alt="Fire" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Ice.png" alt="Ice" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Electric.png" alt="Electric" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Wind.png" alt="Wind" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Light.png" alt="Light" /></th>
-                <th class="extra-slim-column text-align-center"><img src="~/img/Dark.png" alt="Dark" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden">St</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">Mg</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">En</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">Ag</th>
+                <th class="extra-slim-column text-align-center mobile-hidden">Lu</th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Physical.png" alt="Physical" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Fire.png" alt="Fire" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Ice.png" alt="Ice" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Electric.png" alt="Electric" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Wind.png" alt="Wind" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Light.png" alt="Light" /></th>
+                <th class="extra-slim-column text-align-center mobile-hidden"><img src="~/img/Dark.png" alt="Dark" /></th>
             </tr>
         </thead>
         @foreach (var shadowName in distinctShadowNames)
@@ -43,18 +43,18 @@
 
                         <td class="text-align-center type-@shadow.Type">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString())</td>
                         <td class="text-align-center">@shadow.Level</td>
-                        <td class="text-align-center">@shadow.Stats.Strength</td>
-                        <td class="text-align-center">@shadow.Stats.Magic</td>
-                        <td class="text-align-center">@shadow.Stats.Endurance</td>
-                        <td class="text-align-center">@shadow.Stats.Agility</td>
-                        <td class="text-align-center">@shadow.Stats.Luck</td>
-                        <td class="text-align-center affinity-@shadow.Elements.Physical">@ConvertElementAffinityToShortHand(shadow.Elements.Physical)</td>
-                        <td class="text-align-center affinity-@shadow.Elements.Fire">@ConvertElementAffinityToShortHand(shadow.Elements.Fire)</td>
-                        <td class="text-align-center affinity-@shadow.Elements.Ice">@ConvertElementAffinityToShortHand(shadow.Elements.Ice)</td>
-                        <td class="text-align-center affinity-@shadow.Elements.Electricity">@ConvertElementAffinityToShortHand(shadow.Elements.Electricity)</td>
-                        <td class="text-align-center affinity-@shadow.Elements.Wind">@ConvertElementAffinityToShortHand(shadow.Elements.Wind)</td>
-                        <td class="text-align-center affinity-@shadow.Elements.Light">@ConvertElementAffinityToShortHand(shadow.Elements.Light)</td>
-                        <td class="text-align-center affinity-@shadow.Elements.Darkness">@ConvertElementAffinityToShortHand(shadow.Elements.Darkness)</td>
+                        <td class="text-align-center mobile-hidden">@shadow.Stats.Strength</td>
+                        <td class="text-align-center mobile-hidden">@shadow.Stats.Magic</td>
+                        <td class="text-align-center mobile-hidden">@shadow.Stats.Endurance</td>
+                        <td class="text-align-center mobile-hidden">@shadow.Stats.Agility</td>
+                        <td class="text-align-center mobile-hidden">@shadow.Stats.Luck</td>
+                        <td class="text-align-center mobile-hidden affinity-@shadow.Elements.Physical">@ConvertElementAffinityToShortHand(shadow.Elements.Physical)</td>
+                        <td class="text-align-center mobile-hidden affinity-@shadow.Elements.Fire">@ConvertElementAffinityToShortHand(shadow.Elements.Fire)</td>
+                        <td class="text-align-center mobile-hidden affinity-@shadow.Elements.Ice">@ConvertElementAffinityToShortHand(shadow.Elements.Ice)</td>
+                        <td class="text-align-center mobile-hidden affinity-@shadow.Elements.Electricity">@ConvertElementAffinityToShortHand(shadow.Elements.Electricity)</td>
+                        <td class="text-align-center mobile-hidden affinity-@shadow.Elements.Wind">@ConvertElementAffinityToShortHand(shadow.Elements.Wind)</td>
+                        <td class="text-align-center mobile-hidden affinity-@shadow.Elements.Light">@ConvertElementAffinityToShortHand(shadow.Elements.Light)</td>
+                        <td class="text-align-center mobile-hidden affinity-@shadow.Elements.Darkness">@ConvertElementAffinityToShortHand(shadow.Elements.Darkness)</td>
                     </tr>
                 }
             </tbody>

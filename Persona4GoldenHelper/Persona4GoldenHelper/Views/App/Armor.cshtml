@@ -18,7 +18,7 @@
                     <th class="extra-slim-column text-align-center">Evade</th>
                     <th>Effect</th>
                     <th class="text-align-center">Price</th>
-                    <th>How to Obatin</th>
+                    <th class="mobile-hidden">How to Obatin</th>
                 </tr>
             </thead>
             @foreach (var armor in armors)
@@ -37,7 +37,7 @@
                         }
 
                         <td class="text-align-center">@(obtain.Price == "" ? "-" : obtain.Price)</td>
-                        <td>@obtain.Obtain</td>
+                        <td class="mobile-hidden">@obtain.Obtain</td>
                     </tr>
                     }
                 </tbody>
