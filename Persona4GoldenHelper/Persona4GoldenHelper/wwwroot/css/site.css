@@ -42,8 +42,6 @@
         padding: 15px;
     }
 
-
-
 /* Bootstrap overrides */
 .navbar-nav > li {
     float: none;
@@ -159,6 +157,30 @@ table {
 .white-space-pre-line {
     white-space: pre-line;
 }
+
+#return-to-top {
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #202020;
+    border: 1px solid #353535;
+    outline: none;
+    transition: background-color 1s;
+}
+
+    #return-to-top:hover {
+        background-color: #333;
+    }
+
+    #return-to-top #label {
+        font-size: 47px;
+        font-weight: bold;
+        padding-top: 5px;
+        cursor: pointer;
+    }
 
 /* Text colouring */
 .text-bright, a:link, a:visited {
