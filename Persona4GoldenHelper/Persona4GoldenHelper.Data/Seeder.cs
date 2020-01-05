@@ -144,6 +144,15 @@ namespace Persona4GoldenHelper.Data
                 }
             }
 
+            if (!Context.Weapons.Any())
+            {
+                foreach (var weapon in WeaponData.Weapons)
+                {
+                    Context.Weapons.Add(weapon);
+                    Context.SaveChanges();
+                }
+            }
+
             if (!Context.ArcanaFusionResults.Any())
             {
                 foreach (var fusionResult in ArcanaFusionResultData.ArcanaFusions)

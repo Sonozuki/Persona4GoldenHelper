@@ -22,6 +22,7 @@ namespace Persona4GoldenHelper.Data
         public DbSet<SkillCard> SkillCards { get; set; }
         public DbSet<SkillCardLocation> SkillCardLocations { get; set; }
         public DbSet<Source> Sources { get; set; }
+        public DbSet<Weapon> Weapons { get; set; }
 
         public DbSet<ArcanaFusionResult> ArcanaFusionResults { get; set; }
         public DbSet<SpecialFusionResult> SpecialFusionResults { get; set; }

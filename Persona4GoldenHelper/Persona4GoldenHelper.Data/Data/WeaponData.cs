@@ -6,7 +6,7 @@ namespace Persona4GoldenHelper.Data.Data
 {
     public class WeaponData
     {
-        public List<Weapon> Weapons { get; set; } = new List<Weapon>()
+        public static List<Weapon> Weapons { get; set; } = new List<Weapon>()
         {
             new Weapon() {
                 User = User.Protagonist,
