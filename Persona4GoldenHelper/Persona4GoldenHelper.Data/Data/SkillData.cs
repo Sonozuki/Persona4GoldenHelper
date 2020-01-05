@@ -1164,7 +1164,7 @@ namespace Persona4GoldenHelper.Data.Data
                         NewGame = false
                     },
                     new SkillPersona() {
-                        Name = "Andras",
+                        Name = "Andra",
                         LevelRequired = 22,
                         Ultimate = false,
                         NewGame = false
@@ -2223,7 +2223,7 @@ namespace Persona4GoldenHelper.Data.Data
                         NewGame = false
                     },
                     new SkillPersona() {
-                        Name = "Andras",
+                        Name = "Andra",
                         LevelRequired = 25,
                         Ultimate = false,
                         NewGame = false
@@ -5550,7 +5550,7 @@ namespace Persona4GoldenHelper.Data.Data
                         NewGame = false
                     },
                     new SkillPersona() {
-                        Name = "Andras",
+                        Name = "Andra",
                         LevelRequired = 0,
                         Ultimate = false,
                         NewGame = false
@@ -5800,7 +5800,7 @@ namespace Persona4GoldenHelper.Data.Data
                         NewGame = false
                     },
                     new SkillPersona() {
-                        Name = "Andras",
+                        Name = "Andra",
                         LevelRequired = 0,
                         Ultimate = false,
                         NewGame = false
@@ -8014,7 +8014,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Cost = "",
                 Personas = new List<SkillPersona>() {
                     new SkillPersona() {
-                        Name = "Andras",
+                        Name = "Andra",
                         LevelRequired = 23,
                         Ultimate = false,
                         NewGame = false
@@ -9115,7 +9115,7 @@ namespace Persona4GoldenHelper.Data.Data
                         NewGame = false
                     },
                     new SkillPersona() {
-                        Name = "Andras",
+                        Name = "Andra",
                         LevelRequired = 0,
                         Ultimate = false,
                         NewGame = false
@@ -10219,7 +10219,7 @@ namespace Persona4GoldenHelper.Data.Data
                         NewGame = false
                     },
                     new SkillPersona() {
-                        Name = "Andras",
+                        Name = "Andra",
                         LevelRequired = 24,
                         Ultimate = false,
                         NewGame = false

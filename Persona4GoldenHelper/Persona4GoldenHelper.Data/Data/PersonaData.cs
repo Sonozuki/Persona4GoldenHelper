@@ -1825,7 +1825,7 @@ namespace Persona4GoldenHelper.Data.Data
                 NewGame = false,
             },
             new Persona() {
-                Name = "Andras",
+                Name = "Andra",
                 Arcana = "Moon",
                 Level = 20,
                 Stats = new Stats() {
