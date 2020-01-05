@@ -54,5 +54,15 @@
             MiniBoss,
             Boss
         }
+        public enum User
+        {
+            Protagonist,
+            Yosuke,
+            Chie,
+            Yukiko,
+            Kanji,
+            Teddie,
+            Naoto
+        }
     }
 }

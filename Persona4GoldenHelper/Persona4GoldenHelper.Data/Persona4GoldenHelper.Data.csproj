@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\WeaponData.cs" />
-    <Compile Remove="Models\Weapon.cs" />
-    <Compile Remove="Models\WeaponObtain.cs" />
+    <Compile Remove="Migrations\20191231190249_Add shadows.cs" />
+    <Compile Remove="Migrations\20191231190249_Add shadows.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
