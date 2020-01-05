@@ -4,6 +4,7 @@
 * **Personas** - This page lists all available personas in the game, it also shows their: arcana, level, stats, and element affinities. Clicking on one of the persona names will bring you to that persona's page, this contains the above as well as skills that personas has.
 * **Skills** - This page lists all the skills that are available to get on personas, it also shows their: effect, cost, and all personas that can have these skills, including the level the personas require to unlock them (this only includes skills the base personas can have, meaning other personas can have these skills through inheritance with fusion).
 * **Books** - This page lists all the books in the game, it also shows: the date required to obtain them, how to obtain them, their price, and their effect. This page also contains the order at which the books appear your inventory (to make checking missing books easier).
+* **Weapons** - This page lists all the weapons available in the game, sorted by user. It also show their: attack, accuracy, effect, price, and how to obtain them.
 * **Armor** - This page lists all the armor available in the game, sorted by type (male, female, unisex). It also shows their: evade, defense, effect, price, and how to obtain them.
 * **Accessories** - This page lists all accessories in the game, it also shows their: effect, price, and how to obtain them.
 * **Exam Answers** - This page lists all the exam questions and correct answers, it also shows the date you will be asked the question.
@@ -14,7 +15,6 @@
 
 ## Planned Pages
 * **Calender** - This page will contain: the weather, times skips, exam dates, and social link availability for each day.
-* **Weapons** - This page will contain all the weapons available in the game, sorted by user. It will also show their: attack, accuracy, effect, price, and how to obtain them.
 * **Costumes** - This page will contain all the constumes in the game, with their price and how to obtain them.
 * **Gardening** - This page will contain all the plants you can grow in the garden, as well as their products and the effects of those products.
 * **Items** - This page will contain all the items in the game (excluding accessories, weapons, and armor as they have dedicated pages), including their effect, and cost
@@ -201,6 +201,31 @@ This is being rewritten to not require a shadow object. Documentation will be ad
         "name": "",
         "defense": -1,
         "evade": -1,
+        "effect": "",
+        "obtained": [
+            {
+                "id": -1,
+                "obtain": "",
+                "price": ""
+            }, ...
+        ]
+    }, ...
+]
+```
+
+### GetAllWeapons
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all weapons stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
+```json
+[
+    {
+        "id": -1,
+        "user": -1,
+        "name": "",
+        "attack": -1,
+        "accuracy": -1,
         "effect": "",
         "obtained": [
             {
