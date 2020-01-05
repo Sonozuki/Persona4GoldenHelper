@@ -47,7 +47,7 @@ namespace Persona4GoldenHelper.Controllers
 
                 foreach (var shadow in model.Shadows)
                 {
-                    shadow.FullSkills = AppService.GetSkillsByShadow(shadow);
+                    shadow.FullSkills = AppService.GetSkillsByShadowName(shadow.Name, shadow.Type.ToString());
                 }
 
                 return View("Shadow" , model);

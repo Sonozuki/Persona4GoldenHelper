@@ -12,11 +12,15 @@ namespace Persona4GoldenHelper.Service
     {
         private readonly ApplicationDbContext Context;
         private readonly ILogger<AppService> Logger;
+        private readonly IPersona PersonaService;
+        private readonly IShadow ShadowService;
 
-        public AppService(ApplicationDbContext context, ILogger<AppService> logger)
+        public AppService(ApplicationDbContext context, ILogger<AppService> logger, IPersona personaService, IShadow shadowService)
         {
             Context = context;
             Logger = logger;
+            PersonaService = personaService;
+            ShadowService = shadowService;
         }
 
         public List<Book> GetAllBooks()
@@ -82,11 +86,17 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
-        public List<Skill> GetSkillsByPersona(Persona persona)
+        public List<Skill> GetSkillsByPersonaName(string name)
         {
             try
             {
                 Logger.LogInformation("GetSkillsByPersona was called");
+
+                var persona = PersonaService.GetByName(name);
+                if (persona == null)
+                {
+                    return null;
+                }
 
                 // the reason this was done and a direct linq return wasn't used is to keep the current order of skills
                 List<string> skillNames = new List<string>();
@@ -112,11 +122,21 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
-        public List<Skill> GetSkillsByShadow(Shadow shadow)
+        public List<Skill> GetSkillsByShadowName(string name, string shadowType)
         {
             try
             {
                 Logger.LogInformation("GetSkillsByShadow was called");
+
+                var shadows = ShadowService.GetByName(name);
+                var shadow = shadows
+                    .Where(s => s.Type.ToString().ToLower() == shadowType.ToLower())
+                    .FirstOrDefault();
+
+                if (shadow == null)
+                {
+                    return null;
+                }
 
                 List<string> skillNames = new List<string>();
                 foreach (ShadowSkill skill in shadow.Skills)

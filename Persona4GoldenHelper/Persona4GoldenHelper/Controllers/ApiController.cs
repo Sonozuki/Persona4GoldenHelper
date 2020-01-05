@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Persona4GoldenHelper.Data;
-using Persona4GoldenHelper.Data.Models;
 using System;
 
 namespace Persona4GoldenHelper.Controllers
@@ -93,18 +92,18 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
-        public IActionResult GetSkillsByPersona(Persona persona)
+        public IActionResult GetSkillsByPersonaName(string name)
         {
             try
             {
                 Logger.LogInformation("GetSkillsByPersona was called");
 
-                if (persona == null)
+                if (name == null)
                 {
                     return StatusCode(406);
                 }
 
-                var skills = AppService.GetSkillsByPersona(persona);
+                var skills = AppService.GetSkillsByPersonaName(name);
                 if (skills != null)
                 {
                     return Ok(skills);
@@ -121,18 +120,18 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
-        public IActionResult GetSkillsByShadow(Shadow shadow)
+        public IActionResult GetSkillsByShadowName(string name, string type)
         {
             try
             {
                 Logger.LogInformation("GetSkillsByShadow was called");
 
-                if (shadow == null)
+                if (name == null || type == null)
                 {
                     return StatusCode(406);
                 }
 
-                var skills = AppService.GetSkillsByShadow(shadow);
+                var skills = AppService.GetSkillsByShadowName(name, type);
                 if (skills != null)
                 {
                     return Ok(skills);

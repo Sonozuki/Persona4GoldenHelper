@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Persona4GoldenHelper.Data;
 using Persona4GoldenHelper.Data.Models;
 using Persona4GoldenHelper.Models;
-using System;
 
 namespace Persona4GoldenHelper.Controllers
 {
@@ -43,7 +41,7 @@ namespace Persona4GoldenHelper.Controllers
                 var model = new PersonaViewModel
                 {
                     Persona = persona,
-                    Skills = AppService.GetSkillsByPersona(persona)
+                    Skills = AppService.GetSkillsByPersonaName(personaName)
                 };
 
                 return View("Persona", model);
