@@ -581,19 +581,6 @@ namespace Persona4GoldenHelper.Data.Data
             },
             new Weapon() {
                 User = User.Yosuke,
-                Name = "Monkey Wrench",
-                Attack = 40,
-                Accuracy = 90,
-                Effect = "",
-                Obtained = new List<ItemObtain>() {
-                    new ItemObtain() {
-                        Obtain = "[Default]",
-                        Price = "",
-                    }
-                }
-            },
-            new Weapon() {
-                User = User.Yosuke,
                 Name = "Happy Maracas",
                 Attack = 25,
                 Accuracy = 92,
@@ -601,6 +588,19 @@ namespace Persona4GoldenHelper.Data.Data
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 8 Magatsu Xandrite & 1 Mondo Stone.",
+                        Price = "",
+                    }
+                }
+            },
+            new Weapon() {
+                User = User.Yosuke,
+                Name = "Monkey Wrench",
+                Attack = 40,
+                Accuracy = 90,
+                Effect = "",
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
+                        Obtain = "[Default]",
                         Price = "",
                     }
                 }
@@ -646,19 +646,6 @@ namespace Persona4GoldenHelper.Data.Data
             },
             new Weapon() {
                 User = User.Yosuke,
-                Name = "Skill Spanner",
-                Attack = 83,
-                Accuracy = 86,
-                Effect = "Increase max SP by 50",
-                Obtained = new List<ItemObtain>() {
-                    new ItemObtain() {
-                        Obtain = "Go to The Twisted Shopping District (First dungeon) on 5/1",
-                        Price = "",
-                    }
-                }
-            },
-            new Weapon() {
-                User = User.Yosuke,
                 Name = "Reign Skinner",
                 Attack = 80,
                 Accuracy = 98,
@@ -667,6 +654,19 @@ namespace Persona4GoldenHelper.Data.Data
                     new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 4th Girl's Talc (The Steamy Bathhouse, 7-8F, \"4th Girl's Talc\") and buy it.",
                         Price = "¥18000",
+                    }
+                }
+            },
+            new Weapon() {
+                User = User.Yosuke,
+                Name = "Skill Spanner",
+                Attack = 83,
+                Accuracy = 86,
+                Effect = "Increase max SP by 50",
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
+                        Obtain = "Go to The Twisted Shopping District (First dungeon) on 5/1",
+                        Price = "",
                     }
                 }
             },
