@@ -72,11 +72,39 @@ All apis avilable internally in the app have been exposed, through the '/Api/{fu
 ]
 ```
 
-### GetSkillsByPersona
-This is being rewritten to not require a persona object. Documentation will be added once that is changed
+### GetSkillsByPersonaName
+* **Expects**: GET request, with a parameter called 'name', type string, containing the persona name.
+* **Return Summary**: Return all the skills the persona has in the below data model.
+* **Retuen HTTP codes**: 200, 204, 406, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game. Personas will always return null)
+```json
+[
+    {
+        "id": -1,
+        "name": "",
+        "effect": "",
+        "cost": "",
+        "personas": null
+    }, ...
+]
+```
 
-### GetSkillsByShadow
-This is being rewritten to not require a shadow object. Documentation will be added once that is changed
+### GetSkillsByShadowName
+* **Expects**: GET request, with 2 parameters. The first called 'name', type string, containing the shadow name. The second called 'type', type string, containing the shadow's type. Valid types are: 'normal', 'miniboss', and 'boss'.
+* **Return Summary**: Return all the skills the shadow has in the below data model.
+* **Retuen HTTP codes**: 200, 204, 406, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game. Personas will always return null)
+```json
+[
+    {
+        "id": -1,
+        "name": "",
+        "effect": "",
+        "cost": "",
+        "personas": null
+    }, ...
+]
+```
 
 ### GetAllQuests
 * **Expects**: GET request, with no params.
