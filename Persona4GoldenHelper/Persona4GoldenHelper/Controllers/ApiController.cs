@@ -310,6 +310,29 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        public IActionResult GetAllWeapons()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllWeapons was called");
+
+                var weapons = AppService.GetAllWeapons();
+                if (weapons != null)
+                {
+                    return Ok(weapons);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllWeapons failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
         public IActionResult GetAllPersonas()
         {
             try
