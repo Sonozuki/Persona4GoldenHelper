@@ -14,8 +14,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 42,
                 Accuracy = 93,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Default]",
                         Price = "",
                     }
@@ -27,12 +27,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 42,
                 Accuracy = 98,
                 Effect = "+50% EXP",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 2 Guardian for it. (December)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 8 Magatsu Xandrite & 8 Ryugu Stone.",
                         Price = ""
                     }
@@ -44,8 +44,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 53,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Buy from Daidara Metalworks.",
                         Price = "¥4800",
                     }
@@ -57,8 +57,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 53,
                 Accuracy = 98,
                 Effect = "Increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "",
                         Price = "",
                     }
@@ -70,8 +70,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 60,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Black Lamp (The Castle, 3-7F, \"Black Raven\") and buy it.",
                         Price = "¥10000",
                     }
@@ -83,8 +83,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 71,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Supple Metal (The Castle, 6-7F, \"Magical Magus\") and buy it.",
                         Price = "¥12000",
                     }
@@ -96,8 +96,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 78,
                 Accuracy = 98,
                 Effect = "+3 Agility",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Golden Cloth (The Castle, 6-7F, \"Phantom Mage\") and buy it.",
                         Price = "¥13600",
                     }
@@ -109,8 +109,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 88,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Powered Iron (The Steamy Bathhouse, 1-2F, \"Autonomic Basalt\") and buy it.",
                         Price = "¥14000",
                     }
@@ -122,8 +122,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 92,
                 Accuracy = 99,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Hollow Forest equipment.",
                         Price = "",
                     }
@@ -135,8 +135,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 108,
                 Accuracy = 95,
                 Effect = "+1 Endurance",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Pure Iron Lump (The Steamy Bathhouse, 5-7F, \"Iron Dice\") and buy it.",
                         Price = "¥18000",
                     }
@@ -148,8 +148,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 125,
                 Accuracy = 80,
                 Effect = "Low chance to inflict Fear",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Fluorite & 1 Yazu Stone.",
                         Price = "",
                     }
@@ -161,12 +161,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 130,
                 Accuracy = 96,
                 Effect = "+2 Agility",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 2 Inaba Trout for it. (May)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 1 Ryugu Stone.",
                         Price = ""
                     }
@@ -178,8 +178,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 133,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Iron Eyeball (Marukyu Striptease, 1-4F, \"Death Seeker\") and buy it.",
                         Price = "¥20000",
                     }
@@ -191,12 +191,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 140,
                 Accuracy = 80,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 6/26.",
                         Price = "¥9800",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 8/7.",
                         Price = "¥12800"
                     }
@@ -208,8 +208,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 145,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Silver Lump (Marukyu Striptease, 7-8F, \"Silver Dice\") and buy it.",
                         Price = "¥24000",
                     }
@@ -221,8 +221,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 152,
                 Accuracy = 92,
                 Effect = "+3 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Nice Ornament (The Void Quest, 1-4F, \"Justice Sword\") and buy it.",
                         Price = "¥27000",
                     }
@@ -234,8 +234,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 172,
                 Accuracy = 92,
                 Effect = "Increase max HP by 20",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Compacted Metal (The Void Quest, 7-9F, \"Monomaniac Fuzz\") and buy it.",
                         Price = "¥30000",
                     }
@@ -247,8 +247,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 179,
                 Accuracy = 84,
                 Effect = "High chance to inflict Rage",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Fish at Shichiri Beach.",
                         Price = "",
                     }
@@ -260,8 +260,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 180,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Blade Metal (The Void Quest, 7-9F, \"Ardent Dancer\") and buy it.",
                         Price = "¥31000",
                     }
@@ -273,8 +273,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 190,
                 Accuracy = 84,
                 Effect = "+2 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Tungsten (The Void Quest, 9F, \"Steel Machine\") and buy it.",
                         Price = "¥32000",
                     }
@@ -286,8 +286,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 194,
                 Accuracy = 98,
                 Effect = "Low chance to counter Physical attacks",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Howlite & 1 Yazu Stone.",
                         Price = "",
                     }
@@ -299,8 +299,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 200,
                 Accuracy = 30,
                 Effect = "Increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 8/14.",
                         Price = "¥14400",
                     }
@@ -312,8 +312,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 200,
                 Accuracy = 88,
                 Effect = "Low chance to inflict any ailment",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the optional boss in The Void Quest.",
                         Price = "",
                     }
@@ -325,8 +325,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 202,
                 Accuracy = 90,
                 Effect = "Increase max SP by 40",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Meteorite & 2 Taisui Stone.",
                         Price = "",
                     }
@@ -338,8 +338,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 210,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Insolence Steel (The Secret Laboratory, 1-2F, \"Insolent Basalt\") and buy it.",
                         Price = "¥36000",
                     }
@@ -351,8 +351,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 218,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Iron Gear (The Secret Laboratory, 5-6F, \"Wild Drive\") and buy it.",
                         Price = "¥37600",
                     }
@@ -364,8 +364,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 220,
                 Accuracy = 92,
                 Effect = "Low chance to inflict Silence",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Damascus (The Secret Laboratory, 7-8F, \"Dominating Machine\") and buy it.",
                         Price = "¥38000",
                     }
@@ -377,8 +377,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 230,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Flame Steel (Heaven, 2F, \"Brave Wheel\") and buy it.",
                         Price = "¥40000",
                     }
@@ -390,8 +390,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 240,
                 Accuracy = 94,
                 Effect = "+1 Luck",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Sacrilege Iron (Heaven, 3-4F, \"Apostate Tower\") and buy it.",
                         Price = "¥42000",
                     }
@@ -403,8 +403,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 248,
                 Accuracy = 50,
                 Effect = "Greatly increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 3rd Boy's Talc (Marukyu Striptease, 5-6F, \"Rainy Brother 3\", Rainy weather) and buy it.",
                         Price = "¥28000",
                     }
@@ -416,8 +416,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 248,
                 Accuracy = 90,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Prime Steel (Heaven, 6F, \"Stasis Giant\") and buy it.",
                         Price = "¥42000",
                     }
@@ -429,8 +429,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 250,
                 Accuracy = 30,
                 Effect = "Increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Gift from Margaret for completing 50% of active Social Links.",
                         Price = "",
                     }
@@ -442,8 +442,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 252,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Platinum Reins (Heaven, 8-9F, \"Intrepid Knight\") and buy it.",
                         Price = "¥43600",
                     }
@@ -455,8 +455,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 302,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Diamond Canine (Magatsu Inaba, 4-6F, \"SHADOWNAME\") and buy it.",
                         Price = "¥50000",
                     }
@@ -468,8 +468,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 310,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Brilliant Armor (Magatsu Mandala, 2-3F, \"Battle Wheel\") and buy it.",
                         Price = "¥52000",
                     }
@@ -481,8 +481,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 320,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Spark Ornament (Magatsu Mandala, 4-6F, \"Judgement Sword\") and buy it.",
                         Price = "¥54000",
                     }
@@ -494,8 +494,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 334,
                 Accuracy = 94,
                 Effect = "+5 Luck",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Orichalcum (Magatsu Mandala, 6F, \"Solemn Machine\") and buy it.",
                         Price = "¥56000",
                     }
@@ -507,8 +507,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 334,
                 Accuracy = 94,
                 Effect = "+5 Luck (Added sound effect when swung)",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Exchange Triumph with the Artisan Apprentice.",
                         Price = "¥56000",
                     }
@@ -520,8 +520,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 345,
                 Accuracy = 85,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Crown of Truth (Yomotsu Hirasaka, 3-4F, \"Grudge Tower\") and buy it.",
                         Price = "¥58000",
                     }
@@ -533,8 +533,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 360,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Ripper Horse (Yomotsu Hirasaka, 5-6F, \"Jotun of Grief\") and buy it.",
                         Price = "¥61600",
                     }
@@ -546,8 +546,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 372,
                 Accuracy = 88,
                 Effect = "Low chance to inflicit Exhaust",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Soul-Death Steel (Yomotsu Hirasaka, 7-8F, \"Void Giant\") and buy it.",
                         Price = "¥63600",
                     }
@@ -559,8 +559,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 390,
                 Accuracy = 98,
                 Effect = "Increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in: Yomotsu Hirasaka.",
                         Price = "",
                     }
@@ -572,8 +572,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 408,
                 Accuracy = 96,
                 Effect = "Greatly increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper.",
                         Price = "",
                     }
@@ -585,8 +585,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 40,
                 Accuracy = 90,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Default]",
                         Price = "",
                     }
@@ -598,8 +598,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 25,
                 Accuracy = 92,
                 Effect = "+50% EXP",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 8 Magatsu Xandrite & 1 Mondo Stone.",
                         Price = "",
                     }
@@ -611,8 +611,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 48,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Buy from Daidara Metalworks.",
                         Price = "¥4000",
                     }
@@ -624,8 +624,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 55,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Light Iron (The Castle, 3-5F, \"Magic Hand\") and buy it.",
                         Price = "¥10000",
                     }
@@ -637,8 +637,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 64,
                 Accuracy = 92,
                 Effect = "Low chance to inflict Poison",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Poison Flower (The Castle, 3-5F, \"Secret Bambino\") and buy it.",
                         Price = "¥11800",
                     }
@@ -650,8 +650,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 83,
                 Accuracy = 86,
                 Effect = "Increase max SP by 50",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to The Twisted Shopping District (First dungeon) on 5/1",
                         Price = "",
                     }
@@ -663,8 +663,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 80,
                 Accuracy = 98,
                 Effect = "High chance to inflict any ailment",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 4th Girl's Talc (The Steamy Bathhouse, 7-8F, \"4th Girl's Talc\") and buy it.",
                         Price = "¥18000",
                     }
@@ -676,8 +676,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 84,
                 Accuracy = 99,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Hollow Forest equipment.",
                         Price = "",
                     }
@@ -689,8 +689,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 85,
                 Accuracy = 99,
                 Effect = "+Auto-Sukukaja",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Lolite & 1 Kingyou Stone.",
                         Price = "",
                     }
@@ -702,8 +702,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 95,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Gray Shackle (The Steamy Bathhouse, 9-10F, \"Killer Twins\") and buy it.",
                         Price = "¥19600",
                     }
@@ -715,8 +715,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 122,
                 Accuracy = 93,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Hard Rock (Marukyu Striptease, 1-4F, \"Creation Relic\") and buy it.",
                         Price = "¥22000",
                     }
@@ -728,8 +728,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 138,
                 Accuracy = 98,
                 Effect = "+2 Agility",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Haori Iron (Marukyu Striptease, 5-8F, \"Venus Eagle\") and buy it.",
                         Price = "¥24000",
                     }
@@ -741,12 +741,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 140,
                 Accuracy = 90,
                 Effect = "+10 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 7/24.",
                         Price = "¥11800",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 8/7.",
                         Price = "¥12800"
                     }
@@ -758,8 +758,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 146,
                 Accuracy = 94,
                 Effect = "Increase max SP by 30",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Sharp Thorn (Marukyu Striptease, 9-10F, \"Mighty Cyclops\") and buy it.",
                         Price = "¥25600",
                     }
@@ -771,8 +771,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 153,
                 Accuracy = 93,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Steel Thorn (The Void Quest, 1-2F, \"Mad Cyclops\") and buy it.",
                         Price = "¥26400",
                     }
@@ -784,8 +784,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 153,
                 Accuracy = 93,
                 Effect = "Low chance to inflict Confuse",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Alluring Lily (The Void Quest, 7-8F, \"Avarice Bambino\") and buy it.",
                         Price = "¥26900",
                     }
@@ -797,8 +797,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 158,
                 Accuracy = 90,
                 Effect = "High chance to inflict Poison",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Fish at Shichiri Beach.",
                         Price = "",
                     }
@@ -810,8 +810,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 168,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Alloy Signature (The Void Quest, 5-6F, \"Blue Sigil\") and buy it.",
                         Price = "¥28000",
                     }
@@ -823,12 +823,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 170,
                 Accuracy = 74,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in: The Void Quest.",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 8/28.",
                         Price = "¥20800"
                     }
@@ -840,8 +840,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 174,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Trial Obsidian (The Void Quest, 7-9F, \"Leading Idol\") and buy it.",
                         Price = "¥30000",
                     }
@@ -853,8 +853,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 188,
                 Accuracy = 96,
                 Effect = "Low chance to inflict Fear",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Iron Barrel (The Secret Laboratory, 3-4F, \"Dismayed Panzer\") and buy it.",
                         Price = "¥32000",
                     }
@@ -866,8 +866,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 203,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Shining Dish (The Secret Laboratory, 5-6F, \"World Balance\") and buy it.",
                         Price = "¥34000",
                     }
@@ -879,8 +879,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 216,
                 Accuracy = 94,
                 Effect = "Increase Wind damage by 25%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 1st Boy's Talc (The Secret Laboratory, 1-2F, \"Rainy Brother 1\", Rainy weather) and buy it.",
                         Price = "¥37600",
                     }
@@ -892,8 +892,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 222,
                 Accuracy = 98,
                 Effect = "+3 Endurance",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Black Sheet (The Secret Laboratory, 7-8F, \"Wicked Turret\") and buy it.",
                         Price = "¥38000",
                     }
@@ -905,12 +905,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 233,
                 Accuracy = 80,
                 Effect = "+1 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 4 Huge Fish for it. (October)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Buffalo Stone & 1 Takou Stone.",
                         Price = ""
                     }
@@ -922,8 +922,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 238,
                 Accuracy = 96,
                 Effect = "Reduce Fire damage by 30&",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Flame Scale (Heaven, 1-2F, \"Finicky Papillon\") and buy it.",
                         Price = "¥40000",
                     }
@@ -935,8 +935,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 240,
                 Accuracy = 94,
                 Effect = "Increase chance to give critical attacks",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Treasure Cloth (Heaven, 3-5F, \"Phantom Lord\") and buy it.",
                         Price = "¥41600",
                     }
@@ -948,8 +948,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 252,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Perpetual Edge (Heaven, 8-9F, \"Conviction Sword\") and buy it.",
                         Price = "¥43600",
                     }
@@ -961,8 +961,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 280,
                 Accuracy = 98,
                 Effect = "+5 Magic",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Nightmare Sand (Magatsu Inaba, 1-2F, \"Infinite Sand\") and buy it.",
                         Price = "¥48000",
                     }
@@ -974,8 +974,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 284,
                 Accuracy = 92,
                 Effect = "Increase max HP by 40",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Sunstone & 1 Ryugu Stone.",
                         Price = "",
                     }
@@ -987,8 +987,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 294,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Unthinkable Metal (Magatsu Mandala, 4-6F, \"Happy Gene\") and buy it.",
                         Price = "¥50000",
                     }
@@ -1000,8 +1000,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 311,
                 Accuracy = 98,
                 Effect = "+3 to all stats",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Knowledge Staff (Magatsu Mandala, 4-5F, \"Reformed Okina\") and buy it.",
                         Price = "¥52000",
                     }
@@ -1013,8 +1013,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 320,
                 Accuracy = 86,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Cruel Thorn (Magatsu Mandala, 6F, \"Brilliant Cyclops\") and buy it.",
                         Price = "¥54000",
                     }
@@ -1026,8 +1026,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 336,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Mobius Sand (Yomotsu Hirasaka, 1-2F, \"Eternal Sand\") and buy it.",
                         Price = "¥57600",
                     }
@@ -1039,8 +1039,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 350,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Sephirot Staff (Yomotsu Hirasaka, 5-6F, \"Moon Okina\") and buy it.",
                         Price = "¥59600",
                     }
@@ -1052,8 +1052,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 361,
                 Accuracy = 96,
                 Effect = "Medium chance to inflict any ailment",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Vengeance Steel (Yomotsu Hirasaka, 7-8F, \"Reckoning Dice\") and buy it.",
                         Price = "¥61600",
                     }
@@ -1065,8 +1065,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 398,
                 Accuracy = 98,
                 Effect = "High chance to evade Physical attacks",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper with Yosuke in party.",
                         Price = "",
                     }
@@ -1078,8 +1078,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 38,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Default]",
                         Price = "",
                     }
@@ -1091,8 +1091,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 45,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Buy from Daidara Metalworks.",
                         Price = "¥7600",
                     }
@@ -1104,8 +1104,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 50,
                 Accuracy = 70,
                 Effect = "+50% EXP",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Magatsu Xandrite & 1 Kaiou Stone.",
                         Price = "",
                     }
@@ -1117,8 +1117,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 62,
                 Accuracy = 92,
                 Effect = "+2 Endurance",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Hard Horn (The Castle, 6-7F, \"Burning Beetle\") and buy it.",
                         Price = "¥11200",
                     }
@@ -1130,8 +1130,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 71,
                 Accuracy = 95,
                 Effect = "Increase resistance to Panic",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Blue Quartz.",
                         Price = "",
                     }
@@ -1143,8 +1143,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 75,
                 Accuracy = 92,
                 Effect = "+1 Agility",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Golden Dish (The Castle, 6-7F, \"Heat Balance\") and buy it.",
                         Price = "¥13600",
                     }
@@ -1156,8 +1156,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 83,
                 Accuracy = 85,
                 Effect = "Increase max SP by 20",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Blue Quartz & 1 Gyosen Stone.",
                         Price = "",
                     }
@@ -1169,8 +1169,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 92,
                 Accuracy = 92,
                 Effect = "Low chance to inflict rage",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Tough Hide (The Steamy Bathhouse, 1-2F, \"Bribed Fuzz\") and buy it.",
                         Price = "¥20000",
                     }
@@ -1182,8 +1182,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 96,
                 Accuracy = 99,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Hollow Forest equipment.",
                         Price = "",
                     }
@@ -1195,8 +1195,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 108,
                 Accuracy = 90,
                 Effect = "+2 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Thick Hide (The Steamy Bathhouse, 5-8F, \"Dancing Hand\") and buy it.",
                         Price = "¥21200",
                     }
@@ -1208,8 +1208,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 110,
                 Accuracy = 82,
                 Effect = "+3 Agility",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 5/22.",
                         Price = "¥5980",
                     }
@@ -1221,8 +1221,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 125,
                 Accuracy = 70,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in: The Steamy Bathhouse.",
                         Price = "",
                     }
@@ -1234,8 +1234,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 133,
                 Accuracy = 90,
                 Effect = "+1 to all stats",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Rubbery Object (Marukyu Striptease, 1-4F, \"Miss Gene\") and buy it.",
                         Price = "¥25600",
                     }
@@ -1247,8 +1247,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 150,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Sturdy Molar (Marukyu Striptease, 5-8F, \"Forgotten Hablerie\") and buy it.",
                         Price = "¥26800",
                     }
@@ -1260,8 +1260,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 167,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Wrought Lamp (Marukyu Striptease, 3-4F, \"Sonic Raven\") and buy it.",
                         Price = "¥28400",
                     }
@@ -1273,8 +1273,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 182,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Jet Black Scale (The Void Quest, 1-4F, \"Lustful Snake\") and buy it.",
                         Price = "¥31600",
                     }
@@ -1286,8 +1286,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 187,
                 Accuracy = 90,
                 Effect = "Reduce Fire damage by 20%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Bloodstone & 2 Takou Stone.",
                         Price = "",
                     }
@@ -1299,8 +1299,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 193,
                 Accuracy = 98,
                 Effect = "High chance to inflict Enervate",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Platinum Crown (The Void Quest, 1-2F, \"Corrupt Tower\") and buy it.",
                         Price = "¥33200",
                     }
@@ -1312,12 +1312,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 199,
                 Accuracy = 87,
                 Effect = "+2 to all stats",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 8 Amber Seema for it. (September)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Milky Quartz & 1 Ryugu Stone.",
                         Price = ""
                     }
@@ -1329,8 +1329,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 205,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Stone Hide (The Secret Laboratory, 1-2F, \"Constancy Relic\") and buy it.",
                         Price = "¥35600",
                     }
@@ -1342,8 +1342,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 218,
                 Accuracy = 92,
                 Effect = "+5 Agility",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Stretchy Object (The Secret Laboratory, 5-6F, \"Fail Gene\") and buy it.",
                         Price = "¥37200",
                     }
@@ -1355,8 +1355,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 220,
                 Accuracy = 80,
                 Effect = "High chance to counter Physical attacks",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Curious Boulder (The Void Quest, 1-2F, \"Rainy Castle\", Rainy weather) and buy it.",
                         Price = "¥32800",
                     }
@@ -1368,8 +1368,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 225,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Riveted Hide (The Secret Laboratory, 7-8F, \"Jotun of Power\") and buy it.",
                         Price = "¥38000",
                     }
@@ -1381,8 +1381,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 243,
                 Accuracy = 94,
                 Effect = "Medium chance to inflict Fear",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Crimson Cover (Heaven, 2-4F, \"Maniacal Book\") and buy it.",
                         Price = "¥41200",
                     }
@@ -1394,8 +1394,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 253,
                 Accuracy = 92,
                 Effect = "Increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Cursed Stone (Heaven, 3-5F, \"Curse Dice\") and buy it.",
                         Price = "¥43600",
                     }
@@ -1407,12 +1407,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 260,
                 Accuracy = 78,
                 Effect = "Medium chance to evade Physical attacks",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 10/9.",
                         Price = "¥28800",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 11/13.",
                         Price = "¥19800"
                     }
@@ -1424,8 +1424,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 264,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Bloody Hide (Heaven, 8-9F, \"Jotun of Blood\") and buy it.",
                         Price = "¥45200",
                     }
@@ -1437,8 +1437,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 296,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Miracle Scale (Magatsu Inaba, 1-2F, \"Fickle Papillon\") and buy it.",
                         Price = "¥50000",
                     }
@@ -1450,8 +1450,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 300,
                 Accuracy = 92,
                 Effect = "+4 Luck",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Snow Stone (Magatsu Mandala, 1F, \"King Castle\") and buy it.",
                         Price = "¥51200",
                     }
@@ -1463,8 +1463,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 310,
                 Accuracy = 94,
                 Effect = "+3 Magic",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Prime Hide (Magatsu Mandala, 4-6F, \"Phantom King\") and buy it.",
                         Price = "¥52000",
                     }
@@ -1476,8 +1476,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 325,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Platinum Hide (Magatsu Mandala, 6F, \"Minotaur I\") and buy it.",
                         Price = "¥55200",
                     }
@@ -1489,8 +1489,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 338,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Love Scale (Yomotsu Hirasaka, 1-3F, \"Pure Papillon\") and buy it.",
                         Price = "¥57600",
                     }
@@ -1502,8 +1502,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 349,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Death Sentence (Yomotsu Hirasaka, 5-6F, \"Eternal Eagle\") and buy it.",
                         Price = "¥59000",
                     }
@@ -1515,8 +1515,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 362,
                 Accuracy = 96,
                 Effect = "+5 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Tyrannical Hide (Yomotsu Hirasaka, 8F, \"Neo Minotaur\") and buy it.",
                         Price = "¥61200",
                     }
@@ -1528,12 +1528,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 380,
                 Accuracy = 70,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 10 Genji Ayu for it. (November)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Angelite & 1 Ryugu Stone.",
                         Price = ""
                     }
@@ -1545,8 +1545,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 412,
                 Accuracy = 95,
                 Effect = "High chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper with Chie in party.",
                         Price = "",
                     }
@@ -1558,8 +1558,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 36,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Default]",
                         Price = "",
                     }
@@ -1571,8 +1571,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 45,
                 Accuracy = 85,
                 Effect = "+50% EXP",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Magatsu Xandrite & 1 Mondo Stone.",
                         Price = "",
                     }
@@ -1584,8 +1584,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 72,
                 Accuracy = 99,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Hollow Forest equipment.",
                         Price = "",
                     }
@@ -1597,8 +1597,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 74,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Buy from Daidara Metalworks.",
                         Price = "¥11200",
                     }
@@ -1610,8 +1610,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 80,
                 Accuracy = 90,
                 Effect = "+3 Magic",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Smoky Quartz.",
                         Price = "",
                     }
@@ -1623,8 +1623,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 85,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Cloth Wings (The Steamy Bathhouse, 1-2F 5-10F, \"Monopolizing Cupid\") and buy it.",
                         Price = "¥12400",
                     }
@@ -1636,8 +1636,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 89,
                 Accuracy = 96,
                 Effect = "Increase resistance to Silence",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 4th Boy's Talc (The Steamy Bathhouse, 1-2F, \"Rainy Brother 4\", Rainy weather) and buy it.",
                         Price = "¥13800",
                     }
@@ -1649,8 +1649,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 92,
                 Accuracy = 92,
                 Effect = "Increase max SP by 50",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the optional boss in The Castle.",
                         Price = "",
                     }
@@ -1662,8 +1662,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 108,
                 Accuracy = 94,
                 Effect = "+4 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Passion Clasp (Marukyu Striptease, 1-4F, \"Soul Dancer\") and buy it.",
                         Price = "¥19600",
                     }
@@ -1675,8 +1675,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 123,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Glossy Clasp (Marukyu Striptease, 5-10F, \"Killing Hand\") and buy it.",
                         Price = "¥21600",
                     }
@@ -1688,8 +1688,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 134,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Tortoise Shell (Marukyu Striptease, 7-8F, \"Large Basalt\") and buy it.",
                         Price = "¥23600",
                     }
@@ -1701,8 +1701,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 137,
                 Accuracy = 95,
                 Effect = "Medium chance to evade Physical attacks",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Smoky Quartz & 1 Kingyou Stone.",
                         Price = "",
                     }
@@ -1714,8 +1714,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 140,
                 Accuracy = 60,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in: The Marukyu Striptease.",
                         Price = "",
                     }
@@ -1727,8 +1727,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 145,
                 Accuracy = 92,
                 Effect = "Medium chance to inflict Confuse",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Devilish Feather (The Void Quest, 3-4F, \"Amenti Raven\") and buy it.",
                         Price = "¥25600",
                     }
@@ -1740,12 +1740,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 150,
                 Accuracy = 80,
                 Effect = "High chance to inflict Confuse",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 3 Inaba Trout for it. (June)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Lepidolite & 1 Ryugu Stone.",
                         Price = ""
                     }
@@ -1757,8 +1757,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 150,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Gazing Clasp (The Void Quest, 3-4F, \"Fate Seeker\") and buy it.",
                         Price = "¥26800",
                     }
@@ -1770,8 +1770,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 153,
                 Accuracy = 91,
                 Effect = "+Auto-Sukukaja",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Fish at Shichiri Beach.",
                         Price = "",
                     }
@@ -1783,8 +1783,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 162,
                 Accuracy = 94,
                 Effect = "High chance to inflict Silence",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 2nd Girl's Talc (The Void Quest, 3-4F, \"Rainy Sister 2\", Rainy weather) and buy it.",
                         Price = "¥28000",
                     }
@@ -1796,8 +1796,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 170,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Azalea Cord (The Secret Laboratory, 1-2F, \"Inviting Nyogo\") and buy it.",
                         Price = "¥29600",
                     }
@@ -1809,8 +1809,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 173,
                 Accuracy = 95,
                 Effect = "Low chance to inflict Rage",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Dogma Clasp (The Secret Laboratory, 3-4F, \"Dogmatic Tower\") and buy it.",
                         Price = "¥32400",
                     }
@@ -1822,8 +1822,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 180,
                 Accuracy = 50,
                 Effect = "+10 Luck",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 3rd Girl's Talc (Marukyu Striptease, 1-4F, \"Rainy Sister 3\", Rainy weather) and buy it.",
                         Price = "¥25000",
                     }
@@ -1835,8 +1835,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 182,
                 Accuracy = 90,
                 Effect = "+3 to all Stats",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Milky Quartz & 1 Taisui Stone.",
                         Price = "",
                     }
@@ -1848,8 +1848,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 186,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Fur Clasp (The Secret Laboratory, 7-8F, \"Elegant Mother\") and buy it.",
                         Price = "¥32000",
                     }
@@ -1861,8 +1861,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 208,
                 Accuracy = 95,
                 Effect = "Increase max SP by 10",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Smart Clasp (Heaven, 1-2F, \"Prime Magus\") and buy it.",
                         Price = "¥36400",
                     }
@@ -1874,8 +1874,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 218,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Scorching Scale (Heaven, 3-4F, \"Carnal Snake\") and buy it.",
                         Price = "¥37400",
                     }
@@ -1887,8 +1887,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 220,
                 Accuracy = 92,
                 Effect = "Increase resistance to Exhaustion",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Rare Raincoat (Heaven, 2-4F, \"Raindrop Castle\") and buy it.",
                         Price = "¥38000",
                     }
@@ -1900,8 +1900,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 235,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Blessed Dish (Heaven, 5-7F, \"Light Balance\") and buy it.",
                         Price = "¥40000",
                     }
@@ -1913,8 +1913,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 260,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 God Tailfeather (Magatsu Inaba, 1-2F, \"Jupiter Eagle\") and buy it.",
                         Price = "¥44400",
                     }
@@ -1926,8 +1926,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 272,
                 Accuracy = 92,
                 Effect = "+10 Magic",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Love Clasp (Magatsu Mandala, 4-5F, \"Harem Dancer\") and buy it.",
                         Price = "¥46000",
                     }
@@ -1939,8 +1939,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 278,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Golden Film (Magatsu Mandala, 6F, \"Noble Seeker\") and buy it.",
                         Price = "¥47200",
                     }
@@ -1952,8 +1952,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 293,
                 Accuracy = 95,
                 Effect = "Medium chance to inflict Enervate",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Red-Gold Cord (Yomotsu Hirasaka, 2-3F, \"Silent Nyogo\") and buy it.",
                         Price = "¥50000",
                     }
@@ -1965,8 +1965,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 300,
                 Accuracy = 97,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Merciless Cord (Yomotsu Hirasaka, 7-8F, \"El Dorado Beast\") and buy it.",
                         Price = "¥51200",
                     }
@@ -1978,8 +1978,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 328,
                 Accuracy = 98,
                 Effect = "Increase resistance to Confusion",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Forbidden Scale (Yomotsu Hirasaka, 6-7F, \"Stoic Snake\") and buy it.",
                         Price = "¥56000",
                     }
@@ -1991,8 +1991,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 395,
                 Accuracy = 98,
                 Effect = "High chance to inflict Exhaustion",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper with Yukiko in party.",
                         Price = "",
                     }
@@ -2004,8 +2004,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 45,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Default]",
                         Price = "",
                     }
@@ -2017,8 +2017,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 48,
                 Accuracy = 84,
                 Effect = "+50% EXP",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Magatus Xansrite & 1 Kaisou Stone.",
                         Price = "",
                     }
@@ -2030,8 +2030,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 92,
                 Accuracy = 90,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Buy from Daidara Metalworks.",
                         Price = "¥16000",
                     }
@@ -2043,8 +2043,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 95,
                 Accuracy = 89,
                 Effect = "Low chance to inflict Enervate",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Fluorite.",
                         Price = "",
                     }
@@ -2056,8 +2056,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 103,
                 Accuracy = 99,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Hollow Forest equipment.",
                         Price = "",
                     }
@@ -2069,8 +2069,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 113,
                 Accuracy = 92,
                 Effect = "+2 Magic",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the optional boss in The Steamy Bathhouse.",
                         Price = "",
                     }
@@ -2082,8 +2082,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 142,
                 Accuracy = 90,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Heavy Iron Lump (Marukyu Striptease, 5-10F, \"Liberating Idol\") and buy it.",
                         Price = "¥24400",
                     }
@@ -2095,8 +2095,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 158,
                 Accuracy = 90,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Steel Collar (Marukyu Striptease, 5-8F, \"Enslaved Beast\") and buy it.",
                         Price = "¥28000",
                     }
@@ -2108,8 +2108,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 162,
                 Accuracy = 92,
                 Effect = "Reduce Fire damage by 20%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Dependent Iron (The Void Quest, 1-2F, \"Dependent Basalt\") and buy it.",
                         Price = "¥28800",
                     }
@@ -2121,8 +2121,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 172,
                 Accuracy = 96,
                 Effect = "Increase Electricity damage by 25%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Electric Rock (The Void Quest, 5-6F, \"Almighty Hand\") and buy it.",
                         Price = "¥30000",
                     }
@@ -2134,8 +2134,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 174,
                 Accuracy = 94,
                 Effect = "Increase resitance to Exhaustion",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Lepidolite & 2 Gyosen Stone.",
                         Price = "",
                     }
@@ -2147,8 +2147,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 180,
                 Accuracy = 92,
                 Effect = "+3 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Chirping Wings (The Void Quest, 3-4F, \"Blind Cupid\") and buy it.",
                         Price = "¥31200",
                     }
@@ -2160,8 +2160,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 192,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Super-Alloy (The Void Quest, 9F, \"Scarlet Turret\") and buy it.",
                         Price = "¥33000",
                     }
@@ -2173,12 +2173,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 198,
                 Accuracy = 55,
                 Effect = "Medium chance to inflict Rage",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 1 Huge Fish for it. (July)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Howlite & 1 Ryugu Stone.",
                         Price = ""
                     }
@@ -2190,8 +2190,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 205,
                 Accuracy = 94,
                 Effect = "Increase resistance to Fear",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Source Lump (The Secret Laboratory, 1-2F, \"Source Basalt\") and buy it.",
                         Price = "¥35200",
                     }
@@ -2203,8 +2203,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 220,
                 Accuracy = 90,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Illusionary Sand (The Secret Laboratory, 3-4F, \"Flowing Sand\") and buy it.",
                         Price = "¥38000",
                     }
@@ -2216,8 +2216,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 235,
                 Accuracy = 94,
                 Effect = "Increase max HP by 30",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Platinum Lump (The Secret Laboratory, 5-6F, \"Chaos Fuzz\") and buy it.",
                         Price = "¥40000",
                     }
@@ -2229,8 +2229,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 246,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Fixed Lump (The Secret Laboratory, 7-8F, \"Order Giant\") and buy it.",
                         Price = "¥42000",
                     }
@@ -2242,8 +2242,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 252,
                 Accuracy = 92,
                 Effect = "+4 Endurance",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Jet Black Steel (Heaven, 2F, \"Dark Eagle\") and buy it.",
                         Price = "¥43200",
                     }
@@ -2255,12 +2255,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 260,
                 Accuracy = 50,
                 Effect = "+2 Luck",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in: The Secret Laboratory.",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 9/25.",
                         Price = "¥28800"
                     }
@@ -2272,8 +2272,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 264,
                 Accuracy = 94,
                 Effect = "Increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Divine Bark (Heaven, 5-7F, \"Angry Table\") and buy it.",
                         Price = "¥45200",
                     }
@@ -2285,8 +2285,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 280,
                 Accuracy = 88,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Heavy Chains (Heaven, 8-9F, \"Minotaur IV\") and buy it.",
                         Price = "¥45200",
                     }
@@ -2298,8 +2298,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 290,
                 Accuracy = 91,
                 Effect = "Increase max SP by 30",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Aurora Quartz & 1 Maguro Stone.",
                         Price = "",
                     }
@@ -2311,8 +2311,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 305,
                 Accuracy = 99,
                 Effect = "Low chance to inflict any ailment",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Fish at Shichiri Beach.",
                         Price = "",
                     }
@@ -2324,8 +2324,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 318,
                 Accuracy = 96,
                 Effect = "Reduce fire damage by 10%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Dignified Lump (Magatsu Mandala, 1F, \"Great King\") and buy it.",
                         Price = "¥54000",
                     }
@@ -2337,8 +2337,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 322,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Scaly Lump (Magatsu Mandala, 1-3F 6F, \"Amorous Snake\") and buy it.",
                         Price = "¥54800",
                     }
@@ -2350,8 +2350,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 332,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Death Lump (Magatsu Mandala, 4-5F, \"Death Dice\") and buy it.",
                         Price = "¥56400",
                     }
@@ -2363,8 +2363,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 346,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Golden Chains (Magatsu Mandala, 6F, \"Minotaur II\") and buy it.",
                         Price = "¥58800",
                     }
@@ -2376,8 +2376,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 357,
                 Accuracy = 94,
                 Effect = "+10 Endurance",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Platinum Shell (Yomotsu Hirasaka, 2-3F, \"Emperor Beetle\") and buy it.",
                         Price = "¥60000",
                     }
@@ -2389,8 +2389,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 368,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Holy Gold Lump (Yomotsu Hirasaka, 4-5F, \"Doom Sword\") and buy it.",
                         Price = "¥62000",
                     }
@@ -2402,8 +2402,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 382,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Platinum Gear (Yomotsu Hirasaka, 7F, \"Rampage Drive\") and buy it.",
                         Price = "¥64000",
                     }
@@ -2415,8 +2415,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 432,
                 Accuracy = 92,
                 Effect = "Increase Electricity damge by 25%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper with Kanji in party.",
                         Price = "",
                     }
@@ -2428,8 +2428,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 40,
                 Accuracy = 80,
                 Effect = "+50% EXP",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 8 Magatsu Xandrite & 1 Mondo Stone.",
                         Price = "",
                     }
@@ -2441,8 +2441,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 44,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Default]",
                         Price = "",
                     }
@@ -2454,8 +2454,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 78,
                 Accuracy = 99,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Hollow Forest equipment.",
                         Price = "",
                     }
@@ -2467,8 +2467,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 154,
                 Accuracy = 86,
                 Effect = "+4 Agility",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Buy from Daidara Metalworks.",
                         Price = "¥26600",
                     }
@@ -2480,8 +2480,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 161,
                 Accuracy = 78,
                 Effect = "Low chance to counter Physical attacks",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the optional boss in The Marukyu Striptease.",
                         Price = "",
                     }
@@ -2493,8 +2493,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 160,
                 Accuracy = 85,
                 Effect = "High chance to inflict silence",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Olive Quartz & 2 Takou Stone.",
                         Price = "",
                     }
@@ -2506,8 +2506,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 172,
                 Accuracy = 98,
                 Effect = "Medium chance to inflict Exhaustion",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Shiny Scale (The Void Quest, 5-6F, \"Whimsical Papillon\") and buy it.",
                         Price = "¥30000",
                     }
@@ -2519,12 +2519,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 180,
                 Accuracy = 95,
                 Effect = "+5 Strength",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 6 Red Goldfish for it. (August)",
                         Price = "",
                     },
-                    new WeaponObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Lemon Quartz & 1 Ryugu Stone.",
                         Price = ""
                     }
@@ -2536,8 +2536,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 190,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 9/11.",
                         Price = "¥27800",
                     }
@@ -2549,8 +2549,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 200,
                 Accuracy = 70,
                 Effect = "High chance to inflict Fear",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 2nd Boy's Talc (The Void Quest, 7-8F, \"Rainy Brother 2\", Rainy weather) and buy it.",
                         Price = "¥32800",
                     }
@@ -2562,8 +2562,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 205,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Sharp Premolar (The Secret Laboratory, 1-2F, \"Flattering Hablerie\") and buy it.",
                         Price = "¥36800",
                     }
@@ -2575,8 +2575,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 218,
                 Accuracy = 84,
                 Effect = "High chance to inflict Poison",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Venomous Fang (The Secret Laboratory, 5-6F, \"Immoral Snake\") and buy it.",
                         Price = "¥37200",
                     }
@@ -2588,8 +2588,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 225,
                 Accuracy = 89,
                 Effect = "+Auto-Tarukaja",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Fish at Shichiri Beach.",
                         Price = "",
                     }
@@ -2601,8 +2601,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 232,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Guard Stationary (The Secret Laboratory, 7-8F, \"Truth Pesce\") and buy it.",
                         Price = "¥40000",
                     }
@@ -2614,8 +2614,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 240,
                 Accuracy = 93,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Claw of Myth (Heaven, 2F, \"Mythical Gigas\") and buy it.",
                         Price = "¥41200",
                     }
@@ -2627,8 +2627,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 254,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Thirsty Claw (Heaven, 5F, \"Dry Dixie\") and buy it.",
                         Price = "¥43600",
                     }
@@ -2640,8 +2640,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 271,
                 Accuracy = 87,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Blade Thorn (Heaven, 6-7F, \"Chaos Cyclops\") and buy it.",
                         Price = "¥46000",
                     }
@@ -2653,8 +2653,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 300,
                 Accuracy = 74,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in: Heaven.",
                         Price = "",
                     }
@@ -2666,8 +2666,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 300,
                 Accuracy = 75,
                 Effect = "Medium chance to inflict Poison",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Bought from the TV shopping show on 10/23.",
                         Price = "¥29800",
                     }
@@ -2679,8 +2679,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 322,
                 Accuracy = 86,
                 Effect = "High chance to inflict Rage",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Queen's Nail (Magatsu Mandala, 1F, \"Pistil Mother\") and buy it.",
                         Price = "¥54800",
                     }
@@ -2692,8 +2692,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 334,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Silver Claw (Magatsu Mandala, 4-5F, \"Change Relic\") and buy it.",
                         Price = "¥56800",
                     }
@@ -2705,8 +2705,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 345,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Strength Claw (Magatsu Mandala, 6F, \"Minotaur III\") and buy it.",
                         Price = "¥58800",
                     }
@@ -2718,8 +2718,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 358,
                 Accuracy = 96,
                 Effect = "+3 Endurance",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Force Rock (Yomotsu Hirasaka, 2-3F, \"Primitive Idol\") and buy it.",
                         Price = "¥60000",
                     }
@@ -2731,8 +2731,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 362,
                 Accuracy = 50,
                 Effect = "Increase change to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Moonstone & 3 Taisui Stone.",
                         Price = "",
                     }
@@ -2744,8 +2744,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 365,
                 Accuracy = 92,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Bloody Thorn (Yomotsu Hirasaka, 6-7F, \"Rebellious Cyclops\") and buy it.",
                         Price = "¥62000",
                     }
@@ -2757,8 +2757,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 371,
                 Accuracy = 96,
                 Effect = "+4 Magic",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Mysterious Eye (Yomotsu Hirasaka, 7F, \"Acheron Seeker\") and buy it.",
                         Price = "¥62800",
                     }
@@ -2770,8 +2770,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 406,
                 Accuracy = 94,
                 Effect = "Reduce magical damage by 30%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper with Teddie in party.",
                         Price = "",
                     }
@@ -2783,8 +2783,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 35,
                 Accuracy = 95,
                 Effect = "+50% EXP",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 8 Magatsu Xandrite & 1 Kaiou Stone.",
                         Price = "",
                     }
@@ -2796,8 +2796,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 80,
                 Accuracy = 95,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Default]",
                         Price = "",
                     }
@@ -2809,8 +2809,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 87,
                 Accuracy = 99,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Hollow Forest equipment.",
                         Price = "",
                     }
@@ -2822,8 +2822,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 190,
                 Accuracy = 85,
                 Effect = "Increase Ice damge by 25%",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Rose Quatz & 2 Masuda Stone.",
                         Price = "",
                     }
@@ -2835,8 +2835,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 216,
                 Accuracy = 80,
                 Effect = "Medium chance to inflict Rage",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Sphalerite & 1 Masuda Stone.",
                         Price = "",
                     }
@@ -2848,8 +2848,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 220,
                 Accuracy = 88,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 2 Steel Barrel (Heaven, 2F, \"Rash Panzer\") and buy it.",
                         Price = "¥38000",
                     }
@@ -2861,8 +2861,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 230,
                 Accuracy = 85,
                 Effect = "+5 to all stats",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the optional boss in The Secret Laboratory.",
                         Price = "",
                     }
@@ -2874,8 +2874,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 240,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Fixing Bolt (Heaven, 3-4F, \"Killer Drive\") and buy it.",
                         Price = "¥42000",
                     }
@@ -2887,8 +2887,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 246,
                 Accuracy = 94,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Judgement Shot (Heaven, 8-9F, \"Hallowed Turret\") and buy it.",
                         Price = "¥43200",
                     }
@@ -2900,8 +2900,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 254,
                 Accuracy = 90,
                 Effect = "Increase max SP by 30",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Fish at Shichiri Beach.",
                         Price = "",
                     }
@@ -2913,8 +2913,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 275,
                 Accuracy = 95,
                 Effect = "Medium chance to inflict Silence",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Orb of Love (Magatsu Mandala, 1-3F, \"Yearning Pot\") and buy it.",
                         Price = "¥46800",
                     }
@@ -2926,8 +2926,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 290,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Gold Signature (Magatsu Mandala, 2-3F, \"Purple Sigil\") and buy it.",
                         Price = "¥49200",
                     }
@@ -2939,8 +2939,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 301,
                 Accuracy = 95,
                 Effect = "+3 Luck",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Thunder Bead (Magatsu Mandala, 4-5F, \"Jotun of Evil\") and buy it.",
                         Price = "¥50000",
                     }
@@ -2952,8 +2952,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 310,
                 Accuracy = 98,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Golden Barrel (Magatsu Mandala, 6F, \"Conceited Panzer\") and buy it.",
                         Price = "¥52800",
                     }
@@ -2965,8 +2965,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 312,
                 Accuracy = 93,
                 Effect = "+10 Endurance",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to Shiroku pub and trade 5 Rainbow Quartz & 3 Yazu Stone.",
                         Price = "",
                     }
@@ -2978,8 +2978,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 325,
                 Accuracy = 96,
                 Effect = "Increase chance to give a critical hit",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Prophecy Orb (Yomotsu Hirasaka, 1F, \"Wrathful Book\") and buy it.",
                         Price = "¥56000",
                     }
@@ -2991,8 +2991,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 342,
                 Accuracy = 95,
                 Effect = "Medium chance to inflict Confuse",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Pure White Bead (Yomotsu Hirasaka, 4-5F, \"Gracious Cupid\") and buy it.",
                         Price = "¥58800",
                     }
@@ -3004,8 +3004,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 360,
                 Accuracy = 96,
                 Effect = "",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Bull's-Eye Shot (Yomotsu Hirasaka, 6F, \"Berserk Turret\") and buy it.",
                         Price = "¥62800",
                     }
@@ -3017,8 +3017,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 370,
                 Accuracy = 74,
                 Effect = "High chance to inflict Fear",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in: Magatsu Inaba.",
                         Price = "",
                     }
@@ -3030,8 +3030,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Attack = 406,
                 Accuracy = 96,
                 Effect = "High chance to inflict any Ailment",
-                Obtained = new List<WeaponObtain>() {
-                    new WeaponObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper with Naoto in party.",
                         Price = "",
                     }

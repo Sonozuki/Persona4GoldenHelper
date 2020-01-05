@@ -11,6 +11,6 @@ namespace Persona4GoldenHelper.Data.Models
         public int Attack { get; set; }
         public int Accuracy { get; set; }
         public string Effect { get; set; }
-        public IEnumerable<WeaponObtain> Obtained { get; set; }
+        public List<ItemObtain> Obtained { get; set; }
     }
 }

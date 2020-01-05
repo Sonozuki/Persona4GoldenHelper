@@ -14,8 +14,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 34,
                 Evade = 8,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Buy from Daidara Metalworks.",
                         Price = "¥3000",
                     }
@@ -27,8 +27,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 58,
                 Evade = 10,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Moustache Fiber (The Castle, 4-5F, \"Positive King\") and buy it.",
                         Price = "¥6800",
                     }
@@ -40,8 +40,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 62,
                 Evade = 12,
                 Effect = "+1 Endurance",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Wonder Cloth (The Castle, 3-5F, \"Trance Twins\") and buy it.",
                         Price = "¥7200",
                     }
@@ -53,8 +53,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 78,
                 Evade = 3,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Bronze Reins (The Castle, 6-7F, \"Avenger Knight\") and buy it.",
                         Price = "¥12800",
                     }
@@ -66,8 +66,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 156,
                 Evade = 16,
                 Effect = "Reduce Physical damage by 10%",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Fashionable Dishs (Marukyu Striptease, 9-10F, \"Sky Balance\") and buy it.",
                         Price = "¥28000",
                     }
@@ -79,8 +79,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 194,
                 Evade = 20,
                 Effect = "+50% EXP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Go to the Samegawa Riverbank and trade a Guardian for it.",
                         Price = "",
                     }
@@ -92,8 +92,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 210,
                 Evade = 3,
                 Effect = "Low chance to evade Magic attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Bushy Fur (Secret Laboratory, 5-6F, \"Mach Wheel\") and buy it.",
                         Price = "¥42000",
                     }
@@ -105,8 +105,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 375,
                 Evade = 15,
                 Effect = "+10 to all stats",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Defeat the Reaper.",
                         Price = "",
                     }
@@ -118,8 +118,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 22,
                 Evade = 15,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Teddie's default]",
                         Price = "",
                     }
@@ -131,8 +131,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 26,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Protagonist's default]",
                         Price = "",
                     }
@@ -144,8 +144,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 28,
                 Evade = 10,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Yosuke's default]",
                         Price = "",
                     }
@@ -157,8 +157,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 28,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Kanji's default]",
                         Price = "",
                     }
@@ -170,8 +170,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 60,
                 Evade = 24,
                 Effect = "+50 HP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Castle (Yukiko's dungeon).",
                         Price = "",
                     }
@@ -183,12 +183,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 72,
                 Evade = 23,
                 Effect = "+10 HP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Steamy Bathhouse (Kanji's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, June 5th.",
                         Price = "¥11800",
                     }
@@ -200,8 +200,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 78,
                 Evade = 16,
                 Effect = "+1 Strength",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Power String (The Castle, 5-7F, \"Bronze Dice\") and buy it.",
                         Price = "¥14400",
                     }
@@ -213,8 +213,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 86,
                 Evade = 8,
                 Effect = "+2 Endurance",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Proof of Spirit (The Steamy Bathhouse, 3-8F, \"Daring Gigas\") and buy it.",
                         Price = "¥16800",
                     }
@@ -226,8 +226,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 94,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Firm Cloth (The Steamy Bathhouse, 3-4F, \"Pursuing Pesce\") and buy it.",
                         Price = "¥17800",
                     }
@@ -239,8 +239,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 98,
                 Evade = 40,
                 Effect = "+10 Agility",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Rain Steel (The Void Quest, 5-6F, \"Pursuing Pesce\", Rainy weather) and buy it.",
                         Price = "¥32000",
                     }
@@ -252,8 +252,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 114,
                 Evade = 4,
                 Effect = "Resist Rage",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Sharp Horns (The Steamy Bathhouse, 9-10F, \"Grave Beetle\") and buy it.",
                         Price = "¥21600",
                     }
@@ -265,12 +265,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 116,
                 Evade = 23,
                 Effect = "Low chance to counter Physical attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Marukyu Striptease (Rise's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, July 17th.",
                         Price = "¥20800",
                     }
@@ -282,8 +282,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 120,
                 Evade = 5,
                 Effect = "+100 HP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Rain Leg Musha (Marukyu Striptease, 7-9F, \"Rain Leg Musha\", Rainy weather) and buy it.",
                         Price = "¥26000",
                     }
@@ -295,8 +295,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 132,
                 Evade = 11,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Idle Stone Iron (Marukyu Striptease, 3-4F, \"Idle Basalt\") and buy it.",
                         Price = "¥24000",
                     }
@@ -308,8 +308,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 142,
                 Evade = 8,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Sheet Metal (Marukyu Striptease, 9-10F, \"Arcane Turret\") and buy it.",
                         Price = "¥25600",
                     }
@@ -321,8 +321,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 161,
                 Evade = 3,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Golden Horns (The Void Quest, 5-6F, \"Strength Beetle\") and buy it.",
                         Price = "¥29800",
                     }
@@ -334,12 +334,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 166,
                 Evade = 4,
                 Effect = "Low chance to evade Physical attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Void Quest (Mitsuo's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, October 16th.",
                         Price = "¥20800",
                     }
@@ -351,8 +351,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 190,
                 Evade = 18,
                 Effect = "Auto-Tarukaja",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Proof of Flight (The Void Quest, 7-9F, \"Beastly Gigas\") and buy it.",
                         Price = "¥34000",
                     }
@@ -364,8 +364,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 206,
                 Evade = 4,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Demon Collars (The Secret Laboratory, 5-6F, \"Mighty Beast\") and buy it.",
                         Price = "¥36800",
                     }
@@ -377,8 +377,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 210,
                 Evade = 3,
                 Effect = "Auto-Rakukaja",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 1st Girl's Talc (The Secret Laboratory, 1-2F, \"Rainy Sister 1\", Rainy weather) and buy it.",
                         Price = "¥38400",
                     }
@@ -390,20 +390,20 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 216,
                 Evade = 26,
                 Effect = "Reduce Physical damage by 20%",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Secret Laboratory (Naoto's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, October 16th.",
                         Price = "¥20800",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, November 13th.",
                         Price = "¥19800",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 2 Huge Fish for it. (August)",
                         Price = "",
                     }
@@ -415,8 +415,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 228,
                 Evade = 14,
                 Effect = "Reduce Wind damage by 20%",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Black Reins (The Secret Laboratory, 7-8F, \"Hell Knight\") and buy it.",
                         Price = "¥40000",
                     }
@@ -428,8 +428,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 236,
                 Evade = 3,
                 Effect = "Resist Dizzy",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Rain Metal (The Secret Laboratory, 5-6F, \"Raindrop Musha\", Rainy weather) and buy it.",
                         Price = "¥41200",
                     }
@@ -441,8 +441,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 245,
                 Evade = 11,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Porcelain Statue (Heaven, 2F, \"Growth Relic\") and buy it.",
                         Price = "¥42800",
                     }
@@ -454,8 +454,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 254,
                 Evade = 26,
                 Effect = "+5 to all stats",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in Heaven (Nanako's dungeon).",
                         Price = "",
                     }
@@ -467,8 +467,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 258,
                 Evade = 15,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Practical Cloth (Heaven, 5F, \"Reckless Okina\") and buy it.",
                         Price = "¥45800",
                     }
@@ -480,8 +480,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 270,
                 Evade = 17,
                 Effect = "+40 HP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Oracle Textile (Heaven, 6-7F, \"Revelation Pesce\") and buy it.",
                         Price = "¥47200",
                     }
@@ -493,8 +493,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 280,
                 Evade = 8,
                 Effect = "Reduce Physical damage by 30%",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Cascade Metal (Heaven, 6-7F, \"Rain Wind Musha\", Rainy weather) and buy it.",
                         Price = "¥48000",
                     }
@@ -506,8 +506,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 280,
                 Evade = 32,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in Magatsu Inaba ([True Killer]'s dungeon).",
                         Price = "",
                     }
@@ -519,8 +519,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 287,
                 Evade = 4,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Calm Marble (Magatsu Inaba, 1-2F, \"Vehement Idol\") and buy it.",
                         Price = "¥49200",
                     }
@@ -532,8 +532,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 302,
                 Evade = 11,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Thought Crosses (Magatsu Inaba, 2-3F, \"Sleeping Table\") and buy it.",
                         Price = "¥52000",
                     }
@@ -545,8 +545,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 308,
                 Evade = 14,
                 Effect = "Resist Enervation",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Formidable Proof (Magatsu Inaba, 4-5F, \"Immortal Gigas\") and buy it.",
                         Price = "¥53200",
                     }
@@ -558,8 +558,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 315,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Diamond Sheets (Magatsu Inaba, 6F, \"Harmony Giant\") and buy it.",
                         Price = "¥54000",
                     }
@@ -571,8 +571,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 315,
                 Evade = 32,
                 Effect = "+100 HP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in Yomotsu Hirasaka (True ending dungeon).",
                         Price = "",
                     }
@@ -584,8 +584,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 325,
                 Evade = 19,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Demon Cloth (Yomotsu Hirasaka, 3-4F, \"Phantom Hero\") and buy it.",
                         Price = "¥56000",
                     }
@@ -597,8 +597,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 340,
                 Evade = 11,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Unknown Barrel (Yomotsu Hirasaka, 6-7F, \"Phantom Hero\") and buy it.",
                         Price = "¥58000",
                     }
@@ -610,8 +610,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 350,
                 Evade = 10,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Pyroxene Fiber (Yomotsu Hirasaka, 7-8F, \"Heartless Machine\") and buy it.",
                         Price = "¥60000",
                     }
@@ -623,8 +623,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 25,
                 Evade = 14,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Chie's default]",
                         Price = "",
                     }
@@ -636,8 +636,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 25,
                 Evade = 14,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Yukiko's default]",
                         Price = "",
                     }
@@ -649,8 +649,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 30,
                 Evade = 10,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "[Naoto's default]",
                         Price = "",
                     }
@@ -662,8 +662,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 60,
                 Evade = 4,
                 Effect = "Medium chance to evade Fire attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Castle (Yukiko's dungeon).",
                         Price = "",
                     }
@@ -675,8 +675,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 60,
                 Evade = 40,
                 Effect = "Auto-Sukukaja",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Curious Line (The Steamy Bathhouse, 3-4F, \"Cloudgirl Pot\", Rainy weather) and buy it.",
                         Price = "¥22400",
                     }
@@ -688,12 +688,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 75,
                 Evade = 22,
                 Effect = "+20 SP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Steamy Bathhouse (Kanji's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, May 29th.",
                         Price = "¥11800",
                     }
@@ -705,8 +705,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 78,
                 Evade = 18,
                 Effect = "+1 Magic",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Magic Cross (The Castle, 6-7F, \"Laughing Table\") and buy it.",
                         Price = "¥15200",
                     }
@@ -718,8 +718,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 85,
                 Evade = 15,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Karma Lamp (The Steamy Bathhouse, 5-6F, \"Vicious Raven\") and buy it.",
                         Price = "¥15600",
                     }
@@ -731,8 +731,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 108,
                 Evade = 3,
                 Effect = "High chance to evade Magic attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Zero Cloth (The Marukyu Striptease, 3-4F, \"Rain Wheel\", Rainy weather) and buy it.",
                         Price = "¥28000",
                     }
@@ -744,8 +744,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 115,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Smooth Fabric (The Steamy Bathhouse, 7-10F, \"Wondrous Magus\") and buy it.",
                         Price = "¥21200",
                     }
@@ -757,12 +757,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 118,
                 Evade = 25,
                 Effect = "+5 Magic",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Marukyu Striptease (Rise's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, July 3rd.",
                         Price = "¥20800",
                     }
@@ -774,8 +774,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 120,
                 Evade = 3,
                 Effect = "High chance to evade Physical attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Rare Poncho (The Void Quest, 5-6F, \"Rainy Pot\", Rainy weather) and buy it.",
                         Price = "¥31200",
                     }
@@ -787,8 +787,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 130,
                 Evade = 14,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Tanned Hide (The Marukyu Striptease, 3-4F, \"Persistent Fuzz\") and buy it.",
                         Price = "¥24800",
                     }
@@ -800,8 +800,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 144,
                 Evade = 5,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Steel Reins (The Marukyu Striptease, 9-10F, \"Champion Knight\") and buy it.",
                         Price = "¥26400",
                     }
@@ -813,8 +813,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 160,
                 Evade = 11,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Anguish Stone (The Void Quest, 5-6F, \"Anguish Basalt\") and buy it.",
                         Price = "¥28400",
                     }
@@ -826,12 +826,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 167,
                 Evade = 24,
                 Effect = "+5 Endurance",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Void Quest (Mitsuo's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, September 4th.",
                         Price = "¥21800",
                     }
@@ -843,8 +843,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 180,
                 Evade = 14,
                 Effect = "Reduce Wind damage by 20%",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Light String (The Void Quest, 7-9F, \"Platinum Dice\") and buy it.",
                         Price = "¥32600",
                     }
@@ -856,8 +856,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 204,
                 Evade = 8,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Proof of Passion (The Secret Laboratory, 3-4F, \"Furious Gigas\") and buy it.",
                         Price = "¥35600",
                     }
@@ -869,12 +869,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 211,
                 Evade = 4,
                 Effect = "Low chance to evade Physical attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in The Secret Laboratory (Naoto's dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, October 2nd.",
                         Price = "¥29800",
                     }
@@ -886,8 +886,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 222,
                 Evade = 8,
                 Effect = "Resist Confusion",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 1 Cascade String (The Secret Laboratory, 3-4F, \"Rainbow Twins\", Rainy weather) and buy it.",
                         Price = "¥39200",
                     }
@@ -899,8 +899,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 232,
                 Evade = 8,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 8 Power Rock (The Secret Laboratory, 7-8F, \"Power Castle\") and buy it.",
                         Price = "¥40000",
                     }
@@ -912,8 +912,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 240,
                 Evade = 16,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Golden Sand (Heaven, 1F, \"Perpetual Sand\") and buy it.",
                         Price = "¥42000",
                     }
@@ -925,8 +925,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 251,
                 Evade = 29,
                 Effect = "Medium chance to counter Physical attacks",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in Heaven (Nanako's dungeon).",
                         Price = "",
                     }
@@ -938,8 +938,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 255,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Mink Fur (Heaven, 3-5F, \"Regal Mother\") and buy it.",
                         Price = "¥44000",
                     }
@@ -951,8 +951,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 270,
                 Evade = 14,
                 Effect = "+4 to all stats",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Ayanishiki (Heaven, 6-7F, \"Blossom Nyogo\") and buy it.",
                         Price = "¥46000",
                     }
@@ -964,8 +964,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 274,
                 Evade = 8,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Hemp Cloth (Heaven, 8-9F, \"Natural Dancer\") and buy it.",
                         Price = "¥48800",
                     }
@@ -977,12 +977,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 284,
                 Evade = 30,
                 Effect = "Reduce Physical damage by 20%",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in Magatsu Inaba ([True Killer]'s dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Buy on the shopping channel, November 20th.",
                         Price = "¥59800",
                     }
@@ -994,8 +994,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 285,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Royal Blossom (Magatsu Mandala, 1F, \"Free Bambino\") and buy it.",
                         Price = "¥50000",
                     }
@@ -1007,8 +1007,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 304,
                 Evade = 13,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 6 Oguruma Brocade (Magatsu Mandala, 2-5F, \"Valuing Nyogo\") and buy it.",
                         Price = "¥52800",
                     }
@@ -1020,8 +1020,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 310,
                 Evade = 19,
                 Effect = "Resist Poison",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Word String (Magatsu Mandala, 2-5F, \"Silent Book\") and buy it.",
                         Price = "¥54400",
                     }
@@ -1033,12 +1033,12 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 310,
                 Evade = 33,
                 Effect = "+100 HP",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Found in golden chests in Yomotsu Hirasaka (True ending dungeon).",
                         Price = "",
                     },
-                    new ArmorObtain() {
+                    new ItemObtain() {
                         Obtain = "Go to Samegawa Riverbank and trade 3 Huge Fish for it. (December)",
                         Price = "",
                     }
@@ -1050,8 +1050,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 314,
                 Evade = 12,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Flame Sheet (Magatsu Mandala, 6F, \"Spastic Turret\") and buy it.",
                         Price = "¥54800",
                     }
@@ -1063,8 +1063,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 324,
                 Evade = 18,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 4 Klein Bottle (Yomotsu Hirasaka, 3-4F, \"Mistress Pot\") and buy it.",
                         Price = "¥56800",
                     }
@@ -1076,8 +1076,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 338,
                 Evade = 14,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Unknowable Fiber (Yomotsu Hirasaka, 5-6F, \"Next Gene\") and buy it.",
                         Price = "¥59600",
                     }
@@ -1089,8 +1089,8 @@ namespace Persona4GoldenHelper.Data.Data
                 Defense = 352,
                 Evade = 10,
                 Effect = "",
-                Obtained = new List<ArmorObtain>() {
-                    new ArmorObtain() {
+                Obtained = new List<ItemObtain>() {
+                    new ItemObtain() {
                         Obtain = "Sell Daidara Metalworks 10 Silver String (Yomotsu Hirasaka, 7-8F, \"Brilliant King\") and buy it.",
                         Price = "¥61200",
                     }

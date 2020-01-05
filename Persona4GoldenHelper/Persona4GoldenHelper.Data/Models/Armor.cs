@@ -11,6 +11,6 @@ namespace Persona4GoldenHelper.Data.Models
         public int Defense { get; set; }
         public int Evade { get; set; }
         public string Effect { get; set; }
-        public List<ArmorObtain> Obtained { get; set; }
+        public List<ItemObtain> Obtained { get; set; }
     }
 }
