@@ -122,5 +122,17 @@ namespace Persona4GoldenHelper.Controllers
 
             return View(model);
         }
+
+        public IActionResult Weapons()
+        {
+            ViewBag.Title = "Weapons";
+
+            var model = new WeaponListingViewModel()
+            {
+                Weapons = AppService.GetAllWeapons()
+            };
+
+            return View(model);
+        }
     }
 }

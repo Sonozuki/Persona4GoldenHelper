@@ -18,5 +18,6 @@ namespace Persona4GoldenHelper.Data
         List<Source> GetAllSources();
         List<Accessory> GetAllAccessories();
         List<Armor> GetAllArmor();
+        List<Weapon> GetAllWeapons();
     }
 }

@@ -255,5 +255,22 @@ namespace Persona4GoldenHelper.Service
                 return null;
             }
         }
+
+        public List<Weapon> GetAllWeapons()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllWeapons was called");
+
+                return Context.Weapons
+                    .Include(weapon => weapon.Obtained)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllWeapons failed: {ex}");
+                return null;
+            }
+        }
     }
 }
