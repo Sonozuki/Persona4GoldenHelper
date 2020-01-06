@@ -83,6 +83,10 @@
     width: 100%;
 }
 
+table {
+    padding: 0 !important; /* this was causing 2 big borders at either side of each tr */
+}
+
 /* Site wide tag styling */
 body {
     font-family: 'Roboto', sans-serif;
@@ -118,10 +122,29 @@ input[type=text] {
 /* Site wide default table styling */
 table {
     border: 1px solid #353535;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     color: #808080;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
+
+    /* the below 4 styles apply a border radius to the 4 corner th/td, this is needed otherwise they will just override the border radius on the table element */
+    table tr:last-child td:first-child {
+        border-bottom-left-radius: 5px;
+    }
+
+    table tr:last-child td:last-child {
+        border-bottom-right-radius: 5px;
+    }
+
+    table tr:first-child th:first-child {
+        border-top-left-radius: 5px;
+    }
+
+    table tr:first-child th:last-child {
+        border-top-right-radius: 5px;
+    }
 
     table th {
         background-color: #2a2a2a;
