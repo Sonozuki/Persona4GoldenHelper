@@ -71,7 +71,8 @@
 .navbar-toggle {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 0px 10px 10px 10px;
 }
 
 #page-header a:hover {
