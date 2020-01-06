@@ -106,8 +106,8 @@ img {
 }
 
 input[type=text] {
-    background-color: #2a2a2a;
-    border: none;
+    background-color: #202020;
+    border: 1px solid #353535;
     border-radius: 5px;
     padding: 7px;
     font-size: 20px;
