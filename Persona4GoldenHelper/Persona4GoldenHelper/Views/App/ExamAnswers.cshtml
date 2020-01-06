@@ -5,12 +5,12 @@
 }
 
 <div>
-    <h2 class="text-align-center">Exam Answers</h2>
+    <h2 class="text-align-center col-md-12 col-sm-12 col-xs-12">Exam Answers</h2>
     @foreach (var month in months)
     {
         var answers = GetAnswersByMonth(month);
         <div>
-            <h3 class="text-align-center col-md-12">@month</h3>
+            <h3 class="text-align-center col-md-12 col-sm-12 col-xs-12">@month</h3>
             <table class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                 <thead>
                     <tr>

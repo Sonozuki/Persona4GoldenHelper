@@ -1,7 +1,7 @@
 ﻿@model BookListingViewModel
 
 <div>
-    <h2 class="text-align-center">Books</h2>
+    <h2 class="text-align-center col-md-12 col-sm-12 col-xs-12">Books</h2>
     <table class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
         <thead>
             <tr>
@@ -26,9 +26,9 @@
 </div>
 
 <div>
-    <h2 class="text-align-center col-md-12">Book Order</h2>
-    <h4 class="text-align-center col-md-12">This is the order of the books in the inventory, to make it easier to see which books you are missing.</h4>
-    <table class="col-md-2 col-md-offset-5  col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
+    <h2 class="text-align-center col-md-12 col-sm-12 col-xs-12">Book Order</h2>
+    <h4 class="text-align-center col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">This is the order of the books in the inventory, to make it easier to see which books you are missing.</h4>
+    <table class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
         @foreach (var bookOrder in Model.BookOrder)
         {
             <tr>
