@@ -84,7 +84,7 @@
 }
 
 table {
-    padding: 0 !important; /* this was causing 2 big borders at either side of each tr */
+    padding: 0 !important; /* this was causing 2 big padding areas at either side of each tr */
 }
 
 /* Site wide tag styling */
