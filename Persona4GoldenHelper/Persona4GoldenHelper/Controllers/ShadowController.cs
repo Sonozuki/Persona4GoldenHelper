@@ -22,6 +22,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Index()
         {
             ViewBag.Title = "Shadows";
+            ViewBag.HaveSearchBar = true;
 
             var model = new ShadowListingViewModel()
             {

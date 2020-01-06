@@ -26,6 +26,11 @@
     color: #e7e7e7;
 }
 
+/* text in text input */
+::placeholder {
+    text-align: center;
+}
+
 /* Styling for layout header, including navbar */
 #page-header {
     padding-top: 10px;
@@ -94,6 +99,21 @@ img {
     max-width: 26px;
     height: auto;
 }
+
+input[type=text] {
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 100%;
+}
+
+    input[type=text]:focus {
+        outline: none;
+        box-shadow: 0 0 3px white;
+    }
 
 /* Site wide default table styling */
 table {

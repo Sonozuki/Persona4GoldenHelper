@@ -20,6 +20,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Index()
         {
             ViewBag.Title = "Personas";
+            ViewBag.HaveSearchBar = true;
 
             var model = new PersonaListingViewModel
             {

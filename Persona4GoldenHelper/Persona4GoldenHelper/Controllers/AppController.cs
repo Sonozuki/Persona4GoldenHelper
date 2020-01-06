@@ -28,6 +28,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Books()
         {
             ViewBag.Title = "Books";
+            ViewBag.HaveSearchBar = true;
 
             var model = new BookListingViewModel
             {
@@ -41,6 +42,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult ExamAnswers()
         {
             ViewBag.Title = "Exam Answers";
+            ViewBag.HaveSearchBar = true;
 
             var model = new ExamAnswerListingViewModel
             {
@@ -53,6 +55,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Skills()
         {
             ViewBag.Title = "Skills";
+            ViewBag.HaveSearchBar = true;
 
             var model = new SkillListingViewModel
             {
@@ -65,6 +68,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Quests()
         {
             ViewBag.Title = "Quests";
+            ViewBag.HaveSearchBar = true;
 
             var model = new QuestListingViewModel
             {
@@ -77,6 +81,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult SkillCards()
         {
             ViewBag.Title = "Skill Cards";
+            ViewBag.HaveSearchBar = true;
 
             var model = new SkillCardListingViewModel
             {
@@ -90,6 +95,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Lunches()
         {
             ViewBag.Title = "Lunches";
+            ViewBag.HaveSearchBar = true;
 
             var model = new LunchListingViewModel()
             {
@@ -102,6 +108,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Accessories()
         {
             ViewBag.Title = "Accessories";
+            ViewBag.HaveSearchBar = true;
 
             var model = new AccessoryListingViewModel()
             {
@@ -114,6 +121,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Armor()
         {
             ViewBag.Title = "Armor";
+            ViewBag.HaveSearchBar = true;
 
             var model = new ArmorListingViewModel()
             {
@@ -126,6 +134,7 @@ namespace Persona4GoldenHelper.Controllers
         public IActionResult Weapons()
         {
             ViewBag.Title = "Weapons";
+            ViewBag.HaveSearchBar = true;
 
             var model = new WeaponListingViewModel()
             {
