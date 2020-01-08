@@ -9,42 +9,44 @@
     @foreach (var character in characters)
     {
         var weapons = GetWeaponsByUser(character);
-        <h3 class="text-align-center col-md-12 col-sm-12 col-xs-12">@character</h3>
-        <table class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th class="extra-slim-column text-align-center">Attack</th>
-                    <th class="extra-slim-column text-align-center">Accuracy</th>
-                    <th>Effect</th>
-                    <th class="text-align-center">Price</th>
-                    <th class="mobile-hidden">How to Obatin</th>
-                </tr>
-            </thead>
-            @foreach (var weapon in weapons)
-            {
-                <tbody>
-                    @for (int i = 0; i < weapon.Obtained.Count; i++)
-                    {
-                        var obtain = weapon.Obtained[i];
-                        <tr>
-                            @if (i == 0)
-                            {
-                                <td rowspan=@weapon.Obtained.Count class="text-bright">@weapon.Name</td>
-                                <td rowspan=@weapon.Obtained.Count class="text-align-center">@weapon.Attack</td>
-                                <td rowspan=@weapon.Obtained.Count class="text-align-center">@weapon.Accuracy</td>
-                                <td rowspan=@weapon.Obtained.Count>@(weapon.Effect == "" ? "-" : weapon.Effect)</td>
-                            }
+        <div>
+            <h3 class="text-align-center col-md-12 col-sm-12 col-xs-12 sub-header">@character</h3>
+            <table class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th class="extra-slim-column text-align-center">Attack</th>
+                        <th class="extra-slim-column text-align-center">Accuracy</th>
+                        <th>Effect</th>
+                        <th class="text-align-center">Price</th>
+                        <th class="mobile-hidden">How to Obatin</th>
+                    </tr>
+                </thead>
+                @foreach (var weapon in weapons)
+                {
+                    <tbody>
+                        @for (int i = 0; i < weapon.Obtained.Count; i++)
+                        {
+                            var obtain = weapon.Obtained[i];
+                            <tr>
+                                @if (i == 0)
+                                {
+                                    <td rowspan=@weapon.Obtained.Count class="text-bright">@weapon.Name</td>
+                                    <td rowspan=@weapon.Obtained.Count class="text-align-center">@weapon.Attack</td>
+                                    <td rowspan=@weapon.Obtained.Count class="text-align-center">@weapon.Accuracy</td>
+                                    <td rowspan=@weapon.Obtained.Count>@(weapon.Effect == "" ? "-" : weapon.Effect)</td>
+                                }
 
-                            <td class="text-align-center">@(obtain.Price == "" ? "-" : obtain.Price)</td>
-                            <td class="mobile-hidden">@obtain.Obtain</td>
-                        </tr>
-                    }
-                </tbody>
-            }
-        </table>
-
+                                <td class="text-align-center">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                                <td class="mobile-hidden">@obtain.Obtain</td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+            </table>
+        </div>
     }
+    <h3 class="no-results text-error text-align-center col-md-12 col-sm-12 col-xs-12" hidden>No results</h3>
 </div>
 
 @functions {

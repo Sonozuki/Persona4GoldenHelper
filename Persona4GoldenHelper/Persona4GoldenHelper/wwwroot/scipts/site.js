@@ -28,15 +28,35 @@ $('input').on('keyup', function () {
     // check if the table has multiple tbodies, this means the tbodies should be hidden, not the tr (as when multiple tbodies are present it means there are merged cells)
     let tables = $('table');
     for (let table of tables) {
+        $(table).show(); // this is required as if the table is hidden, setting the children to unhidden will not work
+        $(table).siblings('.sub-header').show();
+
         if (table.tBodies.length > 1) {
-            filterContent = $('table tbody');
+            filterContent = table.tBodies;
         }
         else {
-            filterContent = $('table tbody tr');
+            filterContent = table.tBodies[0].children;
         }
 
-        filterContent.filter(function () {
+        $(filterContent).filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         });
+
+        // hide table if all content is hidden
+        let numberOfVisibleRecords = $(filterContent).filter(':visible').length;
+        if (numberOfVisibleRecords === 0) {
+            $(table).hide();
+            $(table).siblings('.sub-header').hide();
+        }
+    }
+
+    // show no results if all tables are hidden
+    let numberOfVisibleTables = $('table').filter(':visible').length;
+    console.log(numberOfVisibleTables);
+    if (numberOfVisibleTables === 0) {
+        $('.no-results').show();
+    }
+    else {
+        $('.no-results').hide();
     }
 });

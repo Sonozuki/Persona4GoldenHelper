@@ -9,42 +9,44 @@
     @foreach (var gender in genders)
     {
         var armors = GetArmorByGender(gender);
-        <h3 class="text-align-center col-md-12 col-sm-12 col-xs-12">@gender</h3>
-        <table class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th class="extra-slim-column text-align-center">Defense</th>
-                    <th class="extra-slim-column text-align-center">Evade</th>
-                    <th>Effect</th>
-                    <th class="text-align-center">Price</th>
-                    <th class="mobile-hidden">How to Obatin</th>
-                </tr>
-            </thead>
-            @foreach (var armor in armors)
-            {
-                <tbody>
-                    @for (int i = 0; i < armor.Obtained.Count; i++)
-                    {
-                        var obtain = armor.Obtained[i];
+        <div>
+            <h3 class="text-align-center col-md-12 col-sm-12 col-xs-12 sub-header">@gender</h3>
+            <table class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <thead>
                     <tr>
-                        @if (i == 0)
-                        {
-                            <td rowspan=@armor.Obtained.Count class="text-bright">@armor.Name</td>
-                            <td rowspan=@armor.Obtained.Count class="text-align-center">@armor.Defense</td>
-                            <td rowspan=@armor.Obtained.Count class="text-align-center">@armor.Evade</td>
-                            <td rowspan=@armor.Obtained.Count>@(armor.Effect == "" ? "-" : armor.Effect)</td>
-                        }
-
-                        <td class="text-align-center">@(obtain.Price == "" ? "-" : obtain.Price)</td>
-                        <td class="mobile-hidden">@obtain.Obtain</td>
+                        <th>Name</th>
+                        <th class="extra-slim-column text-align-center">Defense</th>
+                        <th class="extra-slim-column text-align-center">Evade</th>
+                        <th>Effect</th>
+                        <th class="text-align-center">Price</th>
+                        <th class="mobile-hidden">How to Obatin</th>
                     </tr>
-                    }
-                </tbody>
-            }
-        </table>
+                </thead>
+                @foreach (var armor in armors)
+                {
+                    <tbody>
+                        @for (int i = 0; i < armor.Obtained.Count; i++)
+                        {
+                            var obtain = armor.Obtained[i];
+                            <tr>
+                                @if (i == 0)
+                                {
+                                    <td rowspan=@armor.Obtained.Count class="text-bright">@armor.Name</td>
+                                    <td rowspan=@armor.Obtained.Count class="text-align-center">@armor.Defense</td>
+                                    <td rowspan=@armor.Obtained.Count class="text-align-center">@armor.Evade</td>
+                                    <td rowspan=@armor.Obtained.Count>@(armor.Effect == "" ? "-" : armor.Effect)</td>
+                                }
 
+                                <td class="text-align-center">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                                <td class="mobile-hidden">@obtain.Obtain</td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+            </table>
+        </div>
     }
+    <h3 class="no-results text-error text-align-center col-md-12 col-sm-12 col-xs-12" hidden>No results</h3>
 </div>
 
 @functions {
