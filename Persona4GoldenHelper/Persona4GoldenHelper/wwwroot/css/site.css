@@ -86,7 +86,6 @@
 
 table {
     padding: 0 !important; /* this was causing 2 big padding areas at either side of each tr */
-    overflow: hidden;
 }
 
 /* Site wide tag styling */
@@ -185,7 +184,8 @@ table {
 
 #recipe-scroll {
     max-height: 500px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 0;
     width: 100%;
 }
