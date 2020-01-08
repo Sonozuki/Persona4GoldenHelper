@@ -2,7 +2,7 @@
 
 /* scrollbar width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 17px;
 }
 
 /* scrollbar track */
@@ -175,17 +175,43 @@ table {
         }
 
 /* Persona recipes section styling */
-#recipe-scroll {
-    max-height: 500px;
-    overflow: auto;
+#recipe-scroll-container {
+    border-radius: 5px;
+    overflow: hidden; /* this is needed as it cuts to corner off the scroll bar */
+    border: 1px solid #353535;
     padding: 0;
     margin-bottom: 30px;
 }
 
+#recipe-scroll {
+    max-height: 500px;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+}
+
     #recipe-scroll table {
         margin-bottom: 0;
+        border-radius: 0;
+        border: none;
+        width: 100%;
     }
+        /* this is to remove the border radius on the table in the persona recipe scroll. this isn't wanted as the border radius is applied to the container div to also apply the curve to the scroll bar */
+        #recipe-scroll table tr:last-child td:first-child {
+            border-bottom-left-radius: 0;
+        }
 
+        #recipe-scroll table tr:last-child td:last-child {
+            border-bottom-right-radius: 0;
+        }
+
+        #recipe-scroll table tr:first-child th:first-child {
+            border-top-left-radius: 0;
+        }
+
+        #recipe-scroll table tr:first-child th:last-child {
+            border-top-right-radius: 0;
+        }
 
 /* Table column widths that don't fit nicely in bootstrap col-x styling */
 .extra-slim-column {
