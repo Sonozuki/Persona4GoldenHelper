@@ -240,29 +240,6 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
-        public IActionResult GetAllSources()
-        {
-            try
-            {
-                Logger.LogInformation("GetAllSources was called");
-
-                var sources = AppService.GetAllSources();
-                if (sources != null)
-                {
-                    return Ok(sources);
-                }
-                else
-                {
-                    return StatusCode(500);
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger.LogError($"GetAllSources failed: {ex}");
-                return StatusCode(500);
-            }
-        }
-
         public IActionResult GetAllAccessories()
         {
             try

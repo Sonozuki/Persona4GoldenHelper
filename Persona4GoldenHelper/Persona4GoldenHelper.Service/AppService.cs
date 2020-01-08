@@ -225,23 +225,6 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
-        public List<Source> GetAllSources()
-        {
-            try
-            {
-                Logger.LogInformation("GetAllSources was called");
-
-                return Context.Sources
-                    .Include(source => source.Links)
-                    .ToList();
-            }
-            catch (Exception ex)
-            {
-                Logger.LogError($"GetAllSources failed: {ex}");
-                return null;
-            }
-        }
-
         public List<Accessory> GetAllAccessories()
         {
             try

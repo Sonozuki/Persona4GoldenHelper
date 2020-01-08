@@ -174,26 +174,6 @@ All apis avilable internally in the app have been exposed, through the '/Api/{fu
 ]
 ```
 
-### GetAllSources
-* **Expects**: GET request, with no params.
-* **Return Summary**: Return all sources stored in the database in the below data model, these sources are the data sources for the site, the links on the home page.
-* **Return HTTP codes**: 200, 500
-* **Return data model**: (All ids are purely internal ids and have no relation to the game)
-```json
-[
-    {
-        "id": -1,
-        "information": "",
-        "links": [
-            {
-                "id": -1,
-                "url": ""
-            }, ...
-        ]
-    }, ...
-]
-```
-
 ### GetAllAccessories
 * **Expects**: GET request, with no params.
 * **Return Summary**: Return all accessories stored in the database in the below data model.

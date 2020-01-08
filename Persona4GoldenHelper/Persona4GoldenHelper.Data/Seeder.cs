@@ -135,15 +135,6 @@ namespace Persona4GoldenHelper.Data
                 }
             }
 
-            if (!Context.Sources.Any())
-            {
-                foreach (var source in SourceData.Sources)
-                {
-                    Context.Sources.Add(source);
-                    Context.SaveChanges();
-                }
-            }
-
             if (!Context.Weapons.Any())
             {
                 foreach (var weapon in WeaponData.Weapons)

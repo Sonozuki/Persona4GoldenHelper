@@ -469,48 +469,6 @@ namespace Persona4GoldenHelper.Tests
         }
 
         [Test]
-        public void GetAllSources()
-        {
-            // arrange
-            Context.Sources.Add(new Source()
-            {
-                Information = "personas",
-                Links = new List<Link>()
-                {
-                    new Link()
-                    {
-                        URL = "personas link"
-                    }
-                }
-            });
-
-            Context.Sources.Add(new Source()
-            {
-                Information = "skills",
-                Links = new List<Link>()
-                {
-                    new Link()
-                    {
-                        URL = "skills link"
-                    }
-                }
-            });
-
-            Context.SaveChanges();
-
-            // act
-            var sources = AppService.GetAllSources();
-
-            // assert
-            Assert.AreEqual(2, sources.Count);
-            
-            foreach (var source in sources)
-            {
-                Assert.AreEqual(1, source.Links.Count);
-            }
-        }
-
-        [Test]
         public void GetAllAccessories()
         {
             // arrange
