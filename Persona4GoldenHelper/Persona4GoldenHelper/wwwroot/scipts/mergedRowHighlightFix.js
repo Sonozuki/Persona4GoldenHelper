@@ -6,7 +6,6 @@ function addHoverClass() {
 
     // check each cell for it's rowspan value
     for (let tableCell of mergedTableCellParent.children) {
-        // get rowspan attr
         let rowspan = $(tableCell).attr('rowspan');
 
         // check if it's more than 1 (meaning its a merged cell that should be highlighted)
@@ -16,7 +15,6 @@ function addHoverClass() {
             }
         }
     }
-
 }
 
 function removeHoverClass() {
@@ -25,10 +23,9 @@ function removeHoverClass() {
 
     // check each cell for it's rowspan value
     for (let tableCell of mergedTableCellParent.children) {
-        // get rowspan attr
         let rowspan = $(tableCell).attr('rowspan');
 
-        // check if it's more than 1 (meaning its a merged cell that should be highlighted)
+        // check if it's more than 1 (meaning its a merged cell that would be highlighted)
         if (rowspan > 1) {
             $(tableCell).removeClass('hover-table-cell');
         }
