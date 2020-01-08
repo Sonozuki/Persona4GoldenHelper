@@ -39,7 +39,7 @@ function isPersonaSpecial(persona) {
 function getArcanaRank(targetArcana) {
     for (let i = 0; i < Arcanas.length; i++) {
         let arcana = Arcanas[i];
-        if (arcana.arcanaName === targetArcana) {
+        if (arcana.name === targetArcana) {
             return i;
         }
     }
@@ -107,9 +107,9 @@ function getSpecialRecipe(persona) {
             let recipe = { ingredientPersonas: [] };
 
             for (let ingredientPersona of specialFusionResult.sourcePersonas) {
-                let persona = getPersonaByName(ingredientPersona.personaName);
+                let persona = getPersonaByName(ingredientPersona.name);
                 if (persona == null) {
-                    console.log(`ERROR: No persona with the name: ${ingredientPersona.personaName} could be found.`);
+                    console.log(`ERROR: No persona with the name: ${ingredientPersona.name} could be found.`);
                     continue;
                 }
 
@@ -136,8 +136,8 @@ function get2PersonaRecipes(arcana, validate) {
 
     // get all possible persona from both arcanas and try to combine them all, then check if the output persona if the target persona
     for (let arcanaFusion of arcanaFusions) {
-        let arcana1Personas = getPersonasByArcana(arcanaFusion.sourceArcanas[0].arcanaName);
-        let arcana2Personas = getPersonasByArcana(arcanaFusion.sourceArcanas[1].arcanaName);
+        let arcana1Personas = getPersonasByArcana(arcanaFusion.sourceArcanas[0].name);
+        let arcana2Personas = getPersonasByArcana(arcanaFusion.sourceArcanas[1].name);
 
         for (let i = 0; i < arcana1Personas.length; i++) {
             let arcana1Persona = arcana1Personas[i];
@@ -183,12 +183,12 @@ function get3PersonaRecipes() {
 
     // for each arcana fusion, consider either the intermediate parent
     for (let arcanaFusion of arcanaFusions) {
-        let step1Recipes = get2PersonaRecipes(arcanaFusion.sourceArcanas[0].arcanaName, false);
+        let step1Recipes = get2PersonaRecipes(arcanaFusion.sourceArcanas[0].name, false);
 
         for (let step1Recipe of step1Recipes) {
             let persona1 = step1Recipe.ingredientPersonas[0];
             let persona2 = step1Recipe.ingredientPersonas[1];
-            let personas = getPersonasByArcana(arcanaFusion.sourceArcanas[1].arcanaName);
+            let personas = getPersonasByArcana(arcanaFusion.sourceArcanas[1].name);
 
             for (let persona3 of personas) {
 

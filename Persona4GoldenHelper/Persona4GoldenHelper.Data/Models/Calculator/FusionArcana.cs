@@ -3,6 +3,6 @@
     public class FusionArcana
     {
         public int Id { get; set; }
-        public string ArcanaName { get; set; }
+        public string Name { get; set; }
     }
 }

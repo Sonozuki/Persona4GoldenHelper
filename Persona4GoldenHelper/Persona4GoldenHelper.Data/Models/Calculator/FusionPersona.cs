@@ -7,6 +7,6 @@ namespace Persona4GoldenHelper.Data.Models.Calculator
     public class FusionPersona
     {
         public int Id { get; set; }
-        public string PersonaName { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -12,10 +12,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     }
                 },
                 ResultArcana = "Fool"
@@ -24,10 +24,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -36,10 +36,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     }
                 },
                 ResultArcana = "Death"
@@ -48,10 +48,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     }
                 },
                 ResultArcana = "Moon"
@@ -60,10 +60,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Death"
@@ -72,10 +72,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -84,10 +84,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Empress"
@@ -96,10 +96,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Sun"
@@ -108,10 +108,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Magician"
@@ -120,10 +120,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Strength"
@@ -132,10 +132,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Magician"
@@ -144,10 +144,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Strength"
@@ -156,10 +156,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -168,10 +168,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -180,10 +180,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -192,10 +192,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Star"
@@ -204,10 +204,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Empress"
@@ -216,10 +216,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -228,10 +228,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Devil"
@@ -240,10 +240,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -252,10 +252,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -264,10 +264,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Death"
@@ -276,10 +276,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     }
                 },
                 ResultArcana = "Magician"
@@ -288,10 +288,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     }
                 },
                 ResultArcana = "Moon"
@@ -300,10 +300,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     }
                 },
                 ResultArcana = "Justice"
@@ -312,10 +312,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Stength"
@@ -324,10 +324,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Devil"
@@ -336,10 +336,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Death"
@@ -348,10 +348,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -360,10 +360,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Strength"
@@ -372,10 +372,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Empress"
@@ -384,10 +384,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -396,10 +396,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Justice"
@@ -408,10 +408,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Sun"
@@ -420,10 +420,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -432,10 +432,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Strength"
@@ -444,10 +444,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Sun"
@@ -456,10 +456,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -468,10 +468,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Star"
@@ -480,10 +480,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -492,10 +492,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -504,10 +504,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -516,10 +516,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -528,10 +528,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -540,10 +540,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -552,10 +552,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Empress"
@@ -564,10 +564,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Sun"
@@ -576,10 +576,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -588,10 +588,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -600,10 +600,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -612,10 +612,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Death"
@@ -624,10 +624,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -636,10 +636,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Justice"
@@ -648,10 +648,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Moon"
@@ -660,10 +660,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Magician"
@@ -672,10 +672,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -684,10 +684,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Justice"
@@ -696,10 +696,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Magician"
@@ -708,10 +708,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -720,10 +720,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Star"
@@ -732,10 +732,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Devil"
@@ -744,10 +744,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Sun"
@@ -756,10 +756,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Devil"
@@ -768,10 +768,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Sun"
@@ -780,10 +780,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     }
                 },
                 ResultArcana = "Empress"
@@ -792,10 +792,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Moon"
@@ -804,10 +804,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Death"
@@ -816,10 +816,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Justice"
@@ -828,10 +828,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Justice"
@@ -840,10 +840,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Magician"
@@ -852,10 +852,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Magician"
@@ -864,10 +864,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Star"
@@ -876,10 +876,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -888,10 +888,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -900,10 +900,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -912,10 +912,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Devil"
@@ -924,10 +924,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -936,10 +936,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -948,10 +948,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -960,10 +960,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -972,10 +972,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -984,10 +984,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -996,10 +996,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1008,10 +1008,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -1020,10 +1020,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -1032,10 +1032,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Empress"
@@ -1044,10 +1044,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Justice"
@@ -1056,10 +1056,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -1068,10 +1068,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Devil"
@@ -1080,10 +1080,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -1092,10 +1092,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fotune"
+                        Name = "Fotune"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -1104,10 +1104,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -1116,10 +1116,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Empress"
@@ -1128,10 +1128,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Moon"
@@ -1140,10 +1140,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Sun"
@@ -1152,10 +1152,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Moon"
@@ -1164,10 +1164,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Star"
@@ -1176,10 +1176,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Death"
@@ -1188,10 +1188,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Magician"
@@ -1200,10 +1200,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -1212,10 +1212,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -1224,10 +1224,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Justice"
@@ -1236,10 +1236,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -1248,10 +1248,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -1260,10 +1260,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Death"
@@ -1272,10 +1272,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Sun"
@@ -1284,10 +1284,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -1296,10 +1296,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Justice"
@@ -1308,10 +1308,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -1320,10 +1320,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Sun"
@@ -1332,10 +1332,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Death"
@@ -1344,10 +1344,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Devil"
@@ -1356,10 +1356,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Magician"
@@ -1368,10 +1368,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -1380,10 +1380,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -1392,10 +1392,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Moon"
@@ -1404,10 +1404,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Empress"
@@ -1416,10 +1416,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1428,10 +1428,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -1440,10 +1440,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Magician"
@@ -1452,10 +1452,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Moon"
@@ -1464,10 +1464,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -1476,10 +1476,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -1488,10 +1488,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -1500,10 +1500,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Magician"
@@ -1512,10 +1512,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Star"
@@ -1524,10 +1524,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -1536,10 +1536,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Moon"
@@ -1548,10 +1548,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Star"
@@ -1560,10 +1560,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -1572,10 +1572,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -1584,10 +1584,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Star"
@@ -1596,10 +1596,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -1608,10 +1608,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -1620,10 +1620,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Devil"
@@ -1632,10 +1632,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1644,10 +1644,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Sun"
@@ -1656,10 +1656,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Justice"
@@ -1668,10 +1668,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -1680,10 +1680,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -1692,10 +1692,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Justice"
@@ -1704,10 +1704,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Devil"
@@ -1716,10 +1716,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Magician"
@@ -1728,10 +1728,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Death"
@@ -1740,10 +1740,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -1752,10 +1752,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Magician"
@@ -1764,10 +1764,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Moon"
@@ -1776,10 +1776,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -1788,10 +1788,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -1800,10 +1800,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Sun"
@@ -1812,10 +1812,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1824,10 +1824,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -1836,10 +1836,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -1848,10 +1848,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1860,10 +1860,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Justice"
@@ -1872,10 +1872,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1884,10 +1884,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -1896,10 +1896,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -1908,10 +1908,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -1920,10 +1920,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1932,10 +1932,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -1944,10 +1944,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Magician"
@@ -1956,10 +1956,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -1968,10 +1968,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Moon"
@@ -1980,10 +1980,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Strength"
@@ -1992,10 +1992,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -2004,10 +2004,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -2016,10 +2016,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -2028,10 +2028,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -2040,10 +2040,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -2052,10 +2052,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2064,10 +2064,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Heirophant"
@@ -2076,10 +2076,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Moon"
@@ -2088,10 +2088,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Sun"
@@ -2100,10 +2100,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Magician"
@@ -2112,10 +2112,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Justice"
@@ -2124,10 +2124,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Death"
@@ -2136,10 +2136,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Justice"
@@ -2148,10 +2148,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2160,10 +2160,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -2172,10 +2172,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Star"
@@ -2184,10 +2184,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Moon"
@@ -2196,10 +2196,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Magician"
@@ -2208,10 +2208,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -2220,10 +2220,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Star"
@@ -2232,10 +2232,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Death"
@@ -2244,10 +2244,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -2256,10 +2256,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Devil"
@@ -2268,10 +2268,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -2280,10 +2280,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -2292,10 +2292,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Star"
@@ -2304,10 +2304,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -2316,10 +2316,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -2328,10 +2328,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -2340,10 +2340,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Devil"
@@ -2352,10 +2352,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -2364,10 +2364,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Strength"
@@ -2376,10 +2376,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -2388,10 +2388,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -2400,10 +2400,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Sun"
@@ -2412,10 +2412,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -2424,10 +2424,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -2436,10 +2436,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -2448,10 +2448,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Justice"
@@ -2460,10 +2460,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -2472,10 +2472,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2484,10 +2484,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -2496,10 +2496,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -2508,10 +2508,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -2520,10 +2520,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Death"
@@ -2532,10 +2532,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Justice"
@@ -2544,10 +2544,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -2556,10 +2556,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2568,10 +2568,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -2580,10 +2580,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Devil"
@@ -2592,10 +2592,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2604,10 +2604,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -2616,10 +2616,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Death"
@@ -2628,10 +2628,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Death"
@@ -2640,10 +2640,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -2652,10 +2652,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Star"
@@ -2664,10 +2664,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -2676,10 +2676,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -2688,10 +2688,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -2700,10 +2700,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2712,10 +2712,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -2724,10 +2724,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -2736,10 +2736,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -2748,10 +2748,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -2760,10 +2760,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Star"
@@ -2772,10 +2772,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -2784,10 +2784,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -2796,10 +2796,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -2808,10 +2808,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Death"
@@ -2820,10 +2820,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2832,10 +2832,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Devil"
@@ -2844,10 +2844,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -2856,10 +2856,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -2868,10 +2868,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Empress"
@@ -2880,10 +2880,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -2892,10 +2892,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -2904,10 +2904,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Magician"
@@ -2916,10 +2916,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Tower"
@@ -2928,10 +2928,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -2940,10 +2940,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -2952,10 +2952,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -2964,10 +2964,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -2976,10 +2976,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -2988,10 +2988,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Star"
@@ -3000,10 +3000,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -3012,10 +3012,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Moon"
@@ -3024,10 +3024,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3036,10 +3036,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -3048,10 +3048,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Moon"
@@ -3060,10 +3060,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Strength"
@@ -3072,10 +3072,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -3084,10 +3084,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -3096,10 +3096,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Sun"
@@ -3108,10 +3108,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -3120,10 +3120,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -3132,10 +3132,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -3144,10 +3144,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -3156,10 +3156,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -3168,10 +3168,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Jester"
@@ -3180,10 +3180,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Devil"
@@ -3192,10 +3192,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana2,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -3204,10 +3204,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -3216,10 +3216,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -3228,10 +3228,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -3240,10 +3240,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -3252,10 +3252,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Tower"
@@ -3264,10 +3264,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Devil"
@@ -3276,10 +3276,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -3288,10 +3288,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -3300,10 +3300,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Strength"
@@ -3312,10 +3312,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -3324,10 +3324,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3336,10 +3336,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Star"
@@ -3348,10 +3348,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Star"
@@ -3360,10 +3360,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Justice"
@@ -3372,10 +3372,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -3384,10 +3384,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -3396,10 +3396,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -3408,10 +3408,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3420,10 +3420,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3432,10 +3432,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -3444,10 +3444,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -3456,10 +3456,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fool"
+                        Name = "Fool"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Jester"
@@ -3468,10 +3468,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -3480,10 +3480,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     }
                 },
                 ResultArcana = "Sun"
@@ -3492,10 +3492,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Death"
@@ -3504,10 +3504,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Jester"
@@ -3516,10 +3516,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -3528,10 +3528,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -3540,10 +3540,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -3552,10 +3552,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3564,10 +3564,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Strength"
@@ -3576,10 +3576,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Tower"
@@ -3588,10 +3588,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Fotune"
@@ -3600,10 +3600,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Fool"
@@ -3612,10 +3612,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Sun"
@@ -3624,10 +3624,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -3636,10 +3636,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -3648,10 +3648,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -3660,10 +3660,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Sun"
@@ -3672,10 +3672,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -3684,10 +3684,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Sun"
@@ -3696,10 +3696,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Star"
@@ -3708,10 +3708,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Magician"
+                        Name = "Magician"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3720,10 +3720,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -3732,10 +3732,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Justice"
@@ -3744,10 +3744,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3756,10 +3756,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -3768,10 +3768,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Magician"
@@ -3780,10 +3780,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -3792,10 +3792,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Magician"
@@ -3804,10 +3804,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -3816,10 +3816,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3828,10 +3828,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -3840,10 +3840,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -3852,10 +3852,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -3864,10 +3864,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -3876,10 +3876,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Moon"
@@ -3888,10 +3888,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3900,10 +3900,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Empress"
@@ -3912,10 +3912,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -3924,10 +3924,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -3936,10 +3936,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Moon"
@@ -3948,10 +3948,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Priestess"
+                        Name = "Priestess"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Fool"
@@ -3960,10 +3960,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     }
                 },
                 ResultArcana = "Fool"
@@ -3972,10 +3972,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -3984,10 +3984,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Fool"
@@ -3996,10 +3996,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -4008,10 +4008,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Death"
@@ -4020,10 +4020,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Fool"
@@ -4032,10 +4032,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Strength"
@@ -4044,10 +4044,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Jester"
@@ -4056,10 +4056,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Sun"
@@ -4068,10 +4068,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -4080,10 +4080,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -4092,10 +4092,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Fool"
@@ -4104,10 +4104,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -4116,10 +4116,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Jester"
@@ -4128,10 +4128,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Moon"
@@ -4140,10 +4140,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -4152,10 +4152,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Star"
@@ -4164,10 +4164,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Devil"
@@ -4176,10 +4176,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Empress"
+                        Name = "Empress"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Star"
@@ -4188,10 +4188,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -4200,10 +4200,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Devil"
@@ -4212,10 +4212,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Tower"
@@ -4224,10 +4224,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Jester"
@@ -4236,10 +4236,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Moon"
@@ -4248,10 +4248,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -4260,10 +4260,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -4272,10 +4272,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -4284,10 +4284,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Strength"
@@ -4296,10 +4296,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Death"
@@ -4308,10 +4308,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Death"
@@ -4320,10 +4320,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -4332,10 +4332,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Sun"
@@ -4344,10 +4344,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Strength"
@@ -4356,10 +4356,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Devil"
@@ -4368,10 +4368,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -4380,10 +4380,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -4392,10 +4392,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Emperor"
+                        Name = "Emperor"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Sun"
@@ -4404,10 +4404,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -4416,10 +4416,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -4428,10 +4428,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Magician"
@@ -4440,10 +4440,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -4452,10 +4452,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -4464,10 +4464,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Moon"
@@ -4476,10 +4476,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Star"
@@ -4488,10 +4488,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Magician"
@@ -4500,10 +4500,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -4512,10 +4512,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Moon"
@@ -4524,10 +4524,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -4536,10 +4536,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -4548,10 +4548,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -4560,10 +4560,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Magician"
@@ -4572,10 +4572,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Fool"
@@ -4584,10 +4584,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -4596,10 +4596,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hierophant"
+                        Name = "Hierophant"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Sun"
@@ -4608,10 +4608,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -4620,10 +4620,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -4632,10 +4632,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -4644,10 +4644,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -4656,10 +4656,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Fool"
@@ -4668,10 +4668,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Jusice"
@@ -4680,10 +4680,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -4692,10 +4692,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Termperance"
+                        Name = "Termperance"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -4704,10 +4704,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Tower"
@@ -4716,10 +4716,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -4728,10 +4728,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -4740,10 +4740,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -4752,10 +4752,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Jester"
@@ -4764,10 +4764,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -4776,10 +4776,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Tower"
@@ -4788,10 +4788,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Lovers"
+                        Name = "Lovers"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -4800,10 +4800,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -4812,10 +4812,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -4824,10 +4824,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -4836,10 +4836,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -4848,10 +4848,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Devil"
@@ -4860,10 +4860,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Devil"
@@ -4872,10 +4872,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Moon"
@@ -4884,10 +4884,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -4896,10 +4896,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -4908,10 +4908,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -4920,10 +4920,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Fool"
@@ -4932,10 +4932,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -4944,10 +4944,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Tower"
@@ -4956,10 +4956,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Strength"
@@ -4968,10 +4968,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Chariot"
+                        Name = "Chariot"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Justice"
@@ -4980,10 +4980,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -4992,10 +4992,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -5004,10 +5004,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -5016,10 +5016,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Star"
@@ -5028,10 +5028,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Devil"
@@ -5040,10 +5040,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Magician"
@@ -5052,10 +5052,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -5064,10 +5064,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -5076,10 +5076,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Sun"
@@ -5088,10 +5088,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Star"
@@ -5100,10 +5100,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -5112,10 +5112,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Sun"
@@ -5124,10 +5124,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -5136,10 +5136,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Justice"
+                        Name = "Justice"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -5148,10 +5148,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -5160,10 +5160,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Justice"
@@ -5172,10 +5172,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Strength"
@@ -5184,10 +5184,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Magician"
@@ -5196,10 +5196,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Devil"
@@ -5208,10 +5208,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Death"
@@ -5220,10 +5220,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Jester"
@@ -5232,10 +5232,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Death"
@@ -5244,10 +5244,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Jester"
@@ -5256,10 +5256,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Tower"
@@ -5268,10 +5268,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -5280,10 +5280,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -5292,10 +5292,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hermit"
+                        Name = "Hermit"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Moon"
@@ -5304,10 +5304,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -5316,10 +5316,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Fool"
@@ -5328,10 +5328,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Moon"
@@ -5340,10 +5340,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Tower"
@@ -5352,10 +5352,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Tower"
@@ -5364,10 +5364,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Magician"
@@ -5376,10 +5376,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Magician"
@@ -5388,10 +5388,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Strength"
@@ -5400,10 +5400,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -5412,10 +5412,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Fool"
@@ -5424,10 +5424,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -5436,10 +5436,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Fortune"
+                        Name = "Fortune"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Fool"
@@ -5448,10 +5448,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     }
                 },
                 ResultArcana = "Star"
@@ -5460,10 +5460,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Empress"
@@ -5472,10 +5472,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Emperor"
@@ -5484,10 +5484,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -5496,10 +5496,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Devil"
@@ -5508,10 +5508,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Devil"
@@ -5520,10 +5520,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -5532,10 +5532,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Tower"
@@ -5544,10 +5544,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Temperance"
@@ -5556,10 +5556,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Magician"
@@ -5568,10 +5568,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Strength"
+                        Name = "Strength"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -5580,10 +5580,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     }
                 },
                 ResultArcana = "Devil"
@@ -5592,10 +5592,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Justice"
@@ -5604,10 +5604,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Justice"
@@ -5616,10 +5616,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -5628,10 +5628,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Sun"
@@ -5640,10 +5640,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Magician"
@@ -5652,10 +5652,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Empress"
@@ -5664,10 +5664,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Fool"
@@ -5676,10 +5676,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Moon"
@@ -5688,10 +5688,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Hanged Man"
+                        Name = "Hanged Man"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Jester"
@@ -5700,10 +5700,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     }
                 },
                 ResultArcana = "Jester"
@@ -5712,10 +5712,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -5724,10 +5724,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Justice"
@@ -5736,10 +5736,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -5748,10 +5748,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -5760,10 +5760,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Empress"
@@ -5772,10 +5772,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Strength"
@@ -5784,10 +5784,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -5796,10 +5796,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Death"
+                        Name = "Death"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Strength"
@@ -5808,10 +5808,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     }
                 },
                 ResultArcana = "Justice"
@@ -5820,10 +5820,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -5832,10 +5832,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -5844,10 +5844,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -5856,10 +5856,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -5868,10 +5868,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -5880,10 +5880,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Priestess"
@@ -5892,10 +5892,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Temperance"
+                        Name = "Temperance"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -5904,10 +5904,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     }
                 },
                 ResultArcana = "Star"
@@ -5916,10 +5916,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -5928,10 +5928,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Death"
@@ -5940,10 +5940,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -5952,10 +5952,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Death"
@@ -5964,10 +5964,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -5976,10 +5976,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Devil"
+                        Name = "Devil"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -5988,10 +5988,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -6000,10 +6000,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -6012,10 +6012,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Death"
@@ -6024,10 +6024,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Aeon"
@@ -6036,10 +6036,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Judgement"
@@ -6048,10 +6048,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Tower"
+                        Name = "Tower"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Fortune"
@@ -6060,10 +6060,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     }
                 },
                 ResultArcana = "Death"
@@ -6072,10 +6072,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -6084,10 +6084,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -6096,10 +6096,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Death"
@@ -6108,10 +6108,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Star"
+                        Name = "Star"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Tower"
@@ -6120,10 +6120,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     }
                 },
                 ResultArcana = "Death"
@@ -6132,10 +6132,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Hermit"
@@ -6144,10 +6144,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Hanged Man"
@@ -6156,10 +6156,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Moon"
+                        Name = "Moon"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Tower"
@@ -6168,10 +6168,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     }
                 },
                 ResultArcana = "Chariot"
@@ -6180,10 +6180,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Lovers"
@@ -6192,10 +6192,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Sun"
+                        Name = "Sun"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Hierophant"
@@ -6204,10 +6204,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     }
                 },
                 ResultArcana = "Death"
@@ -6216,10 +6216,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Judgement"
+                        Name = "Judgement"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Sun"
@@ -6228,10 +6228,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
                 FusionType = FusionType.Arcana3,
                 SourceArcanas = new List<FusionArcana>() {
                     new FusionArcana() {
-                        ArcanaName = "Jester"
+                        Name = "Jester"
                     },
                     new FusionArcana() {
-                        ArcanaName = "Aeon"
+                        Name = "Aeon"
                     }
                 },
                 ResultArcana = "Judgement"

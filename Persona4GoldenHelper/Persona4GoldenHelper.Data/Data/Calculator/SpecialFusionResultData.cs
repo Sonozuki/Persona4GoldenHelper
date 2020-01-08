@@ -10,10 +10,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Nebiros"
+                        Name = "Nebiros"
                     },
                     new FusionPersona() {
-                        PersonaName = "Belial"
+                        Name = "Belial"
                     }
                 },
                 ResultPersona = "Alice"
@@ -21,10 +21,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Vetala"
+                        Name = "Vetala"
                     },
                     new FusionPersona() {
-                        PersonaName = "Lilim"
+                        Name = "Lilim"
                     }
                 },
                 ResultPersona = "Ukobach"
@@ -32,10 +32,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Rangda"
+                        Name = "Rangda"
                     },
                     new FusionPersona() {
-                        PersonaName = "Barong"
+                        Name = "Barong"
                     }
                 },
                 ResultPersona = "Shiva"
@@ -43,10 +43,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Obariyon"
+                        Name = "Obariyon"
                     },
                     new FusionPersona() {
-                        PersonaName = "Yomotsu-Shikome"
+                        Name = "Yomotsu-Shikome"
                     }
                 },
                 ResultPersona = "Izanagi"
@@ -54,10 +54,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Jack Frost"
+                        Name = "Jack Frost"
                     },
                     new FusionPersona() {
-                        PersonaName = "Orobas"
+                        Name = "Orobas"
                     }
                 },
                 ResultPersona = "Pixie"
@@ -65,10 +65,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Shiva"
+                        Name = "Shiva"
                     },
                     new FusionPersona() {
-                        PersonaName = "Parvati"
+                        Name = "Parvati"
                     }
                 },
                 ResultPersona = "Ardha"
@@ -76,10 +76,10 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Eligor"
+                        Name = "Eligor"
                     },
                     new FusionPersona() {
-                        PersonaName = "Nata Taishi"
+                        Name = "Nata Taishi"
                     }
                 },
                 ResultPersona = "Slime"
@@ -87,13 +87,13 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Clotho"
+                        Name = "Clotho"
                     },
                     new FusionPersona() {
-                        PersonaName = "Lachesis"
+                        Name = "Lachesis"
                     },
                     new FusionPersona() {
-                        PersonaName = "Atropos"
+                        Name = "Atropos"
                     }
                 },
                 ResultPersona = "Norn"
@@ -101,16 +101,16 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Saki Mitama"
+                        Name = "Saki Mitama"
                     },
                     new FusionPersona() {
-                        PersonaName = "Ara Mitama"
+                        Name = "Ara Mitama"
                     },
                     new FusionPersona() {
-                        PersonaName = "Kusi Mitama"
+                        Name = "Kusi Mitama"
                     },
                     new FusionPersona() {
-                        PersonaName = "Nigi Mitama"
+                        Name = "Nigi Mitama"
                     }
                 },
                 ResultPersona = "Neko Shogun"
@@ -118,16 +118,16 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Phoenix"
+                        Name = "Phoenix"
                     },
                     new FusionPersona() {
-                        PersonaName = "Gdon"
+                        Name = "Gdon"
                     },
                     new FusionPersona() {
-                        PersonaName = "Yatagarasu"
+                        Name = "Yatagarasu"
                     },
                     new FusionPersona() {
-                        PersonaName = "Narasimha"
+                        Name = "Narasimha"
                     }
                 },
                 ResultPersona = "Tam Lin"
@@ -135,16 +135,16 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Oni"
+                        Name = "Oni"
                     },
                     new FusionPersona() {
-                        PersonaName = "Fuu-Ki"
+                        Name = "Fuu-Ki"
                     },
                     new FusionPersona() {
-                        PersonaName = "Kin-Ki"
+                        Name = "Kin-Ki"
                     },
                     new FusionPersona() {
-                        PersonaName = "Sui-Ki"
+                        Name = "Sui-Ki"
                     }
                 },
                 ResultPersona = "Ongyo-Ki"
@@ -152,16 +152,16 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Genbu"
+                        Name = "Genbu"
                     },
                     new FusionPersona() {
-                        PersonaName = "Seiryu"
+                        Name = "Seiryu"
                     },
                     new FusionPersona() {
-                        PersonaName = "Suzaku"
+                        Name = "Suzaku"
                     },
                     new FusionPersona() {
-                        PersonaName = "Byakko"
+                        Name = "Byakko"
                     }
                 },
                 ResultPersona = "Kohryu"
@@ -169,19 +169,19 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Jack Frost"
+                        Name = "Jack Frost"
                     },
                     new FusionPersona() {
-                        PersonaName = "Pyro Jack"
+                        Name = "Pyro Jack"
                     },
                     new FusionPersona() {
-                        PersonaName = "King Frost"
+                        Name = "King Frost"
                     },
                     new FusionPersona() {
-                        PersonaName = "Pixie"
+                        Name = "Pixie"
                     },
                     new FusionPersona() {
-                        PersonaName = "Ghoul"
+                        Name = "Ghoul"
                     }
                 },
                 ResultPersona = "Black Frost"
@@ -189,19 +189,19 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Ares"
+                        Name = "Ares"
                     },
                     new FusionPersona() {
-                        PersonaName = "Triglav"
+                        Name = "Triglav"
                     },
                     new FusionPersona() {
-                        PersonaName = "Kin-Ki"
+                        Name = "Kin-Ki"
                     },
                     new FusionPersona() {
-                        PersonaName = "Atavaka"
+                        Name = "Atavaka"
                     },
                     new FusionPersona() {
-                        PersonaName = "Neko Shogun"
+                        Name = "Neko Shogun"
                     }
                 },
                 ResultPersona = "Futsunushi"
@@ -209,19 +209,19 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Makami"
+                        Name = "Makami"
                     },
                     new FusionPersona() {
-                        PersonaName = "Orthrus"
+                        Name = "Orthrus"
                     },
                     new FusionPersona() {
-                        PersonaName = "Mothman"
+                        Name = "Mothman"
                     },
                     new FusionPersona() {
-                        PersonaName = "Thoth"
+                        Name = "Thoth"
                     },
                     new FusionPersona() {
-                        PersonaName = "Narasimha"
+                        Name = "Narasimha"
                     }
                 },
                 ResultPersona = "Yatsufusa"
@@ -229,19 +229,19 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Masakado"
+                        Name = "Masakado"
                     },
                     new FusionPersona() {
-                        PersonaName = "Shiki-Ouji"
+                        Name = "Shiki-Ouji"
                     },
                     new FusionPersona() {
-                        PersonaName = "Okuninushi"
+                        Name = "Okuninushi"
                     },
                     new FusionPersona() {
-                        PersonaName = "Hachiman"
+                        Name = "Hachiman"
                     },
                     new FusionPersona() {
-                        PersonaName = "Hitokoto-Nushi"
+                        Name = "Hitokoto-Nushi"
                     }
                 },
                 ResultPersona = "Yoshitsune"
@@ -249,22 +249,22 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Matador"
+                        Name = "Matador"
                     },
                     new FusionPersona() {
-                        PersonaName = "White Rider"
+                        Name = "White Rider"
                     },
                     new FusionPersona() {
-                        PersonaName = "Mother Harlot"
+                        Name = "Mother Harlot"
                     },
                     new FusionPersona() {
-                        PersonaName = "Daisoujou"
+                        Name = "Daisoujou"
                     },
                     new FusionPersona() {
-                        PersonaName = "Hell Biker"
+                        Name = "Hell Biker"
                     },
                     new FusionPersona() {
-                        PersonaName = "Trumpeter"
+                        Name = "Trumpeter"
                     }
                 },
                 ResultPersona = "Mahakala"
@@ -272,22 +272,22 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Pazuzu"
+                        Name = "Pazuzu"
                     },
                     new FusionPersona() {
-                        PersonaName = "Belphegor"
+                        Name = "Belphegor"
                     },
                     new FusionPersona() {
-                        PersonaName = "Belial"
+                        Name = "Belial"
                     },
                     new FusionPersona() {
-                        PersonaName = "Mot"
+                        Name = "Mot"
                     },
                     new FusionPersona() {
-                        PersonaName = "Seth"
+                        Name = "Seth"
                     },
                     new FusionPersona() {
-                        PersonaName = "Baal Zebul"
+                        Name = "Baal Zebul"
                     }
                 },
                 ResultPersona = "Beelzebub"
@@ -295,22 +295,22 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Matador"
+                        Name = "Matador"
                     },
                     new FusionPersona() {
-                        PersonaName = "White Rider"
+                        Name = "White Rider"
                     },
                     new FusionPersona() {
-                        PersonaName = "Daisoujou"
+                        Name = "Daisoujou"
                     },
                     new FusionPersona() {
-                        PersonaName = "Taotie"
+                        Name = "Taotie"
                     },
                     new FusionPersona() {
-                        PersonaName = "Pabilsag"
+                        Name = "Pabilsag"
                     },
                     new FusionPersona() {
-                        PersonaName = "Taowu"
+                        Name = "Taowu"
                     }
                 },
                 ResultPersona = "Trumpeter"
@@ -318,22 +318,22 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Ananta"
+                        Name = "Ananta"
                     },
                     new FusionPersona() {
-                        PersonaName = "Anubis"
+                        Name = "Anubis"
                     },
                     new FusionPersona() {
-                        PersonaName = "Trumpeter"
+                        Name = "Trumpeter"
                     },
                     new FusionPersona() {
-                        PersonaName = "Michael"
+                        Name = "Michael"
                     },
                     new FusionPersona() {
-                        PersonaName = "Satan"
+                        Name = "Satan"
                     },
                     new FusionPersona() {
-                        PersonaName = "Metatron"
+                        Name = "Metatron"
                     }
                 },
                 ResultPersona = "Lucifer"
@@ -341,40 +341,40 @@ namespace Persona4GoldenHelper.Data.Data.Calculator
             new SpecialFusionResult() {
                 SourcePersonas = new List<FusionPersona>() {
                     new FusionPersona() {
-                        PersonaName = "Izanagi"
+                        Name = "Izanagi"
                     },
                     new FusionPersona() {
-                        PersonaName = "Sandman"
+                        Name = "Sandman"
                     },
                     new FusionPersona() {
-                        PersonaName = "Nata Taishi"
+                        Name = "Nata Taishi"
                     },
                     new FusionPersona() {
-                        PersonaName = "Girimehkala"
+                        Name = "Girimehkala"
                     },
                     new FusionPersona() {
-                        PersonaName = "Norn"
+                        Name = "Norn"
                     },
                     new FusionPersona() {
-                        PersonaName = "Okuninushi"
+                        Name = "Okuninushi"
                     },
                     new FusionPersona() {
-                        PersonaName = "Orthrus"
+                        Name = "Orthrus"
                     },
                     new FusionPersona() {
-                        PersonaName = "Kartikeya"
+                        Name = "Kartikeya"
                     },
                     new FusionPersona() {
-                        PersonaName = "Mithra"
+                        Name = "Mithra"
                     },
                     new FusionPersona() {
-                        PersonaName = "Tzitzimitl"
+                        Name = "Tzitzimitl"
                     },
                     new FusionPersona() {
-                        PersonaName = "Cu Chulainn"
+                        Name = "Cu Chulainn"
                     },
                     new FusionPersona() {
-                        PersonaName = "Legion"
+                        Name = "Legion"
                     }
                 },
                 ResultPersona = "Izanagi-No-Okami"
