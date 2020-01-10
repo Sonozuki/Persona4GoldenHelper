@@ -172,7 +172,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "+50 HP",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Castle (Yukiko's dungeon).",
+                        Obtain = "Found in golden chests in The Castle.",
                         Price = "",
                     }
                 }
@@ -185,7 +185,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "+10 HP",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Steamy Bathhouse (Kanji's dungeon).",
+                        Obtain = "Found in golden chests in The Steamy Bathhouse.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -267,7 +267,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "Low chance to counter Physical attacks",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Marukyu Striptease (Rise's dungeon).",
+                        Obtain = "Found in golden chests in The Marukyu Striptease.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -336,7 +336,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "Low chance to evade Physical attacks",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Void Quest (Mitsuo's dungeon).",
+                        Obtain = "Found in golden chests in The Void Quest.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -392,7 +392,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "Reduce Physical damage by 20%",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Secret Laboratory (Naoto's dungeon).",
+                        Obtain = "Found in golden chests in The Secret Laboratory.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -508,7 +508,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in Magatsu Inaba ([True Killer]'s dungeon).",
+                        Obtain = "Found in golden chests in Magatsu Inaba.",
                         Price = "",
                     }
                 }
@@ -664,7 +664,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "Medium chance to evade Fire attacks",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Castle (Yukiko's dungeon).",
+                        Obtain = "Found in golden chests in The Castle.",
                         Price = "",
                     }
                 }
@@ -690,7 +690,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "+20 SP",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Steamy Bathhouse (Kanji's dungeon).",
+                        Obtain = "Found in golden chests in The Steamy Bathhouse.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -759,7 +759,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "+5 Magic",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Marukyu Striptease (Rise's dungeon).",
+                        Obtain = "Found in golden chests in The Marukyu Striptease.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -828,7 +828,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "+5 Endurance",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Void Quest (Mitsuo's dungeon).",
+                        Obtain = "Found in golden chests in The Void Quest.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -871,7 +871,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "Low chance to evade Physical attacks",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in The Secret Laboratory (Naoto's dungeon).",
+                        Obtain = "Found in golden chests in The Secret Laboratory.",
                         Price = "",
                     },
                     new ItemObtain() {
@@ -979,7 +979,7 @@ namespace Persona4GoldenHelper.Data.Data
                 Effect = "Reduce Physical damage by 20%",
                 Obtained = new List<ItemObtain>() {
                     new ItemObtain() {
-                        Obtain = "Found in golden chests in Magatsu Inaba ([True Killer]'s dungeon).",
+                        Obtain = "Found in golden chests in Magatsu Inaba.",
                         Price = "",
                     },
                     new ItemObtain() {
