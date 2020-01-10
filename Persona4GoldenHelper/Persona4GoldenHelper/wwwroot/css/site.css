@@ -125,29 +125,12 @@ input[type=text] {
 /* Site wide default table styling */
 table {
     border: 1px solid #353535;
-    border-collapse: separate;
-    border-spacing: 0;
+    border-collapse: separate; /* this is to hide the corners on the 4 corner tds/ths that don't have a border radius, which would otherwise show through */
+    border-radius: 5px;
     color: #808080;
     margin-bottom: 30px;
     border-radius: 5px;
 }
-
-    /* the below 4 styles apply a border radius to the 4 corner th/td, this is needed otherwise they will just override the border radius on the table element */
-    table tr:last-child td:first-child {
-        border-bottom-left-radius: 5px;
-    }
-
-    table tr:last-child td:last-child {
-        border-bottom-right-radius: 5px;
-    }
-
-    table tr:first-child th:first-child {
-        border-top-left-radius: 5px;
-    }
-
-    table tr:first-child th:last-child {
-        border-top-right-radius: 5px;
-    }
 
     table th {
         background-color: #2a2a2a;
@@ -196,22 +179,6 @@ table {
         border: none;
         width: 100%;
     }
-        /* this is to remove the border radius on the table in the persona recipe scroll. this isn't wanted as the border radius is applied to the container div to also apply the curve to the scroll bar */
-        #recipe-scroll table tr:last-child td:first-child {
-            border-bottom-left-radius: 0;
-        }
-
-        #recipe-scroll table tr:last-child td:last-child {
-            border-bottom-right-radius: 0;
-        }
-
-        #recipe-scroll table tr:first-child th:first-child {
-            border-top-left-radius: 0;
-        }
-
-        #recipe-scroll table tr:first-child th:last-child {
-            border-top-right-radius: 0;
-        }
 
 /* Table column widths that don't fit nicely in bootstrap col-x styling */
 .extra-slim-column {
