@@ -353,9 +353,23 @@ table {
     font-weight: bold;
 }
 
-/* Mobile-hidden styling */
+/* Desktop/Mobile-hidden styling */
 @media (max-width: 768px) {
     .mobile-hidden {
+        display: none;
+    }
+
+    .desktop-hidden {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-hidden {
+        display: table-cell;
+    }
+
+    .desktop-hidden {
         display: none;
     }
 }
