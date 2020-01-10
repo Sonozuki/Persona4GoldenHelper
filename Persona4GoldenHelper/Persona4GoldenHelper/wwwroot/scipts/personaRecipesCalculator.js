@@ -364,7 +364,8 @@ function populateRecipeTable() {
                     ${persona.arcana}
                 </span>
                 )
-            </a>`;
+            </a>
+            <br class="desktop-hidden" />`;
         }
 
         let recipeRow = `<tr><td>${costCellValue}</td><td>${personaCellValue}</td></tr>`;
