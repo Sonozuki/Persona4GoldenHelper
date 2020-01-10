@@ -60,11 +60,11 @@ namespace Persona4GoldenHelper.Tests
                 {
                     new FusionArcana()
                     {
-                        ArcanaName = "sdf"
+                        Name = "sdf"
                     },
                     new FusionArcana()
                     {
-                        ArcanaName = "sdgf"
+                        Name = "sdgf"
                     }
                 },
                 ResultArcana = "gfd"
@@ -77,11 +77,11 @@ namespace Persona4GoldenHelper.Tests
                 {
                     new FusionArcana()
                     {
-                        ArcanaName = "sdf"
+                        Name = "sdf"
                     },
                     new FusionArcana()
                     {
-                        ArcanaName = "sdgf"
+                        Name = "sdgf"
                     }
                 },
                 ResultArcana = "gfd"
@@ -107,11 +107,11 @@ namespace Persona4GoldenHelper.Tests
                 {
                     new FusionArcana()
                     {
-                        ArcanaName = "sdf"
+                        Name = "sdf"
                     },
                     new FusionArcana()
                     {
-                        ArcanaName = "sdgf"
+                        Name = "sdgf"
                     }
                 },
                 ResultArcana = "gfd"
@@ -124,11 +124,11 @@ namespace Persona4GoldenHelper.Tests
                 {
                     new FusionArcana()
                     {
-                        ArcanaName = "sdf"
+                        Name = "sdf"
                     },
                     new FusionArcana()
                     {
-                        ArcanaName = "sdgf"
+                        Name = "sdgf"
                     }
                 },
                 ResultArcana = "gfd"
@@ -153,11 +153,11 @@ namespace Persona4GoldenHelper.Tests
                 {
                     new FusionPersona()
                     {
-                        PersonaName = "sdf"
+                        Name = "sdf"
                     },
                     new FusionPersona()
                     {
-                        PersonaName = "adfg"
+                        Name = "adfg"
                     }
                 },
                 ResultPersona = "erg"
@@ -169,11 +169,11 @@ namespace Persona4GoldenHelper.Tests
                 {
                     new FusionPersona()
                     {
-                        PersonaName = "sdf"
+                        Name = "sdf"
                     },
                     new FusionPersona()
                     {
-                        PersonaName = "adfg"
+                        Name = "adfg"
                     }
                 },
                 ResultPersona = "erg"
