@@ -1,4 +1,4 @@
-**Persona4GoldenHelper** is an [ASP.Net Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) web app to bring all the important information for [Persona 4 Golden](https://en.wikipedia.org/wiki/Persona_4#Persona_4_Golden_2) into one place. See at: http://www.persona4goldenhelper.co.uk/ (Not currently live)
+**Persona4GoldenHelper** is an [ASP.Net Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) web app to bring all the important information for [Persona 4 Golden](https://en.wikipedia.org/wiki/Persona_4#Persona_4_Golden_2) into one place. See at: http://www.persona4goldenhelper.co.uk/
 
 ## Current Pages
 * **Personas** - This page lists all available personas in the game, it also shows their: arcana, level, stats, and element affinities. Clicking on one of the persona names will bring you to that persona's page, this contains the above as well as skills that personas has.
