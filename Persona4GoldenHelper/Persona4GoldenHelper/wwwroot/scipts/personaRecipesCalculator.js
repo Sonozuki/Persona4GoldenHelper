@@ -355,15 +355,7 @@ function populateRecipeTable() {
                 <span class="${personaType}">
                     ${persona.name}
                 </span>
-                (
-                <span class="text-dark">
-                    ${persona.level.toString()}
-                </span>
-                /
-                <span class="text-dark">
-                    ${persona.arcana}
-                </span>
-                )
+                (<span class="text-dark">${persona.level.toString()}</span>/<span class="text-dark">${persona.arcana}</span>)
             </a>
             <br class="desktop-hidden" />`;
         }

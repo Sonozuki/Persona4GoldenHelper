@@ -2,7 +2,7 @@
 
 /* scrollbar width */
 ::-webkit-scrollbar {
-    width: 17px;
+    width: 7px;
 }
 
 /* scrollbar track */
@@ -144,7 +144,7 @@ table {
 
     table td {
         padding: 5px 7px !important;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     table tr {
