@@ -8,7 +8,7 @@
 
 <div>
     <h2 class="text-align-center col-md-12 col-sm-12 col-xs-12">
-        @Model.Persona.Name (@Model.Persona.Level/@Model.Persona.Arcana)
+        @Model.Persona.Name (<span class="text-dark">@Model.Persona.Level</span>/<span class="text-dark">@Model.Persona.Arcana</span>)
         <span class="type-ultimate" @(Model.Persona.Ultimate ? "" : "hidden")>Ultimate</span>
         <span class="type-new-game" @(Model.Persona.NewGame ? "" : "hidden")>New Game+</span>
     </h2>
