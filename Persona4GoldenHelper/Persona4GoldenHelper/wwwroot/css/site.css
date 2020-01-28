@@ -5,27 +5,6 @@
     width: 7px;
 }
 
-/* scrollbar track */
-::-webkit-scrollbar-track {
-    background: #2a2a2a;
-}
-
-/* scrollbar handle */
-::-webkit-scrollbar-thumb {
-    background: #444;
-}
-
-    /* scrollbar handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
-
-/* text selected */
-::selection {
-    background-color: #c5c1b9;
-    color: #e7e7e7;
-}
-
 /* text in text input */
 ::placeholder {
     text-align: center;
@@ -40,7 +19,6 @@
         font-size: 30px;
         text-decoration: none;
         font-weight: bold;
-        color: #c5c1b9;
     }
 
     #page-header ul {
@@ -49,7 +27,6 @@
 
     #page-header a {
         text-decoration: none;
-        color: #c5c1b9;
         padding: 15px;
         background-color: transparent; /* without this a weird result can happen when dragging one of the navbar items, without this it will return to the bootstap styling of a white background */
     }
@@ -92,8 +69,6 @@ table {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    background-color: #121212;
-    color: #c5c1b9;
 }
 
 p {
@@ -106,8 +81,6 @@ img {
 }
 
 input[type=text] {
-    background-color: #202020;
-    border: 1px solid #353535;
     border-radius: 5px;
     padding: 7px;
     font-size: 20px;
@@ -119,22 +92,17 @@ input[type=text] {
 
     input[type=text]:focus {
         outline: none;
-        box-shadow: 0 0 3px white;
     }
 
 /* Site wide default table styling */
 table {
-    border: 1px solid #353535;
     border-collapse: separate; /* this is to hide the corners on the 4 corner tds/ths that don't have a border radius, which would otherwise show through */
     border-radius: 5px;
-    color: #808080;
     margin-bottom: 30px;
     border-radius: 5px;
 }
 
     table th {
-        background-color: #2a2a2a;
-        color: #B4B4B4;
         position: sticky !important;
         top: -1px;
         border: none;
@@ -148,19 +116,13 @@ table {
     }
 
     table tr {
-        background-color: #202020;
         transition: background-color .25s;
     }
-
-        table tr:hover, .hover-table-cell { /* hover-table-cell is applied in the 'mergeRowHightlightFix' to fix rowspan highlight issues */
-            background-color: #333;
-        }
 
 /* Persona recipes section styling */
 #recipe-scroll-container {
     border-radius: 5px;
     overflow: hidden; /* this is needed as it cuts to corner off the scroll bar */
-    border: 1px solid #353535;
     padding: 0;
     margin-bottom: 30px;
 }
@@ -206,6 +168,10 @@ table {
     white-space: pre-line;
 }
 
+.font-bold {
+    font-weight: bold;
+}
+
 #return-to-top {
     width: 50px;
     height: 50px;
@@ -213,15 +179,9 @@ table {
     right: 25px;
     position: fixed;
     border-radius: 50%;
-    background-color: #202020;
-    border: 1px solid #353535;
     outline: none;
     transition: background-color 1s;
 }
-
-    #return-to-top:hover {
-        background-color: #333;
-    }
 
     #return-to-top #label {
         font-size: 47px;
@@ -232,7 +192,6 @@ table {
 
 /* Text colouring */
 .text-bright, a:link, a:visited {
-    color: #c5c1b9;
     transition: all .5s;
 }
 
@@ -241,18 +200,9 @@ table {
         filter: brightness(150%);
     }
 
-.text-error {
-    color: red;
-}
-
-.text-dark {
-    color: #808080;
-}
-
 /* Style an element like a button, used on the 'See More' text for persona recipes */
 .button {
     padding: 10px;
-    background-color: #2a2a2a;
     margin-top: 5px;
     margin-bottom: 0;
 }
@@ -260,65 +210,6 @@ table {
     .button:hover {
         cursor: pointer;
     }
-
-/* Persona types */
-.type-ultimate {
-    color: #4b75b3 !important;
-}
-
-.type-new-game {
-    color: #b30000 !important;
-}
-
-/* Shadow types */
-.type-normal {
-    color: #16ce3c;
-}
-
-.type-miniboss {
-    color: #FFD700;
-}
-
-.type-boss {
-    color: #b30000;
-}
-
-/* Skill cost */
-.cost-sp {
-    color: #e8b819;
-    font-weight: bold;
-}
-
-.cost-hp {
-    color: #f71df0;
-    font-weight: bold;
-}
-
-/* Persona / Shadow element affinities */
-.affinity-weak {
-    color: red;
-    font-weight: bold;
-}
-
-.affinity-resistant {
-    color: #9a10b5;
-    font-weight: bold;
-}
-
-.affinity-null {
-    color: dodgerblue;
-    font-weight: bold;
-}
-
-.affinity-reflect {
-    color: #FFD700;
-    font-weight: bold;
-}
-
-.affinity-absorb {
-    color: #16ce3c;
-    font-weight: bold;
-}
 
 /* Desktop/Mobile-hidden styling */
 @media (max-width: 768px) {

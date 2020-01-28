@@ -59,13 +59,13 @@
         </thead>
         <tbody>
             <tr>
-                <td class="text-align-center affinity-@Model.Persona.Elements.Physical">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Physical)</td>
-                <td class="text-align-center affinity-@Model.Persona.Elements.Fire">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Fire)</td>
-                <td class="text-align-center affinity-@Model.Persona.Elements.Ice">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Ice)</td>
-                <td class="text-align-center affinity-@Model.Persona.Elements.Electricity">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Electricity)</td>
-                <td class="text-align-center affinity-@Model.Persona.Elements.Wind">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Wind)</td>
-                <td class="text-align-center affinity-@Model.Persona.Elements.Light">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Light)</td>
-                <td class="text-align-center affinity-@Model.Persona.Elements.Darkness">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Darkness)</td>
+                <td class="text-align-center font-bold affinity-@Model.Persona.Elements.Physical">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Physical)</td>
+                <td class="text-align-center font-bold affinity-@Model.Persona.Elements.Fire">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Fire)</td>
+                <td class="text-align-center font-bold affinity-@Model.Persona.Elements.Ice">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Ice)</td>
+                <td class="text-align-center font-bold affinity-@Model.Persona.Elements.Electricity">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Electricity)</td>
+                <td class="text-align-center font-bold affinity-@Model.Persona.Elements.Wind">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Wind)</td>
+                <td class="text-align-center font-bold affinity-@Model.Persona.Elements.Light">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Light)</td>
+                <td class="text-align-center font-bold affinity-@Model.Persona.Elements.Darkness">@ConvertElementAffinityToShortHand(Model.Persona.Elements.Darkness)</td>
             </tr>
         </tbody>
     </table>
@@ -92,7 +92,7 @@
                     <td class="text-align-center">@personaSkill.LevelRequired</td>
                     <td class="text-bright">@skill.Name</td>
                     <td>@skill.Effect</td>
-                    <td class="text-align-center @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
+                    <td class="text-align-center font-bold @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
                 </tr>
             }
         </tbody>

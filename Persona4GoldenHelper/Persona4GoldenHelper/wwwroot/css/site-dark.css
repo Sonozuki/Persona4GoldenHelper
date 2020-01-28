@@ -1,0 +1,139 @@
+﻿/* scrollbar track */
+::-webkit-scrollbar-track {
+    background: #2a2a2a;
+}
+
+/* scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+    /* scrollbar handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+/* text selected */
+::selection {
+    background-color: #c5c1b9;
+    color: #e7e7e7;
+}
+
+/* Site wide tag colour styling */
+body {
+    background-color: #121212;
+    color: #c5c1b9;
+}
+
+input[type=text] {
+    background-color: #202020;
+    border: 1px solid #353535;
+}
+
+    input[type=text]:focus {
+        box-shadow: 0 0 3px white;
+    }
+
+/* Site wide default table colour styling */
+table {
+    border: 1px solid #353535;
+    color: #808080;
+}
+
+    table th {
+        background-color: #2a2a2a;
+        color: #B4B4B4;
+    }
+
+    table tr {
+        background-color: #202020;
+    }
+
+        table tr:hover, .hover-table-cell { /* hover-table-cell is applied in the 'mergeRowHightlightFix' to fix rowspan highlight issues */
+            background-color: #333;
+        }
+
+/* Persona recipes section styling */
+#recipe-scroll-container {
+    border: 1px solid #353535;
+}
+
+/* Return to top button colour styling */
+#return-to-top {
+    background-color: #202020;
+    border: 1px solid #353535;
+}
+
+    #return-to-top:hover {
+        background-color: #333;
+    }
+
+/* Text colouring */
+.text-bright, a:link, a:visited {
+    color: #c5c1b9;
+}
+
+.text-error {
+    color: red;
+}
+
+.text-dark {
+    color: #808080;
+}
+
+/* Colour the button styled elements, used on the 'See More' text for persona recipes */
+.button {
+    background-color: #2a2a2a;
+}
+
+/* Persona types */
+.type-ultimate {
+    color: #4b75b3;
+}
+
+.type-new-game {
+    color: #b30000;
+}
+
+/* Shadow types */
+.type-normal {
+    color: #16ce3c;
+}
+
+.type-miniboss {
+    color: #ffd700;
+}
+
+.type-boss {
+    color: #b30000;
+}
+
+/* Skill cost */
+.cost-sp {
+    color: #e8b819;
+}
+
+.cost-hp {
+    color: #f71df0;
+}
+
+/* Persona / Shadow element affinities */
+.affinity-weak {
+    color: red;
+}
+
+.affinity-resistant {
+    color: #9a10b5;
+}
+
+.affinity-null {
+    color: dodgerblue;
+}
+
+.affinity-reflect {
+    color: #ffd700;
+}
+
+.affinity-absorb {
+    color: #16ce3c;
+}
