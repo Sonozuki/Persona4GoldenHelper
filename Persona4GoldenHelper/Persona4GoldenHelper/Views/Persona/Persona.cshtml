@@ -82,7 +82,7 @@
                 <th class="text-align-center slim-column">Cost</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="alterate-row-colour">
             @for (int i = 0; i < Model.Persona.Skills.Count(); i++)
             {
                 var skill = Model.Skills[i];
@@ -110,7 +110,7 @@
                         <th>Ingredients</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="alterate-row-colour">
                 </tbody>
             </table>
             <h4 id="see-more-recipes" class="col-md-12 col-sm-12 col-xs-12 text-align-center button" onclick="populateRecipeTable()">See More</h4>

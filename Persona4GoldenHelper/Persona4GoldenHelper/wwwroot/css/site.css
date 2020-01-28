@@ -197,7 +197,6 @@ table {
 
     a:link:hover {
         text-decoration: none;
-        filter: brightness(150%);
     }
 
 /* Style an element like a button, used on the 'See More' text for persona recipes */
@@ -210,6 +209,59 @@ table {
     .button:hover {
         cursor: pointer;
     }
+
+/* Persona types */
+.type-ultimate {
+    color: #4b75b3;
+}
+
+.type-new-game {
+    color: #b30000;
+}
+
+/* Shadow types */
+.type-normal {
+    color: #16ce3c;
+}
+
+.type-miniboss {
+    color: #ffd700;
+}
+
+.type-boss {
+    color: #b30000;
+}
+
+/* Skill cost */
+.cost-sp {
+    color: #e8b819;
+}
+
+.cost-hp {
+    color: #f71df0;
+}
+
+/* Persona / Shadow element affinities */
+.affinity-weak {
+    color: red;
+}
+
+.affinity-resistant {
+    color: #9a10b5;
+}
+
+.affinity-null {
+    color: dodgerblue;
+}
+
+.affinity-reflect {
+    color: #ffd700;
+}
+
+.affinity-absorb {
+    color: #16ce3c;
+}
+
 
 /* Desktop/Mobile-hidden styling */
 @media (max-width: 768px) {

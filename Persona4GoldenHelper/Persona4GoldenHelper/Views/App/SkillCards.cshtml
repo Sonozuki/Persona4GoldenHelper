@@ -18,7 +18,7 @@
                 <th class="text-align-center slim-column">Skill Card Ranks Found</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="alterate-row-colour">
             @foreach (var skillCardLocation in Model.SkillCardLocations)
             {
                 <tr>
@@ -44,7 +44,7 @@
                         <th>Skill Cards</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="alterate-row-colour">
                     @for (int i = 1; i <= 10; i++)
                     {
                         var rankSkillCards = GetSkillCardsByRank(skillCards, i);
