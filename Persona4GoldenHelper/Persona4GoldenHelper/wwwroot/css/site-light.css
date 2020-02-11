@@ -31,6 +31,10 @@ input[type=text] {
         box-shadow: 0 0 3px #999;
     }
 
+img {
+    filter: brightness(25%);
+}
+
 /* Site wide default table colour styling */
 table {
     border: 1px solid #ddd;
