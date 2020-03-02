@@ -133,6 +133,77 @@ namespace Persona4GoldenHelper.Tests
         }
 
         [Test]
+        public void GetAllPlants()
+        {
+            // arrange
+            Context.Plants.Add(new Plant()
+            {
+                DateAvailable = "date available",
+                Seed = new PlantSeed()
+                {
+                    Name = "seed name",
+                    Cost = "seed price"
+                },
+                GrowthTime = 4,
+                Harvest = 5,
+                HarvestWithTending = 6,
+                Products = new List<PlantProduct>() {
+                    new PlantProduct() {
+                        Name = "product name",
+                        Effect = "product effect"
+                    }
+                }
+            });
+
+            Context.Plants.Add(new Plant()
+            {
+                DateAvailable = "date available2",
+                Seed = new PlantSeed()
+                {
+                    Name = "seed name2",
+                    Cost = "seed price2"
+                },
+                GrowthTime = 4,
+                Harvest = 5,
+                HarvestWithTending = 6,
+                Products = new List<PlantProduct>() {
+                    new PlantProduct() {
+                        Name = "product name2",
+                        Effect = "product effect2"
+                    }
+                }
+            });
+
+            Context.Plants.Add(new Plant()
+            {
+                DateAvailable = "date available3",
+                Seed = new PlantSeed()
+                {
+                    Name = "seed name3",
+                    Cost = "seed price3"
+                },
+                GrowthTime = 4,
+                Harvest = 5,
+                HarvestWithTending = 6,
+                Products = new List<PlantProduct>() {
+                    new PlantProduct() {
+                        Name = "product name3",
+                        Effect = "product effect3"
+                    }
+                }
+            });
+
+            Context.SaveChanges();
+
+            // act
+            var answers = AppService.GetAllPlants();
+
+            // assert
+            Assert.AreEqual(3, answers.Count);
+        }
+
+
+        [Test]
         public void GetAllSkills()
         {
             // arrange
