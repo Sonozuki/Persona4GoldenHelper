@@ -1,0 +1,41 @@
+﻿@model PlantListingViewModel
+
+<div>
+    <h2 class="text-align-center col-md-12 col-sm-12 col-xs-12">Plants</h2>
+    <table class="alterate-tbody-colour col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+        <thead>
+            <tr>
+                <th class="text-align-center mobile-hidden">Available</th>
+                <th>Seedling Name</th>
+                <th class="text-align-center mobile-hidden">Price</th>
+                <th class="text-align-center">Growth Time (Days)</th>
+                <th class="text-align-center">Harvest</th>
+                <th class="text-align-center">Harvest with Tending</th>
+                <th>Product</th>
+                <th class="mobile-hidden">Effect</th>
+            </tr>
+        </thead>
+        @foreach (var plant in Model.Plants)
+        {
+            <tbody>
+                @for (int i = 0; i < plant.Products.Count; i++)
+                {
+                    <tr>
+                        @if (i == 0)
+                        {
+                            <td rowspan=@plant.Products.Count class="text-align-center mobile-hidden">@plant.DateAvailable</td>
+                            <td rowspan=@plant.Products.Count class="text-primary">@plant.Seed.Name</td>
+                            <td rowspan=@plant.Products.Count class="text-align-center mobile-hidden">@plant.Seed.Cost</td>
+                            <td rowspan=@plant.Products.Count class="text-align-center">@plant.GrowthTime</td>
+                            <td rowspan=@plant.Products.Count class="text-align-center">@plant.Harvest</td>
+                            <td rowspan=@plant.Products.Count class="text-align-center">@plant.HarvestWithTending</td>
+                        }
+
+                        <td>@plant.Products[i].Name</td>
+                        <td class="mobile-hidden">@plant.Products[i].Effect</td>
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
+</div>

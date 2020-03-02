@@ -15,6 +15,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 5,
                 Harvest = 3,
+                HarvestWithTending = 5,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Tiny Soul Tomato",
@@ -30,6 +31,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 5,
                 Harvest = 3,
+                HarvestWithTending = 5,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Return Daikon",
@@ -45,6 +47,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 6,
                 Harvest = 2,
+                HarvestWithTending = 2,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Cracked Wheat",
@@ -60,6 +63,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 5,
                 Harvest = 2,
+                HarvestWithTending = 2,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Hiranya Cabbage",
@@ -75,6 +79,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 7,
                 Harvest = 1,
+                HarvestWithTending = 1,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Red Paprika",
@@ -102,6 +107,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 8,
                 Harvest = 1,
+                HarvestWithTending = 1,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Tertacorn",
@@ -121,6 +127,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 9,
                 Harvest = 1,
+                HarvestWithTending = 1,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Scapegoat Eggplant",
@@ -136,6 +143,7 @@ namespace Persona4GoldenHelper.Data.Data
                 },
                 GrowthTime = 10,
                 Harvest = 1,
+                HarvestWithTending = 2,
                 Products = new List<PlantProduct>() {
                     new PlantProduct() {
                         Name = "Bead Melon",

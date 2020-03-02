@@ -55,18 +55,18 @@ namespace Persona4GoldenHelper.Service
 
         public List<Answer> GetAllExamAnswers()
         {
-                try
-                {
-                    Logger.LogInformation("GetAllExamAnswers was called");
+            try
+            {
+                Logger.LogInformation("GetAllExamAnswers was called");
 
-                    return Context.ExamAnswers
-                        .ToList();
-                }
-                catch (Exception ex)
-                {
-                    Logger.LogError($"GetAllExamAnswers failed: {ex}");
-                    return null;
-                }
+                return Context.ExamAnswers
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllExamAnswers failed: {ex}");
+                return null;
+            }
         }
 
         public List<Skill> GetAllSkills()
@@ -272,6 +272,24 @@ namespace Persona4GoldenHelper.Service
             catch (Exception ex)
             {
                 Logger.LogError($"GetAllWeapons failed: {ex}");
+                return null;
+            }
+        }
+
+        public List<Plant> GetAllPlants()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllPlants was called");
+
+                return Context.Plants
+                    .Include(plant => plant.Seed)
+                    .Include(plant => plant.Products)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllPlants failed: {ex}");
                 return null;
             }
         }

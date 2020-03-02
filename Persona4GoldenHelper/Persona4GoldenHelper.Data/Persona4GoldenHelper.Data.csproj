@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20191231190249_Add shadows.cs" />
     <Compile Remove="Migrations\20191231190249_Add shadows.Designer.cs" />
+    <Compile Remove="Migrations\20200302170232_Add HarvestWithTending to plant table.cs" />
+    <Compile Remove="Migrations\20200302170232_Add HarvestWithTending to plant table.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

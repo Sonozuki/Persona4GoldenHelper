@@ -138,5 +138,17 @@ namespace Persona4GoldenHelper.Controllers
 
             return View(model);
         }
+
+        public IActionResult Gardening()
+        {
+            ViewBag.Title = "Gardening";
+
+            var model = new PlantListingViewModel()
+            {
+                Plants = AppService.GetAllPlants()
+            };
+
+            return View(model);
+        }
     }
 }

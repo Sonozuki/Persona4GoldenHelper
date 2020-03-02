@@ -9,6 +9,7 @@ namespace Persona4GoldenHelper.Data.Models
         public PlantSeed Seed { get; set; }
         public int GrowthTime { get; set; }
         public int Harvest { get; set; }
+        public int HarvestWithTending { get; set; }
         public List<PlantProduct> Products { get; set; }
     }
 }
