@@ -92,6 +92,29 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        public IActionResult GetAllPlants()
+        {
+            try
+            {
+                Logger.LogInformation("GetAllPlants was called");
+
+                var plants = AppService.GetAllPlants();
+                if (plants != null)
+                {
+                    return Ok(plants);
+                }
+                else
+                {
+                    return StatusCode(500);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"GetAllPlants failed: {ex}");
+                return StatusCode(500);
+            }
+        }
+
         public IActionResult GetSkillsByPersonaName(string name)
         {
             try
