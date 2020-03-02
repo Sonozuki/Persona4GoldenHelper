@@ -8,6 +8,7 @@
 * **Armor** - This page lists all the armor available in the game, sorted by type (male, female, unisex). It also shows their: evade, defense, effect, price, and how to obtain them.
 * **Accessories** - This page lists all accessories in the game, it also shows their: effect, price, and how to obtain them.
 * **Exam Answers** - This page lists all the exam questions and correct answers, it also shows the date you will be asked the question.
+* **Gardening** - This page lists all the plants you can grow in the garden, as well as their products and the effects of those products.
 * **Quests** - This page lists all the quests available in the game, it also shows: the quest giver, where the quest giver is, the date you can start the quest, any prerequisities for starting the quest, the reward, and how to complete the quest.
 * **Shadows** - This page lists all available shadows in the game, it also shows their: type (whether they are a normal shadow, mini boss, or boss), level, stats, and element affinities. Clicking on one of the shadow names will bring you to the shadow's page, this contains the above as well as the skills the shadow has.
 * **Lunches** - This page lists all the lunches you can make, as well as the correct method to make them properly.
@@ -16,7 +17,6 @@
 ## Planned Pages
 * **Calender** - This page will contain: the weather, times skips, exam dates, and social link availability for each day.
 * **Costumes** - This page will contain all the constumes in the game, with their price and how to obtain them.
-* **Gardening** - This page will contain all the plants you can grow in the garden, as well as their products and the effects of those products.
 * **Items** - This page will contain all the items in the game (excluding accessories, weapons, and armor as they have dedicated pages), including their effect, and cost
 * **Social Links** - This page will contain all the social links available in the game, as well as the results from each dialogue option you can choose in them.
 * **Dungeons** - This page will contain all the dungeons. Each dungeon will have a seperate page that includes: how to access it, the floor layout for static floors, info on the: mini boss, main boss, and optional boss, and how to obtain items that are required to go further in the dungeon.
@@ -68,6 +68,35 @@ All apis avilable internally in the app have been exposed, through the '/Api/{fu
         "dateAsked": "",
         "questionAsked": "",
         "questionAnswer": ""
+    }, ...
+]
+```
+
+### GetAllPlants
+* **Expects**: GET request, with no params.
+* **Return Summary**: Return all plants stored in the database in the below data model.
+* **Return HTTP codes**: 200, 500
+* **Return data model**: (All ids are purely internal ids and have no relation to the game)
+```json
+[
+    {
+        "id": -1,
+        "dateAvailable": "",
+        "seed": {
+            "id": -1,
+            "name": "",
+            "cost": ""
+        },
+        "growthTime": -1,
+        "harvest": -1,
+        "harvestWithTending": -1,
+        "products": [
+            {
+                "id": -1,
+                "name": "",
+                "effect": ""
+            }
+        ]
     }, ...
 ]
 ```
