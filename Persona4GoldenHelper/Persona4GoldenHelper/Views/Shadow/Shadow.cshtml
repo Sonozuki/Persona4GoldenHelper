@@ -3,18 +3,18 @@
 <div>
     <h2 class="text-align-center col-md-12 col-sm-12 col-xs-12">
         @Model.Shadows[0].Name
-        <span class="text-dark">(</span>
+        <span class="text-secondary">(</span>
         <span class="type-normal" @(Model.Shadows.Where(shadow => shadow.Type.ToString() == "Normal").Any() ? "" : "hidden")>Normal</span>
         <span class="type-miniboss" @(Model.Shadows.Where(shadow => shadow.Type.ToString() == "MiniBoss").Any() ? "" : "hidden")>Mini Boss</span>
         <span class="type-boss" @(Model.Shadows.Where(shadow => shadow.Type.ToString() == "Boss").Any() ? "" : "hidden")>Boss</span>
-        <span class="text-dark">)</span>
+        <span class="text-secondary">)</span>
     </h2>
 </div>
 
 @foreach (var shadow in Model.Shadows)
 {
     <div>
-        <h2 class="type-@shadow.Type text-align-center col-md-12 col-sm-12 col-xs-12">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString()) <span class="text-bright">(@shadow.Level)</span></h2>
+        <h2 class="type-@shadow.Type text-align-center col-md-12 col-sm-12 col-xs-12">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString()) <span class="text-primary">(@shadow.Level)</span></h2>
     </div>
 
     <div>
@@ -104,7 +104,7 @@
                 @for (int i = 0; i < shadow.Skills.Count(); i++)
                 {
                     <tr>
-                        <td class="text-bright">@shadow.Skills[i].Name</td>
+                        <td class="text-primary">@shadow.Skills[i].Name</td>
                         <td>@(shadow.FullSkills[i] == null ? "?" : shadow.FullSkills[i].Effect)</td>
                     </tr>
                 }

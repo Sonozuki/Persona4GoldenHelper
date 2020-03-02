@@ -16,7 +16,7 @@
             {
                 <tr>
                     <td class="text-align-center">@book.DateAvailable</td>
-                    <td class="text-bright">@book.Title</td>
+                    <td class="text-primary">@book.Title</td>
                     <td class="white-space-pre-line">@book.Requirement</td>
                     <td class="mobile-hidden">@book.Effect</td>
                 </tr>
@@ -34,7 +34,7 @@
             @foreach (var bookOrder in Model.BookOrder)
             {
                 <tr>
-                    <td class="text-align-center text-bright">@bookOrder.BookName</td>
+                    <td class="text-align-center text-primary">@bookOrder.BookName</td>
                 </tr>
             }
         </tbody>

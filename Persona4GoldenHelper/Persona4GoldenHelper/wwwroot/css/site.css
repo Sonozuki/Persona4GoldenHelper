@@ -191,7 +191,7 @@ table {
     }
 
 /* Text colouring */
-.text-bright, a:link, a:visited {
+.text-primary, a:link, a:visited {
     transition: all .5s;
 }
 

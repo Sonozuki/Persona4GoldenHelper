@@ -73,7 +73,7 @@ table {
     }
 
 /* Text colouring */
-.text-bright {
+.text-primary {
     color: rgba(0, 0, 0, 0.85);
 }
 
@@ -89,7 +89,7 @@ a:link, a:visited {
     color: red;
 }
 
-.text-dark {
+.text-secondary {
     color: #666;
 }
 

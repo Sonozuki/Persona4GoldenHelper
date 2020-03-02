@@ -31,7 +31,7 @@
                             <tr>
                                 @if (i == 0)
                                 {
-                                    <td rowspan=@weapon.Obtained.Count class="text-bright">@weapon.Name</td>
+                                    <td rowspan=@weapon.Obtained.Count class="text-primary">@weapon.Name</td>
                                     <td rowspan=@weapon.Obtained.Count class="text-align-center">@weapon.Attack</td>
                                     <td rowspan=@weapon.Obtained.Count class="text-align-center">@weapon.Accuracy</td>
                                     <td rowspan=@weapon.Obtained.Count>@(weapon.Effect == "" ? "-" : weapon.Effect)</td>

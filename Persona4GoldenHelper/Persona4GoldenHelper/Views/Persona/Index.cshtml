@@ -27,7 +27,7 @@
             {
                 <tr>
                     <td class="text-align-center">@persona.Level</td>
-                    <td class="text-bright"><a class="@(persona.Ultimate ? "type-ultimate" : persona.NewGame ? "type-new-game" : "")" asp-action="@persona.Name">@persona.Name</a></td>
+                    <td class="text-primary"><a class="@(persona.Ultimate ? "type-ultimate" : persona.NewGame ? "type-new-game" : "")" asp-action="@persona.Name">@persona.Name</a></td>
                     <td>@persona.Arcana</td>
                     <td class="text-align-center mobile-hidden">@persona.Stats.Strength</td>
                     <td class="text-align-center mobile-hidden">@persona.Stats.Magic</td>

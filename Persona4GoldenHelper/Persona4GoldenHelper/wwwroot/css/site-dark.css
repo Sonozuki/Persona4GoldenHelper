@@ -69,7 +69,7 @@ table {
     }
 
 /* Text colouring */
-.text-bright, a:link, a:visited {
+.text-primary, a:link, a:visited {
     color: #c5c1b9;
 }
 
@@ -81,7 +81,7 @@ table {
     color: red;
 }
 
-.text-dark {
+.text-secondary {
     color: #808080;
 }
 

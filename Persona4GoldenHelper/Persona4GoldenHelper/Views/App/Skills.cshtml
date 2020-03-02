@@ -15,7 +15,7 @@
             @foreach (var skill in Model.Skills)
             {
                 <tr>
-                    <td class="text-bright">@skill.Name</td>
+                    <td class="text-primary">@skill.Name</td>
                     <td>@skill.Effect</td>
                     <td class="text-align-center font-bold @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
                     <td class="mobile-hidden">
@@ -27,7 +27,7 @@
                                 <span class="@(persona.Ultimate ? "type-ultimate" : persona.NewGame ? "type-new-game" : "")">
                                     @persona.Name
                                 </span>
-                                <span class="text-dark">
+                                <span class="text-secondary">
                                     @(persona.LevelRequired != 0 ? $" ({persona.LevelRequired})" : "")
                                 </span>
                                 @(i != skill.Personas.Count() - 1 ? "," : "")

@@ -8,7 +8,7 @@
 
 <div>
     <h2 class="text-align-center col-md-12 col-sm-12 col-xs-12">
-        @Model.Persona.Name (<span class="text-dark">@Model.Persona.Level</span>/<span class="text-dark">@Model.Persona.Arcana</span>)
+        @Model.Persona.Name (<span class="text-secondary">@Model.Persona.Level</span>/<span class="text-secondary">@Model.Persona.Arcana</span>)
         <span class="type-ultimate" @(Model.Persona.Ultimate ? "" : "hidden")>Ultimate</span>
         <span class="type-new-game" @(Model.Persona.NewGame ? "" : "hidden")>New Game+</span>
     </h2>
@@ -90,7 +90,7 @@
 
                 <tr>
                     <td class="text-align-center">@personaSkill.LevelRequired</td>
-                    <td class="text-bright">@skill.Name</td>
+                    <td class="text-primary">@skill.Name</td>
                     <td>@skill.Effect</td>
                     <td class="text-align-center font-bold @CalculateCostType(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
                 </tr>
@@ -100,7 +100,7 @@
 </div>
 
 <div>
-    <h3 class="text-align-center col-md-12 col-sm-12 col-xs-12">Recipes (<span id="recipe-count" class="text-dark">?</span>)</h3>
+    <h3 class="text-align-center col-md-12 col-sm-12 col-xs-12">Recipes (<span id="recipe-count" class="text-secondary">?</span>)</h3>
     <div id="recipe-scroll-container" class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
         <div id="recipe-scroll">
             <table id="recipe-table">

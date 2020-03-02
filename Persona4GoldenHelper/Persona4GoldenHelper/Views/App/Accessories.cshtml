@@ -20,7 +20,7 @@
                     <tr>
                         @if (i == 0)
                         {
-                            <td rowspan=@accessory.Obtained.Count class="text-bright">@accessory.Name</td>
+                            <td rowspan=@accessory.Obtained.Count class="text-primary">@accessory.Name</td>
                             <td rowspan=@accessory.Obtained.Count>@(accessory.Effect == "" ? "-" : accessory.Effect)</td>
                         }
 

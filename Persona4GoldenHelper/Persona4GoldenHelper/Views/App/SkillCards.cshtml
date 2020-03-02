@@ -22,7 +22,7 @@
             @foreach (var skillCardLocation in Model.SkillCardLocations)
             {
                 <tr>
-                    <td class="text-bright text-align-center">@skillCardLocation.DungeonName</td>
+                    <td class="text-primary text-align-center">@skillCardLocation.DungeonName</td>
                     <td class="text-align-center">Ranks @skillCardLocation.RankLowerBound-@skillCardLocation.RankUpperBound</td>
                 </tr>
             }
@@ -59,7 +59,7 @@
 
                                 @for (int j = 0; j < rankSkillCards.Count; j++)
                                 {
-                                    <span class="text-bright">@rankSkillCards[j].Name</span>
+                                    <span class="text-primary">@rankSkillCards[j].Name</span>
                                     @(j != rankSkillCards.Count() - 1 ? "," : "")
                                 }
                             </td>
