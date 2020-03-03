@@ -5,18 +5,33 @@ using Persona4GoldenHelper.Data;
 using Persona4GoldenHelper.Data.Models;
 using Persona4GoldenHelper.Service;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Tests
 {
+    /// <summary>App API tests.</summary>
     public class AppServiceTests
     {
-        ApplicationDbContext Context;
+        /*********
+        ** Fields
+        *********/
+        /// <summary>The database context.</summary>
+        private ApplicationDbContext Context;
 
-        IApp AppService;
-        IPersona PersonaService;
-        IShadow ShadowService;
+        /// <summary>Provides basic data apis.</summary>
+        private IApp AppService;
 
+        /// <summary>Provides persona apis.</summary>
+        private IPersona PersonaService;
+
+        /// <summary>Provides shadow apis.</summary>
+        private IShadow ShadowService;
+
+
+        /*********
+        ** Public Methods
+        *********/
+        /// <summary>Setup initial test state.</summary>
         [SetUp]
         public void SetUp()
         {
@@ -30,6 +45,7 @@ namespace Persona4GoldenHelper.Tests
             AppService = new AppService(Context, new NullLogger<AppService>(), PersonaService, ShadowService);
         }
 
+        /// <summary>Test for books api.</summary>
         [Test]
         public void GetAllBooks()
         {
@@ -67,6 +83,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(3, books.Count);
         }
 
+        /// <summary>Test for book order api.</summary>
         [Test]
         public void GetBookOrder()
         {
@@ -95,6 +112,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(3, bookOrders.Count);
         }
 
+        /// <summary>Test for exam answers api.</summary>
         [Test]
         public void GetAllExamAnswers()
         {
@@ -132,6 +150,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(3, answers.Count);
         }
 
+        /// <summary>Test for plants api.</summary>
         [Test]
         public void GetAllPlants()
         {
@@ -202,7 +221,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(3, answers.Count);
         }
 
-
+        /// <summary>Test for skills api.</summary>
         [Test]
         public void GetAllSkills()
         {
@@ -269,6 +288,8 @@ namespace Persona4GoldenHelper.Tests
             }
         }
 
+        /// <summary>Test for get skills by persona name api.</summary>
+        /// <param name="name">The persona name to get get skills from.</param>
         [TestCase("HeLeL")]
         public void GetSkillsByPersonaName(string name)
         {
@@ -336,6 +357,9 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(2, skills.Count);
         }
 
+        /// <summary>Test for get skills by shadow name api.</summary>
+        /// <param name="name">The shadow name to get skills from.</param>
+        /// <param name="shadowType">The shadow type to get skills from.</param>
         [TestCase("WoRlD BalAnCe", "NoRmAl")]
         public void GetSkillsByShadowName(string name, string shadowType)
         {
@@ -403,6 +427,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(2, skills.Count);
         }
 
+        /// <summary>Test for quests api.</summary>
         [Test]
         public void GetAllQuests()
         {
@@ -440,6 +465,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(2, quests.Count);
         }
 
+        /// <summary>Test for skill cards api.<summary>
         [Test]
         public void GetAllSkillCards()
         {
@@ -474,6 +500,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(3, skillCards.Count);
         }
 
+        /// <summary>Test for skill card locations api.</summary>
         [Test]
         public void GetAllSkillCardLocations()
         {
@@ -508,6 +535,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(3, skillCardLocations.Count);
         }
 
+        /// <summary>Test for lunches api.</summary>
         [Test]
         public void GetAllLunches()
         {
@@ -539,6 +567,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(3, lunches.Count);
         }
 
+        /// <summary>Test for accessories api.</summary>
         [Test]
         public void GetAllAccessories()
         {
@@ -595,6 +624,7 @@ namespace Persona4GoldenHelper.Tests
             }
         }
 
+        /// <summary>Test for armor api.</summary>
         [Test]
         public void GetAllArmor()
         {
@@ -657,6 +687,7 @@ namespace Persona4GoldenHelper.Tests
             }
         }
 
+        /// <summary>Test for weapon api.</summary>
         [Test]
         public void GetAllWeapons()
         {

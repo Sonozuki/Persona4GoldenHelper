@@ -5,21 +5,36 @@ using Persona4GoldenHelper.Data.Models.Calculator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Service
 {
     public class FusionService : IFusion
     {
+        /*********
+        ** Fields 
+        *********/
+        /// <summary>The database context.</summary>
         private readonly ApplicationDbContext Context;
+
+        /// <summary>Provides access to log to the console.</summary>
         private readonly ILogger<FusionService> Logger;
 
+
+        /*********
+        ** Public Methods 
+        *********/
+        /// <summary>Construct an instance.</summary>
+        /// <param name="context">The database context.</param>
+        /// <param name="logger">Provides access to log to the console.</param>
         public FusionService(ApplicationDbContext context, ILogger<FusionService> logger)
         {
             Context = context;
             Logger = logger;
         }
 
+        /// <summary>Get all the arcana data.</summary>
+        /// <returns>All arcana data.</returns>
         public List<ArcanaRank> GetAllArcanas()
         {
             try
@@ -36,6 +51,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the 2 persona fusion arcana data.</summary>
+        /// <returns>All 2 persona fusion arcana data.</returns>
         public List<ArcanaFusionResult> GetAllArcana2FusionResults()
         {
             try
@@ -54,6 +71,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the 3 persona fusion arcana data.</summary>
+        /// <returns>All 3 persona fusion arcana data.</returns>
         public List<ArcanaFusionResult> GetAllArcana3FusionResults()
         {
             try
@@ -72,6 +91,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the special persona fusion data.</summary>
+        /// <returns>All special persona fusion data.</returns>
         public List<SpecialFusionResult> GetAllSpecialFusionResults()
         {
             try

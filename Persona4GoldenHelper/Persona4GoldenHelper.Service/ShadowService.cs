@@ -10,15 +10,30 @@ namespace Persona4GoldenHelper.Service
 {
     public class ShadowService : IShadow
     {
+        /*********
+        ** Fields 
+        *********/
+        /// <summary>The database context.</summary>
         private readonly ApplicationDbContext Context;
+
+        /// <summary>Provides access to log to the console.</summary>
         private readonly ILogger<ShadowService> Logger;
 
+
+        /*********
+        ** Public Methods 
+        *********/
+        /// <summary>Construct an instance.</summary>
+        /// <param name="context">The database context.</param>
+        /// <param name="logger">Provides access to log to the console.</param>
         public ShadowService(ApplicationDbContext context, ILogger<ShadowService> logger)
         {
             Context = context;
             Logger = logger;
         }
 
+        /// <summary>Get all the shadow data.</summary>
+        /// <returns>All shadow data.</returns>
         public List<Shadow> GetAll()
         {
             try
@@ -37,6 +52,9 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get shadow data by name.</summary>
+        /// <param name="name">The persona's name.</param>
+        /// <returns>The data for the shadows that have the name.</returns>
         public List<Shadow> GetByName(string shadowName)
         {
             try

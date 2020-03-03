@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Data.Data.Calculator
 {
+    /// <summary>The special persona fusion data.</summary>
     public class SpecialFusionResultData
     {
         public static List<SpecialFusionResult> SpecialFusions { get; set; } = new List<SpecialFusionResult>

@@ -5,15 +5,41 @@ using System;
 
 namespace Persona4GoldenHelper.Controllers
 {
+    /// <summary>Provides an API that exposes all internal APIs.</summary>
     [Route("Api/[action]")]
     public class ApiController : Controller
     {
+        /*********
+        ** Fields
+        *********/
+        /// <summary>Provides access to basic data apis.</summary>
         private readonly IApp AppService;
+
+        /// <summary>Provides access to persona apis.</summary>
         private readonly IPersona PersonaService;
+
+        /// <summary>Provides access to shadow apis.</summary>
         private readonly IShadow ShadowService;
+
+        /// <summary>Privodes access to persona fusion apis.</summary>
         private readonly IFusion FusionService;
+
+        /// <summary>Provides access to log to the console.</summary>
         private readonly ILogger<ApiController> Logger;
 
+
+        /*********
+        ** Public methods
+        *********/
+        /****
+        ** Constructor 
+        ****/
+        /// <summary>Construct an instance</summary>
+        /// <param name="appService">Provides access to basic data apis.</param>
+        /// <param name="personaService">Provides access to persona apis.</param>
+        /// <param name="shadowService">Provides access to shadow apis.</param>
+        /// <param name="fusionService">Provides access to persona fusion apis.</param>
+        /// <param name="logger">Provides access to log to the console.</param>
         public ApiController(IApp appService, IPersona personaService, IShadow shadowService, IFusion fusionService, ILogger<ApiController> logger)
         {
             AppService = appService;
@@ -23,6 +49,11 @@ namespace Persona4GoldenHelper.Controllers
             Logger = logger;
         }
 
+        /****
+        ** JSON
+        ****/
+        /// <summary>Get all the book data.</summary>
+        /// <returns>All book data.</returns>
         public IActionResult GetAllBooks()
         {
             try
@@ -46,6 +77,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get the order the books are rendered in the player inventory.</summary>
+        /// <returns>The books order.</returns>
         public IActionResult GetBookOrder()
         {
             try
@@ -69,6 +102,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the exam answers data.</summary>
+        /// <returns>All exam answers data.</returns>
         public IActionResult GetAllExamAnswers()
         {
             try
@@ -92,6 +127,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the plant data.</summary>
+        /// <returns>All plant data.</returns>
         public IActionResult GetAllPlants()
         {
             try
@@ -115,6 +152,9 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the skills by persona name.</summary>
+        /// <param name="name">The name of the persona to get skills.</param>
+        /// <returns>The skills the persona has by default.</returns>
         public IActionResult GetSkillsByPersonaName(string name)
         {
             try
@@ -143,6 +183,10 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the skills by shadow name and type</summary>
+        /// <param name="name">The name of shadow to get skills.</param>
+        /// <param name="type">The type of shadow to get skills.</param>
+        /// <returns>The skills the shadow has.</returns>
         public IActionResult GetSkillsByShadowName(string name, string type)
         {
             try
@@ -171,6 +215,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the quest data.</summary>
+        /// <returns>All quest data.</returns>
         public IActionResult GetAllQuests()
         {
             try
@@ -194,6 +240,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the skill card data.</summary>
+        /// <returns>All skill card data.</returns>
         public IActionResult GetAllSkillCards()
         {
             try
@@ -217,6 +265,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the skill card locations data.</summary>
+        /// <returns>All skill card locations data.</returns>
         public IActionResult GetAllSkillCardLocations()
         {
             try
@@ -240,6 +290,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the lunch data.</summary>
+        /// <returns>All lunch data.</returns>
         public IActionResult GetAllLunches()
         {
             try
@@ -263,6 +315,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the accessory data.</summary>
+        /// <returns>All accessory data.</returns>
         public IActionResult GetAllAccessories()
         {
             try
@@ -286,6 +340,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the armor data.</summary>
+        /// <returns>All armor data.</returns>
         public IActionResult GetAllArmor()
         {
             try
@@ -309,6 +365,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the weapon data.</summary>
+        /// <returns>All weapon data.</returns>
         public IActionResult GetAllWeapons()
         {
             try
@@ -332,6 +390,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the persona data.</summary>
+        /// <returns>All persona data.</returns>
         public IActionResult GetAllPersonas()
         {
             try
@@ -355,6 +415,9 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get persona data by name.</summary>
+        /// <param name="name">The persona's name.</param>
+        /// <returns>The persona data.</returns>
         public IActionResult GetPersonaByName(string name)
         {
             try
@@ -383,6 +446,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the shadow data.</summary>
+        /// <returns>All shadow data.</returns>
         public IActionResult GetAllShadows()
         {
             try
@@ -406,6 +471,9 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get shadow data by name.</summary>
+        /// <param name="name">The persona's name.</param>
+        /// <returns>The data for the shadows that have the name.</returns>
         public IActionResult GetShadowsByName(string name)
         {
             try
@@ -434,6 +502,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the arcana data.</summary>
+        /// <returns>All arcana data.</returns>
         public IActionResult GetAllArcanas()
         {
             try
@@ -457,6 +527,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the 2 persona fusion arcana data.</summary>
+        /// <returns>All 2 persona fusion arcana data.</returns>
         public IActionResult GetAllArcana2FusionResults()
         {
             try
@@ -480,6 +552,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the 3 persona fusion arcana data.</summary>
+        /// <returns>All 3 persona fusion arcana data.</returns>
         public IActionResult GetAllArcana3FusionResults()
         {
             try
@@ -503,6 +577,8 @@ namespace Persona4GoldenHelper.Controllers
             }
         }
 
+        /// <summary>Get all the special persona fusion data.</summary>
+        /// <returns>All special persona fusion data.</returns>
         public IActionResult GetAllSpecialFusionResults()
         {
             try

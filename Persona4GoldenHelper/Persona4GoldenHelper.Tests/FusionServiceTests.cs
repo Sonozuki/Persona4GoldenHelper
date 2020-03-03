@@ -5,16 +5,27 @@ using Persona4GoldenHelper.Data;
 using Persona4GoldenHelper.Data.Models.Calculator;
 using Persona4GoldenHelper.Service;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Tests
 {
+    /// <summary>Fusion API tests.</summary>
     public class FusionServiceTests
     {
-        ApplicationDbContext Context;
+        /*********
+        ** Fields
+        *********/
+        /// <summary>The database context.</summary>
+        private ApplicationDbContext Context;
+        
+        /// <summary>Provides persona fusion apis.</summary>
+        private IFusion FusionService;
 
-        IFusion FusionService;
 
+        /*********
+        ** Public Methods
+        *********/
+        /// <summary>Setup initial test state.</summary>
         [SetUp]
         public void SetUp()
         {
@@ -26,6 +37,7 @@ namespace Persona4GoldenHelper.Tests
             FusionService = new FusionService(Context, new NullLogger<FusionService>());
         }
 
+        /// <summary>Test for arcana api.</summary>
         [Test]
         public void GetAllArcanas()
         {
@@ -49,6 +61,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(2, arcanas.Count);
         }
 
+        /// <summary>Test for arcana 2 fusion results api.</summary>
         [Test]
         public void GetAllArcana2FusionResults()
         {
@@ -96,6 +109,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(2, arcanaResults.Count);
         }
 
+        /// <summary>Test for arcana 3 fusion results api.</summary>
         [Test]
         public void GetAllArcana3FusionResults()
         {
@@ -143,6 +157,7 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(2, arcanaResults.Count);
         }
 
+        /// <summary>Test for special persona fusion api.</summary>
         [Test]
         public void GetAllSpecialFusionResults()
         {

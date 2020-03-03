@@ -1,11 +1,13 @@
 ﻿using Persona4GoldenHelper.Data.Models;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The persona data.</summary>
     public static class PersonaData
     {
+        /// <summary>The persona data.</summary>
         public static List<Persona> Personas { get; } = new List<Persona>
         {
             new Persona() {

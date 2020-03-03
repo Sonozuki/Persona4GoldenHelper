@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The book data.</summary>
     public static class BookData
     {
+        /// <summary>The book data.</summary>
         public static List<Book> Books { get; } = new List<Book>()
         {
             new Book() {
@@ -201,6 +203,7 @@ namespace Persona4GoldenHelper.Data.Data
             }
         };
 
+        /// <summary>The book order data.</summary>
         public static List<BookOrder> BookOrder { get; } = new List<BookOrder>()
         {
             new BookOrder() {

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Data.Data.Calculator
 {
+    /// <summary>The arcana rank data.</summary>
     public class ArcanaRankData
     {
+        /// <summary>The arcana rank data.</summary>
         public static List<ArcanaRank> Arcanas { get; set; } = new List<ArcanaRank>
         {
             new ArcanaRank()

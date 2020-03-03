@@ -8,13 +8,33 @@ using System.Linq;
 
 namespace Persona4GoldenHelper.Service
 {
+    /// <summary>Provides basic data apis.</summary>
     public class AppService : IApp
     {
+        /*********
+        ** Fields 
+        *********/
+        /// <summary>The database context.</summary>
         private readonly ApplicationDbContext Context;
+
+        /// <summary>Provides access to log to the console.</summary>
         private readonly ILogger<AppService> Logger;
+
+        /// <summary>Provides access to persona apis.</summary>
         private readonly IPersona PersonaService;
+
+        /// <summary>Provides access to shadow apis.</summary>
         private readonly IShadow ShadowService;
 
+
+        /*********
+        ** Public Methods 
+        *********/
+        /// <summary>Construct an instance.</summary>
+        /// <param name="context">The database context.</param>
+        /// <param name="logger">Provides access to log to the console.</param>
+        /// <param name="personaService">Provides access to persona apis.</param>
+        /// <param name="shadowService">Provides access to shadow apis.</param>
         public AppService(ApplicationDbContext context, ILogger<AppService> logger, IPersona personaService, IShadow shadowService)
         {
             Context = context;
@@ -23,6 +43,8 @@ namespace Persona4GoldenHelper.Service
             ShadowService = shadowService;
         }
 
+        /// <summary>Get all the book data.</summary>
+        /// <returns>All book data.</returns>
         public List<Book> GetAllBooks()
         {
             try
@@ -38,6 +60,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get the order the books are rendered in the player inventory.</summary>
+        /// <returns>The books order.</returns>
         public List<BookOrder> GetBookOrder()
         {
             try
@@ -53,6 +77,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the exam answers data.</summary>
+        /// <returns>All exam answers data.</returns>
         public List<Answer> GetAllExamAnswers()
         {
             try
@@ -69,6 +95,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all skill data.</summary>
+        /// <returns>All skill data.</returns>
         public List<Skill> GetAllSkills()
         {
             try
@@ -86,6 +114,9 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the skills by persona name.</summary>
+        /// <param name="name">The name of the persona to get skills.</param>
+        /// <returns>The skills the persona has by default.</returns>
         public List<Skill> GetSkillsByPersonaName(string name)
         {
             try
@@ -122,6 +153,10 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the skills by shadow name and type</summary>
+        /// <param name="name">The name of shadow to get skills.</param>
+        /// <param name="type">The type of shadow to get skills.</param>
+        /// <returns>The skills the shadow has.</returns>
         public List<Skill> GetSkillsByShadowName(string name, string shadowType)
         {
             try
@@ -161,6 +196,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the quest data.</summary>
+        /// <returns>All quest data.</returns>
         public List<Quest> GetAllQuests()
         {
             try
@@ -177,6 +214,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the skill card data.</summary>
+        /// <returns>All skill card data.</returns>
         public List<SkillCard> GetAllSkillCards()
         {
             try
@@ -193,6 +232,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the skill card locations data.</summary>
+        /// <returns>All skill card locations data.</returns>
         public List<SkillCardLocation> GetAllSkillCardLocations()
         {
             try
@@ -209,6 +250,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the lunch data.</summary>
+        /// <returns>All lunch data.</returns>
         public List<Lunch> GetAllLunches()
         {
             try
@@ -225,6 +268,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the accessory data.</summary>
+        /// <returns>All accessory data.</returns>
         public List<Accessory> GetAllAccessories()
         {
             try
@@ -242,6 +287,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the armor data.</summary>
+        /// <returns>All armor data.</returns>
         public List<Armor> GetAllArmor()
         {
             try
@@ -259,6 +306,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the weapon data.</summary>
+        /// <returns>All weapon data.</returns>
         public List<Weapon> GetAllWeapons()
         {
             try
@@ -276,6 +325,8 @@ namespace Persona4GoldenHelper.Service
             }
         }
 
+        /// <summary>Get all the plant data.</summary>
+        /// <returns>All plant data.</returns>
         public List<Plant> GetAllPlants()
         {
             try

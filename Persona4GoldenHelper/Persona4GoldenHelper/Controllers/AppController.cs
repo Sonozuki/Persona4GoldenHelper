@@ -4,15 +4,33 @@ using Persona4GoldenHelper.Models;
 
 namespace Persona4GoldenHelper.Controllers
 {
+    /// <summary>Provides a web UI for all basic data views.</summary>
     public class AppController : Controller
     {
+        /*********
+        ** Fields
+        *********/
+        /// <summary>Provides access to basic data apis.</summary>
         private readonly IApp AppService;
 
+
+        /*********
+        ** Fields
+        *********/
+        /****
+        ** Constructor
+        ****/
+        /// <summary>Construct an instance.</summary>
+        /// <param name="appService">Provides access to basic data apis.</param>
         public AppController(IApp appService)
         {
             AppService = appService;
         }
 
+        /****
+        ** Web UI
+        ****/
+        /// <summary>Render the data sources UI.</summary>
         public IActionResult Index()
         {
             ViewBag.Title = "Index";
@@ -20,6 +38,7 @@ namespace Persona4GoldenHelper.Controllers
             return View();
         }
 
+        /// <summary>Render the books UI.</summary>
         public IActionResult Books()
         {
             ViewBag.Title = "Books";
@@ -34,6 +53,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the exam answers UI.</summary>
         public IActionResult ExamAnswers()
         {
             ViewBag.Title = "Exam Answers";
@@ -47,6 +67,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the skills UI.</summary>
         public IActionResult Skills()
         {
             ViewBag.Title = "Skills";
@@ -60,6 +81,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the quests UI.</summary>
         public IActionResult Quests()
         {
             ViewBag.Title = "Quests";
@@ -73,6 +95,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the skill card UI.</summary>
         public IActionResult SkillCards()
         {
             ViewBag.Title = "Skill Cards";
@@ -87,6 +110,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the lunch UI.</summary>
         public IActionResult Lunches()
         {
             ViewBag.Title = "Lunches";
@@ -100,6 +124,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the accessory UI.</summary>
         public IActionResult Accessories()
         {
             ViewBag.Title = "Accessories";
@@ -113,6 +138,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the armor UI.</summary>
         public IActionResult Armor()
         {
             ViewBag.Title = "Armor";
@@ -126,6 +152,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the weapons UI.</summary>
         public IActionResult Weapons()
         {
             ViewBag.Title = "Weapons";
@@ -139,6 +166,7 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Renders the gardening UI.</summary>
         public IActionResult Gardening()
         {
             ViewBag.Title = "Gardening";

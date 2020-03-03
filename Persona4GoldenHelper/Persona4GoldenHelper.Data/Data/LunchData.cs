@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The lunch data.</summary>
     public class LunchData
     {
+        /// <summary>The lunch data.</summary>
         public static List<Lunch> Lunches { get; set; } = new List<Lunch>()
         {
             new Lunch() {

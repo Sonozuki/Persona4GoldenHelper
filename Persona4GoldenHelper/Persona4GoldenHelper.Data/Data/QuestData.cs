@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The quests data.</summary>
     public static class QuestData
     {
+        /// <summary>The quests data.</summary>
         public static List<Quest> Quests { get; } = new List<Quest>()
         {
             new Quest() {

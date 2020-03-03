@@ -8,16 +8,28 @@ using Persona4GoldenHelper.Service;
 
 namespace Persona4GoldenHelper
 {
+    /// <summary>The web app startup configuration.</summary>
     public class Startup
     {
+        /*********
+        ** Accessors
+        *********/
+        /// <summary>The web app configuration.</summary>
+        public IConfiguration Configuration { get; }
+
+
+        /*********
+        ** Public Methods 
+        *********/
+        /// <summary>Construct an instance.</summary>
+        /// <param name="configuration">The web app configuration.</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>This method gets called by the runtime. Use this method to add services to the container.</summary>
+        /// <param name="services">The service injection container.</param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors(options =>
@@ -41,7 +53,9 @@ namespace Persona4GoldenHelper
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>This method gets called by the runtime. Use this method to configure the HTTP request pipeline.</summary>
+        /// <param name="app">The application builder.</param>
+        /// <param name="env">The hosting environment.</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseCors("AllowAll");

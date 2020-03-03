@@ -1,11 +1,13 @@
 ﻿using Persona4GoldenHelper.Data.Models;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The armor data.</summary>
     public static class ArmorData
     {
+        /// <summary>The armor data.</summary>
         public static List<Armor> Armor { get; } = new List<Armor>()
         {
             new Armor() {

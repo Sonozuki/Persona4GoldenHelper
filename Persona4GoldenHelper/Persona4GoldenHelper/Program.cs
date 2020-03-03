@@ -3,15 +3,18 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace Persona4GoldenHelper
 {
+    /// <summary>The main app entry point.</summary>
     public class Program
     {
+        /// <summary>The main app entry point.</summary>
+        /// <param name="args">The command-line arguments.</param>
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
-        }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            // configure web server
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .Build()
+                .Run();
+        }
     }
 }

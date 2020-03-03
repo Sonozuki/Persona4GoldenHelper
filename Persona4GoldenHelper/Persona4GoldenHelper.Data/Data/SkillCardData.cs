@@ -1,11 +1,13 @@
 ﻿using Persona4GoldenHelper.Data.Models;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The skill card data.</summary>
     public class SkillCardData
     {
+        /// <summary>The skill card locations data.</summary>
         public static List<SkillCardLocation> SkillCardLocations { get; set; } = new List<SkillCardLocation>()
         {
             new SkillCardLocation() {
@@ -55,6 +57,7 @@ namespace Persona4GoldenHelper.Data.Data
             }
         };
 
+        /// <summary>The skill card data.</summary>
         public static List<SkillCard> SkillCards { get; set; } = new List<SkillCard>()
         {
             new SkillCard() {

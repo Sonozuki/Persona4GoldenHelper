@@ -7,18 +7,39 @@ using System.Linq;
 
 namespace Persona4GoldenHelper.Controllers
 {
+    /// <summary>Provides web UI for shadow views.</summary>
     [Route("Shadows/")]
     public class ShadowController : Controller
     {
+        /*********
+        ** Fields
+        *********/
+        /// <summary>Provides basic data apis.</summary>
         private readonly IApp AppService;
+
+        /// <summary>Provides shadow apis.</summary>
         private readonly IShadow ShadowService;
 
+
+        /*********
+        ** Public Methods
+        *********/
+        /****
+        ** Constructor
+        *****/
+        /// <summary>Construct an instance.</summary>
+        /// <param name="appService">Provides basic data apis.</param>
+        /// <param name="shadowService">Provides shadow apis.</param>
         public ShadowController(IApp appService, IShadow shadowService)
         {
             AppService = appService;
             ShadowService = shadowService;
         }
 
+        /****
+        ** Web UI
+        *****/
+        /// <summary>Render the shadow listing UI.</summary>
         public IActionResult Index()
         {
             ViewBag.Title = "Shadows";
@@ -32,6 +53,8 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Render the shadow UI.</summary>
+        /// <param name="shadowName">The name of the shadow to render.</param>
         [Route("{shadowName}")]
         public IActionResult Shadow(string shadowName)
         {

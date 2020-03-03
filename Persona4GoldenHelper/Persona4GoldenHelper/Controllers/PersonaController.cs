@@ -5,18 +5,36 @@ using Persona4GoldenHelper.Models;
 
 namespace Persona4GoldenHelper.Controllers
 {
+    /// <summary>Provides a web UI for all persona views.</summary>
     [Route("Personas/")]
     public class PersonaController : Controller
     {
+        /*********
+        ** Fields
+        *********/
+        /// <summary>Provides access to persona apis.</summary>
         private readonly IPersona PersonaService;
+
+        /// <summary>Provides access to basic data apis.</summary>
         private readonly IApp AppService;
 
+
+        /*********
+        ** Public Methods
+        *********/
+        /****
+        ** Constructor
+        *****/
         public PersonaController(IPersona personaService, IApp appService)
         {
             PersonaService = personaService;
             AppService = appService;
         }
 
+        /****
+        ** Web UI
+        *****/
+        /// <summary>Render the persona listing UI.</summary>
         public IActionResult Index()
         {
             ViewBag.Title = "Personas";
@@ -30,6 +48,8 @@ namespace Persona4GoldenHelper.Controllers
             return View(model);
         }
 
+        /// <summary>Render the persona UI.</summary>
+        /// <param name="personaName">The name of the persona to render.</param>
         [Route("{personaName}")]
         public IActionResult Persona(string personaName)
         {

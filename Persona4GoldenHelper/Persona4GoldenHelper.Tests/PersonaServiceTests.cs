@@ -5,16 +5,27 @@ using Persona4GoldenHelper.Data;
 using Persona4GoldenHelper.Data.Models;
 using Persona4GoldenHelper.Service;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Tests
 {
-    class PersonaServiceTests
+    /// <summary>Persona API tests.</summary>
+    public class PersonaServiceTests
     {
-        ApplicationDbContext Context;
+        /*********
+        ** Fields
+        *********/
+        /// <summary>The database context.</summary>
+        private ApplicationDbContext Context;
 
-        IPersona PersonaService;
+        /// <summary>Provides persona apis.</summary>
+        private IPersona PersonaService;
 
+
+        /*********
+        ** Public Methods
+        *********/
+        /// <summary>Setup initial test state.</summary>
         [SetUp]
         public void SetUp()
         {
@@ -26,6 +37,7 @@ namespace Persona4GoldenHelper.Tests
             PersonaService = new PersonaService(Context, new NullLogger<PersonaService>());
         }
 
+        /// <summary>Test for get all api.</summary>
         [Test]
         public void GetAll()
         {
@@ -119,6 +131,8 @@ namespace Persona4GoldenHelper.Tests
             Assert.AreEqual(2, personas.Count);
         }
 
+        /// <summary>Test for get by name api.</summary>
+        /// <param name="name">The name of the shadow to get.</param>
         [TestCase("Helel")]
         public void GetByName(string name)
         {

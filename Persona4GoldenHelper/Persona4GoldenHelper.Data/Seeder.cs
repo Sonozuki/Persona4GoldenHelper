@@ -4,15 +4,27 @@ using Persona4GoldenHelper.Data.Data.Calculator;
 
 namespace Persona4GoldenHelper.Data
 {
+    /// <summary>Provides the ability to populate the database with all the data.</summary>
     public class Seeder
     {
+        /*********
+        ** Fields
+        *********/
+        /// <summary>The database context.</summary>
         private readonly ApplicationDbContext Context;
 
+
+        /*********
+        ** Public Methods
+        *********/
+        /// <summary>Construct an instance.</summary>
+        /// <param name="context">The database context.</param>
         public Seeder(ApplicationDbContext context)
         {
             Context = context;
         }
 
+        /// <summary>Populate the database with all the data.</summary>
         // Using foreach looks and SaveChanges after each object. This is to preserve the order. Any other methods to add all objects and save at the end but keeping order would be appreciated
         public void Seed()
         {

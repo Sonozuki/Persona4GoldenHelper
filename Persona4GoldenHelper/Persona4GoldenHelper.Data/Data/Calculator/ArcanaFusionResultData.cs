@@ -1,11 +1,13 @@
 ﻿using Persona4GoldenHelper.Data.Models.Calculator;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Data.Data.Calculator
 {
+    /// <summary>The arcana fusion results data.</summary>
     public class ArcanaFusionResultData
     {
+        /// <summary>The arcana fusion results data.</summary>
         public static List<ArcanaFusionResult> ArcanaFusions { get; set; } = new List<ArcanaFusionResult>()
         {
             new ArcanaFusionResult() {

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The persona skills data.</summary>
     public static class SkillData
     {
+        /// <summary>The persona skills data.</summary>
         public static List<Skill> Skills { get; set; } = new List<Skill>
         {
             new Skill() {

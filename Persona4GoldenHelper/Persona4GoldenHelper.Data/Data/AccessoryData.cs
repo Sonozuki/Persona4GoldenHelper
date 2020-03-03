@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The accessory data.</summary>
     public class AccessoryData
     {
+        /// <summary>The accessory data.</summary>
         public static List<Accessory> Accessories { get; set; } = new List<Accessory>()
         {
             new Accessory() {

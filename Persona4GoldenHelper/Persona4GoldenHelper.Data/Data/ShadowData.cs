@@ -1,11 +1,13 @@
 ﻿using Persona4GoldenHelper.Data.Models;
 using System.Collections.Generic;
-using static Persona4GoldenHelper.Data.Enums;
+using Persona4GoldenHelper.Data.Enums;
 
 namespace Persona4GoldenHelper.Data.Data
 {
+    /// <summary>The shadow data.</summary>
     public class ShadowData
     {
+        /// <summary>The shaadow data.</summary>
         public static List<Shadow> Shadows { get; set; } = new List<Shadow>()
         {
             new Shadow() {

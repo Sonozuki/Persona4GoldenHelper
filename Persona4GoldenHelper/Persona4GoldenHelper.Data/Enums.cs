@@ -1,68 +1,73 @@
-﻿namespace Persona4GoldenHelper.Data
+﻿namespace Persona4GoldenHelper.Data.Enums
 {
-    public class Enums
+    /// <summary>The element affinity enumerator for shadows and personas.</summary>
+    public enum ElementAffinity
     {
-        public enum ElementAffinity
-        {
-            Weak,
-            None,
-            Resistant,
-            Null,
-            Reflect,
-            Absorb
-        }
+        Weak,
+        None,
+        Resistant,
+        Null,
+        Reflect,
+        Absorb
+    }
 
-        public enum Gender
-        {
-            Unisex,
-            Male,
-            Female
-        }
+    /// <summary>The gender enumerator for armor.</summary>
+    public enum Gender
+    {
+        Unisex,
+        Male,
+        Female
+    }
 
-        public enum Month
-        { 
-            January = 1,
-            February,
-            April = 4, // skip march as you never play that month
-            May,
-            June,
-            July,
-            August,
-            September,
-            October,
-            November,
-            December
-        }
+    /// <summary>The month enumerator for exam answers.</summary>
+    public enum Month
+    {
+        January = 1,
+        February,
+        April = 4, // skip march as you don't get asked a question then
+        May,
+        June,
+        July,
+        August,
+        September,
+        October,
+        November,
+        December
+    }
 
-        public enum SkillType
-        { 
-            Physical,
-            Magical,
-            Support,
-            Passive
-        }
+    /// <summary>The skill enumerator for shadow and persona skills.</summary>
+    public enum SkillType
+    {
+        Physical,
+        Magical,
+        Support,
+        Passive
+    }
 
-        public enum FusionType
-        {
-            Arcana2,
-            Arcana3
-        }
+    /// <summary>The arcana fusion types for arcana fusions.</summary>
+    public enum FusionType
+    {
+        Arcana2,
+        Arcana3
+    }
 
-        public enum ShadowType
-        {
-            Normal,
-            MiniBoss,
-            Boss
-        }
-        public enum User
-        {
-            Protagonist,
-            Yosuke,
-            Chie,
-            Yukiko,
-            Kanji,
-            Teddie,
-            Naoto
-        }
+    /// <summary>The type enumerator for shadows.</summary>
+    public enum ShadowType
+    {
+        Normal,
+        MiniBoss,
+        Boss
+    }
+
+    /// <summary>The user enumerator for weapons.</summary>
+    public enum User
+    {
+        Protagonist,
+        Yosuke,
+        Chie,
+        Yukiko,
+        Kanji,
+        Teddie,
+        Naoto
     }
 }
