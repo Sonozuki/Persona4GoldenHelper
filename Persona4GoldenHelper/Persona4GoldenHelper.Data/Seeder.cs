@@ -25,7 +25,8 @@ namespace Persona4GoldenHelper.Data
         }
 
         /// <summary>Populate the database with all the data.</summary>
-        // Using foreach looks and SaveChanges after each object. This is to preserve the order. Any other methods to add all objects and save at the end but keeping order would be appreciated
+        // Using foreach adds and SaveChanges after each object. This is to preserve the order.
+        // This seems to be cleaner and quicker than adding custom order logic for most tables (Such as date available that's stored as an unconventional string date format etc).
         public void Seed()
         {
             Context.Database.EnsureCreated();
