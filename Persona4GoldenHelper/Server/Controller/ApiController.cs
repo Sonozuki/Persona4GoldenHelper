@@ -47,5 +47,10 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>All accessory data.</returns>
         [HttpGet]
         public List<Accessory> GetAllAccessories() => AccessoryData.Accessories;
+
+        /// <summary>Retrieves all exam answer data.</summary>
+        /// <returns>All exam answer data.</returns>
+        [HttpGet]
+        public List<ExamAnswer> GetAllExamAnswers() => ExamAnswerData.ExamAnswers;
     }
 }

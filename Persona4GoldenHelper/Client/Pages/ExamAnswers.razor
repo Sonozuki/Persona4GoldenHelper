@@ -1,0 +1,66 @@
+﻿@page "/examanswers"
+@inject HttpClient Http;
+
+<div class="content">
+    <h1 class="text-align-centre">Exam Answers</h1>
+    @if (AllExamAnswers != null)
+        foreach (var month in Months)
+        {
+            <div>
+                <h2 class="text-align-centre">@month</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-align-centre">Date</th>
+                            <th class="widest-column">Question</th>
+                            <th class="wider-column">Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var examAnswer in GetExamAnswersByMonth(month))
+                        {
+                            <tr>
+                                <td class="text-align-centre">@examAnswer.DateAsked</td>
+                                <td class="text-primary white-space-pre-line">@examAnswer.QuestionAsked</td>
+                                <td>@examAnswer.QuestionAnswer</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+</div>
+
+@code {
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The months which exam answers are asked in.</summary>
+    private static readonly List<string> Months = new() { "April", "May", "June", "July", "August", "September", "October", "November", "December", "January", "February" };
+
+    
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the exam answers to display.</summary>
+    public List<ExamAnswer> AllExamAnswers { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllExamAnswers = await Http.GetFromJsonAsync<List<ExamAnswer>>("api/GetAllExamAnswers");
+
+    
+    /*********
+    ** Private Methods
+    *********/
+    /// <summary>Retrieves the exam answers for a specific month.</summary>
+    /// <param name="month">The month whose exam answers should be retrieved.</param>
+    /// <returns>The exam answers for <paramref name="month"/>.</returns>
+    private List<ExamAnswer> GetExamAnswersByMonth(string month) =>
+        AllExamAnswers
+            .Where(examAnswer => examAnswer.Month.ToString() == month)
+            .ToList();
+}

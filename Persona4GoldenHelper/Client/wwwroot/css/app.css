@@ -144,6 +144,14 @@ img {
     margin-right: auto;
 }
 
+.widest-column {
+    width: 60%;
+}
+
+.wider-column {
+    width: 30%;
+}
+
 .wide-column {
     width: 15%;
 }
