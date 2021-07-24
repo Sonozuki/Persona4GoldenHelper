@@ -32,5 +32,10 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>The book order.</returns>
         [HttpGet]
         public List<string> GetBookOrder() => BookData.BookOrder;
+
+        /// <summary>Retrieves all weapon data.</summary>
+        /// <returns>All weapon data.</returns>
+        [HttpGet]
+        public List<Weapon> GetAllWeapons() => WeaponData.Weapons;
     }
 }

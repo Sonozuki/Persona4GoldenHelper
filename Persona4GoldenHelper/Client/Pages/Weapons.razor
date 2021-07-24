@@ -1,0 +1,81 @@
+﻿@page "/weapons"
+@inject HttpClient Http;
+
+<div class="content">
+    <h1 class="text-align-centre">Weapons</h1>
+    @if (AllWeapons != null)
+        foreach (var character in Characters)
+        {
+            var weapons = GetWeaponsByUser(character);
+            <div>
+                <h2 class="text-align-center sub-header">@character</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="extra-slim-column text-align-centre">Attack</th>
+                            <th class="extra-slim-column text-align-centre">Accuracy</th>
+                            <th>Effect</th>
+                            <th class="text-align-centre">Price</th>
+                            <th>How to Obatin</th>
+                        </tr>
+                    </thead>
+                    @foreach (var weapon in weapons)
+                    {
+                        <tbody>
+                            @for (int i = 0; i < weapon.Obtained.Count; i++)
+                            {
+                                var obtain = weapon.Obtained[i];
+                                <tr>
+                                    @if (i == 0)
+                                    {
+                                        <td rowspan=@weapon.Obtained.Count class="text-primary">@weapon.Name</td>
+                                        <td rowspan=@weapon.Obtained.Count class="text-align-centre">@weapon.Attack</td>
+                                        <td rowspan=@weapon.Obtained.Count class="text-align-centre">@weapon.Accuracy</td>
+                                        <td rowspan=@weapon.Obtained.Count>@(weapon.Effect == "" ? "-" : weapon.Effect)</td>
+                                    }
+
+                                    <td class="text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                                    <td>@obtain.Obtain</td>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                </table>
+            </div>
+        }
+</div>
+
+@code {
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The characters that can wield weapons</summary>
+    private static readonly List<string> Characters = new() { "Protagonist", "Yosuke", "Chie", "Yukiko", "Kanji", "Teddie", "Naoto" };
+
+    
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the weapons to display.</summary>
+    public List<Weapon> AllWeapons { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllWeapons = await Http.GetFromJsonAsync<List<Weapon>>("api/GetAllWeapons");
+
+    
+    /*********
+    ** Private Methods
+    *********/
+    /// <summary>Retrieves the weapons for a specific user.</summary>
+    /// <param name="user">The user whose weapons should be retrieved.</param>
+    /// <returns>The weapons for <paramref name="user"/>.</returns>
+    private List<Weapon> GetWeaponsByUser(string user) =>
+        AllWeapons
+            .Where(weapon => weapon.User.ToString() == user)
+            .ToList();
+}
