@@ -11,7 +11,7 @@
     --background-colour-very-light: #303030;
     --border-medium: 1px solid #404040;
     --text-colour-primary: #c5c1b9;
-    --text-secondary-colour: #808080;
+    --text-colour-secondary: #808080;
     --border-radius-medium: .3rem;
 }
 
@@ -72,7 +72,7 @@ a:link, a:visited {
 
 table {
     width: 100%;
-    color: var(--text-secondary-colour);
+    color: var(--text-colour-secondary);
     margin-bottom: 2rem;
     border: var(--border-medium);
     border-spacing: 0; /* this is used instead of border-collapse so border-radius works correctly */
@@ -121,6 +121,10 @@ img {
     text-align: center;
 }
 
+.slim-column {
+    width: 8%;
+}
+
 .extra-slim-column {
     width: 5%;
 }
@@ -131,6 +135,19 @@ img {
 
 .text-primary {
     color: var(--text-colour-primary);
+}
+
+.text-secondary {
+    color: var(--text-colour-secondary);
+}
+
+/* skill cost */
+.skill-cost-sp {
+    color: #e8b819;
+}
+
+.skill-cost-hp {
+    color: #f71df0;
 }
 
 /* persona types */

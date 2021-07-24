@@ -17,5 +17,10 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>All persona data.</returns>
         [HttpGet]
         public List<Persona> GetAllPersonas() => PersonaData.Personas;
+
+        /// <summary>Retrieves all skill data.</summary>
+        /// <returns>All skill data.</returns>
+        [HttpGet]
+        public List<Skill> GetAllSkills() => SkillData.Skills;
     }
 }

@@ -1,0 +1,77 @@
+﻿@page "/skills"
+@inject HttpClient Http;
+
+<div class="content">
+    <h1 class="text-align-centre">Skills</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Effect</th>
+                <th class="slim-column text-align-centre">Cost</th>
+                <th>Personas</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (AllSkills != null)
+                @foreach (var skill in AllSkills)
+                {
+                    <tr>
+                        <td class="text-primary">@skill.Name</td>
+                        <td>@skill.Effect</td>
+                        <td class="text-align-centre font-bold @CalculateCostTypeClass(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
+                        <td>
+                            @for (var i = 0; i < skill.Personas.Count; i++)
+                            {
+                                var persona = skill.Personas[i];
+
+                                <a href="/personas/@persona.Name">
+                                    <span class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")">
+                                        @persona.Name
+                                    </span><span class="text-secondary">
+                                        @(persona.LevelRequired != 0 ? $" ({persona.LevelRequired})" : "")
+                                    </span>@(i != skill.Personas.Count - 1 ? ", " : "")
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the skills to display.</summary>
+    public List<Skill> AllSkills { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllSkills = await Http.GetFromJsonAsync<List<Skill>>("api/GetAllSkills");
+
+
+    /*********
+    ** Private Methods
+    *********/
+    /// <summary>Calculates the CSS class for a cost.</summary>
+    /// <param name="cost">The cost to calculate the class for.</param>
+    /// <returns>The CSS class to style the cost.</returns>
+    private static string CalculateCostTypeClass(string cost)
+    {
+        if (cost.Length == 0)
+            return "";
+
+        if (cost[cost.Length - 2] == 'S')
+            return "skill-cost-sp";
+
+        if (cost[cost.Length - 2] == 'H')
+            return "skill-cost-hp";
+
+        return "";
+    }
+}
