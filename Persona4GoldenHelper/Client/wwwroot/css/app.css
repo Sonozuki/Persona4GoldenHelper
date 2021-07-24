@@ -5,8 +5,14 @@
 ** Custom Properties
 *********/
 :root {
-    --background-dark-colour: #121212;
-    --text-primary-colour: #c5c1b9;
+    --background-colour-dark: #121212;
+    --background-colour-medium: #202020;
+    --background-colour-light: #282828;
+    --background-colour-very-light: #303030;
+    --border-medium: 1px solid #404040;
+    --text-colour-primary: #c5c1b9;
+    --text-secondary-colour: #808080;
+    --border-radius-medium: .3rem;
 }
 
 
@@ -42,22 +48,69 @@
 
 html, body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-dark-colour);
+    color: var(--text-colour-primary);
+    background-color: var(--background-colour-dark);
     margin: 0;
 }
 
-a:link {
-    transition: all .5s;
+h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: .6rem;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: var(--text-colour-primary);
+    transition: filter .5s;
 }
 
     a:link:hover {
         filter: brightness(150%);
     }
 
+table {
+    width: 100%;
+    color: var(--text-secondary-colour);
+    border: var(--border-medium);
+    border-spacing: 0; /* this is used instead of border-collapse so border-radius works correctly */
+    border-radius: var(--border-radius-medium);
+}
+
+    table tr {
+        background-color: var(--background-colour-medium);
+        transition: background-color .25s;
+    }
+
+        table tr:hover {
+            background-color: var(--background-colour-very-light);
+        }
+
+    table th {
+        color: var(--text-colour-primary);
+        background-color: var(--background-colour-light);
+        padding: .45rem;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    table td {
+        padding: .3rem .45rem;
+    }
+
 
 /*********
 ** General Styles
 *********/
+.content {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.text-align-centre {
+    text-align: center;
+}
 
 
 /*********
@@ -86,8 +139,6 @@ a:link {
         }
 
     .navbar a {
-        text-decoration: none;
-        color: var(--text-primary-colour);
         padding: .9rem;
     }
 
@@ -95,3 +146,14 @@ a:link {
         font-size: 2rem;
         font-weight: bold;
     }
+
+
+/*********
+** Pages
+*********/
+/****
+** Index
+****/
+.sources a {
+    display: block;
+}
