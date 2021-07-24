@@ -37,5 +37,10 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>All weapon data.</returns>
         [HttpGet]
         public List<Weapon> GetAllWeapons() => WeaponData.Weapons;
+
+        /// <summary>Retrieves all armour data.</summary>
+        /// <returns>All armour data.</returns>
+        [HttpGet]
+        public List<Armour> GetAllArmour() => ArmourData.Armour;
     }
 }
