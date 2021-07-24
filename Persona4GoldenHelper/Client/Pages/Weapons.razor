@@ -2,13 +2,12 @@
 @inject HttpClient Http;
 
 <div class="content">
-    <h1 class="text-align-centre">Weapons</h1>
+    <h1>Weapons</h1>
     @if (AllWeapons != null)
         foreach (var character in Characters)
         {
-            var weapons = GetWeaponsByUser(character);
             <div>
-                <h2 class="text-align-center sub-header">@character</h2>
+                <h2>@character</h2>
                 <table>
                     <thead>
                         <tr>
@@ -20,7 +19,7 @@
                             <th>How to Obatin</th>
                         </tr>
                     </thead>
-                    @foreach (var weapon in weapons)
+                    @foreach (var weapon in GetWeaponsByUser(character))
                     {
                         <tbody>
                             @for (int i = 0; i < weapon.Obtained.Count; i++)

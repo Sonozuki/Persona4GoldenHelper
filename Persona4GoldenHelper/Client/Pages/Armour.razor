@@ -3,13 +3,12 @@
 @using ArmourModel = Persona4GoldenHelper.Shared.Models.Armour;
 
 <div class="content">
-    <h1 class="text-align-centre">Armour</h1>
+    <h1>Armour</h1>
     @if (AllArmour != null)
         foreach (var gender in Genders)
         {
-            var armours = GetArmourByGender(gender);
             <div>
-                <h2 class="text-align-centre">@gender</h2>
+                <h2>@gender</h2>
                 <table>
                     <thead>
                         <tr>
@@ -21,7 +20,7 @@
                             <th>How to Obtain</th>
                         </tr>
                     </thead>
-                    @foreach (var armour in armours)
+                    @foreach (var armour in GetArmourByGender(gender))
                     {
                         <tbody>
                             @for (int i = 0; i < armour.Obtained.Count; i++)
