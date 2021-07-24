@@ -1,0 +1,51 @@
+﻿@page "/accessories"
+@inject HttpClient Http;
+
+<div class="content">
+    <h1 class="text-align-centre">Accessories</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Effect</th>
+                <th class="text-align-centre">Price</th>
+                <th>How to Obatin</th>
+            </tr>
+        </thead>
+        @if (AllAccessories != null)
+            foreach (var accessory in AllAccessories)
+            {
+                <tbody>
+                    @for (int i = 0; i < accessory.Obtained.Count; i++)
+                    {
+                        var obtain = accessory.Obtained[i];
+                        <tr>
+                            @if (i == 0)
+                            {
+                                <td rowspan=@accessory.Obtained.Count class="text-primary">@accessory.Name</td>
+                                <td rowspan=@accessory.Obtained.Count>@(accessory.Effect == "" ? "-" : accessory.Effect)</td>
+                            }
+
+                            <td class="text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                            <td>@obtain.Obtain</td>
+                        </tr>
+                    }
+                </tbody>
+            }
+    </table>
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the accessories to display.</summary>
+    public List<Accessory> AllAccessories { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllAccessories = await Http.GetFromJsonAsync<List<Accessory>>("api/GetAllAccessories");
+}
