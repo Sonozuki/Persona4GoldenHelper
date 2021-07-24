@@ -2,6 +2,15 @@
 
 
 /*********
+** Custom Properties
+*********/
+:root {
+    --background-dark-colour: #121212;
+    --text-primary-colour: #c5c1b9;
+}
+
+
+/*********
 ** Blazor styles
 *********/
 #blazor-error-ui {
@@ -16,17 +25,73 @@
     z-index: 1000;
 }
 
-#blazor-error-ui .dismiss {
-    cursor: pointer;
-    position: absolute;
-    right: 0.75rem;
-    top: 0.5rem;
-}
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
 
 
 /*********
 ** Tag styles
 *********/
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background-dark-colour);
+    margin: 0;
 }
+
+a:link {
+    transition: all .5s;
+}
+
+    a:link:hover {
+        filter: brightness(150%);
+    }
+
+
+/*********
+** General Styles
+*********/
+
+
+/*********
+** Components
+*********/
+/****
+** Navbar
+****/
+.navbar {
+    text-align: center;
+    padding-top: .75rem;
+}
+
+    .navbar ul {
+        margin: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+        .navbar li a {
+            display: inline-block;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+    .navbar a {
+        text-decoration: none;
+        color: var(--text-primary-colour);
+        padding: .9rem;
+    }
+
+    .navbar .header {
+        font-size: 2rem;
+        font-weight: bold;
+    }
