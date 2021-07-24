@@ -1,0 +1,58 @@
+﻿@page "/plants"
+@inject HttpClient Http;
+
+<div class="content">
+    <h1>Plants</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="text-align-centre">Available</th>
+                <th>Seedling Name</th>
+                <th class="text-align-centre">Price</th>
+                <th class="text-align-centre">Growth Time (Days)</th>
+                <th class="text-align-centre">Harvest</th>
+                <th class="text-align-centre">Harvest with Tending</th>
+                <th>Product</th>
+                <th>Effect</th>
+            </tr>
+        </thead>
+        @if (AllPlants != null)
+            foreach (var plant in AllPlants)
+            {
+                <tbody>
+                    @for (int i = 0; i < plant.Products.Count; i++)
+                    {
+                        <tr>
+                            @if (i == 0)
+                            {
+                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.DateAvailable</td>
+                                <td rowspan=@plant.Products.Count class="text-primary">@plant.Seed.Name</td>
+                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.Seed.Cost</td>
+                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.GrowthTime</td>
+                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.Harvest</td>
+                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.HarvestWithTending</td>
+                            }
+
+                            <td>@plant.Products[i].Name</td>
+                            <td>@plant.Products[i].Effect</td>
+                        </tr>
+                    }
+                </tbody>
+            }
+    </table>
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the plants to display.</summary>
+    public List<Plant> AllPlants { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllPlants = await Http.GetFromJsonAsync<List<Plant>>("api/GetAllPlants");
+}

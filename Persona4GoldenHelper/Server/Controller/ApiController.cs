@@ -52,5 +52,10 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>All exam answer data.</returns>
         [HttpGet]
         public List<ExamAnswer> GetAllExamAnswers() => ExamAnswerData.ExamAnswers;
+
+        /// <summary>Retrieves all plant data.</summary>
+        /// <returns>All plant data.</returns>
+        [HttpGet]
+        public List<Plant> GetAllPlants() => PlantData.Plants;
     }
 }
