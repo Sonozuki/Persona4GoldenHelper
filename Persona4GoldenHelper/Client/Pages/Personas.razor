@@ -1,0 +1,92 @@
+﻿@page "/personas"
+@inject HttpClient Http;
+
+<div class="content">
+    <h1 class="text-align-centre">Personas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="extra-slim-column text-align-centre">Level</th>
+                <th>Name</th>
+                <th>Arcana</th>
+                <th class="extra-slim-column text-align-centre">St</th>
+                <th class="extra-slim-column text-align-centre">Mg</th>
+                <th class="extra-slim-column text-align-centre">En</th>
+                <th class="extra-slim-column text-align-centre">Ag</th>
+                <th class="extra-slim-column text-align-centre">Lu</th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Physical.png" alt="Physical" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Fire.png" alt="Fire" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Ice.png" alt="Ice" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Electric.png" alt="Electric" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Wind.png" alt="Wind" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Light.png" alt="Light" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Dark.png" alt="Dark" /></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (AllPersonas != null)
+                foreach (var persona in AllPersonas)
+                {
+                    <tr>
+                        <td class="text-align-centre">@persona.Level</td>
+                        <td class="text-primary"><a class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")" href="/personas/@persona.Name">@persona.Name</a></td>
+                        <td>@persona.Arcana</td>
+                        <td class="text-align-centre">@persona.Stats.Strength</td>
+                        <td class="text-align-centre">@persona.Stats.Magic</td>
+                        <td class="text-align-centre">@persona.Stats.Endurance</td>
+                        <td class="text-align-centre">@persona.Stats.Agility</td>
+                        <td class="text-align-centre">@persona.Stats.Luck</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Physical">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Physical)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Fire">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Fire)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Ice">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Ice)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Electricity">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Electricity)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Wind">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Wind)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Light">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Light)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Darkness">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Darkness)</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The short name for each element affinity.</summary>
+    private static Dictionary<string, string> AffinitityNameConversion = new()
+    {
+        ["Weak"] = "wk",
+        ["None"] = "-",
+        ["Resistant"] = "rs",
+        ["Null"] = "nu",
+        ["Reflect"] = "rf",
+        ["Absorb"] = "ab"
+    };
+
+
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the personas to display.</summary>
+    public List<Persona> AllPersonas { get; private set; }
+
+
+    /*********
+    ** Public Methods
+    *********/
+    /// <summary>This will convert the element affinities into shorter versions (e.g. "", "wk", "rs") for easier reading and displaying.</summary>
+    /// <param name="element">The element affinity to convert</param>
+    /// <returns>The short hand version of the affinity</returns>
+    public static string ConvertElementAffinityToShortHand(ElementAffinity element) => AffinitityNameConversion[element.ToString()];
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync()
+    {
+        AllPersonas = await Http.GetFromJsonAsync<List<Persona>>("api/GetAllPersonas");
+    }
+}

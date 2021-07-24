@@ -73,6 +73,7 @@ a:link, a:visited {
 table {
     width: 100%;
     color: var(--text-secondary-colour);
+    margin-bottom: 2rem;
     border: var(--border-medium);
     border-spacing: 0; /* this is used instead of border-collapse so border-radius works correctly */
     border-radius: var(--border-radius-medium);
@@ -88,6 +89,8 @@ table {
         }
 
     table th {
+        position: sticky;
+        top: -1px;
         color: var(--text-colour-primary);
         background-color: var(--background-colour-light);
         padding: .45rem;
@@ -98,6 +101,12 @@ table {
     table td {
         padding: .3rem .45rem;
     }
+
+img {
+    max-width: 1.6rem;
+    height: auto;
+    vertical-align: middle;
+}
 
 
 /*********
@@ -110,6 +119,49 @@ table {
 
 .text-align-centre {
     text-align: center;
+}
+
+.extra-slim-column {
+    width: 5%;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-primary {
+    color: var(--text-colour-primary);
+}
+
+/* persona types */
+.persona-type-ultimate {
+    color: #4b75b3 !important;
+}
+
+.persona-type-new-game {
+    color: #b30000 !important;
+}
+
+/* persona / shadow element affinities */
+.affinity-Weak {
+    color: red;
+}
+
+.affinity-Resistant {
+    color: #9a10b5;
+}
+
+.affinity-Null {
+    color: dodgerblue;
+}
+
+.affinity-Reflect {
+    color: #ffd700;
+}
+
+.affinity-Absorb {
+    font-weight: bold;
+    color: #16ce3c;
 }
 
 
