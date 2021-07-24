@@ -1,0 +1,51 @@
+﻿@page "/quests"
+@inject HttpClient Http;
+
+<div class="wide-content">
+    <h1>Quests</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="extra-slim-column text-align-centre">Number</th>
+                <th>Title</th>
+                <th class="slim-column text-align-centre">Quest Giver</th>
+                <th class="text-align-centre">Location</th>
+                <th class="slim-column text-align-centre">Available</th>
+                <th class="text-align-centre">Prerequisities</th>
+                <th class="text-align-centre">Reward</th>
+                <th>Instructions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (AllQuests != null)
+                foreach (var quest in AllQuests)
+                {
+                    <tr>
+                        <td class="text-align-centre">@quest.Number</td>
+                        <td class="text-primary">@quest.Title</td>
+                        <td class="text-align-centre">@quest.QuestGiver</td>
+                        <td class="text-align-centre">@quest.Location</td>
+                        <td class="text-align-centre">@quest.DateAvailable</td>
+                        <td class="text-align-centre">@(quest.Prerequisites != "" ? quest.Prerequisites : "-")</td>
+                        <td class="text-align-centre">@(quest.Reward != "" ? quest.Reward : "-")</td>
+                        <td>@quest.Instructions</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the quests to display.</summary>
+    public List<Quest> AllQuests { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllQuests = await Http.GetFromJsonAsync<List<Quest>>("api/GetAllQuests");
+}

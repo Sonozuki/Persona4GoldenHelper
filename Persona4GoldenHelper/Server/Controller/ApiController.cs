@@ -57,5 +57,10 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>All plant data.</returns>
         [HttpGet]
         public List<Plant> GetAllPlants() => PlantData.Plants;
+
+        /// <summary>Retrieves all quest data.</summary>
+        /// <returns>All quest data.</returns>
+        [HttpGet]
+        public List<Quest> GetAllQuests() => QuestData.Quests;
     }
 }
