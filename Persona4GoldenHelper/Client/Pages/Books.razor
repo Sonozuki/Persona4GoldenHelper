@@ -1,0 +1,68 @@
+﻿@page "/books"
+@inject HttpClient Http;
+
+<div class="content">
+    <div>
+        <h1 class="text-align-centre">Books</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th class="text-align-centre">Available</th>
+                    <th class="wide-column">Title</th>
+                    <th>How to Obtain</th>
+                    <th>Effect</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (AllBooks != null)
+                    foreach (var book in AllBooks)
+                    {
+                        <tr>
+                            <td class="text-align-centre">@book.DateAvailable</td>
+                            <td class="text-primary">@book.Title</td>
+                            <td class="white-space-pre-line">@book.Requirement</td>
+                            <td>@book.Effect</td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+    
+    <div>
+        <h1 class="text-align-centre">Book Order</h1>
+        <p class="text-align-centre">This is the order of the books in the inventory, to make it easier to see which books you're missing.</p>
+        <table class="narrow-table">
+            <tbody>
+                @if (BookOrder != null)
+                    foreach (var book in BookOrder)
+                    {
+                        <tr>
+                            <td class="text-align-centre text-primary">@book</td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the books to display.</summary>
+    public List<Book> AllBooks { get; private set; }
+
+    /// <summary>The order of the books.</summary>
+    public List<string> BookOrder { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync()
+    {
+        AllBooks = await Http.GetFromJsonAsync<List<Book>>("api/GetAllBooks");
+        BookOrder = await Http.GetFromJsonAsync<List<string>>("api/GetBookOrder");
+    }
+}

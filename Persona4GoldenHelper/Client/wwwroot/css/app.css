@@ -121,24 +121,39 @@ img {
     text-align: center;
 }
 
-.slim-column {
-    width: 8%;
-}
-
-.extra-slim-column {
-    width: 5%;
-}
-
-.font-bold {
-    font-weight: bold;
-}
-
 .text-primary {
     color: var(--text-colour-primary);
 }
 
 .text-secondary {
     color: var(--text-colour-secondary);
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.white-space-pre-line {
+    white-space: pre-line;
+}
+
+/* table related styles */
+.narrow-table {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wide-column {
+    width: 15%;
+}
+
+.slim-column {
+    width: 8%;
+}
+
+.extra-slim-column {
+    width: 5%;
 }
 
 /* skill cost */
