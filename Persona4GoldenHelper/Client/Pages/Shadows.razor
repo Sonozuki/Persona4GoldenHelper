@@ -1,0 +1,96 @@
+﻿@page "/shadows"
+@inject HttpClient Http;
+
+<div class="content">
+    <h1>Shadows</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="text-align-centre">Type</th>
+                <th class="extra-slim-column text-align-centre">Level</th>
+                <th class="extra-slim-column text-align-centre">St</th>
+                <th class="extra-slim-column text-align-centre">Mg</th>
+                <th class="extra-slim-column text-align-centre">En</th>
+                <th class="extra-slim-column text-align-centre">Ag</th>
+                <th class="extra-slim-column text-align-centre">Lu</th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Physical.png" alt="Physical" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Fire.png" alt="Fire" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Ice.png" alt="Ice" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Electric.png" alt="Electric" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Wind.png" alt="Wind" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Light.png" alt="Light" /></th>
+                <th class="extra-slim-column text-align-centre"><img src="img/Dark.png" alt="Dark" /></th>
+            </tr>
+        </thead>
+        @if (AllShadows != null)
+            foreach (var shadowName in GetDistrinctShadowNames())
+            {
+                var shadows = GetShadowsByName(shadowName);
+                <tbody>
+                    @for (int i = 0; i < shadows.Count; i++)
+                    {
+                        var shadow = shadows[i];
+
+                        <tr>
+                            @if (i == 0)
+                            {
+                                <td rowspan=@shadows.Count><a href="/shadows/@shadow.Name">@shadow.Name</a></td>
+                            }
+
+                            <td class="text-align-centre shadow-type-@shadow.Type">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString())</td>
+                            <td class="text-align-centre">@shadow.Level</td>
+                            <td class="text-align-centre">@shadow.Stats.Strength</td>
+                            <td class="text-align-centre">@shadow.Stats.Magic</td>
+                            <td class="text-align-centre">@shadow.Stats.Endurance</td>
+                            <td class="text-align-centre">@shadow.Stats.Agility</td>
+                            <td class="text-align-centre">@shadow.Stats.Luck</td>
+                            <td class="text-align-centre font-bold affinity-@shadow.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Physical)</td>
+                            <td class="text-align-centre font-bold affinity-@shadow.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Fire)</td>
+                            <td class="text-align-centre font-bold affinity-@shadow.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Ice)</td>
+                            <td class="text-align-centre font-bold affinity-@shadow.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Electricity)</td>
+                            <td class="text-align-centre font-bold affinity-@shadow.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Wind)</td>
+                            <td class="text-align-centre font-bold affinity-@shadow.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Light)</td>
+                            <td class="text-align-centre font-bold affinity-@shadow.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Darkness)</td>
+                        </tr>
+                    }
+                </tbody>
+            }
+    </table>
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the shadows to display.</summary>
+    public List<Shadow> AllShadows { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllShadows = await Http.GetFromJsonAsync<List<Shadow>>("api/GetAllShadows");
+
+
+    /*********
+    ** Private Methods
+    *********/
+    /// <summary>Retrieves the distinct shadow names.</summary>
+    /// <returns>The distinct shadow names.</returns>
+    /// <remarks>This is used to separate each shadow as some shadows have multiple types.</remarks>
+    private List<string> GetDistrinctShadowNames() =>
+        AllShadows
+            .Select(shadow => shadow.Name)
+            .Distinct()
+            .ToList();
+
+    /// <summary>Retrieves the shadows that have the specified name.</summary>
+    /// <param name="name">The name of the shadows to retrieve.</param>
+    /// <returns>The shadows that have the name of <paramref name="name"/>.</returns>
+    private List<Shadow> GetShadowsByName(string name) =>
+        AllShadows
+            .Where(shadow => shadow.Name == name)
+            .ToList();
+}

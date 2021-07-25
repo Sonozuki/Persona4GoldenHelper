@@ -187,6 +187,19 @@ img {
     color: #b30000 !important;
 }
 
+/* shadow types */
+.shadow-type-Normal {
+    color: #16ce3c;
+}
+
+.shadow-type-MiniBoss {
+    color: #ffd700;
+}
+
+.shadow-type-Boss {
+    color: #b30000;
+}
+
 /* persona / shadow element affinities */
 .affinity-Weak {
     color: red;

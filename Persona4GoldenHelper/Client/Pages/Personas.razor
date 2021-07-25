@@ -36,13 +36,13 @@
                         <td class="text-align-centre">@persona.Stats.Endurance</td>
                         <td class="text-align-centre">@persona.Stats.Agility</td>
                         <td class="text-align-centre">@persona.Stats.Luck</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Physical">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Physical)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Fire">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Fire)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Ice">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Ice)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Electricity">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Electricity)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Wind">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Wind)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Light">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Light)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Darkness">@ConvertElementAffinityToShortHand(persona.ElementAffinities.Darkness)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Physical)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Fire)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Ice)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Electricity)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Wind)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Light)</td>
+                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Darkness)</td>
                     </tr>
                 }
         </tbody>
@@ -50,21 +50,6 @@
 </div>
 
 @code {
-    /*********
-    ** Fields
-    *********/
-    /// <summary>The short name for each element affinity.</summary>
-    private static readonly Dictionary<string, string> AffinitityNameConversion = new()
-    {
-        ["Weak"] = "wk",
-        ["None"] = "-",
-        ["Resistant"] = "rs",
-        ["Null"] = "nu",
-        ["Reflect"] = "rf",
-        ["Absorb"] = "ab"
-    };
-
-
     /*********
     ** Accessors
     *********/
@@ -77,13 +62,4 @@
     *********/
     /// <inheritdoc/>
     protected override async Task OnInitializedAsync() => AllPersonas = await Http.GetFromJsonAsync<List<Persona>>("api/GetAllPersonas");
-    
-
-    /*********
-    ** Private Methods
-    *********/
-    /// <summary>This will convert the element affinities into shorter versions (e.g. "", "wk", "rs") for easier reading and displaying.</summary>
-    /// <param name="element">The element affinity to convert</param>
-    /// <returns>The short hand version of the affinity</returns>
-    private static string ConvertElementAffinityToShortHand(ElementAffinity element) => AffinitityNameConversion[element.ToString()];
 }

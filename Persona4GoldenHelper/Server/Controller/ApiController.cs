@@ -62,5 +62,10 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>All quest data.</returns>
         [HttpGet]
         public List<Quest> GetAllQuests() => QuestData.Quests;
+
+        /// <summary>Retrieves all shadow data.</summary>
+        /// <returns>All shadow data.</returns>
+        [HttpGet]
+        public List<Shadow> GetAllShadows() => ShadowData.Shadows;
     }
 }

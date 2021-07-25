@@ -24,7 +24,7 @@ namespace Persona4GoldenHelper.Shared.Models
         public int SP { get; }
 
         /// <summary>The experience you get upon killing the shadow.</summary>
-        public int Exprerience { get; }
+        public int Experience { get; }
 
         /// <summary>The amount of money you get upon killing the shadow.</summary>
         public string Yen { get; }
@@ -60,7 +60,7 @@ namespace Persona4GoldenHelper.Shared.Models
             Level = level;
             HP = hp;
             SP = sp;
-            Exprerience = experience;
+            Experience = experience;
             Yen = yen;
             Stats = stats;
             ElementAffinities = elementAffinities;
