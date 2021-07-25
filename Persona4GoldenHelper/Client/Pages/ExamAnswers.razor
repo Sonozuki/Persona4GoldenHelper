@@ -1,7 +1,7 @@
 ﻿@page "/examanswers"
 @inject HttpClient Http;
 
-<div class="content">
+<div class="content-normal">
     <h1>Exam Answers</h1>
     @if (AllExamAnswers != null)
         foreach (var month in Months)
@@ -12,8 +12,8 @@
                     <thead>
                         <tr>
                             <th class="text-align-centre">Date</th>
-                            <th class="widest-column">Question</th>
-                            <th class="wider-column">Answer</th>
+                            <th class="column-very-wide">Question</th>
+                            <th class="column-wider">Answer</th>
                         </tr>
                     </thead>
                     <tbody>

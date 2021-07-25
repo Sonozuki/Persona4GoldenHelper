@@ -1,26 +1,26 @@
 ﻿@page "/shadows"
 @inject HttpClient Http;
 
-<div class="content">
+<div class="content-normal">
     <h1>Shadows</h1>
     <table>
         <thead>
             <tr>
                 <th>Name</th>
                 <th class="text-align-centre">Type</th>
-                <th class="extra-slim-column text-align-centre">Level</th>
-                <th class="extra-slim-column text-align-centre">St</th>
-                <th class="extra-slim-column text-align-centre">Mg</th>
-                <th class="extra-slim-column text-align-centre">En</th>
-                <th class="extra-slim-column text-align-centre">Ag</th>
-                <th class="extra-slim-column text-align-centre">Lu</th>
-                <th class="extra-slim-column text-align-centre"><img src="img/Physical.png" alt="Physical" /></th>
-                <th class="extra-slim-column text-align-centre"><img src="img/Fire.png" alt="Fire" /></th>
-                <th class="extra-slim-column text-align-centre"><img src="img/Ice.png" alt="Ice" /></th>
-                <th class="extra-slim-column text-align-centre"><img src="img/Electric.png" alt="Electric" /></th>
-                <th class="extra-slim-column text-align-centre"><img src="img/Wind.png" alt="Wind" /></th>
-                <th class="extra-slim-column text-align-centre"><img src="img/Light.png" alt="Light" /></th>
-                <th class="extra-slim-column text-align-centre"><img src="img/Dark.png" alt="Dark" /></th>
+                <th class="column-very-slim text-align-centre">Level</th>
+                <th class="column-very-slim text-align-centre">St</th>
+                <th class="column-very-slim text-align-centre">Mg</th>
+                <th class="column-very-slim text-align-centre">En</th>
+                <th class="column-very-slim text-align-centre">Ag</th>
+                <th class="column-very-slim text-align-centre">Lu</th>
+                <th class="column-very-slim text-align-centre"><img src="img/Physical.png" alt="Physical" /></th>
+                <th class="column-very-slim text-align-centre"><img src="img/Fire.png" alt="Fire" /></th>
+                <th class="column-very-slim text-align-centre"><img src="img/Ice.png" alt="Ice" /></th>
+                <th class="column-very-slim text-align-centre"><img src="img/Electric.png" alt="Electric" /></th>
+                <th class="column-very-slim text-align-centre"><img src="img/Wind.png" alt="Wind" /></th>
+                <th class="column-very-slim text-align-centre"><img src="img/Light.png" alt="Light" /></th>
+                <th class="column-very-slim text-align-centre"><img src="img/Dark.png" alt="Dark" /></th>
             </tr>
         </thead>
         @if (AllShadows != null)

@@ -1,14 +1,14 @@
 ﻿@page "/books"
 @inject HttpClient Http;
 
-<div class="content">
+<div class="content-normal">
     <div>
         <h1>Books</h1>
         <table>
             <thead>
                 <tr>
                     <th class="text-align-centre">Available</th>
-                    <th class="wide-column">Title</th>
+                    <th class="column-wide">Title</th>
                     <th>How to Obtain</th>
                     <th>Effect</th>
                 </tr>
@@ -31,7 +31,7 @@
     <div>
         <h1>Book Order</h1>
         <p class="text-align-centre">This is the order of the books in the inventory, to make it easier to see which books you're missing.</p>
-        <table class="narrow-table">
+        <table class="table-narrow">
             <tbody>
                 @if (BookOrder != null)
                     foreach (var book in BookOrder)

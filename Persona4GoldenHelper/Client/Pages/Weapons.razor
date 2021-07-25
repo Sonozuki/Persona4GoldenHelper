@@ -1,7 +1,7 @@
 ﻿@page "/weapons"
 @inject HttpClient Http;
 
-<div class="content">
+<div class="content-normal">
     <h1>Weapons</h1>
     @if (AllWeapons != null)
         foreach (var character in Characters)
@@ -12,8 +12,8 @@
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th class="extra-slim-column text-align-centre">Attack</th>
-                            <th class="extra-slim-column text-align-centre">Accuracy</th>
+                            <th class="column-very-slim text-align-centre">Attack</th>
+                            <th class="column-very-slim text-align-centre">Accuracy</th>
                             <th>Effect</th>
                             <th class="text-align-centre">Price</th>
                             <th>How to Obatin</th>

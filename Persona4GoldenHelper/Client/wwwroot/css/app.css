@@ -10,9 +10,21 @@
     --background-colour-light: #282828;
     --background-colour-very-light: #303030;
     --border-medium: 1px solid #404040;
+    --border-radius-medium: .3rem;
     --text-colour-primary: #c5c1b9;
     --text-colour-secondary: #808080;
-    --border-radius-medium: .3rem;
+    --text-colour-skill-cost-sp: #e8b819;
+    --text-colour-skill-cost-hp: #f71df0;
+    --text-colour-persona-type-ultimate: #4b75b3;
+    --text-colour-persona-type-new-game: #b30000;
+    --text-colour-shadow-type-normal: #16ce3c;
+    --text-colour-shadow-type-mini-boss: #ffd700;
+    --text-colour-shadow-type-boss: #b30000;
+    --text-colour-element-affinity-weak: red;
+    --text-colour-element-affinity-resistant: #9a10b5;
+    --text-colour-element-affinity-null: dodgerblue;
+    --text-colour-element-affinity-reflect: #ffd700;
+    --text-colour-element-affinity-absorb: #16ce3c;
 }
 
 
@@ -112,26 +124,6 @@ img {
 /*********
 ** General Styles
 *********/
-.wide-content {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.content {
-    width: 66%;
-    margin: 0 auto;
-}
-
-.half-content {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.narrow-content {
-    width: 33%;
-    margin: 0 auto;
-}
-
 .text-align-centre {
     text-align: center;
 }
@@ -152,84 +144,104 @@ img {
     white-space: pre-line;
 }
 
+/* content widths */
+.content-wide {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content-normal {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.content-narrow {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content-very-narrow {
+    width: 33%;
+    margin: 0 auto;
+}
+
 /* table related styles */
-.narrow-table {
+.table-narrow {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.widest-column {
+.column-very-wide {
     width: 60%;
 }
 
-.wider-column {
+.column-wider {
     width: 30%;
 }
 
-.wide-column {
+.column-wide {
     width: 15%;
 }
 
-.slim-column {
+.column-slim {
     width: 8%;
 }
 
-.extra-slim-column {
+.column-very-slim {
     width: 5%;
 }
 
 /* skill cost */
 .skill-cost-sp {
-    color: #e8b819;
+    color: var(--text-colour-skill-cost-sp);
 }
 
 .skill-cost-hp {
-    color: #f71df0;
+    color: var(--text-colour-skill-cost-hp);
 }
 
 /* persona types */
 .persona-type-ultimate {
-    color: #4b75b3 !important;
+    color: var(--text-colour-persona-type-ultimate) !important;
 }
 
 .persona-type-new-game {
-    color: #b30000 !important;
+    color: var(--text-colour-persona-type-new-game) !important;
 }
 
 /* shadow types */
 .shadow-type-Normal {
-    color: #16ce3c;
+    color: var(--text-colour-shadow-type-normal);
 }
 
 .shadow-type-MiniBoss {
-    color: #ffd700;
+    color: var(--text-colour-shadow-type-mini-boss);
 }
 
 .shadow-type-Boss {
-    color: #b30000;
+    color: var(--text-colour-shadow-type-boss);
 }
 
 /* persona / shadow element affinities */
 .affinity-Weak {
-    color: red;
+    color: var(--text-colour-element-affinity-weak);
 }
 
 .affinity-Resistant {
-    color: #9a10b5;
+    color: var(--text-colour-element-affinity-resistant);
 }
 
 .affinity-Null {
-    color: dodgerblue;
+    color: var(--text-colour-element-affinity-null);
 }
 
 .affinity-Reflect {
-    color: #ffd700;
+    color: var(--text-colour-element-affinity-reflect);
 }
 
 .affinity-Absorb {
-    font-weight: bold;
-    color: #16ce3c;
+    color: var(--text-colour-element-affinity-absorb);
 }
 
 

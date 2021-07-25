@@ -2,7 +2,7 @@
 @inject HttpClient Http;
 @using ArmourModel = Persona4GoldenHelper.Shared.Models.Armour;
 
-<div class="content">
+<div class="content-normal">
     <h1>Armour</h1>
     @if (AllArmour != null)
         foreach (var gender in Genders)
@@ -13,8 +13,8 @@
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th class="extra-slim-column text-align-centre">Defence</th>
-                            <th class="extra-slim-column text-align-centre">Evasion</th>
+                            <th class="column-very-slim text-align-centre">Defence</th>
+                            <th class="column-very-slim text-align-centre">Evasion</th>
                             <th>Effect</th>
                             <th class="text-align-centre">Price</th>
                             <th>How to Obtain</th>
