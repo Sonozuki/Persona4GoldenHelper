@@ -122,6 +122,11 @@ img {
     margin: 0 auto;
 }
 
+.narrow-content {
+    width: 33%;
+    margin: 0 auto;
+}
+
 .text-align-centre {
     text-align: center;
 }

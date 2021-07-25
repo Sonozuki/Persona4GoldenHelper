@@ -1,0 +1,39 @@
+﻿@page "/lunches"
+@inject HttpClient Http;
+
+<div class="narrow-content">
+    <h1 class="text-align-centre">Lunches</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="slim-column text-align-centre">Name</th>
+                <th class="slim-column text-align-centre">Method</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (AllLunches != null)
+                foreach (var lunch in AllLunches)
+                {
+                    <tr>
+                        <td class="text-primary text-align-centre">@lunch.Name</td>
+                        <td class="text-align-centre">@lunch.Method</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the lunches to display.</summary>
+    public List<Lunch> AllLunches { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllLunches = await Http.GetFromJsonAsync<List<Lunch>>("api/GetAllLunches");
+}
