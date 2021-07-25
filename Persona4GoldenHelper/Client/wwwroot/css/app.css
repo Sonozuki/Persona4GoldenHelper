@@ -29,6 +29,15 @@
 
 
 /*********
+** Browser Styles
+*********/
+::selection {
+    background-color: var(--text-colour-primary);
+    color: var(--background-colour-light);
+}
+
+
+/*********
 ** Blazor styles
 *********/
 #blazor-error-ui {
