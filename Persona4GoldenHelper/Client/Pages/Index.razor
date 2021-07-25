@@ -18,76 +18,52 @@
         </thead>
 
         <tbody>
+        @foreach (var source in Sources)
+        {
             <tr>
-                <td>Personas</td>
+                <td>@source.Key</td>
                 <td>
-                    <a href="https://megamitensei.fandom.com/wiki/List_of_Persona_4_Personas">Megami Tensei Wiki</a>
-                    <a href="https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Personas">IGN Wiki</a>
+                    @foreach (var link in source.Value)
+                    {
+                        <a href="@link.Link">@link.DisplayName</a>
+                    }
                 </td>
             </tr>
-            <tr>
-                <td>Persona Recipe Calculator</td>
-                <td>
-                    <a href="https://github.com/arantius/persona-fusion-calculator">Persona 4 Fusion Calculator</a>
-                    <a href="http://persona4.wikidot.com/fusiontutor">Persona 4 Wiki - Fusion Theory</a>
-                    <a href="https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/map/8037-fusion-chart">Game FAQs</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Skills</td>
-                <td>
-                    <a href="https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Skill_List">IGN Wiki</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Books</td>
-                <td>
-                    <a href="https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65714">Game FAQs</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Exam Answers</td>
-                <td>
-                    <a href="https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65427">Game FAQs</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Gardening</td>
-                <td>
-                    <a href="https://sites.google.com/site/persona4goldenguide/everything-else/gardening">Persona 4 Golden Guide</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Quests</td>
-                <td>
-                    <a href="https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/68730">Game FAQs</a>
-                    <a href="https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Quests">IGN Wiki</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Shadows</td>
-                <td>
-                    <a href="https://megamitensei.fandom.com/wiki/Category:Persona_4_Golden_Shadows">Magami Tensei Wiki</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Lunches</td>
-                <td>
-                    <a href="https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Boxed_Lunches">IGN Wiki</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Skill Cards</td>
-                <td>
-                    <a href="https://docs.google.com/file/d/0BwDCz_Mqaf8RTmJac1hMS1dQOUU/edit?pli=1">Google Docs</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Armor, Accessories, and Weapons</td>
-                <td>
-                    <a href="https://megamitensei.fandom.com/wiki/List_of_Persona_4_Items">Magami Tensei Wiki</a>
-                </td>
-            </tr>
+        }
         </tbody>
     </table>
 </div>
+
+@code {
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The sources to some of the data on the site.</summary>
+    private readonly Dictionary<string, List<(string DisplayName, string Link)>> Sources = new()
+    {
+        ["Personas"] = new()
+        {
+            ("Megami Tensei Wiki", "https://megamitensei.fandom.com/wiki/List_of_Persona_4_Personas"),
+            ("IGN Wiki", "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Personas")
+        },
+        ["Persona Recipe Calculator"] = new()
+        {
+            ("Persona 4 Fusion Calculator", "https://github.com/arantius/persona-fusion-calculator"),
+            ("Persona 4 Wiki - Fusion Theory", "http://persona4.wikidot.com/fusiontutor"),
+            ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/map/8037-fusion-chart")
+        },
+        ["Skills"] = new() { ("IGN Wiki", "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Skill_List") },
+        ["Books"] = new() { ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65714") },
+        ["Exam Answers"] = new() { ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65427") },
+        ["Gardening"] = new() { ("Persona 4 Golden Guide", "https://sites.google.com/site/persona4goldenguide/everything-else/gardening") },
+        ["Quests"] = new()
+        {
+            ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/68730"),
+            ("IGN Wiki", "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Quests")
+        },
+        ["Shadows"] = new() { ("Magami Tensei Wiki", "https://megamitensei.fandom.com/wiki/Category:Persona_4_Golden_Shadows") },
+        ["Lunches"] = new() { ("IGN Wiki", "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Boxed_Lunches") },
+        ["Skill Cards"] = new() { ("Google Docs", "https://docs.google.com/file/d/0BwDCz_Mqaf8RTmJac1hMS1dQOUU/edit?pli=1") },
+        ["Armor, Accessories, and Weapons"] = new() { ("Magami Tensei Wiki", "https://megamitensei.fandom.com/wiki/List_of_Persona_4_Items") }
+    };
+}
