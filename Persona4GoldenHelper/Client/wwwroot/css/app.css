@@ -9,6 +9,7 @@
     --background-colour-medium: #202020;
     --background-colour-light: #282828;
     --background-colour-very-light: #303030;
+    --background-colour-very-very-light: #404040;
     --border-medium: 1px solid #404040;
     --border-radius-medium: .3rem;
     --text-colour-primary: #c5c1b9;
@@ -35,6 +36,22 @@
     background-color: var(--text-colour-primary);
     color: var(--background-colour-light);
 }
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-colour-medium);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-colour-very-light);
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--background-colour-very-very-light);
+    }
 
 
 /*********
