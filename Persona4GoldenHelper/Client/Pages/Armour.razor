@@ -29,13 +29,13 @@
                                 <tr>
                                     @if (i == 0)
                                     {
-                                        <td rowspan=@armour.Obtained.Count class="text-primary">@armour.Name</td>
+                                        <td rowspan=@armour.Obtained.Count>@armour.Name</td>
                                         <td rowspan=@armour.Obtained.Count class="text-align-centre">@armour.Defence</td>
                                         <td rowspan=@armour.Obtained.Count class="text-align-centre">@armour.Evasion</td>
                                         <td rowspan=@armour.Obtained.Count>@(armour.Effect == "" ? "-" : armour.Effect)</td>
                                     }
 
-                                    <td class="text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                                    <td class="text-secondary text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
                                     <td>@obtain.Obtain</td>
                                 </tr>
                             }

@@ -25,9 +25,9 @@
                         <tr>
                             @if (i == 0)
                             {
-                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.DateAvailable</td>
-                                <td rowspan=@plant.Products.Count class="text-primary">@plant.Seed.Name</td>
-                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.Seed.Cost</td>
+                                <td rowspan=@plant.Products.Count class="text-secondary text-align-centre">@plant.DateAvailable</td>
+                                <td rowspan=@plant.Products.Count>@plant.Seed.Name</td>
+                                <td rowspan=@plant.Products.Count class="text-secondary text-align-centre">@plant.Seed.Cost</td>
                                 <td rowspan=@plant.Products.Count class="text-align-centre">@plant.GrowthTime</td>
                                 <td rowspan=@plant.Products.Count class="text-align-centre">@plant.Harvest</td>
                                 <td rowspan=@plant.Products.Count class="text-align-centre">@plant.HarvestWithTending</td>

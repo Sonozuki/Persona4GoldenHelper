@@ -17,9 +17,9 @@
                 @foreach (var skill in AllSkills)
                 {
                     <tr>
-                        <td class="text-primary">@skill.Name</td>
+                        <td>@skill.Name</td>
                         <td>@skill.Effect</td>
-                        <td class="text-align-centre font-bold @CalculateCostTypeClass(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
+                        <td class="text-secondary text-align-centre font-bold @CalculateCostTypeClass(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
                         <td>
                             @for (var i = 0; i < skill.Personas.Count; i++)
                             {

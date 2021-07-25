@@ -22,11 +22,11 @@
                         <tr>
                             @if (i == 0)
                             {
-                                <td rowspan=@accessory.Obtained.Count class="text-primary">@accessory.Name</td>
+                                <td rowspan=@accessory.Obtained.Count>@accessory.Name</td>
                                 <td rowspan=@accessory.Obtained.Count>@(accessory.Effect == "" ? "-" : accessory.Effect)</td>
                             }
 
-                            <td class="text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                            <td class="text-secondary text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
                             <td>@obtain.Obtain</td>
                         </tr>
                     }

@@ -28,21 +28,21 @@
                 foreach (var persona in AllPersonas)
                 {
                     <tr>
-                        <td class="text-align-centre">@persona.Level</td>
-                        <td class="text-primary"><a class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")" href="/personas/@persona.Name">@persona.Name</a></td>
-                        <td>@persona.Arcana</td>
-                        <td class="text-align-centre">@persona.Stats.Strength</td>
-                        <td class="text-align-centre">@persona.Stats.Magic</td>
-                        <td class="text-align-centre">@persona.Stats.Endurance</td>
-                        <td class="text-align-centre">@persona.Stats.Agility</td>
-                        <td class="text-align-centre">@persona.Stats.Luck</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Physical)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Fire)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Ice)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Electricity)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Wind)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Light)</td>
-                        <td class="text-align-centre font-bold affinity-@persona.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Darkness)</td>
+                        <td class="text-secondary text-align-centre">@persona.Level</td>
+                        <td><a class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")" href="/personas/@persona.Name">@persona.Name</a></td>
+                        <td class="text-secondary">@persona.Arcana</td>
+                        <td class="text-secondary text-align-centre">@persona.Stats.Strength</td>
+                        <td class="text-secondary text-align-centre">@persona.Stats.Magic</td>
+                        <td class="text-secondary text-align-centre">@persona.Stats.Endurance</td>
+                        <td class="text-secondary text-align-centre">@persona.Stats.Agility</td>
+                        <td class="text-secondary text-align-centre">@persona.Stats.Luck</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Physical)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Fire)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Ice)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Electricity)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Wind)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Light)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Darkness)</td>
                     </tr>
                 }
         </tbody>

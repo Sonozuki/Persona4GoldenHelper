@@ -10,7 +10,7 @@
                     <th class="text-align-centre">Available</th>
                     <th class="column-wide">Title</th>
                     <th>How to Obtain</th>
-                    <th>Effect</th>
+                    <th class="column-wider">Effect</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,8 +18,8 @@
                     foreach (var book in AllBooks)
                     {
                         <tr>
-                            <td class="text-align-centre">@book.DateAvailable</td>
-                            <td class="text-primary">@book.Title</td>
+                            <td class="text-secondary text-align-centre">@book.DateAvailable</td>
+                            <td>@book.Title</td>
                             <td class="white-space-pre-line">@book.Requirement</td>
                             <td>@book.Effect</td>
                         </tr>
