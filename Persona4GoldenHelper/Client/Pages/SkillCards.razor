@@ -1,0 +1,119 @@
+﻿@page "/skillcards"
+@inject HttpClient Http;
+
+<div class="half-content">
+    <h1>Skill Cards</h1>
+    
+    <div>
+        <h2 class="text-align-centre">How to Obtain</h2>
+        <p class="text-align-centre">Skill cards are obtained via Shuffle Time. Shuffle time can occur at the end of a battle. If you get all the cards in the Shuffle Time you get a Sweep Bonus, a Sweep Bonus means you are guarenteed to get a Shuffle Time after the next battle. Each dungeon has a chance of dropping different skill card, by rank. This can be found below.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th class="text-align-centre slim-column">Dungeon</th>
+                    <th class="text-align-centre slim-column">Skill Card Ranks Found</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (AllSkillCardLocations != null)
+                    foreach (var skillCardLocation in AllSkillCardLocations)
+                    {
+                        <tr>
+                            <td class="text-primary text-align-centre">@skillCardLocation.DungeonName</td>
+                            <td class="text-align-centre">Ranks @skillCardLocation.RankLowerBound-@skillCardLocation.RankUpperBound</td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+    
+    <div>
+        @if (AllSkillCards != null)
+            foreach (var type in Types)
+            {
+                var skillCards = GetSkillCardsByType(type);
+                <div>
+                    <h2>@type</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="text-align-centre extra-slim-column">Rank</th>
+                                <th>Skill Cards</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 1; i <= 10; i++)
+                            {
+                                var rankSkillCards = GetSkillCardsByRank(skillCards, i);
+    
+                                <tr>
+                                    <td class="text-align-centre">@i</td>
+                                    <td>
+                                        @if (rankSkillCards.Count == 0)
+                                        {
+                                            @:-
+                                        }
+    
+                                        @for (int j = 0; j < rankSkillCards.Count; j++)
+                                        {
+                                            <span class="text-primary">@rankSkillCards[j].Name</span>@(j != rankSkillCards.Count() - 1 ? ", " : "")
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+    </div>
+</div>
+
+@code {
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The types of skill cards.</summary>
+    private static readonly List<string> Types = new() { "Physical", "Magical", "Support", "Passive" };
+
+
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the skill card locations to display.</summary>
+    public List<SkillCardLocation> AllSkillCardLocations { get; private set; }
+    
+    /// <summary>All the skill cards to display.</summary>
+    public List<SkillCard> AllSkillCards { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync()
+    {
+        AllSkillCardLocations = await Http.GetFromJsonAsync<List<SkillCardLocation>>("api/GetAllSkillCardLocations");
+        AllSkillCards = await Http.GetFromJsonAsync<List<SkillCard>>("api/GetAllSkillCards");
+    }
+
+
+    /*********
+    ** Private Methods
+    *********/
+    /// <summary>Retrieves the skill cards of a specific type.</summary>
+    /// <param name="type">The type of skill cards to retrieve.</param>
+    /// <returns>The skill cards with a type of <paramref name="type"/></returns>
+    private List<SkillCard> GetSkillCardsByType(string type) =>
+        AllSkillCards
+            .Where(skillCard => skillCard.Type.ToString() == type)
+            .ToList();
+
+    /// <summary>Retrieves the skill cards of a specific rank.</summary>
+    /// <param name="skillCards">The skill cards to filter.</param>
+    /// <param name="rank">The rank of skill cards to retrieve.</param>
+    /// <returns>The skill cards from <paramref name="skillCards"/> whose rank is <paramref name="rank"/></returns>
+    private List<SkillCard> GetSkillCardsByRank(List<SkillCard> skillCards, int rank) =>
+        skillCards
+            .Where(skillCard => skillCard.Rank == rank)
+            .ToList();
+}

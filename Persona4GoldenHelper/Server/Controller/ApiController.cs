@@ -72,5 +72,15 @@ namespace Persona4GoldenHelper.Server.Controller
         /// <returns>All lunch data.</returns>
         [HttpGet]
         public List<Lunch> GetAllLunches() => LunchData.Lunches;
+
+        /// <summary>Retrieves all skill card location data.</summary>
+        /// <returns>All skil card location data.</returns>
+        [HttpGet]
+        public List<SkillCardLocation> GetAllSkillCardLocations() => SkillCardData.SkillCardLocations;
+
+        /// <summary>Retrieves all skill card data.</summary>
+        /// <returns>All skill card data.</returns>
+        [HttpGet]
+        public List<SkillCard> GetAllSkillCards() => SkillCardData.SkillCards;
     }
 }

@@ -122,6 +122,11 @@ img {
     margin: 0 auto;
 }
 
+.half-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .narrow-content {
     width: 33%;
     margin: 0 auto;
@@ -241,6 +246,7 @@ img {
 
     .navbar ul {
         margin: 0;
+        padding: 0 1rem;
     }
 
     .navbar li {
