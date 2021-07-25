@@ -315,4 +315,5 @@ img {
 ****/
 .sources a {
     display: block;
+    text-decoration: underline;
 }
