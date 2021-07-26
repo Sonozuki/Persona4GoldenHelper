@@ -131,7 +131,8 @@ table {
             background-color: transparent;
         }
 
-        table tbody:hover, table tr:hover {
+        table tbody:hover,
+        table tbody:not(.alternate-colour) tr:hover { /* ensure this rule doesn't get applied twice for some rows, which was causing uneven fade durations */
             background-color: var(--background-colour-very-light) !important;
         }
 
