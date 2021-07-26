@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Persona4GoldenHelper.Client
 {
+    /// <summary>Contains miscellaneous helper methods.</summary>
     public static class Utilities
     {
         /*********
