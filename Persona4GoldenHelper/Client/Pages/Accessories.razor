@@ -15,7 +15,7 @@
         @if (AllAccessories != null)
             foreach (var accessory in AllAccessories)
             {
-                <tbody>
+                <tbody class="alternate-colour">
                     @for (int i = 0; i < accessory.Obtained.Count; i++)
                     {
                         var obtain = accessory.Obtained[i];

@@ -19,7 +19,7 @@
                     <tbody>
                         @foreach (var examAnswer in GetExamAnswersByMonth(month))
                         {
-                            <tr>
+                            <tr class="alternate-colour">
                                 <td class="text-secondary text-align-centre">@examAnswer.DateAsked</td>
                                 <td class="white-space-pre-line">@examAnswer.QuestionAsked</td>
                                 <td>@examAnswer.QuestionAnswer</td>

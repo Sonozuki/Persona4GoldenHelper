@@ -17,7 +17,7 @@
                 @if (AllBooks != null)
                     foreach (var book in AllBooks)
                     {
-                        <tr>
+                        <tr class="alternate-colour">
                             <td class="text-secondary text-align-centre">@book.DateAvailable</td>
                             <td>@book.Title</td>
                             <td class="white-space-pre-line">@book.Requirement</td>
@@ -36,7 +36,7 @@
                 @if (BookOrder != null)
                     foreach (var book in BookOrder)
                     {
-                        <tr>
+                        <tr class="alternate-colour">
                             <td class="text-align-centre text-primary">@book</td>
                         </tr>
                     }

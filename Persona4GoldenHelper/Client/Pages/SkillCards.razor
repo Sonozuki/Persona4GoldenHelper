@@ -18,7 +18,7 @@
                 @if (AllSkillCardLocations != null)
                     foreach (var skillCardLocation in AllSkillCardLocations)
                     {
-                        <tr>
+                        <tr class="alternate-colour">
                             <td class="text-align-centre">@skillCardLocation.DungeonName</td>
                             <td class="text-align-centre">Ranks @skillCardLocation.RankLowerBound-@skillCardLocation.RankUpperBound</td>
                         </tr>
@@ -46,7 +46,7 @@
                             {
                                 var rankSkillCards = GetSkillCardsByRank(skillCards, i);
     
-                                <tr>
+                                <tr class="alternate-colour">
                                     <td class="text-secondary text-align-centre">@i</td>
                                     <td>
                                         @if (rankSkillCards.Count == 0)

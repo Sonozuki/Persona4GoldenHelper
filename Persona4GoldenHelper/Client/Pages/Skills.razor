@@ -16,7 +16,7 @@
             @if (AllSkills != null)
                 @foreach (var skill in AllSkills)
                 {
-                    <tr>
+                    <tr class="alternate-colour">
                         <td>@skill.Name</td>
                         <td>@skill.Effect</td>
                         <td class="text-secondary text-align-centre font-bold @CalculateCostTypeClass(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>

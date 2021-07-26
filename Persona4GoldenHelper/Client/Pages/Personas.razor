@@ -27,7 +27,7 @@
             @if (AllPersonas != null)
                 foreach (var persona in AllPersonas)
                 {
-                    <tr>
+                    <tr class="alternate-colour">
                         <td class="text-secondary text-align-centre">@persona.Level</td>
                         <td><a class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")" href="/personas/@persona.Name">@persona.Name</a></td>
                         <td class="text-secondary">@persona.Arcana</td>
