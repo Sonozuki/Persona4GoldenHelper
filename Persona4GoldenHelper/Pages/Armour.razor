@@ -1,0 +1,81 @@
+﻿@page "/armour"
+@inject HttpClient Http;
+@using ArmourModel = Persona4GoldenHelper.Models.Armour;
+
+<div class="content-normal">
+    <h1>Armour</h1>
+    @if (AllArmour != null)
+        foreach (var gender in Genders)
+        {
+            <div>
+                <h2>@gender</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="column-very-slim text-align-centre">Defence</th>
+                            <th class="column-very-slim text-align-centre">Evasion</th>
+                            <th>Effect</th>
+                            <th class="text-align-centre">Price</th>
+                            <th>How to Obtain</th>
+                        </tr>
+                    </thead>
+                    @foreach (var armour in GetArmourByGender(gender))
+                    {
+                        <tbody class="alternate-colour">
+                            @for (int i = 0; i < armour.Obtained.Count; i++)
+                            {
+                                var obtain = armour.Obtained[i];
+                                <tr>
+                                    @if (i == 0)
+                                    {
+                                        <td rowspan=@armour.Obtained.Count>@armour.Name</td>
+                                        <td rowspan=@armour.Obtained.Count class="text-align-centre">@armour.Defence</td>
+                                        <td rowspan=@armour.Obtained.Count class="text-align-centre">@armour.Evasion</td>
+                                        <td rowspan=@armour.Obtained.Count>@(armour.Effect == "" ? "-" : armour.Effect)</td>
+                                    }
+
+                                    <td class="text-secondary text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                                    <td>@obtain.Obtain</td>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                </table>
+            </div>
+        }
+</div>
+
+@code {
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The genders which armour are categorised.</summary>
+    private static readonly List<string> Genders = new() { "Unisex", "Male", "Female" };
+
+    
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>All the armour to display.</summary>
+    public List<ArmourModel> AllArmour { get; private set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync() => AllArmour = await Http.GetFromJsonAsync<List<ArmourModel>>("data/armour.json");
+
+    
+    /*********
+    ** Private Methods
+    *********/
+    /// <summary>Retrieves the armour for a specific gender.</summary>
+    /// <param name="gender">The gender whose armour should be retrieved.</param>
+    /// <returns>The armour for <paramref name="gender"/>.</returns>
+    private List<ArmourModel> GetArmourByGender(string gender) =>
+        AllArmour
+            .Where(armour => armour.Gender.ToString() == gender)
+            .ToList();
+}
