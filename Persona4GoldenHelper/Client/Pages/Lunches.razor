@@ -35,5 +35,5 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllLunches = await Http.GetFromJsonAsync<List<Lunch>>("api/GetAllLunches");
+    protected override async Task OnInitializedAsync() => AllLunches = await Http.GetFromJsonAsync<List<Lunch>>("data/lunches.json");
 }

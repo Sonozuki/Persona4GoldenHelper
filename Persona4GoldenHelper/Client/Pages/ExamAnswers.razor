@@ -50,7 +50,7 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllExamAnswers = await Http.GetFromJsonAsync<List<ExamAnswer>>("api/GetAllExamAnswers");
+    protected override async Task OnInitializedAsync() => AllExamAnswers = await Http.GetFromJsonAsync<List<ExamAnswer>>("data/examanswers.json");
 
     
     /*********

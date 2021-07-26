@@ -47,5 +47,5 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllQuests = await Http.GetFromJsonAsync<List<Quest>>("api/GetAllQuests");
+    protected override async Task OnInitializedAsync() => AllQuests = await Http.GetFromJsonAsync<List<Quest>>("data/quests.json");
 }

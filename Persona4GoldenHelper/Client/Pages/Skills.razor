@@ -52,7 +52,7 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllSkills = await Http.GetFromJsonAsync<List<Skill>>("api/GetAllSkills");
+    protected override async Task OnInitializedAsync() => AllSkills = await Http.GetFromJsonAsync<List<Skill>>("data/skills.json");
 
 
     /*********

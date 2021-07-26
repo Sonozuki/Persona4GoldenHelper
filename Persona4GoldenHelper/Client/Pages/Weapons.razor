@@ -64,7 +64,7 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllWeapons = await Http.GetFromJsonAsync<List<Weapon>>("api/GetAllWeapons");
+    protected override async Task OnInitializedAsync() => AllWeapons = await Http.GetFromJsonAsync<List<Weapon>>("data/weapons.json");
 
     
     /*********

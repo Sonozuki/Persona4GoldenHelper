@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Shared\Persona4GoldenHelper.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\data\" />
+  </ItemGroup>
+
 </Project>

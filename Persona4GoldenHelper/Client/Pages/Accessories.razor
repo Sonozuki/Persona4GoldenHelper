@@ -47,5 +47,5 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllAccessories = await Http.GetFromJsonAsync<List<Accessory>>("api/GetAllAccessories");
+    protected override async Task OnInitializedAsync() => AllAccessories = await Http.GetFromJsonAsync<List<Accessory>>("data/accessories.json");
 }
