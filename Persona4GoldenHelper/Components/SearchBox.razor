@@ -1,5 +1,7 @@
-﻿<input type="text" placeholder="Search..." spellcheck="false"
-    @bind="Value" @bind:event="oninput" @onkeyup="() => ValueChanged?.Invoke()"/>
+﻿<div class="searchbox-container">
+    <input class="text-align-centre searchbox" type="text" placeholder="Search..." spellcheck="false"
+        @bind="Value" @bind:event="oninput" @onkeyup="() => ValueChanged?.Invoke()"/>
+</div>
 
 @code {
     /*********

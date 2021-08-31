@@ -315,6 +315,31 @@ img {
         font-weight: bold;
     }
 
+/****
+** SearchBox
+****/
+.searchbox-container {
+    display: flex;
+    justify-content: center;
+}
+
+.searchbox {
+    font-size: 1.25rem;
+    color: var(--text-colour-primary);
+    background-color: var(--background-colour-medium);
+    border: var(--border-medium);
+    border-radius: var(--border-radius-medium);
+    width: 33vw;
+    padding: .5rem;
+    box-shadow: 0 0 3px transparent;
+    transition: box-shadow .5s;
+}
+
+    .searchbox:focus {
+        outline: none;
+        box-shadow: 0 0 3px white;
+    }
+
 
 /*********
 ** Pages
