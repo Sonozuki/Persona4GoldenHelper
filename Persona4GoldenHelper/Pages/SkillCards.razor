@@ -92,8 +92,8 @@
     /// <inheritdoc/>
     protected override async Task OnInitializedAsync()
     {
-        AllSkillCardLocations = await Http.GetFromJsonAsync<List<SkillCardLocation>>("data/skillcardlocations.json");
-        AllSkillCards = await Http.GetFromJsonAsync<List<SkillCard>>("data/skillcards.json");
+        AllSkillCardLocations = await Http.GetFromJsonAsync<List<SkillCardLocation>>("data/skill-card-locations.json");
+        AllSkillCards = await Http.GetFromJsonAsync<List<SkillCard>>("data/skill-cards.json");
     }
 
 

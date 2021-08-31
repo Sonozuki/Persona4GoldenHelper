@@ -71,7 +71,7 @@
     protected override async Task OnInitializedAsync()
     {
         AllBooks= await Http.GetFromJsonAsync<List<Book>>("data/books.json");
-        BookOrder = (await Http.GetFromJsonAsync<List<string>>("data/bookorder.json"))
+        BookOrder = (await Http.GetFromJsonAsync<List<string>>("data/book-order.json"))
             .Select(bookName => new FilterableString(bookName))
             .ToList();
     }
