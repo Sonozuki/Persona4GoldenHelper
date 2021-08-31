@@ -3,9 +3,7 @@
     /// <summary>The months that exam questions can be asked in.</summary>
     public enum Month
     {
-        January = 1,
-        February,
-        April = 4, // skip march as you don't get asked a question then
+        April, // ordered like this because the game starts from april (and so Enum.GetValues needs april to return first)
         May,
         June,
         July,
@@ -13,6 +11,8 @@
         September,
         October,
         November,
-        December
+        December,
+        January,
+        February,
     }
 }
