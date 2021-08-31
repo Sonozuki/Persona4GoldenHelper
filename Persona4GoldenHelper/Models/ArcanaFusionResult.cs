@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Persona4GoldenHelper.Models
+﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents an arcana fusion.</summary>
     public class ArcanaFusionResult

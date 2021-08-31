@@ -1,0 +1,98 @@
+﻿@typeparam TContent where TContent : FilterableModelBase
+
+@if (_Content.Count > 0)
+    if (FilteredContent.Count > 0)
+    {
+        <table class="@Class">
+            <thead>
+                <tr>
+                    @HeaderRow
+				</tr>
+            </thead>
+            @if (IncludeTBodyTag)
+            {
+                <tbody>
+                    @foreach (var item in FilteredContent)
+                    {
+                        @ContentRow(item)
+                    }
+                </tbody>
+            }
+            else
+                @foreach (var item in FilteredContent)
+                {
+                    @ContentRow(item)
+                }
+        </table>
+    }
+    else
+    {
+        <h3>No results</h3>
+    }
+else
+{
+    <h3>Loading...</h3>
+}
+
+@code {
+    /*********
+    ** Fields
+    *********/
+    /// <summary>The content of the table.</summary>
+    private List<TContent> _Content = new();
+
+    /// <summary>The filtered content of the table.</summary>
+    private List<TContent> FilteredContent = new();
+
+
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>The header row of the table.</summary>
+    [Parameter]
+    public RenderFragment HeaderRow { get; set; }
+
+    /// <summary>A content row of the table.</summary>
+    [Parameter]
+    public RenderFragment<TContent> ContentRow { get; set; }
+
+    /// <summary>The content of the table.</summary>
+    [Parameter]
+    public List<TContent> Content
+    {
+        get => _Content;
+        set
+        {
+            value ??= new();
+
+            if (_Content?.Count == 0)
+                FilteredContent = value;
+
+            _Content = value;
+        }
+    }
+
+    /// <summary>The search box to use to filter the table.</summary>
+    [Parameter]
+    public SearchBox SearchBox { get; set; }
+
+    /// <summary>Whether a <tbody> tag should added wrapping all content rows.</summary>
+    [Parameter]
+    public bool IncludeTBodyTag { get; set; } = true;
+
+    /// <summary>The class of the table.</summary>
+    [Parameter]
+    public string Class { get; set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override void OnInitialized() =>
+        SearchBox.ValueChanged += () =>
+        {
+            FilteredContent = Content.Where(item => SearchBox.IsObjectVisible(item)).ToList();
+            StateHasChanged();
+        };
+}

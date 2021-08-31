@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Persona4GoldenHelper.Models
+﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a shadow.</summary>
-    public class Shadow
+    public class Shadow : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -66,5 +64,13 @@ namespace Persona4GoldenHelper.Models
             ElementAffinities = elementAffinities;
             Skills = skills ?? new();
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Type.ToString().Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Level.ToString().Contains(filter)
+            || Stats.DoesModelPassFilter(filter)
+            || ElementAffinities.DoesModelPassFilter(filter);
     }
 }

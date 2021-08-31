@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a book.</summary>
-    public class Book
+    public class Book : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -34,5 +34,12 @@
             Requirement = requirement;
             Effect = effect;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            DateAvailable.Contains(filter)
+            || Title.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Requirement.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Effect.Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

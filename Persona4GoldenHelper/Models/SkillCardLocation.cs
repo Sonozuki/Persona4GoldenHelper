@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a location where skill cards can be found.</summary>
-    public class SkillCardLocation
+    public class SkillCardLocation : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -29,5 +29,11 @@
             RankLowerBound = rankLowerBound;
             RankUpperBound = rankUpperBound;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            DungeonName.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || RankLowerBound.ToString().Contains(filter)
+            || RankUpperBound.ToString().Contains(filter);
     }
 }

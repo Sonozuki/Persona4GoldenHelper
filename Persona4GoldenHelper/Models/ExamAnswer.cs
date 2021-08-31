@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents an exam answer.</summary>
-    public class ExamAnswer
+    public class ExamAnswer : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -34,5 +34,12 @@
             QuestionAsked = questionAsked;
             QuestionAnswer = questionAnswer;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Month.ToString().Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || DateAsked.Contains(filter)
+            || QuestionAsked.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || QuestionAnswer.Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

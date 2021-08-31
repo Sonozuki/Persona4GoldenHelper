@@ -2,10 +2,13 @@
 @inject HttpClient Http;
 
 <div class="content-normal">
+    <SearchBox @ref="SearchBox" />
+
     <h1>Plants</h1>
-    <table>
-        <thead>
-            <tr>
+    @if (SearchBox != null)
+    {
+        <FilterableTable TContent=Plant Content=AllPlants SearchBox="SearchBox" IncludeTBodyTag=false>
+            <HeaderRow>
                 <th class="text-align-centre">Available</th>
                 <th>Seedling Name</th>
                 <th class="text-align-centre">Price</th>
@@ -14,40 +17,56 @@
                 <th class="text-align-centre">Harvest with Tending</th>
                 <th>Product</th>
                 <th>Effect</th>
-            </tr>
-        </thead>
-        @if (AllPlants != null)
-            foreach (var plant in AllPlants)
-            {
+	    	</HeaderRow>
+            <ContentRow>
                 <tbody class="alternate-colour">
-                    @for (int i = 0; i < plant.Products.Count; i++)
+                    @for (int i = 0; i < context.Products.Count; i++)
                     {
                         <tr>
                             @if (i == 0)
                             {
-                                <td rowspan=@plant.Products.Count class="text-secondary text-align-centre">@plant.DateAvailable</td>
-                                <td rowspan=@plant.Products.Count>@plant.Seed.Name</td>
-                                <td rowspan=@plant.Products.Count class="text-secondary text-align-centre">@plant.Seed.Cost</td>
-                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.GrowthTime</td>
-                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.Harvest</td>
-                                <td rowspan=@plant.Products.Count class="text-align-centre">@plant.HarvestWithTending</td>
+                                <td rowspan=@context.Products.Count class="text-secondary text-align-centre">@context.DateAvailable</td>
+                                <td rowspan=@context.Products.Count>@context.Seed.Name</td>
+                                <td rowspan=@context.Products.Count class="text-secondary text-align-centre">@context.Seed.Cost</td>
+                                <td rowspan=@context.Products.Count class="text-align-centre">@context.GrowthTime</td>
+                                <td rowspan=@context.Products.Count class="text-align-centre">@context.Harvest</td>
+                                <td rowspan=@context.Products.Count class="text-align-centre">@context.HarvestWithTending</td>
                             }
 
-                            <td>@plant.Products[i].Name</td>
-                            <td>@plant.Products[i].Effect</td>
+                            <td>@context.Products[i].Name</td>
+                            <td>@context.Products[i].Effect</td>
                         </tr>
                     }
                 </tbody>
-            }
-    </table>
+	    	</ContentRow>
+	    </FilterableTable>
+    }
 </div>
 
 @code {
     /*********
+    ** Fields
+    *********/
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+
+    /// <summary>All the plants to display.</summary>
+    private List<Plant> AllPlants;
+
+
+    /*********
     ** Accessors
     *********/
-    /// <summary>All the plants to display.</summary>
-    public List<Plant> AllPlants { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********

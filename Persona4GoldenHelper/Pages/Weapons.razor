@@ -2,62 +2,72 @@
 @inject HttpClient Http;
 
 <div class="content-normal">
-    <h1>Weapons</h1>
-    @if (AllWeapons != null)
-        foreach (var character in Characters)
-        {
-            <div>
-                <h2>@character</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th class="column-very-slim text-align-centre">Attack</th>
-                            <th class="column-very-slim text-align-centre">Accuracy</th>
-                            <th>Effect</th>
-                            <th class="text-align-centre">Price</th>
-                            <th>How to Obtain</th>
-                        </tr>
-                    </thead>
-                    @foreach (var weapon in GetWeaponsByUser(character))
-                    {
-                        <tbody class="alternate-colour">
-                            @for (int i = 0; i < weapon.Obtained.Count; i++)
-                            {
-                                var obtain = weapon.Obtained[i];
-                                <tr>
-                                    @if (i == 0)
-                                    {
-                                        <td rowspan=@weapon.Obtained.Count>@weapon.Name</td>
-                                        <td rowspan=@weapon.Obtained.Count class="text-align-centre">@weapon.Attack</td>
-                                        <td rowspan=@weapon.Obtained.Count class="text-align-centre">@weapon.Accuracy</td>
-                                        <td rowspan=@weapon.Obtained.Count>@(weapon.Effect == "" ? "-" : weapon.Effect)</td>
-                                    }
+    <SearchBox @ref="SearchBox" />
 
-                                    <td class="text-secondary text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
-                                    <td>@obtain.Obtain</td>
-                                </tr>
-                            }
-                        </tbody>
-                    }
-                </table>
-            </div>
+    <h1>Weapons</h1>
+    @if (SearchBox != null && AllWeapons != null)
+    {
+        @foreach (var user in Enum.GetValues<User>())
+        {
+            <h2>@user</h2>
+            <FilterableTable TContent=Weapon Content=GetWeaponsByUser(user) SearchBox="SearchBox" IncludeTBodyTag=false>
+                <HeaderRow>
+                    <th>Name</th>
+                    <th class="column-very-slim text-align-centre">Attack</th>
+                    <th class="column-very-slim text-align-centre">Accuracy</th>
+                    <th>Effect</th>
+                    <th class="text-align-centre">Price</th>
+                    <th>How to Obtain</th>
+	        	</HeaderRow>
+                <ContentRow>
+                    <tbody class="alternate-colour">
+                        @for (int i = 0; i < context.Obtained.Count; i++)
+                        {
+                            var obtain = context.Obtained[i];
+                            <tr>
+                                @if (i == 0)
+                                {
+                                    <td rowspan=@context.Obtained.Count>@context.Name</td>
+                                    <td rowspan=@context.Obtained.Count class="text-align-centre">@context.Attack</td>
+                                    <td rowspan=@context.Obtained.Count class="text-align-centre">@context.Accuracy</td>
+                                    <td rowspan=@context.Obtained.Count>@(context.Effect == "" ? "-" : context.Effect)</td>
+                                }
+
+                                <td class="text-secondary text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                                <td>@obtain.Obtain</td>
+                            </tr>
+                        }
+                    </tbody>
+	    		</ContentRow>
+	        </FilterableTable>
         }
+    }
 </div>
 
 @code {
     /*********
     ** Fields
     *********/
-    /// <summary>The characters that can wield weapons.</summary>
-    private static readonly List<string> Characters = new() { "Protagonist", "Yosuke", "Chie", "Yukiko", "Kanji", "Teddie", "Naoto" };
-
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
     
+    /// <summary>All the weapons to display.</summary>
+    private List<Weapon> AllWeapons;
+
+
     /*********
     ** Accessors
     *********/
-    /// <summary>All the weapons to display.</summary>
-    public List<Weapon> AllWeapons { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********
@@ -73,8 +83,8 @@
     /// <summary>Retrieves the weapons for a specific user.</summary>
     /// <param name="user">The user whose weapons should be retrieved.</param>
     /// <returns>The weapons for <paramref name="user"/>.</returns>
-    private List<Weapon> GetWeaponsByUser(string user) =>
+    private List<Weapon> GetWeaponsByUser(User user) =>
         AllWeapons
-            .Where(weapon => weapon.User.ToString() == user)
+            .Where(weapon => weapon.User == user)
             .ToList();
 }

@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Persona4GoldenHelper.Models
+﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents an armour.</summary>
-    public class Armour
+    public class Armour : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -46,5 +44,14 @@ namespace Persona4GoldenHelper.Models
             Effect = effect;
             Obtained = obtained ?? new();
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Gender.ToString().Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Defence.ToString().Contains(filter)
+            || Evasion.ToString().Contains(filter)
+            || Effect.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Obtained.Any(obtained => obtained.DoesModelPassFilter(filter));
     }
 }

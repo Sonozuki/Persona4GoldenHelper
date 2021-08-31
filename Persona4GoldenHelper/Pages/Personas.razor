@@ -2,10 +2,13 @@
 @inject HttpClient Http;
 
 <div class="content-normal">
+    <SearchBox @ref="SearchBox" />
+
     <h1>Personas</h1>
-    <table>
-        <thead>
-            <tr>
+    @if (SearchBox != null)
+    {
+        <FilterableTable TContent=Persona Content=AllPersonas SearchBox="SearchBox">
+            <HeaderRow>
                 <th class="column-very-slim text-align-centre">Level</th>
                 <th>Name</th>
                 <th>Arcana</th>
@@ -21,40 +24,54 @@
                 <th class="column-very-slim text-align-centre"><img src="images/wind.png" alt="Wind" /></th>
                 <th class="column-very-slim text-align-centre"><img src="images/light.png" alt="Light" /></th>
                 <th class="column-very-slim text-align-centre"><img src="images/darkness.png" alt="Dark" /></th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (AllPersonas != null)
-                foreach (var persona in AllPersonas)
-                {
-                    <tr class="alternate-colour">
-                        <td class="text-secondary text-align-centre">@persona.Level</td>
-                        <td><a class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")" href="/personas/@persona.Name">@persona.Name</a></td>
-                        <td class="text-secondary">@persona.Arcana</td>
-                        <td class="text-secondary text-align-centre">@persona.Stats.Strength</td>
-                        <td class="text-secondary text-align-centre">@persona.Stats.Magic</td>
-                        <td class="text-secondary text-align-centre">@persona.Stats.Endurance</td>
-                        <td class="text-secondary text-align-centre">@persona.Stats.Agility</td>
-                        <td class="text-secondary text-align-centre">@persona.Stats.Luck</td>
-                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Physical)</td>
-                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Fire)</td>
-                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Ice)</td>
-                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Electricity)</td>
-                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Wind)</td>
-                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Light)</td>
-                        <td class="text-secondary text-align-centre font-bold affinity-@persona.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(persona.ElementAffinities.Darkness)</td>
-                    </tr>
-                }
-        </tbody>
-    </table>
+            </HeaderRow>
+            <ContentRow>
+                <tr class="alternate-colour">
+                    <td class="text-secondary text-align-centre">@context.Level</td>
+                    <td><a class="@(context.IsUltimate ? "persona-type-ultimate" : context.IsNewGamePlus ? "persona-type-new-game" : "")" href="/personas/@context.Name">@context.Name</a></td>
+                    <td class="text-secondary">@context.Arcana</td>
+                    <td class="text-secondary text-align-centre">@context.Stats.Strength</td>
+                    <td class="text-secondary text-align-centre">@context.Stats.Magic</td>
+                    <td class="text-secondary text-align-centre">@context.Stats.Endurance</td>
+                    <td class="text-secondary text-align-centre">@context.Stats.Agility</td>
+                    <td class="text-secondary text-align-centre">@context.Stats.Luck</td>
+                    <td class="text-secondary text-align-centre font-bold affinity-@context.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(context.ElementAffinities.Physical)</td>
+                    <td class="text-secondary text-align-centre font-bold affinity-@context.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(context.ElementAffinities.Fire)</td>
+                    <td class="text-secondary text-align-centre font-bold affinity-@context.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(context.ElementAffinities.Ice)</td>
+                    <td class="text-secondary text-align-centre font-bold affinity-@context.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(context.ElementAffinities.Electricity)</td>
+                    <td class="text-secondary text-align-centre font-bold affinity-@context.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(context.ElementAffinities.Wind)</td>
+                    <td class="text-secondary text-align-centre font-bold affinity-@context.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(context.ElementAffinities.Light)</td>
+                    <td class="text-secondary text-align-centre font-bold affinity-@context.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(context.ElementAffinities.Darkness)</td>
+                </tr>
+            </ContentRow>
+        </FilterableTable>
+    }
 </div>
 
 @code {
     /*********
+    ** Fields
+    *********/
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+
+    /// <summary>All the personas to display.</summary>
+    private List<Persona> AllPersonas;
+
+    
+    /*********
     ** Accessors
     *********/
-    /// <summary>All the personas to display.</summary>
-    public List<Persona> AllPersonas { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********

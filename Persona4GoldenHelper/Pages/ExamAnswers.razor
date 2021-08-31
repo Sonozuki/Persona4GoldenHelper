@@ -2,48 +2,56 @@
 @inject HttpClient Http;
 
 <div class="content-normal">
+    <SearchBox @ref="SearchBox" />
+
     <h1>Exam Answers</h1>
-    @if (AllExamAnswers != null)
-        foreach (var month in Months)
+    @if (SearchBox != null && AllExamAnswers != null)
+    {
+        @foreach (var month in Enum.GetValues<Month>())
         {
-            <div>
-                <h2>@month</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="text-align-centre">Date</th>
-                            <th class="column-very-wide">Question</th>
-                            <th class="column-wider">Answer</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var examAnswer in GetExamAnswersByMonth(month))
-                        {
-                            <tr class="alternate-colour">
-                                <td class="text-secondary text-align-centre">@examAnswer.DateAsked</td>
-                                <td class="white-space-pre-line">@examAnswer.QuestionAsked</td>
-                                <td>@examAnswer.QuestionAnswer</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
+            <h2>@month</h2>
+            <FilterableTable TContent=ExamAnswer Content=GetExamAnswersByMonth(month) SearchBox="SearchBox">
+                <HeaderRow>
+                    <th class="text-align-centre">Date</th>
+                    <th class="column-very-wide">Question</th>
+                    <th class="column-wider">Answer</th>
+	    		</HeaderRow>
+                <ContentRow>
+                    <tr class="alternate-colour">
+                        <td class="text-secondary text-align-centre">@context.DateAsked</td>
+                        <td class="white-space-pre-line">@context.QuestionAsked</td>
+                        <td>@context.QuestionAnswer</td>
+                    </tr>
+	    		</ContentRow>
+	    	</FilterableTable>
         }
+    }
 </div>
 
 @code {
     /*********
     ** Fields
     *********/
-    /// <summary>The months which exam answers are asked in.</summary>
-    private static readonly List<string> Months = new() { "April", "May", "June", "July", "August", "September", "October", "November", "December", "January", "February" };
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+
+    /// <summary>All the exam answers to display.</summary>
+    private List<ExamAnswer> AllExamAnswers;
 
     
     /*********
     ** Accessors
     *********/
-    /// <summary>All the exam answers to display.</summary>
-    public List<ExamAnswer> AllExamAnswers { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********
@@ -59,8 +67,8 @@
     /// <summary>Retrieves the exam answers for a specific month.</summary>
     /// <param name="month">The month whose exam answers should be retrieved.</param>
     /// <returns>The exam answers for <paramref name="month"/>.</returns>
-    private List<ExamAnswer> GetExamAnswersByMonth(string month) =>
+    private List<ExamAnswer> GetExamAnswersByMonth(Month month) =>
         AllExamAnswers
-            .Where(examAnswer => examAnswer.Month.ToString() == month)
+            .Where(examAnswer => examAnswer.Month == month)
             .ToList();
 }

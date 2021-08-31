@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents the element affinities of a shadow or persona.</summary>
-    public class ElementAffinities
+    public class ElementAffinities : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -49,5 +49,15 @@
             Light = light;
             Darkness = darkness;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Utilities.ConvertElementAffinityToShortHand(Physical).Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Utilities.ConvertElementAffinityToShortHand(Fire).Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Utilities.ConvertElementAffinityToShortHand(Ice).Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Utilities.ConvertElementAffinityToShortHand(Electricity).Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Utilities.ConvertElementAffinityToShortHand(Wind).Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Utilities.ConvertElementAffinityToShortHand(Light).Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Utilities.ConvertElementAffinityToShortHand(Darkness).Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a skill card.</summary>
-    public class SkillCard
+    public class SkillCard : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -29,5 +29,11 @@
             Name = name;
             Rank = rank;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Type.ToString().Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Rank.ToString().Contains(filter);
     }
 }

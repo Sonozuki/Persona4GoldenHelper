@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents the stats of a shadow or persona.</summary>
-    public class Stats
+    public class Stats : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -39,5 +39,13 @@
             Agility = agility;
             Luck = luck;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Strength.ToString().Contains(filter)
+            || Magic.ToString().Contains(filter)
+            || Endurance.ToString().Contains(filter)
+            || Agility.ToString().Contains(filter)
+            || Luck.ToString().Contains(filter);
     }
 }

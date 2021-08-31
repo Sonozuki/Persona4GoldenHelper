@@ -3,62 +3,72 @@
 @using ArmourModel = Persona4GoldenHelper.Models.Armour;
 
 <div class="content-normal">
-    <h1>Armour</h1>
-    @if (AllArmour != null)
-        foreach (var gender in Genders)
-        {
-            <div>
-                <h2>@gender</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th class="column-very-slim text-align-centre">Defence</th>
-                            <th class="column-very-slim text-align-centre">Evasion</th>
-                            <th>Effect</th>
-                            <th class="text-align-centre">Price</th>
-                            <th>How to Obtain</th>
-                        </tr>
-                    </thead>
-                    @foreach (var armour in GetArmourByGender(gender))
-                    {
-                        <tbody class="alternate-colour">
-                            @for (int i = 0; i < armour.Obtained.Count; i++)
-                            {
-                                var obtain = armour.Obtained[i];
-                                <tr>
-                                    @if (i == 0)
-                                    {
-                                        <td rowspan=@armour.Obtained.Count>@armour.Name</td>
-                                        <td rowspan=@armour.Obtained.Count class="text-align-centre">@armour.Defence</td>
-                                        <td rowspan=@armour.Obtained.Count class="text-align-centre">@armour.Evasion</td>
-                                        <td rowspan=@armour.Obtained.Count>@(armour.Effect == "" ? "-" : armour.Effect)</td>
-                                    }
+    <SearchBox @ref="SearchBox" />
 
-                                    <td class="text-secondary text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
-                                    <td>@obtain.Obtain</td>
-                                </tr>
-                            }
-                        </tbody>
-                    }
-                </table>
-            </div>
+    <h1>Armour</h1>
+    @if (SearchBox != null && AllArmour != null)
+    {
+        @foreach (var gender in Enum.GetValues<Gender>())
+        {
+            <h2>@gender</h2>
+            <FilterableTable TContent=ArmourModel Content=GetArmourByGender(gender) SearchBox="SearchBox" IncludeTBodyTag=false>
+                <HeaderRow>
+                    <th>Name</th>
+                    <th class="column-very-slim text-align-centre">Defence</th>
+                    <th class="column-very-slim text-align-centre">Evasion</th>
+                    <th>Effect</th>
+                    <th class="text-align-centre">Price</th>
+                    <th>How to Obtain</th>
+	    		</HeaderRow>
+                <ContentRow>
+                    <tbody class="alternate-colour">
+                        @for (int i = 0; i < context.Obtained.Count; i++)
+                        {
+                            var obtain = context.Obtained[i];
+                            <tr>
+                                @if (i == 0)
+                                {
+                                    <td rowspan=@context.Obtained.Count>@context.Name</td>
+                                    <td rowspan=@context.Obtained.Count class="text-align-centre">@context.Defence</td>
+                                    <td rowspan=@context.Obtained.Count class="text-align-centre">@context.Evasion</td>
+                                    <td rowspan=@context.Obtained.Count>@(context.Effect == "" ? "-" : context.Effect)</td>
+                                }
+
+                                <td class="text-secondary text-align-centre">@(obtain.Price == "" ? "-" : obtain.Price)</td>
+                                <td>@obtain.Obtain</td>
+                            </tr>
+                        }
+                    </tbody>
+	    		</ContentRow>
+	    	</FilterableTable>
         }
+    }
 </div>
 
 @code {
     /*********
     ** Fields
     *********/
-    /// <summary>The genders which armour are categorised.</summary>
-    private static readonly List<string> Genders = new() { "Unisex", "Male", "Female" };
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
 
-    
+    /// <summary>All the armour to display.</summary>
+    private List<ArmourModel> AllArmour;
+
+
     /*********
     ** Accessors
     *********/
-    /// <summary>All the armour to display.</summary>
-    public List<ArmourModel> AllArmour { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********
@@ -74,8 +84,8 @@
     /// <summary>Retrieves the armour for a specific gender.</summary>
     /// <param name="gender">The gender whose armour should be retrieved.</param>
     /// <returns>The armour for <paramref name="gender"/>.</returns>
-    private List<ArmourModel> GetArmourByGender(string gender) =>
+    private List<ArmourModel> GetArmourByGender(Gender gender) =>
         AllArmour
-            .Where(armour => armour.Gender.ToString() == gender)
+            .Where(armour => armour.Gender == gender)
             .ToList();
 }

@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a quest.</summary>
-    public class Quest
+    public class Quest : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -54,5 +54,16 @@
             Reward = reward;
             Instructions = instructions;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Number.ToString().Contains(filter)
+            || Title.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || QuestGiver.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Location.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || DateAvailable.Contains(filter)
+            || Prerequisites.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Reward.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Instructions.Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

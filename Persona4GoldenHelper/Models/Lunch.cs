@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a lunch.</summary>
-    public class Lunch
+    public class Lunch : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -24,5 +24,10 @@
             Name = name;
             Method = method;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Method.Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

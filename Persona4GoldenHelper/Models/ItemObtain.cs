@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a method to obtaining an item.</summary>
-    public class ItemObtain
+    public class ItemObtain : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -24,5 +24,10 @@
             Obtain = obtain;
             Price = price;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Price.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Obtain.Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

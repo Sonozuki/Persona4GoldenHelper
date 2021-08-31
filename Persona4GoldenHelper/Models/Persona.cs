@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Persona4GoldenHelper.Models
+﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a persona.</summary>
-    public class Persona
+    public class Persona : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -56,5 +54,13 @@ namespace Persona4GoldenHelper.Models
             IsUltimate = isUltimate;
             IsNewGamePlus = isNewGamePlus;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Arcana.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Level.ToString().Contains(filter)
+            || Stats.DoesModelPassFilter(filter)
+            || ElementAffinities.DoesModelPassFilter(filter);
     }
 }

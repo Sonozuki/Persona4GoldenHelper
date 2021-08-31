@@ -2,50 +2,67 @@
 @inject HttpClient Http;
 
 <div class="content-normal">
+    <SearchBox @ref="SearchBox" />
+
     <h1>Skills</h1>
-    <table>
-        <thead>
-            <tr>
+    @if (SearchBox != null)
+    {
+        <FilterableTable TContent=Skill Content=AllSkills SearchBox="SearchBox">
+            <HeaderRow>
                 <th>Name</th>
                 <th>Effect</th>
                 <th class="column-slim text-align-centre">Cost</th>
                 <th>Personas</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (AllSkills != null)
-                @foreach (var skill in AllSkills)
-                {
-                    <tr class="alternate-colour">
-                        <td>@skill.Name</td>
-                        <td>@skill.Effect</td>
-                        <td class="text-secondary text-align-centre font-bold @CalculateCostTypeClass(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
-                        <td>
-                            @for (var i = 0; i < skill.Personas.Count; i++)
-                            {
-                                var persona = skill.Personas[i];
+            </HeaderRow>
+            <ContentRow>
+                <tr class="alternate-colour">
+                    <td>@context.Name</td>
+                    <td>@context.Effect</td>
+                    <td class="text-secondary text-align-centre font-bold @CalculateCostTypeClass(context.Cost)">@(context.Cost != "" ? context.Cost : "-")</td>
+                    <td>
+                        @for (var i = 0; i < context.Personas.Count; i++)
+                        {
+                            var persona = context.Personas[i];
 
-                                <a href="/personas/@persona.Name">
-                                    <span class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")">
-                                        @persona.Name
-                                    </span><span class="text-secondary">
-                                        @(persona.LevelRequired != 0 ? $" ({persona.LevelRequired})" : "")
-                                    </span>@(i != skill.Personas.Count - 1 ? ", " : "")
-                                </a>
-                            }
-                        </td>
-                    </tr>
-                }
-        </tbody>
-    </table>
+                            <a href="/personas/@persona.Name">
+                                <span class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")">
+                                    @persona.Name
+                                </span><span class="text-secondary">
+                                    @(persona.LevelRequired != 0 ? $" ({persona.LevelRequired})" : "")
+                                </span>@(i != context.Personas.Count - 1 ? ", " : "")
+                            </a>
+                        }
+                    </td>
+                </tr>
+            </ContentRow>
+        </FilterableTable>
+    }
 </div>
 
 @code {
     /*********
+    ** Fields
+    *********/
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+    
+    /// <summary>All the skills to display.</summary>
+    private List<Skill> AllSkills;
+
+    
+    /*********
     ** Accessors
     *********/
-    /// <summary>All the skills to display.</summary>
-    public List<Skill> AllSkills { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********
@@ -55,8 +72,8 @@
     protected override async Task OnInitializedAsync() => AllSkills = await Http.GetFromJsonAsync<List<Skill>>("data/skills.json");
 
 
-    /*********
-    ** Private Methods
+	/*********
+	** Private Methods
     *********/
     /// <summary>Calculates the CSS class for a cost.</summary>
     /// <param name="cost">The cost to calculate the class for.</param>

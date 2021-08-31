@@ -2,67 +2,77 @@
 @inject HttpClient Http;
 
 <div class="content-normal">
-    <div>
-        <h1>Books</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th class="text-align-centre">Available</th>
-                    <th class="column-wide">Title</th>
-                    <th>How to Obtain</th>
-                    <th class="column-wider">Effect</th>
+    <SearchBox @ref="SearchBox" />
+
+    <h1>Books</h1>
+    @if (SearchBox != null)
+    {
+        <FilterableTable TContent=Book Content=AllBooks SearchBox="SearchBox">
+            <HeaderRow>
+                <th class="text-align-centre">Available</th>
+                <th class="column-wide">Title</th>
+                <th>How to Obtain</th>
+                <th class="column-wider">Effect</th>
+            </HeaderRow>
+            <ContentRow>
+                <tr class="alternate-colour">
+                    <td class="text-secondary text-align-centre">@context.DateAvailable</td>
+                    <td>@context.Title</td>
+                    <td class="white-space-pre-line">@context.Requirement</td>
+                    <td>@context.Effect</td>
                 </tr>
-            </thead>
-            <tbody>
-                @if (AllBooks != null)
-                    foreach (var book in AllBooks)
-                    {
-                        <tr class="alternate-colour">
-                            <td class="text-secondary text-align-centre">@book.DateAvailable</td>
-                            <td>@book.Title</td>
-                            <td class="white-space-pre-line">@book.Requirement</td>
-                            <td>@book.Effect</td>
-                        </tr>
-                    }
-            </tbody>
-        </table>
-    </div>
-    
-    <div>
+            </ContentRow>
+        </FilterableTable>
+
         <h1>Book Order</h1>
-        <p class="text-align-centre">This is the order of the books in the inventory, to make it easier to see which books you're missing.</p>
-        <table class="table-narrow">
-            <tbody>
-                @if (BookOrder != null)
-                    foreach (var book in BookOrder)
-                    {
-                        <tr class="alternate-colour">
-                            <td class="text-align-centre text-primary">@book</td>
-                        </tr>
-                    }
-            </tbody>
-        </table>
-    </div>
+        <FilterableTable TContent=FilterableString Content=BookOrder SearchBox="SearchBox" Class="table-narrow">
+            <ContentRow>
+                <tr class="alternate-colour">
+                    <td class="text-align-centre text-primary">@context.Value</td>
+                </tr>
+            </ContentRow>
+        </FilterableTable>
+    }
 </div>
 
 @code {
     /*********
+    ** Fields
+    *********/
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+
+    /// <summary>All the books to display.</summary>
+    private List<Book> AllBooks;
+
+    /// <summary>The order of the books in the inventory.</summary>
+    private List<FilterableString> BookOrder;
+
+    
+    /*********
     ** Accessors
     *********/
-    /// <summary>All the books to display.</summary>
-    public List<Book> AllBooks { get; private set; }
-
-    /// <summary>The order of the books.</summary>
-    public List<string> BookOrder { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********
     ** Protected Methods
-    *********/
+	*********/
     /// <inheritdoc/>
     protected override async Task OnInitializedAsync()
     {
-        AllBooks = await Http.GetFromJsonAsync<List<Book>>("data/books.json");
-        BookOrder = await Http.GetFromJsonAsync<List<string>>("data/bookorder.json");
+        AllBooks= await Http.GetFromJsonAsync<List<Book>>("data/books.json");
+        BookOrder = (await Http.GetFromJsonAsync<List<string>>("data/bookorder.json"))
+            .Select(bookName => new FilterableString(bookName))
+            .ToList();
     }
 }

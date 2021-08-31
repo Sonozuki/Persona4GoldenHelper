@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Persona4GoldenHelper.Models
+﻿namespace Persona4GoldenHelper.Models
 {
-    /// <summary>Represents a skill for a shadow or persona.</summary>
-    public class Skill
+    /// <summary>Represents a skill for a persona.</summary>
+    public class Skill : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -36,5 +34,13 @@ namespace Persona4GoldenHelper.Models
             Cost = cost;
             Personas = personas ?? new();
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Effect.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Cost.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || string.Join(", ", Personas.Select(persona => $"{persona.Name}{(persona.LevelRequired != 0 ? $" ({persona.LevelRequired})" : "")}"))
+                   .Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

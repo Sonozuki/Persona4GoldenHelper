@@ -2,10 +2,13 @@
 @inject HttpClient Http;
 
 <div class="content-wide">
+    <SearchBox @ref="SearchBox" />
+
     <h1>Quests</h1>
-    <table>
-        <thead>
-            <tr>
+    @if (SearchBox != null)
+    {
+        <FilterableTable TContent=Quest Content=AllQuests SearchBox="SearchBox">
+            <HeaderRow>
                 <th class="column-very-slim text-align-centre">Number</th>
                 <th>Title</th>
                 <th class="column-slim text-align-centre">Quest Giver</th>
@@ -14,33 +17,47 @@
                 <th class="text-align-centre">Prerequisities</th>
                 <th class="text-align-centre">Reward</th>
                 <th>Instructions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (AllQuests != null)
-                foreach (var quest in AllQuests)
-                {
-                    <tr class="alternate-colour">
-                        <td class="text-secondary text-align-centre">@quest.Number</td>
-                        <td>@quest.Title</td>
-                        <td class="text-align-centre">@quest.QuestGiver</td>
-                        <td class="text-align-centre">@quest.Location</td>
-                        <td class="text-align-centre">@quest.DateAvailable</td>
-                        <td class="text-align-centre">@(quest.Prerequisites != "" ? quest.Prerequisites : "-")</td>
-                        <td class="text-align-centre">@(quest.Reward != "" ? quest.Reward : "-")</td>
-                        <td>@quest.Instructions</td>
-                    </tr>
-                }
-        </tbody>
-    </table>
+            </HeaderRow>
+            <ContentRow>
+                <tr class="alternate-colour">
+                    <td class="text-secondary text-align-centre">@context.Number</td>
+                    <td>@context.Title</td>
+                    <td class="text-align-centre">@context.QuestGiver</td>
+                    <td class="text-align-centre">@context.Location</td>
+                    <td class="text-align-centre">@context.DateAvailable</td>
+                    <td class="text-align-centre">@(context.Prerequisites != "" ? context.Prerequisites : "-")</td>
+                    <td class="text-align-centre">@(context.Reward != "" ? context.Reward : "-")</td>
+                    <td>@context.Instructions</td>
+                </tr>
+            </ContentRow>
+        </FilterableTable>
+    }
 </div>
 
 @code {
     /*********
+    ** Fields
+    *********/
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+
+    /// <summary>All the quests to display.</summary>
+    private List<Quest> AllQuests;
+
+
+    /*********
     ** Accessors
     *********/
-    /// <summary>All the quests to display.</summary>
-    public List<Quest> AllQuests { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********

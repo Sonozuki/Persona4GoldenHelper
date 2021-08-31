@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Persona4GoldenHelper.Models
+﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents an accessory.</summary>
-    public class Accessory
+    public class Accessory : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -31,5 +29,11 @@ namespace Persona4GoldenHelper.Models
             Effect = effect;
             Obtained = obtained;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Effect.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Obtained.Any(obtained => obtained.DoesModelPassFilter(filter));
     }
 }

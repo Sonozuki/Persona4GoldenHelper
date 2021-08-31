@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Persona4GoldenHelper.Models
+﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a plant.</summary>
-    public class Plant
+    public class Plant : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -46,5 +44,14 @@ namespace Persona4GoldenHelper.Models
             Seed = seed;
             Products = products ?? new();
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            DateAvailable.Contains(filter)
+            || GrowthTime.ToString().Contains(filter)
+            || Harvest.ToString().Contains(filter)
+            || HarvestWithTending.ToString().Contains(filter)
+            || Seed.DoesModelPassFilter(filter)
+            || Products.Any(product => product.DoesModelPassFilter(filter));
     }
 }

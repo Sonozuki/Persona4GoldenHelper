@@ -1,7 +1,7 @@
 ﻿namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents the product of a plant.</summary>
-    public class PlantProduct
+    public class PlantProduct : FilterableModelBase
     {
         /*********
         ** Accessors
@@ -24,5 +24,10 @@
             Name = name;
             Effect = effect;
         }
+
+        /// <inheritdoc/>
+        public override bool DoesModelPassFilter(string filter) =>
+            Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Effect.Contains(filter, StringComparison.OrdinalIgnoreCase);
     }
 }

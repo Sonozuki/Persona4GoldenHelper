@@ -1,11 +1,15 @@
 ﻿@page "/shadows"
 @inject HttpClient Http;
+@using FilterableKeyValuePair = Persona4GoldenHelper.Models.FilterableKeyValuePair<string, List<Persona4GoldenHelper.Models.Shadow>>;
 
 <div class="content-normal">
+    <SearchBox @ref="SearchBox" />
+
     <h1>Shadows</h1>
-    <table>
-        <thead>
-            <tr>
+    @if (SearchBox != null && AllShadows != null)
+    {
+        <FilterableTable TContent=FilterableKeyValuePair Content=GetDistinctShadows() SearchBox="SearchBox" IncludeTBodyTag=false>
+            <HeaderRow>
                 <th>Name</th>
                 <th class="text-align-centre">Type</th>
                 <th class="column-very-slim text-align-centre">Level</th>
@@ -21,12 +25,13 @@
                 <th class="column-very-slim text-align-centre"><img src="images/wind.png" alt="Wind" /></th>
                 <th class="column-very-slim text-align-centre"><img src="images/light.png" alt="Light" /></th>
                 <th class="column-very-slim text-align-centre"><img src="images/darkness.png" alt="Dark" /></th>
-            </tr>
-        </thead>
-        @if (AllShadows != null)
-            foreach (var shadowName in GetDistrinctShadowNames())
-            {
-                var shadows = GetShadowsByName(shadowName);
+	    	</HeaderRow>
+            <ContentRow>
+                @{
+                    var shadowName = context.Key;
+                    var shadows = context.Value;
+                }
+                
                 <tbody class="alternate-colour">
                     @for (int i = 0; i < shadows.Count; i++)
                     {
@@ -55,16 +60,35 @@
                         </tr>
                     }
                 </tbody>
-            }
-    </table>
+	    	</ContentRow>
+        </FilterableTable>
+    }
 </div>
 
 @code {
     /*********
+    ** Fields
+    *********/
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+
+    /// <summary>All the shadows to display.</summary>
+    private List<Shadow> AllShadows;
+
+
+    /*********
     ** Accessors
     *********/
-    /// <summary>All the shadows to display.</summary>
-    public List<Shadow> AllShadows { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********
@@ -80,17 +104,9 @@
     /// <summary>Retrieves the distinct shadow names.</summary>
     /// <returns>The distinct shadow names.</returns>
     /// <remarks>This is used to separate each shadow as some shadows have multiple types.</remarks>
-    private List<string> GetDistrinctShadowNames() =>
+    private List<FilterableKeyValuePair> GetDistinctShadows() =>
         AllShadows
-            .Select(shadow => shadow.Name)
-            .Distinct()
-            .ToList();
-
-    /// <summary>Retrieves the shadows that have the specified name.</summary>
-    /// <param name="name">The name of the shadows to retrieve.</param>
-    /// <returns>The shadows that have the name of <paramref name="name"/>.</returns>
-    private List<Shadow> GetShadowsByName(string name) =>
-        AllShadows
-            .Where(shadow => shadow.Name == name)
+            .GroupBy(shadow => shadow.Name)
+            .Select(shadowGroup => new FilterableKeyValuePair(shadowGroup.Key, shadowGroup.ToList()))
             .ToList();
 }

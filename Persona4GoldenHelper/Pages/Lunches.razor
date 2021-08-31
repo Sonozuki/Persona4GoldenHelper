@@ -2,33 +2,50 @@
 @inject HttpClient Http;
 
 <div class="content-very-narrow">
-    <h1 class="text-align-centre">Lunches</h1>
-    <table>
-        <thead>
-            <tr>
+    <SearchBox @ref="SearchBox" />
+
+    <h1>Lunches</h1>
+    @if (SearchBox != null)
+    {
+        <FilterableTable TContent=Lunch Content=AllLunches SearchBox="SearchBox">
+            <HeaderRow>
                 <th class="column-slim text-align-centre">Name</th>
                 <th class="column-slim text-align-centre">Method</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (AllLunches != null)
-                foreach (var lunch in AllLunches)
-                {
-                    <tr class="alternate-colour">
-                        <td class="text-align-centre">@lunch.Name</td>
-                        <td class="text-align-centre">@lunch.Method</td>
-                    </tr>
-                }
-        </tbody>
-    </table>
+	    	</HeaderRow>
+            <ContentRow>
+                <tr class="alternate-colour">
+                    <td class="text-align-centre">@context.Name</td>
+                    <td class="text-align-centre">@context.Method</td>
+                </tr>
+	    	</ContentRow>
+	    </FilterableTable>
+    }
 </div>
 
 @code {
     /*********
+    ** Fields
+    *********/
+    /// <summary>A reference to the search box.</summary>
+    private SearchBox _SearchBox;
+
+    /// <summary>All the lunches to display.</summary>
+    private List<Lunch> AllLunches;
+
+
+    /*********
     ** Accessors
     *********/
-    /// <summary>All the lunches to display.</summary>
-    public List<Lunch> AllLunches { get; private set; }
+    /// <summary>A reference to the search box.</summary>
+    public SearchBox SearchBox
+    {
+        get => _SearchBox;
+        set
+        {
+            _SearchBox = value;
+            StateHasChanged();
+        }
+    }
 
 
     /*********
