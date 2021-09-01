@@ -1,11 +1,11 @@
 ﻿@typeparam TContent where TContent : FilterableModelBase
 
-@if (!string.IsNullOrEmpty(Header))
+@if (!string.IsNullOrEmpty(Header) && FilteredContent.Count > 0 || ShowHeaderWithNoResults)
 {
     <h2>@Header</h2>
 }
 
-@if (_Content.Count > 0)
+@if (Content.Count > 0)
     if (FilteredContent.Count > 0)
     {
         <table class="@Class">
@@ -64,6 +64,10 @@ else
     /// <summary>The header of the table.</summary>
     [Parameter]
     public string Header { get; set; }
+
+    /// <summary>Whether the header should be shown when no results in the table are shown.</summary>
+    [Parameter]
+    public bool ShowHeaderWithNoResults { get; set; }
 
     /// <summary>The content of the table.</summary>
     [Parameter]
