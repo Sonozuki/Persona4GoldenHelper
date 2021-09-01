@@ -7,7 +7,7 @@
     <h1>Books</h1>
     @if (SearchBox != null)
     {
-        <FilterableTable TContent=Book Content=AllBooks SearchBox="SearchBox">
+        <FilterableTable TContent=Book Content=AllBooks SearchBox=SearchBox>
             <HeaderRow>
                 <th class="text-align-centre">Available</th>
                 <th class="column-wide">Title</th>
@@ -25,7 +25,7 @@
         </FilterableTable>
 
         <h1>Book Order</h1>
-        <FilterableTable TContent=FilterableString Content=BookOrder SearchBox="SearchBox" Class="table-narrow">
+        <FilterableTable TContent=FilterableString Content=BookOrder SearchBox=SearchBox Class="table-narrow">
             <ContentRow>
                 <tr class="alternate-colour">
                     <td class="text-align-centre text-primary">@context.Value</td>

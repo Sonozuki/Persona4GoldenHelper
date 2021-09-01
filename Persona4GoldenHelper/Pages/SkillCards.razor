@@ -10,7 +10,7 @@
     {
         <h2 class="text-align-centre">How to Obtain</h2>
         <p class="text-align-centre">Skill cards are obtained via Shuffle Time. Shuffle time can occur at the end of a battle. If you get all the cards in the Shuffle Time you get a Sweep Bonus, a Sweep Bonus means you are guarenteed to get a Shuffle Time after the next battle. Each dungeon has a chance of dropping different skill card, by rank. This can be found below.</p>
-        <FilterableTable TContent=SkillCardLocation Content=AllSkillCardLocations SearchBox="SearchBox">
+        <FilterableTable TContent=SkillCardLocation Content=AllSkillCardLocations SearchBox=SearchBox>
             <HeaderRow>
                 <th class="text-align-centre column-slim">Dungeon</th>
                 <th class="text-align-centre column-slim">Skill Card Ranks Found</th>
@@ -25,7 +25,7 @@
 
         @foreach (var type in Enum.GetValues<SkillCardType>())
         {
-            <FilterableTable Header=@type.ToString() TContent=FilterableKeyValuePair Content=GetSkillCardsByType(type) SearchBox="SearchBox">
+            <FilterableTable Header=@type.ToString() TContent=FilterableKeyValuePair Content=GetSkillCardsByType(type) SearchBox=SearchBox>
                 <HeaderRow>
                     <th class="text-align-centre column-very-slim">Rank</th>
                     <th>Skill Cards</th>
