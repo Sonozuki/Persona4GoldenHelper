@@ -25,8 +25,7 @@
 
         @foreach (var type in Enum.GetValues<SkillCardType>())
         {
-            <h2>@type</h2>
-            <FilterableTable TContent=FilterableKeyValuePair Content=GetSkillCardsByType(type) SearchBox="SearchBox">
+            <FilterableTable Header=@type.ToString() TContent=FilterableKeyValuePair Content=GetSkillCardsByType(type) SearchBox="SearchBox">
                 <HeaderRow>
                     <th class="text-align-centre column-very-slim">Rank</th>
                     <th>Skill Cards</th>

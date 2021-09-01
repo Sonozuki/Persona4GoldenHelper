@@ -9,8 +9,7 @@
     {
         @foreach (var month in Enum.GetValues<Month>())
         {
-            <h2>@month</h2>
-            <FilterableTable TContent=ExamAnswer Content=GetExamAnswersByMonth(month) SearchBox="SearchBox">
+            <FilterableTable Header=@month.ToString() TContent=ExamAnswer Content=GetExamAnswersByMonth(month) SearchBox="SearchBox">
                 <HeaderRow>
                     <th class="text-align-centre">Date</th>
                     <th class="column-very-wide">Question</th>

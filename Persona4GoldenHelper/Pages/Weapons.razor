@@ -9,8 +9,7 @@
     {
         @foreach (var user in Enum.GetValues<User>())
         {
-            <h2>@user</h2>
-            <FilterableTable TContent=Weapon Content=GetWeaponsByUser(user) SearchBox="SearchBox" IncludeTBodyTag=false>
+            <FilterableTable Header=@user.ToString() TContent=Weapon Content=GetWeaponsByUser(user) SearchBox="SearchBox" IncludeTBodyTag=false>
                 <HeaderRow>
                     <th>Name</th>
                     <th class="column-very-slim text-align-centre">Attack</th>

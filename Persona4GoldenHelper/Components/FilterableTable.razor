@@ -1,5 +1,10 @@
 ﻿@typeparam TContent where TContent : FilterableModelBase
 
+@if (!string.IsNullOrEmpty(Header))
+{
+    <h2>@Header</h2>
+}
+
 @if (_Content.Count > 0)
     if (FilteredContent.Count > 0)
     {
@@ -55,6 +60,10 @@ else
     /// <summary>A content row of the table.</summary>
     [Parameter]
     public RenderFragment<TContent> ContentRow { get; set; }
+    
+    /// <summary>The header of the table.</summary>
+    [Parameter]
+    public string Header { get; set; }
 
     /// <summary>The content of the table.</summary>
     [Parameter]
