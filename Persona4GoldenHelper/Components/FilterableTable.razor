@@ -6,6 +6,7 @@
 }
 
 @if (Content.Count > 0)
+{
     if (FilteredContent.Count > 0)
     {
         <table class="@Class">
@@ -30,10 +31,11 @@
                 }
         </table>
     }
-    else
+    else if (ShowNoResultsText)
     {
         <h3>No results</h3>
     }
+}
 else
 {
     <h3>Loading...</h3>
@@ -68,6 +70,10 @@ else
     /// <summary>Whether the header should be shown when no results in the table are shown.</summary>
     [Parameter]
     public bool ShowHeaderWithNoResults { get; set; }
+    
+    /// <summary>Whether the "no results" text should be drawn when no results are in the table.</summary>
+    [Parameter]
+    public bool ShowNoResultsText { get; set; } = true;
 
     /// <summary>The content of the table.</summary>
     [Parameter]

@@ -10,7 +10,7 @@
     {
         @foreach (var gender in Enum.GetValues<Gender>())
         {
-            <FilterableTable Header=@gender.ToString() TContent=ArmourModel Content=GetArmourByGender(gender) SearchBox=SearchBox IncludeTBodyTag=false>
+            <FilterableTable Header=@gender.ToString() TContent=ArmourModel Content=GetArmourByGender(gender) SearchBox=SearchBox IncludeTBodyTag=false ShowNoResultsText=false>
                 <HeaderRow>
                     <th>Name</th>
                     <th class="column-very-slim text-align-centre">Defence</th>
