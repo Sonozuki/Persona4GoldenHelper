@@ -10,7 +10,7 @@
     {
         @foreach (var gender in Enum.GetValues<Gender>())
         {
-            <FilterableTable Header=@gender.ToString() TContent=ArmourModel Content=GetArmourByGender(gender) SearchBox=SearchBox IncludeTBodyTag=false ShowNoResultsText=false>
+            <FilterableTable Header=@gender.ToString() TContent=ArmourModel Content=GetArmourByGender(gender) SearchBox=SearchBox IncludeTBodyTag=false ShowNoResultsText=false TableReferences=TableReferences>
                 <HeaderRow>
                     <th>Name</th>
                     <th class="column-very-slim text-align-centre">Defence</th>
@@ -42,6 +42,10 @@
 	    	</FilterableTable>
         }
     }
+    @if (TableReferences.Count > 0 && !TableReferences.AnyHasResults)
+    {
+        <h2>No results</h2>
+    }
 </div>
 
 @code {
@@ -53,6 +57,9 @@
 
     /// <summary>All the armour to display.</summary>
     private List<ArmourModel> AllArmour;
+    
+    /// <summary>References to all the tables.</summary>
+    private TableReferences<ArmourModel> TableReferences = new();
 
 
     /*********
@@ -74,7 +81,11 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllArmour = await Http.GetFromJsonAsync<List<ArmourModel>>("data/armour.json");
+    protected override async Task OnInitializedAsync()
+    {
+        AllArmour = await Http.GetFromJsonAsync<List<ArmourModel>>("data/armour.json");
+        TableReferences.StateChanged += StateHasChanged;
+    }
 
     
     /*********

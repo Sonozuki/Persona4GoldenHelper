@@ -9,7 +9,7 @@
     {
         @foreach (var month in Enum.GetValues<Month>())
         {
-            <FilterableTable Header=@month.ToString() TContent=ExamAnswer Content=GetExamAnswersByMonth(month) SearchBox=SearchBox ShowNoResultsText=false>
+            <FilterableTable Header=@month.ToString() TContent=ExamAnswer Content=GetExamAnswersByMonth(month) SearchBox=SearchBox ShowNoResultsText=false TableReferences=TableReferences>
                 <HeaderRow>
                     <th class="text-align-centre">Date</th>
                     <th class="column-very-wide">Question</th>
@@ -25,6 +25,10 @@
 	    	</FilterableTable>
         }
     }
+    @if (TableReferences.Count > 0 && !TableReferences.AnyHasResults)
+    {
+        <h2>No results</h2>
+    }
 </div>
 
 @code {
@@ -36,6 +40,9 @@
 
     /// <summary>All the exam answers to display.</summary>
     private List<ExamAnswer> AllExamAnswers;
+
+    /// <summary>References to all the tables.</summary>
+    private TableReferences<ExamAnswer> TableReferences = new();
 
     
     /*********
@@ -57,11 +64,15 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllExamAnswers = await Http.GetFromJsonAsync<List<ExamAnswer>>("data/exam-answers.json");
+    protected override async Task OnInitializedAsync()
+    {
+        AllExamAnswers = await Http.GetFromJsonAsync<List<ExamAnswer>>("data/exam-answers.json");
+        TableReferences.StateChanged += StateHasChanged;
+    }
 
-    
-    /*********
-    ** Private Methods
+
+	/*********
+	** Private Methods
     *********/
     /// <summary>Retrieves the exam answers for a specific month.</summary>
     /// <param name="month">The month whose exam answers should be retrieved.</param>

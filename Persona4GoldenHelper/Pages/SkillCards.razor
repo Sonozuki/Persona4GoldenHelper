@@ -10,7 +10,7 @@
     {
         <h2 class="text-align-centre">How to Obtain</h2>
         <p class="text-align-centre">Skill cards are obtained via Shuffle Time. Shuffle time can occur at the end of a battle. If you get all the cards in the Shuffle Time you get a Sweep Bonus, a Sweep Bonus means you are guarenteed to get a Shuffle Time after the next battle. Each dungeon has a chance of dropping different skill card, by rank. This can be found below.</p>
-        <FilterableTable TContent=SkillCardLocation Content=AllSkillCardLocations SearchBox=SearchBox ShowNoResultsText=false>
+        <FilterableTable TContent=SkillCardLocation Content=AllSkillCardLocations SearchBox=SearchBox ShowNoResultsText=false TableReferences=SkillCardLocationTableReferences>
             <HeaderRow>
                 <th class="text-align-centre column-slim">Dungeon</th>
                 <th class="text-align-centre column-slim">Skill Card Ranks Found</th>
@@ -25,7 +25,7 @@
 
         @foreach (var type in Enum.GetValues<SkillCardType>())
         {
-            <FilterableTable Header=@type.ToString() TContent=FilterableKeyValuePair Content=GetSkillCardsByType(type) SearchBox=SearchBox ShowNoResultsText=false>
+            <FilterableTable Header=@type.ToString() TContent=FilterableKeyValuePair Content=GetSkillCardsByType(type) SearchBox=SearchBox ShowNoResultsText=false TableReferences=SkillCardTableReferences>
                 <HeaderRow>
                     <th class="text-align-centre column-very-slim">Rank</th>
                     <th>Skill Cards</th>
@@ -54,6 +54,11 @@
 	        </FilterableTable>
         }
     }
+    @if (SkillCardTableReferences.Count > 0 && !SkillCardTableReferences.AnyHasResults
+        && SkillCardTableReferences.Count > 0 && !SkillCardLocationTableReferences.AnyHasResults)
+    {
+        <h2>No results</h2>
+    }
 </div>
 
 @code {
@@ -68,6 +73,12 @@
 
     /// <summary>All the skill cards to display.</summary>
     private List<SkillCard> AllSkillCards;
+    
+    /// <summary>References to all the skill card tables.</summary>
+    private TableReferences<FilterableKeyValuePair> SkillCardTableReferences = new();
+    
+    /// <summary>References to all the skill card location tables.</summary>
+    private TableReferences<SkillCardLocation> SkillCardLocationTableReferences = new();
 
 
     /*********
@@ -93,6 +104,8 @@
     {
         AllSkillCardLocations = await Http.GetFromJsonAsync<List<SkillCardLocation>>("data/skill-card-locations.json");
         AllSkillCards = await Http.GetFromJsonAsync<List<SkillCard>>("data/skill-cards.json");
+        SkillCardTableReferences.StateChanged += StateHasChanged;
+        SkillCardLocationTableReferences.StateChanged += StateHasChanged;
     }
 
 

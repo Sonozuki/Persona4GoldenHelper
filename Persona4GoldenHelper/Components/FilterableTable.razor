@@ -43,6 +43,13 @@ else
 
 @code {
     /*********
+	** Events
+	*********/
+    /// <summary>Invoked when the state of the table gets changed.</summary>
+    public event Action StateChanged;
+
+
+    /*********
     ** Fields
     *********/
     /// <summary>The content of the table.</summary>
@@ -55,6 +62,9 @@ else
     /*********
     ** Accessors
     *********/
+    /// <summary>Whether the table currently has results.</summary>
+    public bool HasResults => FilteredContent.Count > 0;
+    
     /// <summary>The header row of the table.</summary>
     [Parameter]
     public RenderFragment HeaderRow { get; set; }
@@ -102,16 +112,25 @@ else
     /// <summary>The class of the table.</summary>
     [Parameter]
     public string Class { get; set; }
+    
+    /// <summary>A table references collection to add this table to.</summary>
+    [Parameter]
+    public TableReferences<TContent> TableReferences { get; set; }
 
 
     /*********
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override void OnInitialized() =>
+    protected override void OnInitialized()
+    {
+        TableReferences?.Add(this);
+
         SearchBox.ValueChanged += () =>
         {
             FilteredContent = Content.Where(item => SearchBox.IsObjectVisible(item)).ToList();
             StateHasChanged();
+            StateChanged?.Invoke();
         };
+    }
 }
