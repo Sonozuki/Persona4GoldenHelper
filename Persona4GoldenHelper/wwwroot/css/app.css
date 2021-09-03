@@ -15,6 +15,7 @@
     --border-radius-medium: .3rem;
     --text-colour-primary: #c5c1b9;
     --text-colour-secondary: #808080;
+    --text-colour-no-results: red;
     --text-colour-skill-cost-sp: #e8b819;
     --text-colour-skill-cost-hp: #f71df0;
     --text-colour-persona-type-ultimate: #4b75b3;
@@ -382,6 +383,14 @@ img {
     .searchbox {
         width: 100%;
     }
+}
+
+/****
+** NoResults
+****/
+.no-results {
+    color: var(--text-colour-no-results);
+    font-weight: bold;
 }
 
 
