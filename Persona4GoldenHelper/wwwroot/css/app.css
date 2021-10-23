@@ -15,6 +15,7 @@
     --border-radius-medium: .3rem;
     --text-colour-primary: #c5c1b9;
     --text-colour-secondary: #808080;
+    --text-colour-error: red;
     --text-colour-no-results: red;
     --text-colour-skill-cost-sp: #e8b819;
     --text-colour-skill-cost-hp: #f71df0;
@@ -170,6 +171,10 @@ img {
 
 .text-secondary {
     color: var(--text-colour-secondary);
+}
+
+.text-error {
+    color: var(--text-colour-error);
 }
 
 .font-bold {

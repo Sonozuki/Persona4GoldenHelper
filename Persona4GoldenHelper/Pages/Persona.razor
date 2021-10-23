@@ -1,0 +1,134 @@
+﻿@page "/personas/{personaName}"
+@inject HttpClient Http;
+
+<div class="content-normal">
+    @if (CurrentPersona != null)
+    {
+        <div>
+            <h1>
+                @CurrentPersona.Name (<span class="text-secondary">@CurrentPersona.Level</span>/<span class="text-secondary">@CurrentPersona.Arcana</span>)
+                <span class="persona-type-ultimate" hidden="@(!CurrentPersona.IsUltimate)">Ultimate</span>
+                <span class="persona-type-new-game" hidden="@(!CurrentPersona.IsNewGamePlus)">New Game+</span>
+            </h1>
+        </div>
+        
+        <div>
+            <h2 class="text-align-centre">Stats</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="text-align-centre column-slim">Strength</th>
+                        <th class="text-align-centre column-slim">Magic</th>
+                        <th class="text-align-centre column-slim">Endurance</th>
+                        <th class="text-align-centre column-slim">Agility</th>
+                        <th class="text-align-centre column-slim">Luck</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-align-centre">@CurrentPersona.Stats.Strength</td>
+                        <td class="text-align-centre">@CurrentPersona.Stats.Magic</td>
+                        <td class="text-align-centre">@CurrentPersona.Stats.Endurance</td>
+                        <td class="text-align-centre">@CurrentPersona.Stats.Agility</td>
+                        <td class="text-align-centre">@CurrentPersona.Stats.Luck</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2 class="text-align-centre">Elements</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="text-align-centre column-slim"><img src="/images/physical.png" alt="Physical" /></th>
+                        <th class="text-align-centre column-slim"><img src="/images/fire.png" alt="Fire" /></th>
+                        <th class="text-align-centre column-slim"><img src="/images/ice.png" alt="Ice" /></th>
+                        <th class="text-align-centre column-slim"><img src="/images/electricity.png" alt="Electric" /></th>
+                        <th class="text-align-centre column-slim"><img src="/images/wind.png" alt="Wind" /></th>
+                        <th class="text-align-centre column-slim"><img src="/images/light.png" alt="Light" /></th>
+                        <th class="text-align-centre column-slim"><img src="/images/darkness.png" alt="Dark" /></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-secondary text-align-centre font-bold affinity-@CurrentPersona.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(CurrentPersona.ElementAffinities.Physical)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@CurrentPersona.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(CurrentPersona.ElementAffinities.Fire)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@CurrentPersona.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(CurrentPersona.ElementAffinities.Ice)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@CurrentPersona.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(CurrentPersona.ElementAffinities.Electricity)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@CurrentPersona.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(CurrentPersona.ElementAffinities.Wind)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@CurrentPersona.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(CurrentPersona.ElementAffinities.Light)</td>
+                        <td class="text-secondary text-align-centre font-bold affinity-@CurrentPersona.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(CurrentPersona.ElementAffinities.Darkness)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div>
+            <h2 class="text-align-centre">Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="text-align-centre">Level</th>
+                        <th>Name</th>
+                        <th>Effect</th>
+                        <th class="text-align-centre slim-column">Cost</th>
+                    </tr>
+                </thead>
+                <tbody class="alterate-row-colour">
+                    @for (int i = 0; i < CurrentPersona.Skills.Count(); i++)
+                    {
+                        var personaSkill = CurrentPersona.Skills[i];
+                        var skill = AllSkills.First(skill => skill.Name == personaSkill.Name);
+
+                        <tr>
+                            <td class="text-align-centre text-secondary">@personaSkill.LevelRequired</td>
+                            <td>@skill.Name</td>
+                            <td class="text-secondary">@skill.Effect</td>
+                            <td class="text-secondary text-align-centre font-bold @Utilities.CalculateCostClass(skill.Cost)">@(skill.Cost != "" ? skill.Cost : "-")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else if (!IsPersonaNameValid)
+    {
+        <h2 class="text-align-centre text-error">No persona with the name <span class="text-primary">@PersonaName</span> could be found</h2>
+        <h3 class="text-align-centre text-secondary">Please check you entered the URL correctly. If you got this page from the Personas index page, please report this issue on the GitHub repo.</h3>
+    }
+
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>The name of the persona of the page.</summary>
+    [Parameter]
+    public string PersonaName { get; set; }
+
+    /// <summary>Whether there is a persona with the specified name.</summary>
+    public bool IsPersonaNameValid { get; set; } = true;
+
+    /// <summary>The persona object of the persona of the current page.</summary>
+    public Models.Persona CurrentPersona { get; set; }
+
+    /// <summary>All the skills.</summary>
+    public List<Skill> AllSkills { get; set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync()
+    {
+        var allPersonas = await Http.GetFromJsonAsync<List<Models.Persona>>("data/personas.json");
+        CurrentPersona = allPersonas.FirstOrDefault(persona => persona.Name.Contains(PersonaName, StringComparison.OrdinalIgnoreCase));
+        if (CurrentPersona == null)
+            IsPersonaNameValid = false;
+
+        AllSkills = await Http.GetFromJsonAsync<List<Skill>>("data/skills.json");
+    }
+}
