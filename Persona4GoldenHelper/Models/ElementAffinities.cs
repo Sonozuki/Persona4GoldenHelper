@@ -59,5 +59,19 @@
             || Utilities.ConvertElementAffinityToShortHand(Wind).Contains(filter, StringComparison.OrdinalIgnoreCase)
             || Utilities.ConvertElementAffinityToShortHand(Light).Contains(filter, StringComparison.OrdinalIgnoreCase)
             || Utilities.ConvertElementAffinityToShortHand(Darkness).Contains(filter, StringComparison.OrdinalIgnoreCase);
+
+        /// <inheritdoc/>
+        public override bool Equals(object obj) =>
+            obj is ElementAffinities affinities
+             && Physical == affinities.Physical
+             && Fire == affinities.Fire
+             && Ice == affinities.Ice
+             && Electricity == affinities.Electricity
+             && Wind == affinities.Wind
+             && Light == affinities.Light
+             && Darkness == affinities.Darkness;
+
+        /// <inheritdoc/>
+        public override int GetHashCode() => HashCode.Combine(Physical, Fire, Ice, Electricity, Wind, Light, Darkness);
     }
 }

@@ -47,5 +47,17 @@
             || Endurance.ToString().Contains(filter)
             || Agility.ToString().Contains(filter)
             || Luck.ToString().Contains(filter);
+
+        /// <inheritdoc/>
+        public override bool Equals(object obj) =>
+            obj is Stats stats
+             && Strength == stats.Strength
+             && Magic == stats.Magic
+             && Endurance == stats.Endurance
+             && Agility == stats.Agility
+             && Luck == stats.Luck;
+
+        /// <inheritdoc/>
+        public override int GetHashCode() => HashCode.Combine(Strength, Magic, Endurance, Agility, Luck);
     }
 }

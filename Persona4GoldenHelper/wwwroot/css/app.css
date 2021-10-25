@@ -409,3 +409,47 @@ img {
     display: block;
     text-decoration: underline;
 }
+
+/****
+** Persona
+****/
+.recipes-container {
+    overflow: hidden; /* this is to hide the scroll bar under the border radius */
+}
+
+.recipes {
+    max-height: 50rem;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: var(--border-radius-medium);
+    border: var(--border-medium);
+}
+
+    .recipes table {
+        border: none;
+        margin: 0;
+    }
+
+.recipe-ingredient {
+    margin-right: 2rem;
+}
+
+    .recipe-ingredient:hover {
+        cursor: pointer;
+        filter: brightness(150%);
+    }
+
+.show-more {
+    width: 100%;
+    margin-top: .25rem;
+    background-color: var(--background-colour-light);
+    border: none;
+    font-size: 1rem;
+    color: var(--text-colour-primary);
+    padding: .5rem;
+}
+
+    .show-more:hover {
+        cursor: pointer;
+    }

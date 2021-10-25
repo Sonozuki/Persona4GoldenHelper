@@ -24,5 +24,14 @@
             Name = name;
             LevelRequired = levelRequired;
         }
+
+        /// <inheritdoc/>
+        public override bool Equals(object obj) =>
+            obj is PersonaSkill skill
+             && Name == skill.Name
+             && LevelRequired == skill.LevelRequired;
+
+        /// <inheritdoc/>
+        public override int GetHashCode() => HashCode.Combine(Name, LevelRequired);
     }
 }

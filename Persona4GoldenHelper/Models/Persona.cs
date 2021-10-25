@@ -30,6 +30,12 @@
         /// <summary>Whether the persona is a new game plus persona.</summary>
         public bool IsNewGamePlus { get; }
 
+        /// <summary>Whether the persona has a special fusion recipe.</summary>
+        public bool IsSpecial { get; }
+
+        /// <summary>The cost to summon the persona.</summary>
+        public int Cost { get; }
+        
 
         /*********
         ** Public Methods
@@ -43,7 +49,8 @@
         /// <param name="skills">The skills of the persona.</param>
         /// <param name="isUltimate">Whether the persona is an ultimate persona.</param>
         /// <param name="isNewGamePlus">Whether the persona is a new game plus persona.</param>
-        public Persona(string name, string arcana, int level, Stats stats, ElementAffinities elementAffinities, List<PersonaSkill> skills, bool isUltimate = false, bool isNewGamePlus = false)
+        /// <param name="isSpecial">Whether the persona has a special fusion recipe.</param>
+        public Persona(string name, string arcana, int level, Stats stats, ElementAffinities elementAffinities, List<PersonaSkill> skills, bool isUltimate = false, bool isNewGamePlus = false, bool isSpecial = false)
         {
             Name = name;
             Arcana = arcana;
@@ -53,6 +60,9 @@
             Skills = skills ?? new();
             IsUltimate = isUltimate;
             IsNewGamePlus = isNewGamePlus;
+            IsSpecial = isSpecial;
+
+            Cost = (int)MathF.Pow(Stats.Strength + Stats.Magic + Stats.Endurance + Stats.Agility + Stats.Luck, 2) + 2000;
         }
 
         /// <inheritdoc/>
@@ -62,5 +72,34 @@
             || Level.ToString().Contains(filter)
             || Stats.DoesModelPassFilter(filter)
             || ElementAffinities.DoesModelPassFilter(filter);
+
+        /// <inheritdoc/>
+        public override bool Equals(object obj) =>
+            obj is Persona persona
+             && Name == persona.Name
+             && Arcana == persona.Arcana
+             && Level == persona.Level
+             && Stats.Equals(persona.Stats)
+             && ElementAffinities.Equals(persona.ElementAffinities)
+             && Skills.SequenceEqual(persona.Skills)
+             && IsUltimate == persona.IsUltimate
+             && IsNewGamePlus == persona.IsNewGamePlus
+             && Cost == persona.Cost;
+
+        /// <inheritdoc/>
+        public override int GetHashCode()
+        {
+            var hash = new HashCode();
+            hash.Add(Name);
+            hash.Add(Arcana);
+            hash.Add(Level);
+            hash.Add(Stats);
+            hash.Add(ElementAffinities);
+            hash.Add(Skills);
+            hash.Add(IsUltimate);
+            hash.Add(IsNewGamePlus);
+            hash.Add(Cost);
+            return hash.ToHashCode();
+        }
     }
 }

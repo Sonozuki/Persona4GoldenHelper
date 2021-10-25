@@ -1,9 +1,11 @@
 ﻿@page "/personas/{personaName}"
 @inject HttpClient Http;
+@inject NavigationManager NavigationManager;
 
 <div class="content-normal">
     @if (CurrentPersona != null)
     {
+        @* title *@
         <div>
             <h1>
                 @CurrentPersona.Name (<span class="text-secondary">@CurrentPersona.Level</span>/<span class="text-secondary">@CurrentPersona.Arcana</span>)
@@ -12,6 +14,7 @@
             </h1>
         </div>
         
+        @* stats *@
         <div>
             <h2 class="text-align-centre">Stats</h2>
             <table>
@@ -36,6 +39,7 @@
             </table>
         </div>
 
+        @* element affinities *@
         <div>
             <h2 class="text-align-centre">Elements</h2>
             <table>
@@ -64,24 +68,25 @@
             </table>
         </div>
         
+        @* skills *@
         <div>
             <h2 class="text-align-centre">Skills</h2>
             <table>
                 <thead>
                     <tr>
-                        <th class="text-align-centre">Level</th>
+                        <th class="text-align-centre column-slim">Level</th>
                         <th>Name</th>
                         <th>Effect</th>
-                        <th class="text-align-centre slim-column">Cost</th>
+                        <th class="text-align-centre column-slim">Cost</th>
                     </tr>
                 </thead>
-                <tbody class="alterate-row-colour">
+                <tbody>
                     @for (int i = 0; i < CurrentPersona.Skills.Count(); i++)
                     {
                         var personaSkill = CurrentPersona.Skills[i];
                         var skill = AllSkills.First(skill => skill.Name == personaSkill.Name);
 
-                        <tr>
+                        <tr class="alternate-colour">
                             <td class="text-align-centre text-secondary">@personaSkill.LevelRequired</td>
                             <td>@skill.Name</td>
                             <td class="text-secondary">@skill.Effect</td>
@@ -90,6 +95,44 @@
                     }
                 </tbody>
             </table>
+        </div>
+
+        @* fusion recipes *@
+        <div>
+            <h2 class="text-align-centre">Recipes (<span class="text-secondary">@(Recipes?.Count.ToString() ?? "Calculating...")</span>)</h2>
+            @if (Recipes != null)
+            {
+                <div class="recipes-container">
+                    <div class="recipes">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="column-slim text-align-centre">Cost</th>
+                                    <th>Ingredients</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var recipe in Recipes.Take(MaxNumberOfRecipesToShow))
+                                {
+                                    <tr class="alternate-colour">
+                                        <td>¥@recipe.Cost</td>
+                                        <td>
+                                            @foreach (var persona in recipe.ParentPersonas)
+                                            {
+                                                <span class="recipe-ingredient" @onclick=@(() => NavigationManager.NavigateTo($"/personas/{persona.Name.ToLower()}", true))>
+                                                    <span class="@(persona.IsUltimate ? "persona-type-ultimate" : persona.IsNewGamePlus ? "persona-type-new-game" : "")">@persona.Name
+                                                    </span>&nbsp;(<span class="text-secondary">@persona.Level</span>/<span class="text-secondary">@persona.Arcana</span>)
+                                                </span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <button class="show-more" hidden="@(MaxNumberOfRecipesToShow >= Recipes.Count)" @onclick=@(() => MaxNumberOfRecipesToShow += 100)>Show More</button>
+                    </div>
+                </div>
+            }
         </div>
     }
     else if (!IsPersonaNameValid)
@@ -117,6 +160,12 @@
     /// <summary>All the skills.</summary>
     public List<Skill> AllSkills { get; set; }
 
+    /// <summary>The recipes for persona.</summary>
+    public List<Recipe> Recipes { get; set; }
+
+    /// <summary>The maximum number of recipes to show.</summary>
+    public int MaxNumberOfRecipesToShow { get; set; } = 100;
+
 
     /*********
     ** Protected Methods
@@ -130,5 +179,9 @@
             IsPersonaNameValid = false;
 
         AllSkills = await Http.GetFromJsonAsync<List<Skill>>("data/skills.json");
+
+        // calculate recipes
+        if (IsPersonaNameValid)
+            Recipes = await RecipeCalculator.CalculateRecipes(Http, CurrentPersona);
     }
 }

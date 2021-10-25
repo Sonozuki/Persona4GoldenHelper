@@ -41,17 +41,8 @@
     /// <summary>The sources to some of the data on the site.</summary>
     private readonly Dictionary<string, List<(string DisplayName, string Link)>> Sources = new()
     {
-        ["Personas"] = new()
-        {
-            ("Megami Tensei Wiki", "https://megamitensei.fandom.com/wiki/List_of_Persona_4_Personas"),
-            ("IGN Wiki", "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Personas")
-        },
-        ["Persona Recipe Calculator"] = new()
-        {
-            ("Persona 4 Fusion Calculator", "https://github.com/arantius/persona-fusion-calculator"),
-            ("Persona 4 Wiki - Fusion Theory", "http://persona4.wikidot.com/fusiontutor"),
-            ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/map/8037-fusion-chart")
-        },
+        ["Personas"] = new() { ("Megami Tensei Wiki", "https://megamitensei.fandom.com/wiki/List_of_Persona_4_Personas") },
+        ["Persona Recipe Calculator"] = new() { ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/map/8037-fusion-chart") },
         ["Skills"] = new() { ("IGN Wiki", "https://uk.ign.com/wikis/shin-megami-tensei-persona-4-golden/Skill_List") },
         ["Books"] = new() { ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65714") },
         ["Exam Answers"] = new() { ("Game FAQs", "https://gamefaqs.gamespot.com/vita/641695-persona-4-golden/faqs/65427") },
