@@ -161,6 +161,12 @@ img {
 /*********
 ** General Styles
 *********/
+.loading {
+    color: var(--text-colour-primary);
+    font-weight: bold;
+    text-align: center;
+}
+
 .text-align-centre {
     text-align: center;
 }
