@@ -7,14 +7,14 @@
         ** Fields
         *********/
         /// <summary>The short name for each element affinity.</summary>
-        private static readonly Dictionary<string, string> AffinitityNameConversion = new()
+        private static readonly Dictionary<ElementAffinity, string> AffinitityNameConversion = new()
         {
-            ["Weak"] = "wk",
-            ["None"] = "-",
-            ["Resistant"] = "rs",
-            ["Null"] = "nu",
-            ["Reflect"] = "rf",
-            ["Absorb"] = "ab"
+            [ElementAffinity.Weak] = "wk",
+            [ElementAffinity.None] = "-",
+            [ElementAffinity.Resistant] = "rs",
+            [ElementAffinity.Null] = "nu",
+            [ElementAffinity.Reflect] = "rf",
+            [ElementAffinity.Absorb] = "ab"
         };
 
 
@@ -24,7 +24,7 @@
         /// <summary>This will convert the element affinities into shorter versions (e.g. "", "wk", "rs") for easier reading and displaying.</summary>
         /// <param name="element">The element affinity to convert</param>
         /// <returns>The short hand version of the affinity</returns>
-        public static string ConvertElementAffinityToShortHand(ElementAffinity element) => AffinitityNameConversion[element.ToString()];
+        public static string ConvertElementAffinityToShortHand(ElementAffinity element) => AffinitityNameConversion[element];
 
         /// <summary>Calcualtes the CSS class for a specified cost.</summary>
         /// <param name="cost">The cost to retrieve the CSS class for.</param>
