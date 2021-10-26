@@ -1,4 +1,6 @@
-﻿namespace Persona4GoldenHelper
+﻿using Persona4GoldenHelper.Attributes;
+
+namespace Persona4GoldenHelper
 {
     /// <summary>The types of shadows.</summary>
     public enum ShadowType
@@ -7,6 +9,7 @@
         Normal,
 
         /// <summary>A mini-boss that's required to kill before completing some dungeons.</summary>
+        [DisplayName("Mini Boss")]
         MiniBoss,
 
         /// <summary>A boss at the end of a dungeon.</summary>

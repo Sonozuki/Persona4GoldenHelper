@@ -43,7 +43,7 @@
                                 <td rowspan=@shadows.Count><a href="/shadows/@shadow.Name">@shadow.Name</a></td>
                             }
 
-                            <td class="text-align-centre shadow-type-@shadow.Type">@(shadow.Type.ToString() == "MiniBoss" ? "Mini Boss" : shadow.Type.ToString())</td>
+                            <td class="text-align-centre shadow-type-@shadow.Type">@shadow.Type.GetDisplayName()</td>
                             <td class="text-secondary text-align-centre">@shadow.Level</td>
                             <td class="text-secondary text-align-centre">@shadow.Stats.Strength</td>
                             <td class="text-secondary text-align-centre">@shadow.Stats.Magic</td>

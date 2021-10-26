@@ -1,4 +1,6 @@
-﻿namespace Persona4GoldenHelper.Models
+﻿using Persona4GoldenHelper.Extensions;
+
+namespace Persona4GoldenHelper.Models
 {
     /// <summary>Represents a shadow.</summary>
     public class Shadow : FilterableModelBase
@@ -68,7 +70,7 @@
         /// <inheritdoc/>
         public override bool DoesModelPassFilter(string filter) =>
             Name.Contains(filter, StringComparison.OrdinalIgnoreCase)
-            || Type.ToString().Contains(filter, StringComparison.OrdinalIgnoreCase)
+            || Type.GetDisplayName().Contains(filter, StringComparison.OrdinalIgnoreCase)
             || Level.ToString().Contains(filter)
             || Stats.DoesModelPassFilter(filter)
             || ElementAffinities.DoesModelPassFilter(filter);

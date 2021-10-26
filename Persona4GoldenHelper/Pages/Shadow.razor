@@ -15,7 +15,7 @@
                     var type = types[i];
         
                     @(i == 0 ? " (" : " ")
-                    <span class="shadow-type-@type">@type</span>
+                    <span class="shadow-type-@type">@type.GetDisplayName()</span>
                     @(i == types.Count - 1 ? ")" : "")
                 }
             </h1>
@@ -25,7 +25,7 @@
         {
             @* type *@
             <div>
-                <h1 class="shadow-type-@shadow.Type text-align-centre">@shadow.Type <span class="text-primary">(<span class="text-secondary">@shadow.Level</span>)</span></h1>
+                <h1 class="shadow-type-@shadow.Type text-align-centre">@shadow.Type.GetDisplayName() <span class="text-primary">(<span class="text-secondary">@shadow.Level</span>)</span></h1>
             </div>
             
             @* info *@
