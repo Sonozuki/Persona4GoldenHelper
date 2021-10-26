@@ -1,0 +1,172 @@
+﻿@page "/shadows/{shadowName}"
+@inject HttpClient Http;
+
+<div class="content-normal">
+    @if (CurrentShadows != null && IsShadowNameValid)
+    {
+        @* title *@
+        <div>
+            <h1>
+                @CurrentShadows[0].Name
+        
+                @{ var types = CurrentShadows.Select(shadow => shadow.Type).ToList(); }
+                @for (int i = 0; i < types.Count; i++)
+                {
+                    var type = types[i];
+        
+                    @(i == 0 ? " (" : " ")
+                    <span class="shadow-type-@type">@type</span>
+                    @(i == types.Count - 1 ? ")" : "")
+                }
+            </h1>
+        </div>
+
+        @foreach (var shadow in CurrentShadows)
+        {
+            @* type *@
+            <div>
+                <h1 class="shadow-type-@shadow.Type text-align-centre">@shadow.Type <span class="text-primary">(<span class="text-secondary">@shadow.Level</span>)</span></h1>
+            </div>
+            
+            @* info *@
+            <div>
+                <h2 class="text-align-centre">Info</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-align-centre column-slim">HP</th>
+                            <th class="text-align-centre column-slim">SP</th>
+                            <th class="text-align-centre column-slim">Money</th>
+                            <th class="text-align-centre column-slim">Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-align-centre">@shadow.HP</td>
+                            <td class="text-align-centre">@shadow.SP</td>
+                            <td class="text-align-centre">@shadow.Yen</td>
+                            <td class="text-align-centre">@shadow.Experience</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            @* stats *@
+            <div>
+                <h2 class="text-align-centre">Stats</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-align-centre column-slim">Strength</th>
+                            <th class="text-align-centre column-slim">Magic</th>
+                            <th class="text-align-centre column-slim">Endurance</th>
+                            <th class="text-align-centre column-slim">Agility</th>
+                            <th class="text-align-centre column-slim">Luck</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-align-centre">@shadow.Stats.Strength</td>
+                            <td class="text-align-centre">@shadow.Stats.Magic</td>
+                            <td class="text-align-centre">@shadow.Stats.Endurance</td>
+                            <td class="text-align-centre">@shadow.Stats.Agility</td>
+                            <td class="text-align-centre">@shadow.Stats.Luck</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            @* element affinities *@
+            <div>
+                <h2 class="text-align-centre">Elements</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-align-centre column-slim"><img src="/images/physical.png" alt="Physical" /></th>
+                            <th class="text-align-centre column-slim"><img src="/images/fire.png" alt="Fire" /></th>
+                            <th class="text-align-centre column-slim"><img src="/images/ice.png" alt="Ice" /></th>
+                            <th class="text-align-centre column-slim"><img src="/images/electricity.png" alt="Electric" /></th>
+                            <th class="text-align-centre column-slim"><img src="/images/wind.png" alt="Wind" /></th>
+                            <th class="text-align-centre column-slim"><img src="/images/light.png" alt="Light" /></th>
+                            <th class="text-align-centre column-slim"><img src="/images/darkness.png" alt="Dark" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-secondary text-align-centre font-bold affinity-@shadow.ElementAffinities.Physical">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Physical)</td>
+                            <td class="text-secondary text-align-centre font-bold affinity-@shadow.ElementAffinities.Fire">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Fire)</td>
+                            <td class="text-secondary text-align-centre font-bold affinity-@shadow.ElementAffinities.Ice">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Ice)</td>
+                            <td class="text-secondary text-align-centre font-bold affinity-@shadow.ElementAffinities.Electricity">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Electricity)</td>
+                            <td class="text-secondary text-align-centre font-bold affinity-@shadow.ElementAffinities.Wind">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Wind)</td>
+                            <td class="text-secondary text-align-centre font-bold affinity-@shadow.ElementAffinities.Light">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Light)</td>
+                            <td class="text-secondary text-align-centre font-bold affinity-@shadow.ElementAffinities.Darkness">@Utilities.ConvertElementAffinityToShortHand(shadow.ElementAffinities.Darkness)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            @* skills *@
+            <div>
+                <h2 class="text-align-centre">Skills</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < shadow.Skills.Count; i++)
+                        {
+                            var shadowSkill = shadow.Skills[i];
+                            var skill = AllSkills.First(skill => skill.Name == shadowSkill);
+            
+                            <tr class="alternate-colour">
+                                <td>@skill.Name</td>
+                                <td class="text-secondary">@skill.Effect</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div> 
+        }
+    }
+    else if (!IsShadowNameValid)
+    {
+        <h2 class="text-align-centre text-error">No shadow with the name <span class="text-primary">@ShadowName</span> could be found</h2>
+        <h3 class="text-align-centre text-secondary">Please check you entered the URL correctly. If you got this page from the Shadows index page, please report this issue on the GitHub repo.</h3>
+    }
+</div>
+
+@code {
+    /*********
+    ** Accessors
+    *********/
+    /// <summary>The name of the shadow of the page.</summary>
+    [Parameter]
+    public string ShadowName { get; set; }
+
+    /// <summary>Whether there is a shadow with the specified name.</summary>
+    public bool IsShadowNameValid { get; set; } = true;
+
+    /// <summary>The shadow objects of the shadow of the current page.</summary>
+    public List<Models.Shadow> CurrentShadows { get; set; } // there may be multiple as some shadows have multiple types (normal, miniboss, boss)
+
+    /// <summary>All the skills.</summary>
+    public List<Skill> AllSkills { get; set; }
+
+
+    /*********
+    ** Protected Methods
+    *********/
+    /// <inheritdoc/>
+    protected override async Task OnInitializedAsync()
+    {
+        var allShadows = await Http.GetFromJsonAsync<List<Models.Shadow>>("data/shadows.json");
+        CurrentShadows = allShadows.Where(shadow => shadow.Name.ToLower() == ShadowName.ToLower()).ToList();
+        if (CurrentShadows.Count == 0)
+            IsShadowNameValid = false;
+
+        AllSkills = await Http.GetFromJsonAsync<List<Skill>>("data/skills.json");
+    }
+}

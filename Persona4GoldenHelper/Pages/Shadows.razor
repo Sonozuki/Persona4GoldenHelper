@@ -73,7 +73,7 @@
     private SearchBox _SearchBox;
 
     /// <summary>All the shadows to display.</summary>
-    private List<Shadow> AllShadows;
+    private List<Models.Shadow> AllShadows;
 
 
     /*********
@@ -95,7 +95,7 @@
     ** Protected Methods
     *********/
     /// <inheritdoc/>
-    protected override async Task OnInitializedAsync() => AllShadows = await Http.GetFromJsonAsync<List<Shadow>>("data/shadows.json");
+    protected override async Task OnInitializedAsync() => AllShadows = await Http.GetFromJsonAsync<List<Models.Shadow>>("data/shadows.json");
 
 
     /*********
