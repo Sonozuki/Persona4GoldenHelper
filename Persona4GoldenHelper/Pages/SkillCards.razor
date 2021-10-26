@@ -41,7 +41,7 @@
                         <td>
                             @if (rankSkillCards.Count == 0)
                             {
-                                @:-
+                                <span class="text-secondary">-</span>
                             }
         
                             @for (int j = 0; j < rankSkillCards.Count; j++)
@@ -115,10 +115,19 @@
     /// <summary>Retrieves the skill cards of a specific type.</summary>
     /// <param name="type">The type of skill cards to retrieve.</param>
     /// <returns>The skill cards with a type of <paramref name="type"/></returns>
-    private List<FilterableKeyValuePair<int, List<SkillCard>>> GetSkillCardsByType(SkillCardType type) =>
-        AllSkillCards
+    private List<FilterableKeyValuePair<int, List<SkillCard>>> GetSkillCardsByType(SkillCardType type)
+    {
+        // prefill the dictionary so any ranks that don't have skill cards exist
+        var skillCards = new List<FilterableKeyValuePair<int, List<SkillCard>>>();
+        for (int i = 1; i <= 10; i++)
+            skillCards.Add(new(i, new()));
+
+        var groupedSkillCards = AllSkillCards
             .Where(skillCard => skillCard.Type == type)
-            .GroupBy(skillCard => skillCard.Rank)
-            .Select(skillCardGroup => new FilterableKeyValuePair(skillCardGroup.Key, skillCardGroup.ToList()))
-            .ToList();
+            .GroupBy(skillCard => skillCard.Rank);
+
+        foreach (var group in groupedSkillCards)
+            skillCards[group.Key - 1].Value = group.ToList();
+        return skillCards;
+    }
 }

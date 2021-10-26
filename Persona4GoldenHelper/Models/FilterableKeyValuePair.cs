@@ -13,14 +13,15 @@ namespace Persona4GoldenHelper.Models
         public TKey Key { get; }
 
         /// <summary>The value of the filterable key value pair.</summary>
-        public TValue Value { get; }
+        public TValue Value { get; set; }
 
 
         /*********
         ** Public Methods
         *********/
         /// <summary>Constructs an instance.</summary>
-        /// <param name="value">The value of the filterable string.</param>
+        /// <param name="key">The key of the filterable key value pair.</param>
+        /// <param name="value">The value of the filterable key value pair.</param>
         public FilterableKeyValuePair(TKey key, TValue value)
         {
             Key = key;
