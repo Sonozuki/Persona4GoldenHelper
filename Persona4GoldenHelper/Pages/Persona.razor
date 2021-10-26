@@ -81,7 +81,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for (int i = 0; i < CurrentPersona.Skills.Count(); i++)
+                    @for (int i = 0; i < CurrentPersona.Skills.Count; i++)
                     {
                         var personaSkill = CurrentPersona.Skills[i];
                         var skill = AllSkills.First(skill => skill.Name == personaSkill.Name);
@@ -174,7 +174,7 @@
     protected override async Task OnInitializedAsync()
     {
         var allPersonas = await Http.GetFromJsonAsync<List<Models.Persona>>("data/personas.json");
-        CurrentPersona = allPersonas.FirstOrDefault(persona => persona.Name.Contains(PersonaName, StringComparison.OrdinalIgnoreCase));
+        CurrentPersona = allPersonas.FirstOrDefault(persona => persona.Name.ToLower() == PersonaName.ToLower());
         if (CurrentPersona == null)
             IsPersonaNameValid = false;
 
